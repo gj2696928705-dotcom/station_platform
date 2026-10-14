@@ -1,0 +1,48 @@
+{
+  "at": "2026-10-13T10:24:50.923914+00:00",
+  "real_model": true,
+  "business_data": "simulation",
+  "model": "deepseek-v4-pro",
+  "base_url": "https://api.deepseek.com",
+  "protocol": "chat_completions",
+  "connection_id": "model-ddf4ba1552884d768ad946a332c8a3af",
+  "connection_ref": "model-ddf4ba1552884d768ad946a332c8a3af@1",
+  "verification": {
+    "at": "2026-10-13T10:21:12.291277+00:00",
+    "passed": true,
+    "text": true,
+    "tools": true
+  },
+  "default_connection_confirmed": true,
+  "sessions": [
+    {
+      "agent_id": "O1",
+      "session_id": "session-fee2ca89ce9149108cbffefbc36c3f11",
+      "tool_calls": [
+        "station_state",
+        "station_capability"
+      ],
+      "text_received": true
+    },
+    {
+      "agent_id": "S1",
+      "session_id": "session-926a22f2c143403f80b4a3c8588539ee",
+      "tool_calls": [
+        "station_state",
+        "station_capability"
+      ],
+      "text_received": true
+    }
+  ],
+  "station_restart_multiturn": {
+    "session_id": "session-e7265e95b4ec485581d158a34dfc678a",
+    "messages_completed": 2,
+    "tool_calls": [
+      "station_state",
+      "station_capability",
+      "station_capability"
+    ],
+    "provider_contexts_persisted": 4,
+    "verified_at": "2026-10-13T10:27:32.839861+00:00"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "at": "2026-10-13T12:50:29.775790+00:00",
+  "instance": "production",
+  "roles": {
+    "O4": {
+      "original_body_preserved": true,
+      "role_version_preserved": true,
+      "document_revision": 1,
+      "source_kind": "builtin_template",
+      "body_hash": "860bb160be012e74517e4fa8b186d6b9925af12aaea6ec0ece8d3cd61972922c"
+    },
+    "O3": {
+      "original_body_preserved": true,
+      "role_version_preserved": true,
+      "document_revision": 1,
+      "source_kind": "builtin_template",
+      "body_hash": "3f3108fcc54f60f1a455efcade610a5a8de2e1b96f5cb45a35c03546ebedfe95"
+    },
+    "O2": {
+      "original_body_preserved": true,
+      "role_version_preserved": true,
+      "document_revision": 1,
+      "source_kind": "builtin_template",
+      "body_hash": "1560c4d694224720bd762828508dd9339c30da9a02f695c0b8ef42140064022b"
+    },
+    "O1": {
+      "original_body_preserved": true,
+      "role_version_preserved": true,
+      "document_revision": 1,
+      "source_kind": "builtin_template",
+      "body_hash": "434a26fdf51d354e6c8de4edeb24beb61858e1ac1f7ec416db5232619fc4823a"
+    },
+    "S1": {
+      "original_body_preserved": true,
+      "role_version_preserved": true,
+      "document_revision": 1,
+      "source_kind": "builtin_template",
+      "body_hash": "0035ff0cd96089b3c3bcc1efe4493d3f87e4dcf07b003b4aceb86d5787c9fc0c"
+    }
+  },
+  "station_online": true,
+  "default_model": "deepseek-v4-pro",
+  "default_model_verified": true,
+  "preserved": {
+    "tasks": {
+      "previous_records": 1,
+      "all_previous_records_unchanged": true
+    },
+    "sessions": {
+      "previous_records": 5,
+      "all_previous_records_unchanged": true
+    },
+    "connections": {
+      "previous_records": 1,
+      "all_previous_records_unchanged": true
+    },
+    "connection_versions": {
+      "previous_records": 1,
+      "all_previous_records_unchanged": true
+    }
+  },
+  "test_api_calls_to_real_model": 0,
+  "note": "本轮部署和只读核验未重新调用真实模型；编辑与发布验收使用隔离测试实例。"
+}

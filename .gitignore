@@ -1,0 +1,21 @@
+# 此仓库仅发布场站平台；同目录的原始资料及其他项目不纳入 Git。
+/*
+!/.gitignore
+!/README.md
+!/station_platform/
+
+# 本机环境、运行数据和凭据文件
+**/.venv/
+**/data/
+**/__pycache__/
+**/.pytest_cache/
+*.py[cod]
+*.sqlite*
+*.db
+*.log
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.zip

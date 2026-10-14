@@ -1,0 +1,27 @@
+{
+  "created_at": "2026-10-13",
+  "runtime_dependency": "none",
+  "files": [
+    {
+      "source": "station_poc/demand.py",
+      "target": "station_platform/legacy/demand.py",
+      "source_sha256": "6a11cbae07b5edf0e713be91e7ef79e6f6024c8882c0f466f7971cbf79e7cd9b",
+      "target_sha256": "6a11cbae07b5edf0e713be91e7ef79e6f6024c8882c0f466f7971cbf79e7cd9b",
+      "adaptation": "仅替换导入所属包，算法文件保持原内容"
+    },
+    {
+      "source": "station_poc/service.py",
+      "target": "station_platform/legacy/service.py",
+      "source_sha256": "df79ded91cde15070b2c29f85bf503de9065c2708781dac477a609c901ee3284",
+      "target_sha256": "e8015640dea54c77200768c098894e81fa1c5d1846c4cde2a635de624f79ba10",
+      "adaptation": "独立充电功率预算参数"
+    },
+    {
+      "source": "station_poc/computation.py",
+      "target": "station_platform/legacy/computation.py",
+      "source_sha256": "516bc465bbcb1b0976049aa92ae854076baa8fba884edc8cd06839c49e830a2a",
+      "target_sha256": "516bc465bbcb1b0976049aa92ae854076baa8fba884edc8cd06839c49e830a2a",
+      "adaptation": "仅替换导入所属包，算法文件保持原内容"
+    }
+  ]
+}

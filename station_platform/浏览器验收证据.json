@@ -1,0 +1,43 @@
+{
+  "real_model": false,
+  "source": "isolated_browser_test_substitute",
+  "tasks": [
+    {
+      "id": "task-048d54517d924b2f8d990c1787ce6271",
+      "type": "vpp",
+      "status": "COMPLETED",
+      "actors": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "S1"
+      ],
+      "slot_count": 4,
+      "business_report": {
+        "at": "2026-10-13T06:18:48.506287+00:00",
+        "budget_kw": 250,
+        "budget_met": true,
+        "peak_charging_kw": 200.0,
+        "real_settlement": false,
+        "receipt_ref": "task-048d54517d924b2f8d990c1787ce6271-v1",
+        "simulation": true
+      },
+      "cost_cny": 30.0
+    },
+    {
+      "id": "task-d3f8eebf09a649a19d9e89447478606e",
+      "type": "tariff",
+      "status": "COMPLETED",
+      "actors": [
+        "O1",
+        "O2",
+        "O3",
+        "S1"
+      ],
+      "slot_count": 4,
+      "business_report": null,
+      "cost_cny": 30.0
+    }
+  ]
+}

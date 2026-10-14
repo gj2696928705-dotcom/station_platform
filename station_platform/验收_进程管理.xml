@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="0.152" timestamp="2026-10-13T14:36:34.861902+08:00" hostname="cloudluv"><testcase classname="station_platform.tests.test_cli" name="test_native_process_identity_and_stop_wait" time="0.037" /></testsuite></testsuites>

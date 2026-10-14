@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>场站 Agent 工作台</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+<aside class="sidebar">
+  <div class="brand"><span class="brand-mark">站</span><div>场站工作台<small>Agent 部署与协作</small></div></div>
+  <nav aria-label="主要功能">
+    <button data-page="overview" class="active"><span>01</span>总览与场站</button>
+    <button data-page="models"><span>02</span>模型连接</button>
+    <button data-page="agents"><span>03</span>Agent 与工具</button>
+    <button data-page="chat"><span>04</span>对话工作区</button>
+    <button data-page="tasks"><span>05</span>任务与运行记录</button>
+  </nav>
+  <div class="sidebar-foot"><span class="dot"></span>独立运行核心<small>一个站级节点 · 四个运营商角色</small></div>
+</aside>
+<div class="workspace">
+  <header><div><div class="eyebrow">STATION AGENT PLATFORM</div><h1 id="page-title">总览与场站</h1></div><div id="service-status" class="service-status"></div></header>
+  <div class="simulation-banner"><strong>模拟场站</strong><span>场站数据、外部业务与执行反馈均为模拟。模型连接单独配置并验证。</span></div>
+  <main id="main"></main>
+  <div id="toast" role="status" aria-live="polite"></div>
+</div>
+<dialog id="editor"><div id="editor-content"></div></dialog>
+<dialog id="document-editor" aria-labelledby="document-heading"><div id="document-content"></div></dialog>
+<script src="/static/documents.js"></script>
+<script src="/static/app.js"></script>
+</body></html>
