@@ -1,0 +1,153 @@
+{
+  "schema_version": "huanghua-station-registry-1",
+  "dataset_id": "huanghua_station_registry_2025_synthetic_v1",
+  "config_version": "1.0.0",
+  "recorded_on": "2026-10-15",
+  "is_simulated": true,
+  "source_type": "synthetic_registry",
+  "approval_basis": "用户确认沿用年度数据规模、逐台逐端口建账、10MW购电上限和2MW/4MWh储能，并要求实施完整方案。数值是模拟选择，不是实站核实参数。",
+  "station": {
+    "station_id": "HH-Huanghua-CSS",
+    "station_name": "黄花充换电站（统一模拟配置）",
+    "timezone": "Asia/Shanghai",
+    "interval_minutes": 15,
+    "effective_from": "2025-01-01T00:00:00+08:00",
+    "effective_to": "2026-01-01T00:00:00+08:00",
+    "available_at": "2025-01-01T00:00:00+08:00",
+    "availability_basis": "历史回放开始前已知的静态模拟设定；recorded_on是实际建档日期，不声称2025年实站已存在这些设备。",
+    "grid_import_limit_kw": 10000,
+    "grid_export_limit_kw": 0,
+    "export_allowed": false,
+    "latitude_deg": 30.90,
+    "longitude_deg": 111.35,
+    "coordinate_basis": "沿用光伏模拟配置的太阳位置计算近似坐标，未经实站地址核验"
+  },
+  "equipment": {
+    "pv": {
+      "capacity_kw": 5000,
+      "inverter_count": 10,
+      "inverter_rated_power_kw": 500,
+      "power_side": "AC",
+      "per_inverter_timeseries": "not_generated"
+    },
+    "charging": {
+      "terminal_count": 128,
+      "ports_per_terminal": 1,
+      "port_count": 128,
+      "terminal_rated_power_kw": 240,
+      "port_rated_power_kw": 240,
+      "port_id_prefix": "SIM-G-",
+      "connector_type": "DC",
+      "rated_power_basis": "站内AC供电等效上限；为兼容现有无充电损耗的支路模型，终端与枪口共用一条功率变量，不推断真实DC铭牌或电池入电量。",
+      "charging_efficiency": null,
+      "multiport_shared_cabinet": false,
+      "v2g_enabled": false
+    },
+    "storage": {
+      "system_count": 1,
+      "rated_capacity_kwh": 4000,
+      "pcs_count": 1,
+      "pcs_rated_power_kw": 2000,
+      "pcs_max_charge_kw": 2000,
+      "pcs_max_discharge_kw": 2000,
+      "power_side": "AC",
+      "capacity_basis": "名义电池容量；不是当前可用能量或允许释放电量",
+      "charge_efficiency": null,
+      "discharge_efficiency": null,
+      "soc_percent": null,
+      "soc_min_percent": null,
+      "soc_max_percent": null,
+      "reserve_soc_percent": null,
+      "terminal_soc_target_percent": null,
+      "dispatch_ready": false
+    }
+  },
+  "baseline_state": {
+    "availability": "available",
+    "fault": false,
+    "derating_reason": "",
+    "protection_active": false,
+    "manual_takeover": false,
+    "frozen": false,
+    "port_occupancy_source": "historical_sessions_as_of_business_time",
+    "occupancy_interval": "[start_at,end_at)",
+    "availability_is_not_idle": true
+  },
+  "model": {
+    "topology": "station_active_power_equivalent",
+    "power_unit": "kW",
+    "energy_unit": "kWh",
+    "interval_semantics": "[interval_start,interval_end)",
+    "meter_count": 5,
+    "meter_status": "definition_only",
+    "unknown_identity": null,
+    "unknown_numeric_value": null,
+    "pcc_balance": "grid_import_kw + pv_used_kw + storage_discharge_kw = base_load_kw + charging_load_kw + storage_charge_kw + grid_export_kw",
+    "pv_balance": "pv_available_kw = pv_used_kw + pv_curtailed_kw",
+    "loss_model": "not_modelled; no independently added branch/PCS/transformer loss",
+    "unmodelled": [
+      "transformer_nameplate_and_impedance",
+      "network_power_flow_and_voltage_limits",
+      "reactive_power_and_power_factor",
+      "protection_settings_and_real_control",
+      "battery_SOC_dynamics_efficiency_and_reserve",
+      "vehicle_battery_SOC_and_DC_charging_efficiency",
+      "real_manufacturer_model_and_serial_number"
+    ]
+  },
+  "history_contract": {
+    "expected_interval_rows": 35040,
+    "expected_session_rows": 44826,
+    "power_decimal_places": 6,
+    "power_balance_tolerance_kw": 0.000001,
+    "pv_interval_rule": "adjacent_point_trapezoid",
+    "pv_last_endpoint_kw": 0,
+    "pv_last_endpoint_basis": "本模拟坐标下2026-01-01 00:00为夜间，沿用既有光伏说明的零功率端点假设",
+    "pv_interval_available_at": "interval_end; right endpoint must already be available",
+    "load_interval_available_at": "interval_end",
+    "compatibility_mode": "offline_full_year_audit_only",
+    "baseline_storage_charge_kw": 0,
+    "baseline_storage_discharge_kw": 0,
+    "forbidden_as_decision_input": ["future_actual_power", "actual_session_end", "final_session_energy"],
+    "platform_mapping_status": "not_connected; mock-station-001 is a different simulation scale"
+  },
+  "sources": {
+    "pv_data": {
+      "path": "代码/数据/光伏数据/黄花站_2025年_15分钟光伏模拟数据.csv",
+      "sha256": "28a0842c8b7c28ac5e90ae209bba2a5a215ef1f48ae3f25d616d083515bed1c8",
+      "dataset_id": "huanghua_pv_2025_synthetic_v1",
+      "mapping": {"timestamp": "instant_observed_at", "pv_power_kw": "BR-PV.aggregate_unconstrained_generation_kw"}
+    },
+    "load_data": {
+      "path": "代码/数据/负荷数据/黄花站_2025年_15分钟负荷模拟数据.csv",
+      "sha256": "c4989c0c8a62a488bdc9e3abd3118bf5cc34333181246ad1f41a672a2d7b0c39",
+      "dataset_id": "huanghua_load_2025_synthetic_v1",
+      "mapping": {"timestamp": "interval_start", "base_load_kw": "LOAD-BASE.interval_average_kw", "charging_load_kw": "BR-CHARGE.interval_average_kw", "total_load_kw": "base_load_kw + charging_load_kw; not_PCC_net_load"}
+    },
+    "sessions": {
+      "path": "代码/数据/负荷数据/充电会话明细.csv",
+      "sha256": "4c3d0b1a2c26ca6ccb4cebf9d9e0d12c477c4f81c23d66509a1e151378e94ecf",
+      "mapping": {"port_id": "设备台账.csv.port_id (identity mapping)", "peak_power_kw": "historical_branch_equivalent_peak_kw", "start_at/end_at": "occupancy_only; actual_end_is_not_expected_departure"}
+    },
+    "pv_config": {"path": "代码/数据/光伏数据/simulation_config.json", "sha256": "3c438b1591d89b3639fe1710366bbf4dac41ed8bd5f1a94c261d5da783818239"},
+    "load_config": {"path": "代码/数据/负荷数据/simulation_config.json", "sha256": "b431bb4212a85301603ad89bb7731cbd167c71312865b700aac7824c793be430"},
+    "pv_notes": {"path": "代码/数据/光伏数据/数据说明.md", "sha256": "634b6db6f0fcff0ffc37604746934ea54e46c3b02d4feb1c928526489e3a81f6"},
+    "load_notes": {"path": "代码/数据/负荷数据/数据说明.md", "sha256": "605bf9e3adbb4d89348fe6db13f936ccb79702a4e473b9b9b44b7bec9c8c600a"},
+    "handoff": {"path": "代码/数据/单站光储充数据需求与项目交接.md", "sha256": "69da3c8a310bf68faae7ba55d52a5a1f203631fea7aeed38aa02bdfcc26fbc7e"},
+    "design": {"path": "资料/场站智能体详细设计方案_合并版.docx", "sha256": "074f28e68fc35e2db20943d9b874b80cd4cb15309bfc2910bde9cb531885bfd3"},
+    "mechanism": {"path": "资料/场站功能运行机理说明.docx", "sha256": "1432f4436fdabd144910b01054a52ab1bc0201e7f7dffa69a82bff8b29bd85c1"},
+    "slides": {"path": "资料/场站层7.08.pptx", "sha256": "dc686ca044a0af7504ef80611c74690f9d4b1b6ee627028958604734434dcd6e"},
+    "platform_reference": {"path": "station_platform/legacy/demand.py", "sha256": "6a11cbae07b5edf0e713be91e7ef79e6f6024c8882c0f466f7971cbf79e7cd9b"}
+  },
+  "output": {
+    "assets": "设备台账.csv",
+    "constraints": "功率约束.csv",
+    "meters": "计量关系.csv",
+    "provenance": "来源与假设.csv",
+    "notes": "数据说明.md",
+    "report": "validation_report.json",
+    "csv_encoding": "utf-8-sig",
+    "csv_newline": "LF",
+    "collection_cell_encoding": "JSON array or object"
+  }
+}

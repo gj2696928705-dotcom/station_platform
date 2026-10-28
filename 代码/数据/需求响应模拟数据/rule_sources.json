@@ -1,0 +1,12 @@
+{
+  "finding": "No verifiable market baseline, assessment tolerance, settlement or authorization rule supplied; technical test only",
+  "is_simulated": true,
+  "market_rule_status": "unknown",
+  "reviewed_sources": [
+    "代码/后续算法会话交接/D04_需求响应模拟数据.md",
+    "代码/后续算法会话交接/A09_需求响应可调能力与履约.md"
+  ],
+  "scenario_id": "PACKAGE",
+  "station_id": "HH-Huanghua-CSS",
+  "technical_fixture_rule": "frozen_no_response_plan_v1"
+}

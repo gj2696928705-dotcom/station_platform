@@ -1,0 +1,50 @@
+[
+  {
+    "is_simulated": true,
+    "path": "代码/数据/储能参数与初始状态/储能参数.csv",
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "3536c8694ed45036842a96c75a09a6684db7ec4ff1ffb302a88585f90e90aaa3",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "代码/数据/场站联动模拟数据/simulation_config.json",
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "9869e29b761150846f078ed759a10532a61bf47ca2aca392c639ed8ea3ea7a3a",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "代码/数据/场站联动模拟数据/station_interval_truth.csv",
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "d631a3cf7b2ff3a361b2c7fe5ccc27096ce1b1d312e15c5fb2e3f900107766f4",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "代码/数据/场站联动模拟数据/tariff_intervals.csv",
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "63b81b965fadf0ec3bf7da500dc7608a7958d97ff304ff176f87f533e62fd2f7",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "代码/数据/场站配置与设备台账/设备台账.csv",
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "8843ffc5cfe4279edab887ed335f5be026614dd0ab8bab4f35db64c16fb9cc44",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "总平台/fleet_platform/COLLABORATION.md",
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "f2f7b401227d01cddfa037cb01b9f03638ffff511ff297a247b32bbf15414259",
+    "station_id": "HH-Huanghua-CSS"
+  }
+]

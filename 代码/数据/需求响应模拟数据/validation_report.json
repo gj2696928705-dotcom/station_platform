@@ -1,0 +1,139 @@
+{
+  "counts": {
+    "activation_events": 27,
+    "baseline_intervals": 40,
+    "execution_intervals": 40,
+    "offers": 10,
+    "scenarios": 10,
+    "tamper_attempts": 1
+  },
+  "dataset_id": "huanghua_dr_technical_replay_2025_v1",
+  "execution_mode": "offline_technical_range_test",
+  "independent_validation": {
+    "device_states_and_D02_references_checked": true,
+    "duplicate_activation_events": 1,
+    "frozen_baseline_fingerprints_recomputed": true,
+    "future_truth_hidden_at_as_of": true,
+    "missing_meter_not_zero": true,
+    "past_only_forecasts": true,
+    "response_and_recovery_energy_conserved": true,
+    "settlement_generated": false,
+    "technical_scenario_checks": [
+      {
+        "actual_status": "activated_technical",
+        "difference": "",
+        "expected_status": "activated_technical",
+        "measured_grid_complete": true,
+        "response_energy_reduction_kwh": "20.000000",
+        "scenario_id": "DR01_normal_down",
+        "whole_window_vehicle_energy_conserved": true
+      },
+      {
+        "actual_status": "reject_up_capacity",
+        "difference": "",
+        "expected_status": "reject_up_capacity",
+        "measured_grid_complete": true,
+        "response_energy_reduction_kwh": "0.000000",
+        "scenario_id": "DR02_up_unavailable",
+        "whole_window_vehicle_energy_conserved": true
+      },
+      {
+        "actual_status": "reject_down_capacity",
+        "difference": "",
+        "expected_status": "reject_down_capacity",
+        "measured_grid_complete": true,
+        "response_energy_reduction_kwh": "0.000000",
+        "scenario_id": "DR03_down_unavailable",
+        "whole_window_vehicle_energy_conserved": true
+      },
+      {
+        "actual_status": "reject_service_deadline",
+        "difference": "",
+        "expected_status": "reject_service_deadline",
+        "measured_grid_complete": true,
+        "response_energy_reduction_kwh": "0.000000",
+        "scenario_id": "DR04_sustained_service",
+        "whole_window_vehicle_energy_conserved": true
+      },
+      {
+        "actual_status": "reject_recovery_capacity",
+        "difference": "",
+        "expected_status": "reject_recovery_capacity",
+        "measured_grid_complete": true,
+        "response_energy_reduction_kwh": "0.000000",
+        "scenario_id": "DR05_recovery_rebound",
+        "whole_window_vehicle_energy_conserved": true
+      },
+      {
+        "actual_status": "partial_technical",
+        "difference": "",
+        "expected_status": "partial_technical",
+        "measured_grid_complete": true,
+        "response_energy_reduction_kwh": "10.000000",
+        "scenario_id": "DR06_partial_activation",
+        "whole_window_vehicle_energy_conserved": true
+      },
+      {
+        "actual_status": "cancelled_before_start",
+        "difference": "",
+        "expected_status": "cancelled_before_start",
+        "measured_grid_complete": true,
+        "response_energy_reduction_kwh": "0.000000",
+        "scenario_id": "DR07_cancelled",
+        "whole_window_vehicle_energy_conserved": true
+      },
+      {
+        "actual_status": "reject_baseline_fingerprint",
+        "difference": "",
+        "expected_status": "reject_baseline_fingerprint",
+        "measured_grid_complete": true,
+        "response_energy_reduction_kwh": "0.000000",
+        "scenario_id": "DR08_baseline_tamper",
+        "whole_window_vehicle_energy_conserved": true
+      },
+      {
+        "actual_status": "evidence_incomplete",
+        "difference": "",
+        "expected_status": "evidence_incomplete",
+        "measured_grid_complete": false,
+        "response_energy_reduction_kwh": "20.000000",
+        "scenario_id": "DR09_missing_meter",
+        "whole_window_vehicle_energy_conserved": true
+      },
+      {
+        "actual_status": "reject_late_ack",
+        "difference": "",
+        "expected_status": "reject_late_ack",
+        "measured_grid_complete": true,
+        "response_energy_reduction_kwh": "0.000000",
+        "scenario_id": "DR10_late_receipt",
+        "whole_window_vehicle_energy_conserved": true
+      }
+    ]
+  },
+  "is_simulated": true,
+  "market_rule_status": "unknown",
+  "output_hashes_sha256": {
+    "activation_events.jsonl": "7084942a89f4331353fb318a311b27f9d60b3f411e156a4c0cb997a7dfec2f40",
+    "baseline_mutation_attempts.jsonl": "c3abac2d3e2917138f0b0dd198f369eff071c57aa5d6e72c523c5c1e7e358585",
+    "baseline_plan.csv": "444a190bde4eb62f07d1014bc5ac15639996acd532d3450211777ed413a1061f",
+    "execution_truth.csv": "a539db8c0f1c067deb1495c5042e191a9eb18c12a86dd072a87d15af629a081c",
+    "response_offers.csv": "05be42ac15eb654f34aced0ccb51a4d056300f931b1ad77ed2aae10bdfa36817",
+    "rule_sources.json": "7de5dfc78af68b8aaf280b8f0eacf49f08a9ba9e87a46c712bfd5e91f8b3c4e4",
+    "scenario_manifest.json": "1c39bfe7c68f72c68ad39c2799649ca410dbcc108b1cc6194455b6b2f11e20bc",
+    "settlement_reference.json": "c8318a6988f776875a333055e4df35ed58e8dca5b2ef964f7e513d519d992995",
+    "source_manifest.json": "388c6e106a4663b47fe200b5c7ef9243c026709ad040754b06e02ec23422861d"
+  },
+  "settlement_status": "not_applicable",
+  "source_hashes_sha256": {
+    "代码/后续算法会话交接/A09_需求响应可调能力与履约.md": "1999875836c3a78488ace9c4ba4a39c43090051ca5d12a1728d3985f8aa15164",
+    "代码/后续算法会话交接/D04_需求响应模拟数据.md": "1e32eb05d2a3d09800c5acafa6db98fe5eb146ce6db9a457e15dc73f865faba4",
+    "代码/数据/储能参数与初始状态/储能参数.csv": "3536c8694ed45036842a96c75a09a6684db7ec4ff1ffb302a88585f90e90aaa3",
+    "代码/数据/场站联动模拟数据/forecast_values.csv": "23cdaffb280195ed943f57dd61669ec843c5f46374dd4ad3eb020d9af268ad0e",
+    "代码/数据/场站联动模拟数据/scenario_inputs.csv": "3c923806bfc989af50fded18d32ba9916815785040a7e86c115059f2f34b242c",
+    "代码/数据/场站联动模拟数据/scenario_truth.csv": "3348816745e08e0568d1720be296fd25fad496c27743eacd4daf4252631b062f",
+    "代码/数据/滚动事件模拟数据/events.jsonl": "fc789af1a60277b326bfd1640a39afbf6217c195f75f99d26a3dddacc894f2ba",
+    "代码/数据/滚动事件模拟数据/execution_truth.jsonl": "61c3f3cd44f364aa4152babe7b103205e0929386c73b7f4e7b7de1efedcd1b47"
+  },
+  "status": "passed"
+}

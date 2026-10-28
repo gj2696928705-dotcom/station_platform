@@ -1,0 +1,5 @@
+﻿station_id,dataset_id,scenario_id,is_simulated,fleet_station_id,excluded_example_station_id,station_port_id,fleet_port_id,station_port_rated_kw,fleet_port_limit_kw,connector,meter_boundary,source_version
+HH-Huanghua-CSS,huanghua_fleet_station_2025_offline_v1,ALL,true,HH-Huanghua-CSS,示例充电站,SIM-G-001,FLEET-PORT-01,240.000000,120.000000,DC,AC charging branch,registry_v1+new_fleet_subset_v1
+HH-Huanghua-CSS,huanghua_fleet_station_2025_offline_v1,ALL,true,HH-Huanghua-CSS,示例充电站,SIM-G-002,FLEET-PORT-02,240.000000,120.000000,DC,AC charging branch,registry_v1+new_fleet_subset_v1
+HH-Huanghua-CSS,huanghua_fleet_station_2025_offline_v1,ALL,true,HH-Huanghua-CSS,示例充电站,SIM-G-003,FLEET-PORT-03,240.000000,120.000000,DC,AC charging branch,registry_v1+new_fleet_subset_v1
+HH-Huanghua-CSS,huanghua_fleet_station_2025_offline_v1,ALL,true,HH-Huanghua-CSS,示例充电站,SIM-G-004,FLEET-PORT-04,240.000000,120.000000,DC,AC charging branch,registry_v1+new_fleet_subset_v1

@@ -1,0 +1,64 @@
+{
+  "counts": {
+    "allocations": 26,
+    "capacity_intervals": 480,
+    "history_intervals": 244,
+    "messages": 22,
+    "requests": 14,
+    "scenarios": 5,
+    "service_intervals": 288,
+    "tasks": 14,
+    "vehicle_energy_trace_intervals": 1152,
+    "vehicles": 15
+  },
+  "dataset_id": "huanghua_fleet_station_2025_offline_v1",
+  "independent_validation": {
+    "aggregation_30_60_energy_conserved": true,
+    "cancel_ack_before_new_reservation": true,
+    "full_day_15min_grid": true,
+    "history_future_signing_redacted": true,
+    "history_holdout_replay": {
+      "blind_test_claim": false,
+      "evaluated_intervals": 56,
+      "mae_kwh_per_15min": "8.826581",
+      "train_slot_mean_only": true
+    },
+    "infeasible_cases_rejected": [
+      "F02_station_short",
+      "F03_deadline_conflict"
+    ],
+    "message_conflicts_rejected": 1,
+    "message_duplicates": 1,
+    "source_forecasts_past_only": true,
+    "station_grid_pv_storage_balance": true,
+    "vehicle_battery_15min_trace_recomputed": 1152,
+    "vehicle_port_energy_and_transport": true
+  },
+  "is_simulated": true,
+  "limitations": "Synthetic small/full-day fixture; no live grid or S1 confirmation, no economic equilibrium proof",
+  "output_hashes_sha256": {
+    "allocation_15m.csv": "bde01218766bcd7d673f81f38709f473ea71198cdfd0a9eae558a05d4476e074",
+    "charging_requests.csv": "94da6170dd124265221e099890c8f2ed93d8d435e367d5b1c0ee3458899881d6",
+    "collaboration_messages.jsonl": "62f1379cb69219d31d0fb2be219973e40cf5917cd47f0152ad7ff01f6f3ea51d",
+    "fleet_aggregates_30_60m.csv": "811c96e3bbc0810a40d7cf92b42d92283021ef13945e023cdd57df572d24d1d5",
+    "history_uncontracted.csv": "ee633472b0d18c8053dec049015f13b28e0f9c3d33def5e97a20b793e96dd57b",
+    "history_uncontracted_visible.csv": "2e26b165d74b4eb1188ef3f205b6afafe83a570b5a091d88bbc20201ad663920",
+    "identity_mapping.csv": "262834a640b27380d69111f86dda720c057423af665083c3f9ec3e7ea812d56a",
+    "scenario_manifest.json": "531ed42d3f272e138dd3831220c43cb75b83b3c5eaaf4bc02a61d39a7cc6e6d5",
+    "source_manifest.json": "319122a218c90c09151cc8ce16e011404f86112f6c7b168f9914913bb7968443",
+    "station_capacity_15m.csv": "75b768246d26c668ebfd9ac7972d9584a0c26ec7eeff198b761fbf2b8e73b4b6",
+    "station_service_15m.csv": "f702464e2b1cfe16606969de17dda16239e8cfe252311a9fada8cb1024545f09",
+    "transport_tasks.csv": "99accc265e271a6a5ec2983a49e2a34fe69af7e6191a07dafbe5a84c36bdf22c",
+    "vehicle_energy_trace_15m.csv": "be7530d8c0e3268dec09f7ff7fd3ffc0649f19f1df278de0ae162c1a1a2961ec",
+    "vehicles.csv": "20bb898af6e8f5074c85e0deb764933df9911cc113697f0b76b2fa7240109894"
+  },
+  "source_hashes_sha256": {
+    "代码/数据/储能参数与初始状态/储能参数.csv": "3536c8694ed45036842a96c75a09a6684db7ec4ff1ffb302a88585f90e90aaa3",
+    "代码/数据/场站联动模拟数据/simulation_config.json": "9869e29b761150846f078ed759a10532a61bf47ca2aca392c639ed8ea3ea7a3a",
+    "代码/数据/场站联动模拟数据/station_interval_truth.csv": "d631a3cf7b2ff3a361b2c7fe5ccc27096ce1b1d312e15c5fb2e3f900107766f4",
+    "代码/数据/场站联动模拟数据/tariff_intervals.csv": "63b81b965fadf0ec3bf7da500dc7608a7958d97ff304ff176f87f533e62fd2f7",
+    "代码/数据/场站配置与设备台账/设备台账.csv": "8843ffc5cfe4279edab887ed335f5be026614dd0ab8bab4f35db64c16fb9cc44",
+    "总平台/fleet_platform/COLLABORATION.md": "f2f7b401227d01cddfa037cb01b9f03638ffff511ff297a247b32bbf15414259"
+  },
+  "status": "passed"
+}

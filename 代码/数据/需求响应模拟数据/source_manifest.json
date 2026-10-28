@@ -1,0 +1,66 @@
+[
+  {
+    "is_simulated": true,
+    "path": "代码/后续算法会话交接/A09_需求响应可调能力与履约.md",
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "1999875836c3a78488ace9c4ba4a39c43090051ca5d12a1728d3985f8aa15164",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "代码/后续算法会话交接/D04_需求响应模拟数据.md",
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "1e32eb05d2a3d09800c5acafa6db98fe5eb146ce6db9a457e15dc73f865faba4",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "代码/数据/储能参数与初始状态/储能参数.csv",
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "3536c8694ed45036842a96c75a09a6684db7ec4ff1ffb302a88585f90e90aaa3",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "代码/数据/场站联动模拟数据/forecast_values.csv",
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "23cdaffb280195ed943f57dd61669ec843c5f46374dd4ad3eb020d9af268ad0e",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "代码/数据/场站联动模拟数据/scenario_inputs.csv",
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "3c923806bfc989af50fded18d32ba9916815785040a7e86c115059f2f34b242c",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "代码/数据/场站联动模拟数据/scenario_truth.csv",
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "3348816745e08e0568d1720be296fd25fad496c27743eacd4daf4252631b062f",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "代码/数据/滚动事件模拟数据/events.jsonl",
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "fc789af1a60277b326bfd1640a39afbf6217c195f75f99d26a3dddacc894f2ba",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "代码/数据/滚动事件模拟数据/execution_truth.jsonl",
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "61c3f3cd44f364aa4152babe7b103205e0929386c73b7f4e7b7de1efedcd1b47",
+    "station_id": "HH-Huanghua-CSS"
+  }
+]

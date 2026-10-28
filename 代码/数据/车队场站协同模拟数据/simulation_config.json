@@ -1,0 +1,58 @@
+{
+  "dataset_id": "huanghua_fleet_station_2025_offline_v1",
+  "station_id": "HH-Huanghua-CSS",
+  "business_date": "2025-09-15",
+  "timezone": "Asia/Shanghai",
+  "interval_minutes": 15,
+  "seed": 2025102803,
+  "is_simulated": true,
+  "execution_mode": "offline_replay",
+  "binding_decision": "D03 option 1: create new small fleet subset on D01 Huanghua station; fleet_platform sample_input station is a different synthetic station and is not renamed",
+  "source_hashes_sha256": {
+    "代码/数据/场站联动模拟数据/station_interval_truth.csv": "d631a3cf7b2ff3a361b2c7fe5ccc27096ce1b1d312e15c5fb2e3f900107766f4",
+    "代码/数据/场站联动模拟数据/simulation_config.json": "9869e29b761150846f078ed759a10532a61bf47ca2aca392c639ed8ea3ea7a3a",
+    "代码/数据/场站联动模拟数据/tariff_intervals.csv": "63b81b965fadf0ec3bf7da500dc7608a7958d97ff304ff176f87f533e62fd2f7",
+    "代码/数据/场站配置与设备台账/设备台账.csv": "8843ffc5cfe4279edab887ed335f5be026614dd0ab8bab4f35db64c16fb9cc44",
+    "代码/数据/储能参数与初始状态/储能参数.csv": "3536c8694ed45036842a96c75a09a6684db7ec4ff1ffb302a88585f90e90aaa3",
+    "总平台/fleet_platform/COLLABORATION.md": "f2f7b401227d01cddfa037cb01b9f03638ffff511ff297a247b32bbf15414259"
+  },
+  "forecast": {
+    "issued_at": "2025-09-15T00:00:00+08:00",
+    "load_rule": "previous_week_same_slot_base_load; source interval ended by issue",
+    "pv_rule": "previous_day_same_slot_trapezoid_interval_mean; source interval ended by issue",
+    "native_grid": "15min_interval_average",
+    "no_empirical_coverage_claim": true
+  },
+  "fleet_assumptions": {
+    "vehicle_battery_kwh": 400,
+    "vehicle_initial_energy_small_kwh": 200,
+    "vehicle_initial_energy_pressure_kwh": 150,
+    "vehicle_reserve_kwh": 80,
+    "vehicle_max_charge_kw": 120,
+    "vehicle_charge_efficiency": 0.95,
+    "connector": "DC",
+    "v2g_authorized": false,
+    "existing_synthetic_charge_kw_during_10_11": 80,
+    "existing_service_port_id": "SIM-G-005",
+    "existing_charge_basis": "independent assumed contracted service visible at business-day start; not copied from future historical charge truth",
+    "storage_initial_energy_kwh": 2400,
+    "storage_policy": "idle reference fixture; site_dispatch_ready remains false",
+    "port_subset": ["SIM-G-001", "SIM-G-002", "SIM-G-003", "SIM-G-004"],
+    "station_total_ports": 128,
+    "grid_import_limit_kw": 10000,
+    "grid_export_limit_kw": 0
+  },
+  "history_assumptions": {
+    "period": "2025-08-01/2025-10-01",
+    "daily_slots": [40, 41, 42, 43],
+    "uncontracted_fraction_of_past_synthetic_charge": 0.1,
+    "missing_day_ordinal_mod": 17,
+    "signed_before_target_day_ordinal_mod": 13,
+    "later_signed_day_ordinal_mod": 11,
+    "visible_as_of": "2025-09-15T00:00:00+08:00",
+    "train_end_exclusive": "2025-09-01",
+    "calibration_end_exclusive": "2025-09-15",
+    "holdout_end_exclusive": "2025-10-01",
+    "limitation": "Retrospective synthetic partition, not untouched blind test; missing is null, not zero"
+  }
+}

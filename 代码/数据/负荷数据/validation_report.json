@@ -1,0 +1,142 @@
+{
+  "dataset_id": "huanghua_load_2025_synthetic_v1",
+  "is_simulated": true,
+  "status": "passed",
+  "contract": {
+    "power_semantics": "[timestamp,timestamp+15min)区间平均功率，区间结束后才完整可用",
+    "energy_semantics": "每个区间电量等于功率乘0.25h，不使用光伏瞬时功率的梯形积分",
+    "base_load_kw": "站用基础负荷，排除车辆充电、储能充放电和光伏",
+    "charging_load_kw": "历史已发生的模拟充电支路负荷，不是未来充电计划",
+    "total_load_kw": "基础负荷加充电负荷，未扣光伏及储能，不是并网净负荷",
+    "default_model_target": "base_load_kw",
+    "no_double_counting": "用基础负荷预测叠加已有会话及新计划；若预测total_load_kw，不再叠加充电计划。"
+  },
+  "checks": {
+    "rows": 35040,
+    "days": 365,
+    "start": "2025-01-01T00:00:00+08:00",
+    "end": "2025-12-31T23:45:00+08:00",
+    "interval_minutes": 15,
+    "missing_values": 0,
+    "duplicate_timestamps": 0,
+    "non_finite_values": 0,
+    "negative_powers": 0,
+    "fixed_point_conservation_max_error_kw": 0,
+    "temperature_exactly_matches_pv": true,
+    "component_statistics": {
+      "base_load_kw": {
+        "min_kw": 322.890197,
+        "max_kw": 1051.725686,
+        "mean_kw": 637.7618306478026,
+        "std_kw": 150.76405749814202,
+        "annual_energy_kwh": 5586793.63647475,
+        "weekday_mean_kw": 661.2691602938618,
+        "weekend_mean_kw": 578.767474516827
+      },
+      "charging_load_kw": {
+        "min_kw": 0.0,
+        "max_kw": 8243.6,
+        "mean_kw": 1789.2610844748858,
+        "std_kw": 1388.9057675945044,
+        "annual_energy_kwh": 15673927.1,
+        "weekday_mean_kw": 1891.5902219029374,
+        "weekend_mean_kw": 1532.4543068910255
+      },
+      "total_load_kw": {
+        "min_kw": 420.500813,
+        "max_kw": 8783.879704,
+        "mean_kw": 2427.022915122688,
+        "std_kw": 1358.275530596866,
+        "annual_energy_kwh": 21260720.73647475,
+        "weekday_mean_kw": 2552.8593821967993,
+        "weekend_mean_kw": 2111.2217814078526
+      }
+    }
+  },
+  "exact_csv_decimal_conservation": true,
+  "monthly_energy_tolerance_kwh": 1e-05,
+  "session_audit": {
+    "status": "passed",
+    "session_count": 44826,
+    "ports_used": 128,
+    "max_simultaneous_sessions": 77,
+    "max_queue_minutes": 0,
+    "peak_one_minute_charging_kw": 8472.0,
+    "carry_in_sessions_from_2024": 37,
+    "carry_out_sessions_to_2026": 51,
+    "all_35040_charging_intervals_reconstructed": true,
+    "session_energy_within_2025_kwh": 15673927.100000001,
+    "energy_rounding_tolerance_kwh": 0.026794
+  },
+  "generation_session_statistics": {
+    "session_count_intersecting_2025": 44826,
+    "maximum_simultaneous_sessions": 77,
+    "peak_one_minute_charging_kw": 8472.0,
+    "one_minute_charging_energy_kwh": 15673927.1
+  },
+  "reproducibility": {
+    "seed": 20250928,
+    "all_three_csvs_repeat_byte_identical": true,
+    "exported_csvs_match_regeneration": true
+  },
+  "temperature_source": {
+    "path": "D:\\源网荷储\\codex\\2026.08.14\\场站智能体（3）\\代码\\数据\\光伏数据\\黄花站_2025年_15分钟光伏模拟数据.csv",
+    "sha256_before": "28a0842c8b7c28ac5e90ae209bba2a5a215ef1f48ae3f25d616d083515bed1c8",
+    "sha256_after": "28a0842c8b7c28ac5e90ae209bba2a5a215ef1f48ae3f25d616d083515bed1c8",
+    "unchanged": true,
+    "row_by_row_temperature_match": true,
+    "is_simulated": true
+  },
+  "data_hashes_sha256": {
+    "黄花站_2025年_15分钟负荷模拟数据.csv": "c4989c0c8a62a488bdc9e3abd3118bf5cc34333181246ad1f41a672a2d7b0c39",
+    "月度统计.csv": "8dd93933435c4d1ce260dda7ab7517de16d3987ba75c3ebe0840a3dfb698d67f",
+    "充电会话明细.csv": "4c3d0b1a2c26ca6ccb4cebf9d9e0d12c477c4f81c23d66509a1e151378e94ecf"
+  },
+  "generator_sha256": "9d3f6ca80a09446984934d83928a3f24e6c524d286f99577e51d7d5e48759e4b",
+  "config_sha256": "b431bb4212a85301603ad89bb7731cbd167c71312865b700aac7824c793be430",
+  "source_evidence": [
+    {
+      "path": "D:/源网荷储/codex/2026.08.14/场站智能体（3）/代码/负荷/模拟数据任务交接.md",
+      "role": "字段契约、任务范围、区间平均功率及分量拆分要求",
+      "sha256": "f35003e0e2a6d34b1d46aa24593e3fe05a8c5284bb805b145cace649c7566217"
+    },
+    {
+      "path": "D:/源网荷储/codex/2026.08.14/场站智能体（3）/项目交接文档.md",
+      "role": "仅参考项目背景；本轮范围以用户负荷模拟请求为准",
+      "sha256": "f04d04448364f92dcf80ae79d47d49762cf7efdd9441e28a182b911fd0f14c6a"
+    },
+    {
+      "path": "D:/源网荷储/codex/2026.05.07/场站算法1/湖北“零碳物流”电动重卡补能网络建设及互动示范.docx",
+      "role": "先前已读取的站点背景、128个车位、240kW常规枪、120kW夜间功率及15.12MW站级变流设计参考",
+      "sha256": "aeb7cf516f9b020f669e0cabcb85859dfda38429113eda0dca96c00e4b0e874d"
+    },
+    {
+      "path": "D:/源网荷储/codex/2026.05.07/场站算法1/场站层算法模拟输入数据.json",
+      "role": "模拟站号、站点设计参考和基础负荷日内示例，不是实测",
+      "sha256": "b80ff0af91aa725f4178b3f6a15840ea53995d854f335885c90502fbaa6a19dd"
+    },
+    {
+      "path": "D:/源网荷储/codex/2026.08.14/场站智能体（3）/代码/数据/光伏数据/数据说明.md",
+      "role": "共用模拟温度的时间、单位和模拟性质说明",
+      "sha256": "634b6db6f0fcff0ffc37604746934ea54e46c3b02d4feb1c928526489e3a81f6"
+    }
+  ],
+  "scope": {
+    "written_directory": "D:\\源网荷储\\codex\\2026.08.14\\场站智能体（3）\\代码\\数据\\负荷数据",
+    "load_model_imported": false,
+    "model_training_performed": false,
+    "model_compatibility": "只验证交接字段契约；不导入正在开发的XGBoost模型，不宣称模型联调通过"
+  },
+  "runtime": {
+    "python": "3.13.5",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3"
+  },
+  "limitations": [
+    "全部负荷及充电会话为合成数据，不证明黄花站2025年投运状态、设备边界、收益或预测精度。",
+    "无实测基础负荷容量和车辆订单；轮廓、温度敏感性、到站量和充电曲线均为模拟假设。",
+    "不包含光伏、储能、V2G、电价或优化器调度效果；不进行模型训练、推理和接口部署。",
+    "复用的温度也是模拟观测，不是未来已知特征。主表不含滞后、滚动均值等预制预测特征。",
+    "仅按普通周一至周日区分，不假定法定节假日、调休或春节停工规律。"
+  ]
+}

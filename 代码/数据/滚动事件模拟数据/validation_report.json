@@ -1,0 +1,520 @@
+{
+  "dataset_id": "huanghua_rolling_events_2025_offline_v1",
+  "event_count": 152,
+  "event_truth_count": 79,
+  "execution_truth_count": 21,
+  "independent_validation": {
+    "all_event_fields_and_time_order": true,
+    "all_step_energy_balances": true,
+    "all_storage_updates": true,
+    "future_truth_hidden_at_as_of": true,
+    "replayed_twice_identically": true,
+    "scenario_checks": [
+      {
+        "actual_status": "completed",
+        "difference": "",
+        "executed_prefix_steps": 4,
+        "expected_status": "completed",
+        "replay_equal": true,
+        "scenario_id": "R01_normal",
+        "visible_at_as_of": 5
+      },
+      {
+        "actual_status": "completed",
+        "difference": "",
+        "executed_prefix_steps": 4,
+        "expected_status": "completed",
+        "replay_equal": true,
+        "scenario_id": "R02_duplicate",
+        "visible_at_as_of": 5
+      },
+      {
+        "actual_status": "rejected_zero_execution",
+        "difference": "",
+        "executed_prefix_steps": 0,
+        "expected_status": "rejected_zero_execution",
+        "replay_equal": true,
+        "scenario_id": "R03_rejected",
+        "visible_at_as_of": 4
+      },
+      {
+        "actual_status": "replan_required",
+        "difference": "",
+        "executed_prefix_steps": 1,
+        "expected_status": "replan_required",
+        "replay_equal": true,
+        "scenario_id": "R04_soc_drift",
+        "visible_at_as_of": 5
+      },
+      {
+        "actual_status": "replan_required",
+        "difference": "",
+        "executed_prefix_steps": 1,
+        "expected_status": "replan_required",
+        "replay_equal": true,
+        "scenario_id": "R05_pv_drop",
+        "visible_at_as_of": 5
+      },
+      {
+        "actual_status": "replan_required",
+        "difference": "",
+        "executed_prefix_steps": 1,
+        "expected_status": "replan_required",
+        "replay_equal": true,
+        "scenario_id": "R06_grid_derate",
+        "visible_at_as_of": 5
+      },
+      {
+        "actual_status": "active",
+        "difference": "",
+        "executed_prefix_steps": 1,
+        "expected_status": "active",
+        "replay_equal": true,
+        "scenario_id": "R07_cancel_ack_late",
+        "visible_at_as_of": 5
+      },
+      {
+        "actual_status": "active",
+        "difference": "",
+        "executed_prefix_steps": 1,
+        "expected_status": "active",
+        "replay_equal": true,
+        "scenario_id": "R08_old_receipt",
+        "visible_at_as_of": 5
+      },
+      {
+        "actual_status": "active",
+        "difference": "",
+        "executed_prefix_steps": 1,
+        "expected_status": "active",
+        "replay_equal": true,
+        "scenario_id": "R09_measurement_before_receipt",
+        "visible_at_as_of": 5
+      },
+      {
+        "actual_status": "active",
+        "difference": "",
+        "executed_prefix_steps": 1,
+        "expected_status": "active",
+        "replay_equal": true,
+        "scenario_id": "R10_event_id_conflict",
+        "visible_at_as_of": 5
+      },
+      {
+        "actual_status": "completed",
+        "difference": "",
+        "executed_prefix_steps": 4,
+        "expected_status": "completed",
+        "replay_equal": true,
+        "scenario_id": "R11_restart_replay",
+        "visible_at_as_of": 5
+      },
+      {
+        "actual_status": "blocked_safety",
+        "difference": "",
+        "executed_prefix_steps": 0,
+        "expected_status": "blocked_safety",
+        "replay_equal": true,
+        "scenario_id": "R12_protection",
+        "visible_at_as_of": 5
+      },
+      {
+        "actual_status": "blocked_safety",
+        "difference": "",
+        "executed_prefix_steps": 0,
+        "expected_status": "blocked_safety",
+        "replay_equal": true,
+        "scenario_id": "R13_manual_takeover",
+        "visible_at_as_of": 5
+      },
+      {
+        "actual_status": "blocked_safety",
+        "difference": "",
+        "executed_prefix_steps": 0,
+        "expected_status": "blocked_safety",
+        "replay_equal": true,
+        "scenario_id": "R14_device_frozen",
+        "visible_at_as_of": 5
+      },
+      {
+        "actual_status": "blocked_measurement",
+        "difference": "",
+        "executed_prefix_steps": 0,
+        "expected_status": "blocked_measurement",
+        "replay_equal": true,
+        "scenario_id": "R15_poor_measurement",
+        "visible_at_as_of": 4
+      },
+      {
+        "actual_status": "blocked_measurement",
+        "difference": "",
+        "executed_prefix_steps": 0,
+        "expected_status": "blocked_measurement",
+        "replay_equal": true,
+        "scenario_id": "R16_stale_measurement",
+        "visible_at_as_of": 4
+      },
+      {
+        "actual_status": "blocked_forecast",
+        "difference": "",
+        "executed_prefix_steps": 0,
+        "expected_status": "blocked_forecast",
+        "replay_equal": true,
+        "scenario_id": "R17_forecast_expired",
+        "visible_at_as_of": 4
+      },
+      {
+        "actual_status": "blocked_forecast",
+        "difference": "",
+        "executed_prefix_steps": 0,
+        "expected_status": "blocked_forecast",
+        "replay_equal": true,
+        "scenario_id": "R18_forecast_gap",
+        "visible_at_as_of": 4
+      },
+      {
+        "actual_status": "blocked_connection",
+        "difference": "",
+        "executed_prefix_steps": 0,
+        "expected_status": "blocked_connection",
+        "replay_equal": true,
+        "scenario_id": "R19_connection_lost",
+        "visible_at_as_of": 5
+      },
+      {
+        "actual_status": "replan_required",
+        "difference": "",
+        "executed_prefix_steps": 0,
+        "expected_status": "replan_required",
+        "replay_equal": true,
+        "scenario_id": "R20_connection_restored",
+        "visible_at_as_of": 5
+      },
+      {
+        "actual_status": "replan_limit_exhausted",
+        "difference": "",
+        "executed_prefix_steps": 1,
+        "expected_status": "replan_limit_exhausted",
+        "replay_equal": true,
+        "scenario_id": "R21_replan_exhausted",
+        "visible_at_as_of": 5
+      },
+      {
+        "actual_status": "remaining_service_infeasible",
+        "difference": "",
+        "executed_prefix_steps": 1,
+        "expected_status": "remaining_service_infeasible",
+        "replay_equal": true,
+        "scenario_id": "R22_remaining_infeasible",
+        "visible_at_as_of": 5
+      }
+    ],
+    "separate_event_state_truth_checked": 79
+  },
+  "is_simulated": true,
+  "limitations": "Synthetic workflow fixture; results do not certify optimizer, physical station, or real alarms",
+  "output_hashes_sha256": {
+    "event_truth.jsonl": "c1da74929695db832e266583a1495221ff7634c4b915a7b92508d8b563b5c7e7",
+    "events.jsonl": "fc789af1a60277b326bfd1640a39afbf6217c195f75f99d26a3dddacc894f2ba",
+    "execution_truth.jsonl": "61c3f3cd44f364aa4152babe7b103205e0929386c73b7f4e7b7de1efedcd1b47",
+    "scenario_manifest.json": "56791cebe61ecd4014434227a4fe83a37a7bae341b3af58cc45061ffea228973"
+  },
+  "scenario_count": 22,
+  "scenario_results": [
+    {
+      "actual_status": "completed",
+      "conflicts": 0,
+      "double_occupancy_blocks": 0,
+      "duplicates": 0,
+      "executed_prefix_steps": 4,
+      "expected_status": "completed",
+      "match": true,
+      "rejections": [],
+      "scenario_id": "R01_normal",
+      "stale_receipts": 0
+    },
+    {
+      "actual_status": "completed",
+      "conflicts": 0,
+      "double_occupancy_blocks": 0,
+      "duplicates": 1,
+      "executed_prefix_steps": 4,
+      "expected_status": "completed",
+      "match": true,
+      "rejections": [],
+      "scenario_id": "R02_duplicate",
+      "stale_receipts": 0
+    },
+    {
+      "actual_status": "rejected_zero_execution",
+      "conflicts": 0,
+      "double_occupancy_blocks": 0,
+      "duplicates": 0,
+      "executed_prefix_steps": 0,
+      "expected_status": "rejected_zero_execution",
+      "match": true,
+      "rejections": [],
+      "scenario_id": "R03_rejected",
+      "stale_receipts": 0
+    },
+    {
+      "actual_status": "replan_required",
+      "conflicts": 0,
+      "double_occupancy_blocks": 0,
+      "duplicates": 0,
+      "executed_prefix_steps": 1,
+      "expected_status": "replan_required",
+      "match": true,
+      "rejections": [],
+      "scenario_id": "R04_soc_drift",
+      "stale_receipts": 0
+    },
+    {
+      "actual_status": "replan_required",
+      "conflicts": 0,
+      "double_occupancy_blocks": 0,
+      "duplicates": 0,
+      "executed_prefix_steps": 1,
+      "expected_status": "replan_required",
+      "match": true,
+      "rejections": [],
+      "scenario_id": "R05_pv_drop",
+      "stale_receipts": 0
+    },
+    {
+      "actual_status": "replan_required",
+      "conflicts": 0,
+      "double_occupancy_blocks": 0,
+      "duplicates": 0,
+      "executed_prefix_steps": 1,
+      "expected_status": "replan_required",
+      "match": true,
+      "rejections": [],
+      "scenario_id": "R06_grid_derate",
+      "stale_receipts": 0
+    },
+    {
+      "actual_status": "active",
+      "conflicts": 0,
+      "double_occupancy_blocks": 1,
+      "duplicates": 0,
+      "executed_prefix_steps": 1,
+      "expected_status": "active",
+      "match": true,
+      "rejections": [
+        "CANCEL_NOT_ACKNOWLEDGED"
+      ],
+      "scenario_id": "R07_cancel_ack_late",
+      "stale_receipts": 0
+    },
+    {
+      "actual_status": "active",
+      "conflicts": 0,
+      "double_occupancy_blocks": 0,
+      "duplicates": 0,
+      "executed_prefix_steps": 1,
+      "expected_status": "active",
+      "match": true,
+      "rejections": [],
+      "scenario_id": "R08_old_receipt",
+      "stale_receipts": 1
+    },
+    {
+      "actual_status": "active",
+      "conflicts": 0,
+      "double_occupancy_blocks": 0,
+      "duplicates": 0,
+      "executed_prefix_steps": 1,
+      "expected_status": "active",
+      "match": true,
+      "rejections": [],
+      "scenario_id": "R09_measurement_before_receipt",
+      "stale_receipts": 1
+    },
+    {
+      "actual_status": "active",
+      "conflicts": 1,
+      "double_occupancy_blocks": 0,
+      "duplicates": 0,
+      "executed_prefix_steps": 1,
+      "expected_status": "active",
+      "match": true,
+      "rejections": [
+        "EVENT_ID_CONTENT_CONFLICT"
+      ],
+      "scenario_id": "R10_event_id_conflict",
+      "stale_receipts": 0
+    },
+    {
+      "actual_status": "completed",
+      "conflicts": 0,
+      "double_occupancy_blocks": 0,
+      "duplicates": 0,
+      "executed_prefix_steps": 4,
+      "expected_status": "completed",
+      "match": true,
+      "rejections": [],
+      "scenario_id": "R11_restart_replay",
+      "stale_receipts": 0
+    },
+    {
+      "actual_status": "blocked_safety",
+      "conflicts": 0,
+      "double_occupancy_blocks": 0,
+      "duplicates": 0,
+      "executed_prefix_steps": 0,
+      "expected_status": "blocked_safety",
+      "match": true,
+      "rejections": [
+        "PUBLISH_BLOCKED"
+      ],
+      "scenario_id": "R12_protection",
+      "stale_receipts": 0
+    },
+    {
+      "actual_status": "blocked_safety",
+      "conflicts": 0,
+      "double_occupancy_blocks": 0,
+      "duplicates": 0,
+      "executed_prefix_steps": 0,
+      "expected_status": "blocked_safety",
+      "match": true,
+      "rejections": [
+        "PUBLISH_BLOCKED"
+      ],
+      "scenario_id": "R13_manual_takeover",
+      "stale_receipts": 0
+    },
+    {
+      "actual_status": "blocked_safety",
+      "conflicts": 0,
+      "double_occupancy_blocks": 0,
+      "duplicates": 0,
+      "executed_prefix_steps": 0,
+      "expected_status": "blocked_safety",
+      "match": true,
+      "rejections": [
+        "PUBLISH_BLOCKED"
+      ],
+      "scenario_id": "R14_device_frozen",
+      "stale_receipts": 0
+    },
+    {
+      "actual_status": "blocked_measurement",
+      "conflicts": 0,
+      "double_occupancy_blocks": 0,
+      "duplicates": 0,
+      "executed_prefix_steps": 0,
+      "expected_status": "blocked_measurement",
+      "match": true,
+      "rejections": [
+        "PUBLISH_BLOCKED"
+      ],
+      "scenario_id": "R15_poor_measurement",
+      "stale_receipts": 0
+    },
+    {
+      "actual_status": "blocked_measurement",
+      "conflicts": 0,
+      "double_occupancy_blocks": 0,
+      "duplicates": 0,
+      "executed_prefix_steps": 0,
+      "expected_status": "blocked_measurement",
+      "match": true,
+      "rejections": [
+        "PUBLISH_BLOCKED"
+      ],
+      "scenario_id": "R16_stale_measurement",
+      "stale_receipts": 0
+    },
+    {
+      "actual_status": "blocked_forecast",
+      "conflicts": 0,
+      "double_occupancy_blocks": 0,
+      "duplicates": 0,
+      "executed_prefix_steps": 0,
+      "expected_status": "blocked_forecast",
+      "match": true,
+      "rejections": [
+        "PUBLISH_BLOCKED"
+      ],
+      "scenario_id": "R17_forecast_expired",
+      "stale_receipts": 0
+    },
+    {
+      "actual_status": "blocked_forecast",
+      "conflicts": 0,
+      "double_occupancy_blocks": 0,
+      "duplicates": 0,
+      "executed_prefix_steps": 0,
+      "expected_status": "blocked_forecast",
+      "match": true,
+      "rejections": [
+        "PUBLISH_BLOCKED"
+      ],
+      "scenario_id": "R18_forecast_gap",
+      "stale_receipts": 0
+    },
+    {
+      "actual_status": "blocked_connection",
+      "conflicts": 0,
+      "double_occupancy_blocks": 0,
+      "duplicates": 0,
+      "executed_prefix_steps": 0,
+      "expected_status": "blocked_connection",
+      "match": true,
+      "rejections": [
+        "PUBLISH_BLOCKED"
+      ],
+      "scenario_id": "R19_connection_lost",
+      "stale_receipts": 0
+    },
+    {
+      "actual_status": "replan_required",
+      "conflicts": 0,
+      "double_occupancy_blocks": 0,
+      "duplicates": 0,
+      "executed_prefix_steps": 0,
+      "expected_status": "replan_required",
+      "match": true,
+      "rejections": [
+        "PUBLISH_BLOCKED"
+      ],
+      "scenario_id": "R20_connection_restored",
+      "stale_receipts": 0
+    },
+    {
+      "actual_status": "replan_limit_exhausted",
+      "conflicts": 0,
+      "double_occupancy_blocks": 0,
+      "duplicates": 0,
+      "executed_prefix_steps": 1,
+      "expected_status": "replan_limit_exhausted",
+      "match": true,
+      "rejections": [],
+      "scenario_id": "R21_replan_exhausted",
+      "stale_receipts": 0
+    },
+    {
+      "actual_status": "remaining_service_infeasible",
+      "conflicts": 0,
+      "double_occupancy_blocks": 0,
+      "duplicates": 0,
+      "executed_prefix_steps": 1,
+      "expected_status": "remaining_service_infeasible",
+      "match": true,
+      "rejections": [],
+      "scenario_id": "R22_remaining_infeasible",
+      "stale_receipts": 0
+    }
+  ],
+  "source_hashes_sha256": {
+    "储能参数与初始状态/储能参数.csv": "3536c8694ed45036842a96c75a09a6684db7ec4ff1ffb302a88585f90e90aaa3",
+    "场站联动模拟数据/booking_events.csv": "253f6908d1be5ecd7d8b18431a100e7ce9cfd9c0d00311919a5838d9af9d9188",
+    "场站联动模拟数据/forecast_values.csv": "23cdaffb280195ed943f57dd61669ec843c5f46374dd4ad3eb020d9af268ad0e",
+    "场站联动模拟数据/scenario_inputs.csv": "3c923806bfc989af50fded18d32ba9916815785040a7e86c115059f2f34b242c",
+    "场站联动模拟数据/scenario_truth.csv": "3348816745e08e0568d1720be296fd25fad496c27743eacd4daf4252631b062f",
+    "场站联动模拟数据/station_interval_truth.csv": "d631a3cf7b2ff3a361b2c7fe5ccc27096ce1b1d312e15c5fb2e3f900107766f4"
+  },
+  "status": "passed"
+}

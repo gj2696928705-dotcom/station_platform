@@ -1,0 +1,11 @@
+{
+  "allowed_deviation": "unknown",
+  "is_simulated": true,
+  "method": "unknown",
+  "payment_amount": null,
+  "performance_passed": null,
+  "reason": "No business baseline and assessment rule; technical energy checks are not settlement",
+  "scenario_id": "PACKAGE",
+  "station_id": "HH-Huanghua-CSS",
+  "status": "not_applicable"
+}

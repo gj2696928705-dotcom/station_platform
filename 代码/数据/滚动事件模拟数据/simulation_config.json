@@ -1,0 +1,34 @@
+{
+  "dataset_id": "huanghua_rolling_events_2025_offline_v1",
+  "station_id": "HH-Huanghua-CSS",
+  "timezone": "Asia/Shanghai",
+  "interval_minutes": 15,
+  "seed": 2025102802,
+  "is_simulated": true,
+  "base_scenario_id": "S06_calibration",
+  "execution_mode": "offline_replay",
+  "source_hashes_sha256": {
+    "场站联动模拟数据/scenario_inputs.csv": "3c923806bfc989af50fded18d32ba9916815785040a7e86c115059f2f34b242c",
+    "场站联动模拟数据/scenario_truth.csv": "3348816745e08e0568d1720be296fd25fad496c27743eacd4daf4252631b062f",
+    "场站联动模拟数据/forecast_values.csv": "23cdaffb280195ed943f57dd61669ec843c5f46374dd4ad3eb020d9af268ad0e",
+    "场站联动模拟数据/booking_events.csv": "253f6908d1be5ecd7d8b18431a100e7ce9cfd9c0d00311919a5838d9af9d9188",
+    "场站联动模拟数据/station_interval_truth.csv": "d631a3cf7b2ff3a361b2c7fe5ccc27096ce1b1d312e15c5fb2e3f900107766f4",
+    "储能参数与初始状态/储能参数.csv": "3536c8694ed45036842a96c75a09a6684db7ec4ff1ffb302a88585f90e90aaa3"
+  },
+  "plan_fixture": {
+    "purpose": "nonoptimized synthetic execution stub for workflow tests",
+    "vehicles": {"EV-ROLL-01": 40, "EV-ROLL-02": 40},
+    "storage_charge_kw": 0,
+    "storage_discharge_kw": 0,
+    "pv_used_kw": 0,
+    "initial_energy_kwh": 2400,
+    "max_replans": 2,
+    "soc_drift_trigger_kwh": 20,
+    "pv_drop_trigger_kw": 100,
+    "grid_import_limit_kw": 10000
+  },
+  "quality_rule": "good measurement requires nonempty numeric values and valid_until>=received_at; unknown is never zero",
+  "event_order_rule": "Replay in received_at then ordinal order; available_at is causal visibility gate",
+  "truth_rule": "Step truth is generated from D01 post-interval truth plus explicit synthetic execution intervention and becomes visible only after interval end",
+  "scope_limit": "No live dispatch, reliability statistics, optimizer curve, or real safety certification"
+}

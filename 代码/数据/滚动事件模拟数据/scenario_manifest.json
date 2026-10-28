@@ -1,0 +1,528 @@
+[
+  {
+    "business_window": [
+      "2025-09-15T10:00:00+08:00",
+      "2025-09-15T11:00:00+08:00"
+    ],
+    "event_order": [
+      "R01_normal-E000",
+      "R01_normal-E001",
+      "R01_normal-E002",
+      "R01_normal-E003",
+      "R01_normal-E004",
+      "R01_normal-E005",
+      "R01_normal-E006",
+      "R01_normal-E007",
+      "R01_normal-E008"
+    ],
+    "expected_invariant": "all four intervals execute",
+    "expected_status": "completed",
+    "is_simulated": true,
+    "scenario_id": "R01_normal",
+    "source_scenario_id": "S06_calibration",
+    "source_version": "huanghua_rolling_events_2025_offline_v1",
+    "station_id": "HH-Huanghua-CSS",
+    "task_id": "TASK-R01_normal",
+    "truth_ref": "execution_truth.jsonl|event_truth.jsonl"
+  },
+  {
+    "business_window": [
+      "2025-09-15T10:00:00+08:00",
+      "2025-09-15T11:00:00+08:00"
+    ],
+    "event_order": [
+      "R02_duplicate-E000",
+      "R02_duplicate-E001",
+      "R02_duplicate-E002",
+      "R02_duplicate-E003",
+      "R02_duplicate-E004",
+      "R02_duplicate-E005",
+      "R02_duplicate-E005",
+      "R02_duplicate-E007",
+      "R02_duplicate-E008",
+      "R02_duplicate-E009"
+    ],
+    "expected_invariant": "duplicate receipt idempotent",
+    "expected_status": "completed",
+    "is_simulated": true,
+    "scenario_id": "R02_duplicate",
+    "source_scenario_id": "S06_calibration",
+    "source_version": "huanghua_rolling_events_2025_offline_v1",
+    "station_id": "HH-Huanghua-CSS",
+    "task_id": "TASK-R02_duplicate",
+    "truth_ref": "execution_truth.jsonl|event_truth.jsonl"
+  },
+  {
+    "business_window": [
+      "2025-09-15T10:00:00+08:00",
+      "2025-09-15T11:00:00+08:00"
+    ],
+    "event_order": [
+      "R03_rejected-E000",
+      "R03_rejected-E001",
+      "R03_rejected-E002",
+      "R03_rejected-E003",
+      "R03_rejected-E004"
+    ],
+    "expected_invariant": "rejected plan executes zero steps",
+    "expected_status": "rejected_zero_execution",
+    "is_simulated": true,
+    "scenario_id": "R03_rejected",
+    "source_scenario_id": "S06_calibration",
+    "source_version": "huanghua_rolling_events_2025_offline_v1",
+    "station_id": "HH-Huanghua-CSS",
+    "task_id": "TASK-R03_rejected",
+    "truth_ref": "execution_truth.jsonl|event_truth.jsonl"
+  },
+  {
+    "business_window": [
+      "2025-09-15T10:00:00+08:00",
+      "2025-09-15T11:00:00+08:00"
+    ],
+    "event_order": [
+      "R04_soc_drift-E000",
+      "R04_soc_drift-E001",
+      "R04_soc_drift-E002",
+      "R04_soc_drift-E003",
+      "R04_soc_drift-E004",
+      "R04_soc_drift-E005"
+    ],
+    "expected_invariant": "actual SOC differs after first step",
+    "expected_status": "replan_required",
+    "is_simulated": true,
+    "scenario_id": "R04_soc_drift",
+    "source_scenario_id": "S06_calibration",
+    "source_version": "huanghua_rolling_events_2025_offline_v1",
+    "station_id": "HH-Huanghua-CSS",
+    "task_id": "TASK-R04_soc_drift",
+    "truth_ref": "execution_truth.jsonl|event_truth.jsonl"
+  },
+  {
+    "business_window": [
+      "2025-09-15T10:00:00+08:00",
+      "2025-09-15T11:00:00+08:00"
+    ],
+    "event_order": [
+      "R05_pv_drop-E000",
+      "R05_pv_drop-E001",
+      "R05_pv_drop-E002",
+      "R05_pv_drop-E003",
+      "R05_pv_drop-E004",
+      "R05_pv_drop-E005",
+      "R05_pv_drop-E006"
+    ],
+    "expected_invariant": "PV measurement falls below forecast",
+    "expected_status": "replan_required",
+    "is_simulated": true,
+    "scenario_id": "R05_pv_drop",
+    "source_scenario_id": "S06_calibration",
+    "source_version": "huanghua_rolling_events_2025_offline_v1",
+    "station_id": "HH-Huanghua-CSS",
+    "task_id": "TASK-R05_pv_drop",
+    "truth_ref": "execution_truth.jsonl|event_truth.jsonl"
+  },
+  {
+    "business_window": [
+      "2025-09-15T10:00:00+08:00",
+      "2025-09-15T11:00:00+08:00"
+    ],
+    "event_order": [
+      "R06_grid_derate-E000",
+      "R06_grid_derate-E001",
+      "R06_grid_derate-E002",
+      "R06_grid_derate-E003",
+      "R06_grid_derate-E004",
+      "R06_grid_derate-E005",
+      "R06_grid_derate-E006"
+    ],
+    "expected_invariant": "PCC capacity shrinks after first step",
+    "expected_status": "replan_required",
+    "is_simulated": true,
+    "scenario_id": "R06_grid_derate",
+    "source_scenario_id": "S06_calibration",
+    "source_version": "huanghua_rolling_events_2025_offline_v1",
+    "station_id": "HH-Huanghua-CSS",
+    "task_id": "TASK-R06_grid_derate",
+    "truth_ref": "execution_truth.jsonl|event_truth.jsonl"
+  },
+  {
+    "business_window": [
+      "2025-09-15T10:00:00+08:00",
+      "2025-09-15T11:00:00+08:00"
+    ],
+    "event_order": [
+      "R07_cancel_ack_late-E000",
+      "R07_cancel_ack_late-E001",
+      "R07_cancel_ack_late-E002",
+      "R07_cancel_ack_late-E003",
+      "R07_cancel_ack_late-E004",
+      "R07_cancel_ack_late-E005",
+      "R07_cancel_ack_late-E006",
+      "R07_cancel_ack_late-E007",
+      "R07_cancel_ack_late-E008",
+      "R07_cancel_ack_late-E009",
+      "R07_cancel_ack_late-E010"
+    ],
+    "expected_invariant": "no second plan before cancellation ack",
+    "expected_status": "active",
+    "is_simulated": true,
+    "scenario_id": "R07_cancel_ack_late",
+    "source_scenario_id": "S06_calibration",
+    "source_version": "huanghua_rolling_events_2025_offline_v1",
+    "station_id": "HH-Huanghua-CSS",
+    "task_id": "TASK-R07_cancel_ack_late",
+    "truth_ref": "execution_truth.jsonl|event_truth.jsonl"
+  },
+  {
+    "business_window": [
+      "2025-09-15T10:00:00+08:00",
+      "2025-09-15T11:00:00+08:00"
+    ],
+    "event_order": [
+      "R08_old_receipt-E000",
+      "R08_old_receipt-E001",
+      "R08_old_receipt-E002",
+      "R08_old_receipt-E003",
+      "R08_old_receipt-E004",
+      "R08_old_receipt-E005",
+      "R08_old_receipt-E006",
+      "R08_old_receipt-E007",
+      "R08_old_receipt-E008",
+      "R08_old_receipt-E009",
+      "R08_old_receipt-E010"
+    ],
+    "expected_invariant": "old version receipt cannot change current confirmation",
+    "expected_status": "active",
+    "is_simulated": true,
+    "scenario_id": "R08_old_receipt",
+    "source_scenario_id": "S06_calibration",
+    "source_version": "huanghua_rolling_events_2025_offline_v1",
+    "station_id": "HH-Huanghua-CSS",
+    "task_id": "TASK-R08_old_receipt",
+    "truth_ref": "execution_truth.jsonl|event_truth.jsonl"
+  },
+  {
+    "business_window": [
+      "2025-09-15T10:00:00+08:00",
+      "2025-09-15T11:00:00+08:00"
+    ],
+    "event_order": [
+      "R09_measurement_before_receipt-E000",
+      "R09_measurement_before_receipt-E001",
+      "R09_measurement_before_receipt-E002",
+      "R09_measurement_before_receipt-E003",
+      "R09_measurement_before_receipt-E004",
+      "R09_measurement_before_receipt-E005",
+      "R09_measurement_before_receipt-E006",
+      "R09_measurement_before_receipt-E007",
+      "R09_measurement_before_receipt-E008",
+      "R09_measurement_before_receipt-E009",
+      "R09_measurement_before_receipt-E010",
+      "R09_measurement_before_receipt-E011"
+    ],
+    "expected_invariant": "new measurement precedes old receipt",
+    "expected_status": "active",
+    "is_simulated": true,
+    "scenario_id": "R09_measurement_before_receipt",
+    "source_scenario_id": "S06_calibration",
+    "source_version": "huanghua_rolling_events_2025_offline_v1",
+    "station_id": "HH-Huanghua-CSS",
+    "task_id": "TASK-R09_measurement_before_receipt",
+    "truth_ref": "execution_truth.jsonl|event_truth.jsonl"
+  },
+  {
+    "business_window": [
+      "2025-09-15T10:00:00+08:00",
+      "2025-09-15T11:00:00+08:00"
+    ],
+    "event_order": [
+      "R10_event_id_conflict-E000",
+      "R10_event_id_conflict-E001",
+      "R10_event_id_conflict-E002",
+      "R10_event_id_conflict-E003",
+      "R10_event_id_conflict-E004",
+      "R10_event_id_conflict-E005",
+      "R10_event_id_conflict-E005"
+    ],
+    "expected_invariant": "same ID with changed content rejected",
+    "expected_status": "active",
+    "is_simulated": true,
+    "scenario_id": "R10_event_id_conflict",
+    "source_scenario_id": "S06_calibration",
+    "source_version": "huanghua_rolling_events_2025_offline_v1",
+    "station_id": "HH-Huanghua-CSS",
+    "task_id": "TASK-R10_event_id_conflict",
+    "truth_ref": "execution_truth.jsonl|event_truth.jsonl"
+  },
+  {
+    "business_window": [
+      "2025-09-15T10:00:00+08:00",
+      "2025-09-15T11:00:00+08:00"
+    ],
+    "event_order": [
+      "R11_restart_replay-E000",
+      "R11_restart_replay-E001",
+      "R11_restart_replay-E002",
+      "R11_restart_replay-E003",
+      "R11_restart_replay-E004",
+      "R11_restart_replay-E005",
+      "R11_restart_replay-E006",
+      "R11_restart_replay-E007",
+      "R11_restart_replay-E008"
+    ],
+    "expected_invariant": "restart replay yields identical state",
+    "expected_status": "completed",
+    "is_simulated": true,
+    "scenario_id": "R11_restart_replay",
+    "source_scenario_id": "S06_calibration",
+    "source_version": "huanghua_rolling_events_2025_offline_v1",
+    "station_id": "HH-Huanghua-CSS",
+    "task_id": "TASK-R11_restart_replay",
+    "truth_ref": "execution_truth.jsonl|event_truth.jsonl"
+  },
+  {
+    "business_window": [
+      "2025-09-15T10:00:00+08:00",
+      "2025-09-15T11:00:00+08:00"
+    ],
+    "event_order": [
+      "R12_protection-E000",
+      "R12_protection-E001",
+      "R12_protection-E002",
+      "R12_protection-E003",
+      "R12_protection-E004"
+    ],
+    "expected_invariant": "protection blocks publishing",
+    "expected_status": "blocked_safety",
+    "is_simulated": true,
+    "scenario_id": "R12_protection",
+    "source_scenario_id": "S06_calibration",
+    "source_version": "huanghua_rolling_events_2025_offline_v1",
+    "station_id": "HH-Huanghua-CSS",
+    "task_id": "TASK-R12_protection",
+    "truth_ref": "execution_truth.jsonl|event_truth.jsonl"
+  },
+  {
+    "business_window": [
+      "2025-09-15T10:00:00+08:00",
+      "2025-09-15T11:00:00+08:00"
+    ],
+    "event_order": [
+      "R13_manual_takeover-E000",
+      "R13_manual_takeover-E001",
+      "R13_manual_takeover-E002",
+      "R13_manual_takeover-E003",
+      "R13_manual_takeover-E004"
+    ],
+    "expected_invariant": "manual takeover blocks publishing",
+    "expected_status": "blocked_safety",
+    "is_simulated": true,
+    "scenario_id": "R13_manual_takeover",
+    "source_scenario_id": "S06_calibration",
+    "source_version": "huanghua_rolling_events_2025_offline_v1",
+    "station_id": "HH-Huanghua-CSS",
+    "task_id": "TASK-R13_manual_takeover",
+    "truth_ref": "execution_truth.jsonl|event_truth.jsonl"
+  },
+  {
+    "business_window": [
+      "2025-09-15T10:00:00+08:00",
+      "2025-09-15T11:00:00+08:00"
+    ],
+    "event_order": [
+      "R14_device_frozen-E000",
+      "R14_device_frozen-E001",
+      "R14_device_frozen-E002",
+      "R14_device_frozen-E003",
+      "R14_device_frozen-E004"
+    ],
+    "expected_invariant": "frozen device blocks publishing",
+    "expected_status": "blocked_safety",
+    "is_simulated": true,
+    "scenario_id": "R14_device_frozen",
+    "source_scenario_id": "S06_calibration",
+    "source_version": "huanghua_rolling_events_2025_offline_v1",
+    "station_id": "HH-Huanghua-CSS",
+    "task_id": "TASK-R14_device_frozen",
+    "truth_ref": "execution_truth.jsonl|event_truth.jsonl"
+  },
+  {
+    "business_window": [
+      "2025-09-15T10:00:00+08:00",
+      "2025-09-15T11:00:00+08:00"
+    ],
+    "event_order": [
+      "R15_poor_measurement-E000",
+      "R15_poor_measurement-E001",
+      "R15_poor_measurement-E002",
+      "R15_poor_measurement-E003"
+    ],
+    "expected_invariant": "unknown measurement blocks publishing",
+    "expected_status": "blocked_measurement",
+    "is_simulated": true,
+    "scenario_id": "R15_poor_measurement",
+    "source_scenario_id": "S06_calibration",
+    "source_version": "huanghua_rolling_events_2025_offline_v1",
+    "station_id": "HH-Huanghua-CSS",
+    "task_id": "TASK-R15_poor_measurement",
+    "truth_ref": "execution_truth.jsonl|event_truth.jsonl"
+  },
+  {
+    "business_window": [
+      "2025-09-15T10:00:00+08:00",
+      "2025-09-15T11:00:00+08:00"
+    ],
+    "event_order": [
+      "R16_stale_measurement-E000",
+      "R16_stale_measurement-E001",
+      "R16_stale_measurement-E002",
+      "R16_stale_measurement-E003"
+    ],
+    "expected_invariant": "expired measurement blocks publishing",
+    "expected_status": "blocked_measurement",
+    "is_simulated": true,
+    "scenario_id": "R16_stale_measurement",
+    "source_scenario_id": "S06_calibration",
+    "source_version": "huanghua_rolling_events_2025_offline_v1",
+    "station_id": "HH-Huanghua-CSS",
+    "task_id": "TASK-R16_stale_measurement",
+    "truth_ref": "execution_truth.jsonl|event_truth.jsonl"
+  },
+  {
+    "business_window": [
+      "2025-09-15T10:00:00+08:00",
+      "2025-09-15T11:00:00+08:00"
+    ],
+    "event_order": [
+      "R17_forecast_expired-E000",
+      "R17_forecast_expired-E001",
+      "R17_forecast_expired-E002",
+      "R17_forecast_expired-E003"
+    ],
+    "expected_invariant": "expired forecast blocks publishing",
+    "expected_status": "blocked_forecast",
+    "is_simulated": true,
+    "scenario_id": "R17_forecast_expired",
+    "source_scenario_id": "S06_calibration",
+    "source_version": "huanghua_rolling_events_2025_offline_v1",
+    "station_id": "HH-Huanghua-CSS",
+    "task_id": "TASK-R17_forecast_expired",
+    "truth_ref": "execution_truth.jsonl|event_truth.jsonl"
+  },
+  {
+    "business_window": [
+      "2025-09-15T10:00:00+08:00",
+      "2025-09-15T11:00:00+08:00"
+    ],
+    "event_order": [
+      "R18_forecast_gap-E000",
+      "R18_forecast_gap-E001",
+      "R18_forecast_gap-E002",
+      "R18_forecast_gap-E003"
+    ],
+    "expected_invariant": "incomplete forecast blocks publishing",
+    "expected_status": "blocked_forecast",
+    "is_simulated": true,
+    "scenario_id": "R18_forecast_gap",
+    "source_scenario_id": "S06_calibration",
+    "source_version": "huanghua_rolling_events_2025_offline_v1",
+    "station_id": "HH-Huanghua-CSS",
+    "task_id": "TASK-R18_forecast_gap",
+    "truth_ref": "execution_truth.jsonl|event_truth.jsonl"
+  },
+  {
+    "business_window": [
+      "2025-09-15T10:00:00+08:00",
+      "2025-09-15T11:00:00+08:00"
+    ],
+    "event_order": [
+      "R19_connection_lost-E000",
+      "R19_connection_lost-E001",
+      "R19_connection_lost-E002",
+      "R19_connection_lost-E003",
+      "R19_connection_lost-E004"
+    ],
+    "expected_invariant": "disconnection blocks publishing",
+    "expected_status": "blocked_connection",
+    "is_simulated": true,
+    "scenario_id": "R19_connection_lost",
+    "source_scenario_id": "S06_calibration",
+    "source_version": "huanghua_rolling_events_2025_offline_v1",
+    "station_id": "HH-Huanghua-CSS",
+    "task_id": "TASK-R19_connection_lost",
+    "truth_ref": "execution_truth.jsonl|event_truth.jsonl"
+  },
+  {
+    "business_window": [
+      "2025-09-15T10:00:00+08:00",
+      "2025-09-15T11:00:00+08:00"
+    ],
+    "event_order": [
+      "R20_connection_restored-E000",
+      "R20_connection_restored-E001",
+      "R20_connection_restored-E002",
+      "R20_connection_restored-E003",
+      "R20_connection_restored-E004",
+      "R20_connection_restored-E005"
+    ],
+    "expected_invariant": "restoration requires new check",
+    "expected_status": "replan_required",
+    "is_simulated": true,
+    "scenario_id": "R20_connection_restored",
+    "source_scenario_id": "S06_calibration",
+    "source_version": "huanghua_rolling_events_2025_offline_v1",
+    "station_id": "HH-Huanghua-CSS",
+    "task_id": "TASK-R20_connection_restored",
+    "truth_ref": "execution_truth.jsonl|event_truth.jsonl"
+  },
+  {
+    "business_window": [
+      "2025-09-15T10:00:00+08:00",
+      "2025-09-15T11:00:00+08:00"
+    ],
+    "event_order": [
+      "R21_replan_exhausted-E000",
+      "R21_replan_exhausted-E001",
+      "R21_replan_exhausted-E002",
+      "R21_replan_exhausted-E003",
+      "R21_replan_exhausted-E004",
+      "R21_replan_exhausted-E005",
+      "R21_replan_exhausted-E006",
+      "R21_replan_exhausted-E007",
+      "R21_replan_exhausted-E008"
+    ],
+    "expected_invariant": "third attempt exceeds limit",
+    "expected_status": "replan_limit_exhausted",
+    "is_simulated": true,
+    "scenario_id": "R21_replan_exhausted",
+    "source_scenario_id": "S06_calibration",
+    "source_version": "huanghua_rolling_events_2025_offline_v1",
+    "station_id": "HH-Huanghua-CSS",
+    "task_id": "TASK-R21_replan_exhausted",
+    "truth_ref": "execution_truth.jsonl|event_truth.jsonl"
+  },
+  {
+    "business_window": [
+      "2025-09-15T10:00:00+08:00",
+      "2025-09-15T11:00:00+08:00"
+    ],
+    "event_order": [
+      "R22_remaining_infeasible-E000",
+      "R22_remaining_infeasible-E001",
+      "R22_remaining_infeasible-E002",
+      "R22_remaining_infeasible-E003",
+      "R22_remaining_infeasible-E004",
+      "R22_remaining_infeasible-E005",
+      "R22_remaining_infeasible-E006"
+    ],
+    "expected_invariant": "new service cannot fit remaining window",
+    "expected_status": "remaining_service_infeasible",
+    "is_simulated": true,
+    "scenario_id": "R22_remaining_infeasible",
+    "source_scenario_id": "S06_calibration",
+    "source_version": "huanghua_rolling_events_2025_offline_v1",
+    "station_id": "HH-Huanghua-CSS",
+    "task_id": "TASK-R22_remaining_infeasible",
+    "truth_ref": "execution_truth.jsonl|event_truth.jsonl"
+  }
+]

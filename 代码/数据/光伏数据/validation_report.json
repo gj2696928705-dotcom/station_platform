@@ -1,0 +1,117 @@
+{
+  "dataset_id": "huanghua_pv_2025_synthetic_v1",
+  "is_simulated": true,
+  "status": "passed",
+  "checks": {
+    "row_count": 35040,
+    "days": 365,
+    "start": "2025-01-01T00:00:00+08:00",
+    "end": "2025-12-31T23:45:00+08:00",
+    "missing_values": 0,
+    "power_min_kw": 0.0,
+    "power_max_kw": 3903.774277,
+    "night_rows": 17472,
+    "irradiance_identity_max_abs_error_w_m2": 6.522129353925266e-06,
+    "weather_counts": {
+      "overcast": 11472,
+      "partly_cloudy": 9552,
+      "clear": 7128,
+      "rain": 6888
+    },
+    "temperature_min_c": -2.848565,
+    "temperature_max_c": 35.83962,
+    "minimum_daylight_hours_approx": 10.0,
+    "maximum_daylight_hours_approx": 14.0
+  },
+  "annual_simulated_energy_kwh": 4500441.93725875,
+  "annual_equivalent_full_load_hours": 900.08838745175,
+  "annual_ghi_irradiation_kwh_m2": 1012.59952618275,
+  "annual_rainfall_mm": 1457.095665,
+  "energy_integration": "对已导出的功率点作15分钟梯形积分；追加下一年元旦00:00夜间零功率边界，按区间起点归属月份",
+  "reproducibility": {
+    "seed": 2025,
+    "repeat_generation_byte_identical": true,
+    "disk_matches_regeneration": true
+  },
+  "predictor_compatibility": {
+    "status": "passed",
+    "quality": {
+      "source_rows": 35040,
+      "regular_rows": 35040,
+      "missing_target_rows": 0,
+      "missing_weather_rows": 0,
+      "interpolated_target_rows": 0,
+      "interpolated_weather_rows": 0,
+      "first_timestamp": "2025-01-01T00:00:00+08:00",
+      "last_timestamp": "2025-12-31T23:45:00+08:00"
+    },
+    "sample_forecast_starts": [
+      "2025-01-04T00:00:00+08:00",
+      "2025-02-04T00:00:00+08:00",
+      "2025-03-04T00:00:00+08:00",
+      "2025-04-04T00:00:00+08:00",
+      "2025-05-04T00:00:00+08:00",
+      "2025-06-04T00:00:00+08:00",
+      "2025-07-04T00:00:00+08:00",
+      "2025-08-04T00:00:00+08:00",
+      "2025-09-04T00:00:00+08:00",
+      "2025-10-04T00:00:00+08:00",
+      "2025-11-04T00:00:00+08:00",
+      "2025-12-04T00:00:00+08:00"
+    ],
+    "history_shape": [
+      1,
+      288,
+      1
+    ],
+    "target_shape": [
+      1,
+      96
+    ],
+    "calendar_feature_shape": [
+      1,
+      96,
+      5
+    ],
+    "observed_weather_experiment_feature_shape": [
+      1,
+      96,
+      10
+    ],
+    "training_performed": false,
+    "scope": "仅验证数据读取及样本构造，不验证模型训练、时间分区、预测精度或发布能力",
+    "data_module_sha256": "c4c60fafe7b3e3101186af311d33e2cd0f24c046dac22fdf49a69fcf2579b9c4"
+  },
+  "hashes_sha256": {
+    "黄花站_2025年_15分钟光伏模拟数据.csv": "28a0842c8b7c28ac5e90ae209bba2a5a215ef1f48ae3f25d616d083515bed1c8",
+    "月度统计.csv": "20082da5c71b31b7bc8d4de595e6ccc59ea1cc18b0cb628f5844faa55f8736ec",
+    "config_canonical_json": "933b752e1afa5b80494a7ce33f64a6ac1c6b0227fd4c806f97a0ae5a0549d221",
+    "generator": "63afa01c9fb7d31d32a35fd7971447f1c67210fc8efdec19e838fce666340c97"
+  },
+  "source_evidence": [
+    {
+      "path": "D:/源网荷储/codex/2026.05.07/场站算法1/湖北“零碳物流”电动重卡补能网络建设及互动示范.docx",
+      "used_for": "附图标示宜昌地区黄花站、项目光伏与补能网络背景",
+      "not_established": "未明确黄花站光伏容量、精确坐标、组件朝向、2025年运行或气象；15.12MW为站级变流功率",
+      "sha256": "aeb7cf516f9b020f669e0cabcb85859dfda38429113eda0dca96c00e4b0e874d"
+    },
+    {
+      "path": "D:/源网荷储/codex/2026.05.07/场站算法1/场站层算法模拟输入数据.json",
+      "used_for": "meta.station_id/name和pv_weather.pv_system中的5000kW、10台500kW配置",
+      "not_established": "2026-05-08算法测试用模拟样例，不是实站测量或建设验收参数",
+      "sha256": "b80ff0af91aa725f4178b3f6a15840ea53995d854f335885c90502fbaa6a19dd"
+    }
+  ],
+  "runtime": {
+    "python": "3.13.5",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3"
+  },
+  "limitations": [
+    "所有天气参数均为工程模拟假设，不是宜昌2025年观测统计或官方气候常值。",
+    "假设5000kW系统2025年全年可用；不证明当年已建成投运。",
+    "不模拟地形遮挡、积雪、故障、限发或数据缺失。",
+    "月度电量来自合成曲线积分，不对齐任何实站年发电量目标。",
+    "同步气象及区间降雨不能当作提前已知的日前预报；不生成模型权重。"
+  ]
+}

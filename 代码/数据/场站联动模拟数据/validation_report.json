@@ -1,0 +1,101 @@
+{
+  "boundary": "Last PV interval uses documented synthetic 2026-01-01 00:00 zero anchor, explicitly flagged; no 2026 observed row",
+  "counts": {
+    "booking_events": 66,
+    "forecast_values": 98,
+    "forecast_vintages": 26,
+    "scenario_truth_intervals": 48,
+    "scenarios": 12,
+    "truth_intervals": 35040,
+    "vehicle_requests": 148
+  },
+  "dataset_id": "huanghua_linked_2025_offline_replay_v1",
+  "execution_mode": "offline_replay",
+  "forecast_limitation": "Past-only baselines and heuristic intervals; no calibrated coverage or 2025-published model claim",
+  "independent_validation": {
+    "accepted_source_storage_steps_recomputed": 202,
+    "all_35040_truth_rows_recomputed": true,
+    "all_event_visibility_checked": true,
+    "all_forecast_points_recomputed_from_past_only_truth": true,
+    "all_scenario_truth_separated_from_as_of": true,
+    "all_tariff_intervals_checked": true,
+    "all_vintage_coverage_checked": true,
+    "ports": 128,
+    "source_and_output_hashes_match": true,
+    "source_session_port_nonoverlap_count": 44826,
+    "spotchecks": [
+      {
+        "balance_residual_kw": "0",
+        "derived_grid_import_kw": "0.000000",
+        "derived_pv_curtailed_kw": "1693.857666",
+        "derived_pv_used_kw": "2085.885183",
+        "scenario_id": "S01_sunny",
+        "timestamp": "2025-04-30T12:45:00+08:00"
+      },
+      {
+        "balance_residual_kw": "0",
+        "derived_grid_import_kw": "7907.012008",
+        "derived_pv_curtailed_kw": "0.000000",
+        "derived_pv_used_kw": "0.000000",
+        "scenario_id": "S02_mismatch",
+        "timestamp": "2025-06-17T21:45:00+08:00"
+      },
+      {
+        "balance_residual_kw": "0",
+        "derived_grid_import_kw": "8783.879704",
+        "derived_pv_curtailed_kw": "0.000000",
+        "derived_pv_used_kw": "0.000000",
+        "scenario_id": "S03_grid",
+        "timestamp": "2025-04-02T22:45:00+08:00"
+      },
+      {
+        "balance_residual_kw": "0",
+        "derived_grid_import_kw": "0.000000",
+        "derived_pv_curtailed_kw": "2575.891107",
+        "derived_pv_used_kw": "683.116835",
+        "scenario_id": "S05_pv_surplus",
+        "timestamp": "2025-03-01T11:15:00+08:00"
+      },
+      {
+        "balance_residual_kw": "0",
+        "derived_grid_import_kw": "1102.078742",
+        "derived_pv_curtailed_kw": "0.000000",
+        "derived_pv_used_kw": "537.458824",
+        "scenario_id": "S11_pv_gap",
+        "timestamp": "2025-12-02T10:00:00+08:00"
+      },
+      {
+        "balance_residual_kw": "0",
+        "derived_grid_import_kw": "1195.226382",
+        "derived_pv_curtailed_kw": "0.000000",
+        "derived_pv_used_kw": "458.201038",
+        "scenario_id": "S12_late_weather",
+        "timestamp": "2025-12-03T10:00:00+08:00"
+      }
+    ]
+  },
+  "is_simulated": true,
+  "output_hashes_sha256": {
+    "booking_events.csv": "253f6908d1be5ecd7d8b18431a100e7ce9cfd9c0d00311919a5838d9af9d9188",
+    "forecast_values.csv": "23cdaffb280195ed943f57dd61669ec843c5f46374dd4ad3eb020d9af268ad0e",
+    "forecast_vintages.csv": "bab97f8761bbd2ea57d1375400baa4a4a3348ead8e1ff466a3a6686a3f01f18a",
+    "scenario_inputs.csv": "3c923806bfc989af50fded18d32ba9916815785040a7e86c115059f2f34b242c",
+    "scenario_truth.csv": "3348816745e08e0568d1720be296fd25fad496c27743eacd4daf4252631b062f",
+    "source_manifest.json": "47a278959970998c1a894b21dfcdf4fdbf8d2473c89182632a0c0268a4aa7d32",
+    "station_interval_truth.csv": "d631a3cf7b2ff3a361b2c7fe5ccc27096ce1b1d312e15c5fb2e3f900107766f4",
+    "tariff_intervals.csv": "63b81b965fadf0ec3bf7da500dc7608a7958d97ff304ff176f87f533e62fd2f7",
+    "vehicle_requests.csv": "494e9f6e1d005f674b97a31d84b7b6115bd83a1ce8bac442766a3038be3073f9"
+  },
+  "source_hashes_sha256": {
+    "储能参数与初始状态/储能参数.csv": "3536c8694ed45036842a96c75a09a6684db7ec4ff1ffb302a88585f90e90aaa3",
+    "储能参数与初始状态/初始状态.csv": "cfe2edc60e01a3ba43bfad969c41c799cbaef7c70ba68ea994a094086e01815b",
+    "光伏数据/黄花站_2025年_07-19_小时数据.csv": "62be47a6af61152205e489ebf7f30369c0ebb9fcfa8087214eac64de41dffc1b",
+    "光伏数据/黄花站_2025年_15分钟光伏模拟数据.csv": "28a0842c8b7c28ac5e90ae209bba2a5a215ef1f48ae3f25d616d083515bed1c8",
+    "场站配置与设备台账/功率约束.csv": "7b8d552ffe31c4d3220d9984a6a5b84dc9c6f5ba764b86f4b14e36895ba7f65e",
+    "场站配置与设备台账/设备台账.csv": "8843ffc5cfe4279edab887ed335f5be026614dd0ab8bab4f35db64c16fb9cc44",
+    "负荷数据/充电会话明细.csv": "4c3d0b1a2c26ca6ccb4cebf9d9e0d12c477c4f81c23d66509a1e151378e94ecf",
+    "负荷数据/黄花站_2025年_15分钟负荷模拟数据.csv": "c4989c0c8a62a488bdc9e3abd3118bf5cc34333181246ad1f41a672a2d7b0c39"
+  },
+  "status": "passed",
+  "test_set_limitation": "Scenario windows selected post hoc from known synthetic truth; no blind-test claim"
+}

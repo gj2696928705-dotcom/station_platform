@@ -1,0 +1,248 @@
+{
+  "schema_version": "huanghua-station-registry-1",
+  "dataset_id": "huanghua_station_registry_2025_synthetic_v1",
+  "config_version": "1.0.0",
+  "is_simulated": true,
+  "status": "passed",
+  "config_recorded_on": "2026-10-15",
+  "generation_runtime": {
+    "python": "3.12.14",
+    "dependencies": "standard_library_only"
+  },
+  "checks": {
+    "asset_rows": 281,
+    "asset_counts": {
+      "ac_bus": 1,
+      "base_load": 1,
+      "battery_system": 1,
+      "branch": 4,
+      "charger": 128,
+      "charging_port": 128,
+      "grid_connection": 1,
+      "meter": 5,
+      "pcs": 1,
+      "pv_inverter": 10,
+      "station": 1
+    },
+    "constraint_rows": 145,
+    "meter_rows": 5,
+    "provenance_rows": 20,
+    "unique_ids_and_acyclic_topology": true,
+    "all_references_resolve": true,
+    "parent_child_power_not_double_counted": true,
+    "pv_total_kw": 5000.0,
+    "charging_leaf_total_kw": 30720.0,
+    "storage_pcs_kw": 2000.0,
+    "battery_nameplate_kwh": 4000.0,
+    "storage_dispatch_ready": false
+  },
+  "history_compatibility": {
+    "scope": "offline_full_year_audit_only_not_decision_input",
+    "time_resolution": "15min_interval_average",
+    "not_a_certification_of_intra_interval_peaks_or_real_equipment": true,
+    "pv_rows": 35040,
+    "load_rows": 35040,
+    "session_rows": 44826,
+    "historical_ports": 128,
+    "continuous_unique_aligned_timestamps": true,
+    "missing_main_table_cells": 0,
+    "load_components_exactly_conserved": true,
+    "temperature_matches": true,
+    "session_peak_values_kw": [
+      120.0,
+      180.0,
+      240.0
+    ],
+    "all_session_peaks_within_port_limit": true,
+    "per_port_sessions_do_not_overlap": true,
+    "initial_occupied_port_count": 37,
+    "initial_occupied_ports": [
+      "SIM-G-070",
+      "SIM-G-074",
+      "SIM-G-077",
+      "SIM-G-078",
+      "SIM-G-080",
+      "SIM-G-081",
+      "SIM-G-082",
+      "SIM-G-083",
+      "SIM-G-084",
+      "SIM-G-085",
+      "SIM-G-089",
+      "SIM-G-090",
+      "SIM-G-091",
+      "SIM-G-092",
+      "SIM-G-093",
+      "SIM-G-094",
+      "SIM-G-095",
+      "SIM-G-096",
+      "SIM-G-097",
+      "SIM-G-098",
+      "SIM-G-101",
+      "SIM-G-102",
+      "SIM-G-103",
+      "SIM-G-105",
+      "SIM-G-108",
+      "SIM-G-109",
+      "SIM-G-110",
+      "SIM-G-111",
+      "SIM-G-112",
+      "SIM-G-113",
+      "SIM-G-114",
+      "SIM-G-115",
+      "SIM-G-116",
+      "SIM-G-120",
+      "SIM-G-122",
+      "SIM-G-124",
+      "SIM-G-125"
+    ],
+    "initial_occupancy_is_historical_truth_not_forecast": true,
+    "sessions_continuing_at_year_end": 51,
+    "pv_interval_rule": "adjacent_point_trapezoid",
+    "last_midnight_endpoint_kw": 0,
+    "storage_charge_discharge_kw_for_this_check": [
+      0,
+      0
+    ],
+    "grid_import_peak_kw": 8783.879704,
+    "grid_import_limit_kw": 10000,
+    "grid_import_exceedance_intervals": 0,
+    "pv_surplus_intervals_before_storage_or_curtailment": 3459,
+    "pv_surplus_peak_kw": 2575.8911065,
+    "pv_surplus_energy_kwh": 599675.07171325,
+    "unconstrained_pv_energy_kwh": 4500441.93725875,
+    "baseline_grid_import_energy_kwh": 17359953.87092925,
+    "baseline_curtailment_if_storage_idle_kwh": 599675.07171325,
+    "baseline_export_kw": 0,
+    "derived_meter_timeseries_written": false,
+    "storage_soc_simulated": false
+  },
+  "negative_and_boundary_tests": {
+    "duplicate_asset_id": {
+      "status": "passed",
+      "rejected_with": "DUPLICATE_ASSET"
+    },
+    "orphan_asset": {
+      "status": "passed",
+      "rejected_with": "ORPHAN_ASSET"
+    },
+    "topology_cycle": {
+      "status": "passed",
+      "rejected_with": "TOPOLOGY_CYCLE"
+    },
+    "missing_port": {
+      "status": "passed",
+      "rejected_with": "MISSING_PORT"
+    },
+    "inconsistent_pv_capacity": {
+      "status": "passed",
+      "rejected_with": "PV_CAPACITY"
+    },
+    "available_power_above_nameplate": {
+      "status": "passed",
+      "rejected_with": "ASSET_POWER_LIMIT"
+    },
+    "invalid_meter_reference": {
+      "status": "passed",
+      "rejected_with": "METER_REFERENCE"
+    },
+    "parent_child_power_double_count": {
+      "status": "passed",
+      "rejected_with": "DOUBLE_COUNT"
+    },
+    "pcs_power_above_nameplate": {
+      "status": "passed",
+      "rejected_with": "PCS_LIMIT"
+    },
+    "cross_year_occupancy_and_interval_end_release": {
+      "status": "passed"
+    },
+    "non_finite_numeric_input": {
+      "status": "passed",
+      "rejected_with": "INVALID_NUMBER"
+    }
+  },
+  "reproducibility": {
+    "deterministic_table_bytes": true,
+    "csv_roundtrip_verified": true,
+    "written_artifacts_read_back": true,
+    "report_self_hash_excluded": true
+  },
+  "source_files": {
+    "pv_data": {
+      "path": "代码/数据/光伏数据/黄花站_2025年_15分钟光伏模拟数据.csv",
+      "sha256": "28a0842c8b7c28ac5e90ae209bba2a5a215ef1f48ae3f25d616d083515bed1c8",
+      "matches_pinned_hash": true
+    },
+    "load_data": {
+      "path": "代码/数据/负荷数据/黄花站_2025年_15分钟负荷模拟数据.csv",
+      "sha256": "c4989c0c8a62a488bdc9e3abd3118bf5cc34333181246ad1f41a672a2d7b0c39",
+      "matches_pinned_hash": true
+    },
+    "sessions": {
+      "path": "代码/数据/负荷数据/充电会话明细.csv",
+      "sha256": "4c3d0b1a2c26ca6ccb4cebf9d9e0d12c477c4f81c23d66509a1e151378e94ecf",
+      "matches_pinned_hash": true
+    },
+    "pv_config": {
+      "path": "代码/数据/光伏数据/simulation_config.json",
+      "sha256": "3c438b1591d89b3639fe1710366bbf4dac41ed8bd5f1a94c261d5da783818239",
+      "matches_pinned_hash": true
+    },
+    "load_config": {
+      "path": "代码/数据/负荷数据/simulation_config.json",
+      "sha256": "b431bb4212a85301603ad89bb7731cbd167c71312865b700aac7824c793be430",
+      "matches_pinned_hash": true
+    },
+    "pv_notes": {
+      "path": "代码/数据/光伏数据/数据说明.md",
+      "sha256": "634b6db6f0fcff0ffc37604746934ea54e46c3b02d4feb1c928526489e3a81f6",
+      "matches_pinned_hash": true
+    },
+    "load_notes": {
+      "path": "代码/数据/负荷数据/数据说明.md",
+      "sha256": "605bf9e3adbb4d89348fe6db13f936ccb79702a4e473b9b9b44b7bec9c8c600a",
+      "matches_pinned_hash": true
+    },
+    "handoff": {
+      "path": "代码/数据/单站光储充数据需求与项目交接.md",
+      "sha256": "69da3c8a310bf68faae7ba55d52a5a1f203631fea7aeed38aa02bdfcc26fbc7e",
+      "matches_pinned_hash": true
+    },
+    "design": {
+      "path": "资料/场站智能体详细设计方案_合并版.docx",
+      "sha256": "074f28e68fc35e2db20943d9b874b80cd4cb15309bfc2910bde9cb531885bfd3",
+      "matches_pinned_hash": true
+    },
+    "mechanism": {
+      "path": "资料/场站功能运行机理说明.docx",
+      "sha256": "1432f4436fdabd144910b01054a52ab1bc0201e7f7dffa69a82bff8b29bd85c1",
+      "matches_pinned_hash": true
+    },
+    "slides": {
+      "path": "资料/场站层7.08.pptx",
+      "sha256": "dc686ca044a0af7504ef80611c74690f9d4b1b6ee627028958604734434dcd6e",
+      "matches_pinned_hash": true
+    },
+    "platform_reference": {
+      "path": "station_platform/legacy/demand.py",
+      "sha256": "6a11cbae07b5edf0e713be91e7ef79e6f6024c8882c0f466f7971cbf79e7cd9b",
+      "matches_pinned_hash": true
+    }
+  },
+  "scope": {
+    "platform_connected": false,
+    "original_data_rewritten": false,
+    "models_trained_or_called": false,
+    "storage_dispatch_implemented": false,
+    "real_equipment_certified": false
+  },
+  "artifact_hashes_sha256": {
+    "generate_station_registry.py": "119547e17b96b6e00bd2e0f1c9430f4fa6da61e7d6f197131deb90683d8d47ef",
+    "simulation_config.json": "fa695d093b3743dd762e56f6bf8274402dfdb9560a8448cc276cac6250a737b8",
+    "功率约束.csv": "7b8d552ffe31c4d3220d9984a6a5b84dc9c6f5ba764b86f4b14e36895ba7f65e",
+    "数据说明.md": "049d011c7d92e7b4e3386c68eaf5e0b9dbf73e21b894827bf49bbef60d00f7ac",
+    "来源与假设.csv": "74b0e6ef254597456db42c953053da609169c6d038595fed3b5add766041bcd8",
+    "计量关系.csv": "432f036170f77f78cfd3bc6d6126cfe67f5c4ea48baeb45f73a0c5e41a671a22",
+    "设备台账.csv": "8843ffc5cfe4279edab887ed335f5be026614dd0ab8bab4f35db64c16fb9cc44"
+  }
+}

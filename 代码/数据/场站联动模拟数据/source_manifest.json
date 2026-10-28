@@ -1,0 +1,191 @@
+[
+  {
+    "is_simulated": true,
+    "path": "储能参数与初始状态/simulation_config.json",
+    "pinned": false,
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "376001744c65507e2e786c83ecb62ccc97dcc73ddf0dbbb564cfcbad765fd962",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "储能参数与初始状态/validation_report.json",
+    "pinned": false,
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "c766d116b3f31ae472a78e1f2d731c52e199b5ca9d13619a0310acdc7fd57852",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "储能参数与初始状态/储能参数.csv",
+    "pinned": true,
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "3536c8694ed45036842a96c75a09a6684db7ec4ff1ffb302a88585f90e90aaa3",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "储能参数与初始状态/初始状态.csv",
+    "pinned": true,
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "cfe2edc60e01a3ba43bfad969c41c799cbaef7c70ba68ea994a094086e01815b",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "储能参数与初始状态/数据说明.md",
+    "pinned": false,
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "1caa5167f1abb72dfa37c081ffc023c39c7357710eb04f81d1a24c2bc8a46120",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "储能参数与初始状态/状态校验轨迹.csv",
+    "pinned": false,
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "d91c97a6cbb628d094240a03611d59a48ccd969b8397d16df51c64e7624b74bf",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "光伏数据/simulation_config.json",
+    "pinned": false,
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "3c438b1591d89b3639fe1710366bbf4dac41ed8bd5f1a94c261d5da783818239",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "光伏数据/validation_report.json",
+    "pinned": false,
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "60e3eba2b48420569f06fd6884aad297aa8e3a2af38b7b38d72edf3d672262d0",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "光伏数据/数据说明.md",
+    "pinned": false,
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "634b6db6f0fcff0ffc37604746934ea54e46c3b02d4feb1c928526489e3a81f6",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "光伏数据/黄花站_2025年_07-19_小时数据.csv",
+    "pinned": true,
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "62be47a6af61152205e489ebf7f30369c0ebb9fcfa8087214eac64de41dffc1b",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "光伏数据/黄花站_2025年_15分钟光伏模拟数据.csv",
+    "pinned": true,
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "28a0842c8b7c28ac5e90ae209bba2a5a215ef1f48ae3f25d616d083515bed1c8",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "场站配置与设备台账/simulation_config.json",
+    "pinned": false,
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "fa695d093b3743dd762e56f6bf8274402dfdb9560a8448cc276cac6250a737b8",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "场站配置与设备台账/validation_report.json",
+    "pinned": false,
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "530a04c984f018f50afcd554affdc484f1663b15cda62ee6b67f4d6291a44256",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "场站配置与设备台账/功率约束.csv",
+    "pinned": true,
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "7b8d552ffe31c4d3220d9984a6a5b84dc9c6f5ba764b86f4b14e36895ba7f65e",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "场站配置与设备台账/数据说明.md",
+    "pinned": false,
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "049d011c7d92e7b4e3386c68eaf5e0b9dbf73e21b894827bf49bbef60d00f7ac",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "场站配置与设备台账/设备台账.csv",
+    "pinned": true,
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "8843ffc5cfe4279edab887ed335f5be026614dd0ab8bab4f35db64c16fb9cc44",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "负荷数据/simulation_config.json",
+    "pinned": false,
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "b431bb4212a85301603ad89bb7731cbd167c71312865b700aac7824c793be430",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "负荷数据/validation_report.json",
+    "pinned": false,
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "6076d6e20c931a7e9068243ec9f42fa0950167c5777acfd11b88ae32a3c6f9d2",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "负荷数据/充电会话明细.csv",
+    "pinned": true,
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "4c3d0b1a2c26ca6ccb4cebf9d9e0d12c477c4f81c23d66509a1e151378e94ecf",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "负荷数据/数据说明.md",
+    "pinned": false,
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "605bf9e3adbb4d89348fe6db13f936ccb79702a4e473b9b9b44b7bec9c8c600a",
+    "station_id": "HH-Huanghua-CSS"
+  },
+  {
+    "is_simulated": true,
+    "path": "负荷数据/黄花站_2025年_15分钟负荷模拟数据.csv",
+    "pinned": true,
+    "read_only": true,
+    "scenario_id": "PACKAGE",
+    "sha256": "c4989c0c8a62a488bdc9e3abd3118bf5cc34333181246ad1f41a672a2d7b0c39",
+    "station_id": "HH-Huanghua-CSS"
+  }
+]
