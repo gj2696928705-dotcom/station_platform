@@ -1,0 +1,230 @@
+{
+  "forecast_id": "eb0391fb-b602-4b08-a798-14198ba1badc",
+  "forecast_type": "pv_power",
+  "asset_scope": "configured_pv_assets",
+  "generated_at": "2026-10-26T08:22:21.613024+00:00",
+  "forecast_start_at": "2025-12-31T07:00:00+08:00",
+  "forecast_end_at": "2025-12-31T19:00:00+08:00",
+  "interval_minutes": 60,
+  "forecast_values": [
+    {
+      "timestamp": "2025-12-31T07:00:00+08:00",
+      "value": 132.18861389160156,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2025-12-31T08:00:00+08:00",
+      "value": 184.9639892578125,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2025-12-31T09:00:00+08:00",
+      "value": 277.2409362792969,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2025-12-31T10:00:00+08:00",
+      "value": 402.3840637207031,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2025-12-31T11:00:00+08:00",
+      "value": 569.8456420898438,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2025-12-31T12:00:00+08:00",
+      "value": 699.3359375,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2025-12-31T13:00:00+08:00",
+      "value": 686.459716796875,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2025-12-31T14:00:00+08:00",
+      "value": 621.410888671875,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2025-12-31T15:00:00+08:00",
+      "value": 480.6103210449219,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2025-12-31T16:00:00+08:00",
+      "value": 304.6977233886719,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2025-12-31T17:00:00+08:00",
+      "value": 141.98597717285156,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2025-12-31T18:00:00+08:00",
+      "value": 35.45393753051758,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2025-12-31T19:00:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    }
+  ],
+  "prediction_interval": {
+    "method": "empirical_absolute_residual",
+    "nominal_coverage": 0.8,
+    "values": [
+      {
+        "timestamp": "2025-12-31T07:00:00+08:00",
+        "lower": 0.0,
+        "upper": 384.2509074853516,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2025-12-31T08:00:00+08:00",
+        "lower": 0.0,
+        "upper": 437.02628285156254,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2025-12-31T09:00:00+08:00",
+        "lower": 25.178642685546862,
+        "upper": 529.3032298730469,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2025-12-31T10:00:00+08:00",
+        "lower": 150.3217701269531,
+        "upper": 654.4463573144532,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2025-12-31T11:00:00+08:00",
+        "lower": 317.7833484960937,
+        "upper": 821.9079356835938,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2025-12-31T12:00:00+08:00",
+        "lower": 447.27364390624996,
+        "upper": 951.39823109375,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2025-12-31T13:00:00+08:00",
+        "lower": 434.39742320312496,
+        "upper": 938.522010390625,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2025-12-31T14:00:00+08:00",
+        "lower": 369.34859507812496,
+        "upper": 873.473182265625,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2025-12-31T15:00:00+08:00",
+        "lower": 228.54802745117186,
+        "upper": 732.6726146386719,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2025-12-31T16:00:00+08:00",
+        "lower": 52.63542979492186,
+        "upper": 556.7600169824219,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2025-12-31T17:00:00+08:00",
+        "lower": 0.0,
+        "upper": 394.0482707666016,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2025-12-31T18:00:00+08:00",
+        "lower": 0.0,
+        "upper": 287.5162311242676,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2025-12-31T19:00:00+08:00",
+        "lower": 0.0,
+        "upper": 252.06229359375,
+        "unit": "kW"
+      }
+    ]
+  },
+  "confidence": {
+    "level": 0.8,
+    "source": "validation_residual_calibration",
+    "limitations": [
+      "按参考代码使用提供的当日辐照和降雨；其可提前获得性未经证明，离线精度以这些未来输入已知为条件",
+      "区间使用全局残差分位数，未达到逐预测步样本数门槛"
+    ],
+    "model_used": "gru",
+    "sampling_layout": "day13_07_19",
+    "weather_input_policy": "provided_target_day_weather",
+    "weather_forecast_issued_at": null,
+    "runtime_weather_input_policy": "provided_target_day_weather",
+    "history_input_columns": [
+      "pv_power_kw"
+    ],
+    "future_input_columns": [
+      "SWGDN",
+      "DHI",
+      "DNI",
+      "rain"
+    ]
+  },
+  "input_data_quality_summary": {
+    "sampling_layout": "day13_07_19",
+    "history_points_required": 39,
+    "target_points": 13,
+    "source_rows": 4745,
+    "history_days": 3,
+    "interpolation": "none",
+    "history_points_used": 39
+  },
+  "model_id": "pv-power-forecast",
+  "model_version": "0.3.0-candidate+day13",
+  "model_published_at": null,
+  "training_data_window": {
+    "start": "2025-01-01T07:00:00+08:00",
+    "end": "2025-09-12T19:00:00+08:00"
+  },
+  "fallback_forecast_ref": null,
+  "status": "available",
+  "audit_refs": [
+    "model_metadata.json"
+  ],
+  "visualizations": [
+    {
+      "id": "forecast_day13",
+      "kind": "forecast_interval",
+      "title": "当天07:00–19:00光伏功率预测",
+      "path": "visualizations/eb0391fb-b602-4b08-a798-14198ba1badc_forecast_day13.png",
+      "mime_type": "image/png",
+      "description": "预测值及经验预测区间"
+    },
+    {
+      "id": "history_forecast",
+      "kind": "history_forecast",
+      "title": "历史功率与未来预测衔接",
+      "path": "visualizations/eb0391fb-b602-4b08-a798-14198ba1badc_history_forecast.png",
+      "mime_type": "image/png",
+      "description": "最近历史功率与未来预测的衔接"
+    },
+    {
+      "id": "forecast_profile",
+      "kind": "forecast_profile",
+      "title": "预测窗口日内功率分布",
+      "path": "visualizations/eb0391fb-b602-4b08-a798-14198ba1badc_forecast_profile.png",
+      "mime_type": "image/png",
+      "description": "预测窗口内的日内功率变化"
+    }
+  ],
+  "visualization_errors": []
+}

@@ -1,0 +1,82 @@
+{
+  "objective": "historical weather, solar geometry, learning-rate scheduling, three-candidate rolling validation",
+  "unit_tests": {
+    "total_passed": 48,
+    "seconds": 928.323,
+    "failed": 0,
+    "command": "python -X utf8 -m unittest discover -s tests -v",
+    "log_ref": "开发验证/20261009_night_support/unit_tests.log",
+    "log_sha256": "6b0f54de8a2223a0a23a19cd7263308eb0a08d7d59db3160ca3d81a685510f5b"
+  },
+  "coverage": [
+    "historical feature causality",
+    "issued forecast cutoff and coverage",
+    "solar timezone invariance",
+    "training-only scalers",
+    "complete target windows within folds",
+    "pooled metrics",
+    "learning rate reductions before early stop",
+    "multivariate save/reload",
+    "validated baseline calibration on fallback",
+    "three-fold three-GRU search and prediction",
+    "no test windows used in rolling selection",
+    "legacy initializer compatibility preserves original weights and non-null parameters"
+  ],
+  "full_run_status": "completed",
+  "full_run_configuration": "default, all eligible training windows, three calendar folds, three GRU candidates",
+  "remaining": [],
+  "legacy_cli_verification": "verification/legacy_cli/verification.json",
+  "completed_candidate_artifacts_verified": 9,
+  "partial_artifact_audit_command": "python verification/audit_artifacts.py --partial",
+  "full_artifact_audit_command": "python verification/audit_artifacts.py",
+  "legacy_cli_status": "passed",
+  "partial_artifact_audit_ref": "verification/artifact_audit_partial.json",
+  "final_inference_audit_command": "python verification/verify_final.py",
+  "source_changes_after_training_started": [
+    "Narrow legacy Keras loader compatibility; no numerical training changes",
+    "Additional missing-history-weather quality fields; no numerical training changes",
+    "Optional daylight-conditioned intervals and frozen-weight recalibration; no weight fitting or primary selection change",
+    "Forecast-origin truncation before numeric validation, filling and quality summary; clean full-year point predictions unchanged",
+    "Optional night zero lower interval support and frozen full-window backtest; original point predictions unchanged"
+  ],
+  "historical_unit_tests": {
+    "suite_passed": 23,
+    "additional_archive_integration_passed": 1,
+    "total_passed": 27,
+    "additional_legacy_loader_passed": 2,
+    "additional_quality_summary_passed": 1
+  },
+  "completed_final_artifacts_verified": 1,
+  "verified_on": "2026-10-09",
+  "scope": "PV implementation, simulated candidate artifacts and frozen new random-path evaluation",
+  "model_acceptance": {
+    "status": "candidate_only",
+    "production_accepted": false,
+    "remaining": [
+      "real-site data and issued meteorological forecast validation",
+      "daylight point forecast error and weather-dependent bias",
+      "daylight interval undercoverage on the new simulated path",
+      "new unused evaluation data for subsequent algorithm changes"
+    ],
+    "night_zero_coverage_scope": "all-zero nighttime truth of the known simulator only"
+  },
+  "artifact_audit_ref": "verification/artifact_audit.json",
+  "artifact_audit_status": "passed",
+  "final_cli_verification_ref": "verification/final_cli/verification.json",
+  "final_cli_status": "passed",
+  "visual_review_ref": "../../开发验证/20261009/verification.json",
+  "current_source_verification_ref": "../../开发验证/20261009_night_support/verification.json",
+  "verification_history": [
+    {
+      "unit_tests": {
+        "total_passed": 40,
+        "seconds": 637.168,
+        "failed": 0,
+        "command": "python -X utf8 -m unittest discover -s tests -v",
+        "log_ref": "开发验证/20261009/unit_tests.log"
+      },
+      "current_source_verification_ref": "../../开发验证/20261009/verification.json",
+      "backup_ref": "implementation_verification_pre_20261009_night_support.json"
+    }
+  ]
+}

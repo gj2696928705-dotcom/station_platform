@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "exit_code": 0,
+  "scope": "8-day simulated slice verifies CLI dispatch; full-year evidence is separate",
+  "evaluated_windows": 385,
+  "stdout_matches_saved_report": true,
+  "matches_API_different_batch_size": true,
+  "input_sha256": "5c7aaa4e119e982dcbf080f4ee25a79b621ba06587f8a6a51215d9e0c15a916d",
+  "report_ref": "backtest_cli_report.json",
+  "stderr_ref": "backtest_cli_stderr.log"
+}

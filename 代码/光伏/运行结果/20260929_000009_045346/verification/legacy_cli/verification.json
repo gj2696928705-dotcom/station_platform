@@ -1,0 +1,23 @@
+{
+  "predict": {
+    "exit_code": 0,
+    "status": "available",
+    "images": [
+      "forecast_24h",
+      "history_forecast",
+      "forecast_profile"
+    ],
+    "points": 96,
+    "max_absolute_difference_kw": 0.0001220703125
+  },
+  "evaluate": {
+    "exit_code": 0,
+    "status": "available",
+    "images": [
+      "actual_vs_forecast"
+    ]
+  },
+  "original_bundle_unchanged": true,
+  "status": "passed",
+  "limits": "One legacy bundle checked across these runtimes; not a general guarantee for arbitrary Keras/sklearn versions."
+}

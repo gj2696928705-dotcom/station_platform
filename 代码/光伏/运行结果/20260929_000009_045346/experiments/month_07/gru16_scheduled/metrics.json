@@ -1,0 +1,19 @@
+{
+  "all_day": {
+    "count": 276576,
+    "mae": 340.4039945665523,
+    "rmse": 580.3992005620471,
+    "nrmse": 0.7818058391068332,
+    "r2": 0.6680911017882671,
+    "coverage": null
+  },
+  "daylight": {
+    "count": 159325,
+    "mae": 578.7187479161704,
+    "rmse": 764.0246108666068,
+    "nrmse": 0.5928555479529499,
+    "r2": 0.4481417750366249,
+    "coverage": null
+  },
+  "training_summary_ref": "experiments/month_07/gru16_scheduled/training_summary.json"
+}

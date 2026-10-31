@@ -1,0 +1,41 @@
+{
+  "selected_model": "gru",
+  "point_correction": "ridge_0.1",
+  "validation": {
+    "count": 495456,
+    "mae": 250.15429792721423,
+    "rmse": 472.8156501790193,
+    "nrmse": 0.8475481141128127,
+    "r2": 0.7122577541167652,
+    "coverage": 0.9041024833688561,
+    "mean_interval_width_kw": 743.9148435009263
+  },
+  "test": {
+    "count": 495456,
+    "mae": 208.53686822800046,
+    "rmse": 394.2658496242613,
+    "nrmse": 1.06254430745884,
+    "r2": 0.6650628955789921,
+    "coverage": 0.9402207259575017,
+    "mean_interval_width_kw": 661.6183628538065
+  },
+  "test_daylight": {
+    "count": 210298,
+    "mae": 491.3068245288696,
+    "rmse": 605.1654647523445,
+    "nrmse": 0.6922485808325513,
+    "r2": 0.4396498266084736,
+    "coverage": 0.8591617609297283,
+    "mean_interval_width_kw": 1558.7537094318336
+  },
+  "test_night": {
+    "count": 285158,
+    "mae": 0.0,
+    "rmse": 0.0,
+    "nrmse": null,
+    "r2": null,
+    "coverage": 1.0,
+    "mean_interval_width_kw": 0.0
+  },
+  "point_correction_report_ref": "point_correction_report.json"
+}

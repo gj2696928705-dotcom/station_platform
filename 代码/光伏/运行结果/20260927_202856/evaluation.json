@@ -1,0 +1,13 @@
+{
+  "status": "available",
+  "metrics": {
+    "count": 96,
+    "mae": 34.91742643402778,
+    "rmse": 71.30324122296726,
+    "nrmse": 0.3947123993953238,
+    "r2": 0.9254055952963054,
+    "coverage": null
+  },
+  "visualizations": [],
+  "visualization_errors": []
+}

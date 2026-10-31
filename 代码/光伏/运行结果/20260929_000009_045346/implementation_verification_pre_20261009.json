@@ -1,0 +1,42 @@
+{
+  "objective": "historical weather, solar geometry, learning-rate scheduling, three-candidate rolling validation",
+  "unit_tests": {
+    "suite_passed": 23,
+    "additional_archive_integration_passed": 1,
+    "total_passed": 27,
+    "additional_legacy_loader_passed": 2,
+    "additional_quality_summary_passed": 1
+  },
+  "coverage": [
+    "historical feature causality",
+    "issued forecast cutoff and coverage",
+    "solar timezone invariance",
+    "training-only scalers",
+    "complete target windows within folds",
+    "pooled metrics",
+    "learning rate reductions before early stop",
+    "multivariate save/reload",
+    "validated baseline calibration on fallback",
+    "three-fold three-GRU search and prediction",
+    "no test windows used in rolling selection",
+    "legacy initializer compatibility preserves original weights and non-null parameters"
+  ],
+  "full_run_status": "running",
+  "full_run_configuration": "default, all eligible training windows, three calendar folds, three GRU candidates",
+  "remaining": [
+    "last September GRU candidate and final fit completion",
+    "complete artifact/PNG verification",
+    "final model reload, CLI and fallback verification"
+  ],
+  "legacy_cli_verification": "verification/legacy_cli/verification.json",
+  "completed_candidate_artifacts_verified": 8,
+  "partial_artifact_audit_command": "python verification/audit_artifacts.py --partial",
+  "full_artifact_audit_command": "python verification/audit_artifacts.py",
+  "legacy_cli_status": "passed",
+  "partial_artifact_audit_ref": "verification/artifact_audit_partial.json",
+  "final_inference_audit_command": "python verification/verify_final.py",
+  "source_changes_after_training_started": [
+    "Narrow legacy Keras loader compatibility; no numerical training changes",
+    "Additional missing-history-weather quality fields; no numerical training changes"
+  ]
+}

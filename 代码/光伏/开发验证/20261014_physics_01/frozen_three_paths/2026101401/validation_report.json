@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "checks": {
+    "row_count": 35040,
+    "days": 365,
+    "start": "2026-01-01T00:00:00+08:00",
+    "end": "2026-12-31T23:45:00+08:00",
+    "missing_values": 0,
+    "power_min_kw": 0.0,
+    "power_max_kw": 3910.208006,
+    "night_rows": 17472,
+    "irradiance_identity_max_abs_error_w_m2": 6.728454025051178e-06,
+    "weather_counts": {
+      "partly_cloudy": 10704,
+      "overcast": 10704,
+      "rain": 6864,
+      "clear": 6768
+    },
+    "temperature_min_c": -1.541438,
+    "temperature_max_c": 35.281772,
+    "minimum_daylight_hours_approx": 10.0,
+    "maximum_daylight_hours_approx": 14.0
+  },
+  "repeat_generation_byte_identical": true,
+  "source_sha256": "5b5e03556f7d9f7339ddf93a1f9271469dd89fc0b0c326d4d47db2cdb52d580f",
+  "is_simulated": true
+}

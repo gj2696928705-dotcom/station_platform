@@ -1,0 +1,93 @@
+{
+  "status": "passed",
+  "reference_sha256": "4e33bab2a8b4c0e24a169382dc916e2234e2a0b6bc4a2627440c500a738d5c49",
+  "original_data_sha256": "28a0842c8b7c28ac5e90ae209bba2a5a215ef1f48ae3f25d616d083515bed1c8",
+  "hourly_data_sha256": "62be47a6af61152205e489ebf7f30369c0ebb9fcfa8087214eac64de41dffc1b",
+  "hourly_rows": 4745,
+  "calendar_days": 365,
+  "daily_samples": 362,
+  "training_samples": 252,
+  "selection_samples": 27,
+  "calibration_samples": 28,
+  "test_samples": 55,
+  "history_shape": [
+    39,
+    1
+  ],
+  "future_shape": [
+    13,
+    4
+  ],
+  "output_shape": [
+    13
+  ],
+  "forecast_hours": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "interval_minutes": 60,
+  "epochs_requested": 50,
+  "epochs_completed": 47,
+  "best_epoch": 39,
+  "independent_holdout_metrics": {
+    "rmse": 173.0150216717061,
+    "mae": 107.95475567408536,
+    "r2": 0.9518515544563741
+  },
+  "metrics_scope": "known simulated target-day weather; 55 retrospective test days",
+  "current_day_default_verified_in_tests": true,
+  "target_power_mutation_ignored": true,
+  "real_CLI_predict_evaluate_backtest": true,
+  "saved_reload_matches": true,
+  "original_data_generator_config_and_control_unchanged": true,
+  "model_hashes": {
+    "gru.keras": "566e9be4850925e7dc07fd06c8b4bb886def261357895281aca50f1ed1afe9d8",
+    "scalers.joblib": "7db809af10cce8d3049ec7edd3d8518d7ee0e5506af4e9438792e2f551f021f1",
+    "model_metadata.json": "4c33e1edbe02bd3a2bcc3f152c2a53cbee8fb07a6eeab43353c3ee7702678d02",
+    "interval_calibration.json": "241b09d190c5f4fcb1d96b826213cb34e01eafab35c8b5c8c56eb22b2114d1be"
+  },
+  "implementation_sha256": {
+    "pv_forecast\\__init__.py": "8e2e8d79842f0a14971c35790baf251527bc75d36752474f7bdd796a19f3d883",
+    "pv_forecast\\backtesting.py": "29d89f69a0ff3c04588a2569c5646e47c1489e04e6e85f037e5f17f33d91b03c",
+    "pv_forecast\\baselines.py": "2ae903e99f170445b628259c3d477c03485fb3ee48709d54317f43c708d5c003",
+    "pv_forecast\\cli.py": "78d2101b6d24d9c9089b62af78c7b24b92d590b2fbc30dd32acb3281a07dc668",
+    "pv_forecast\\data.py": "38c3a75303ad14b76ba6f0ad97d6b6f0183df96f53896138beb68ec83d89e912",
+    "pv_forecast\\day13.py": "132c65bb2eb0a19eb0a2375b57dba25e80421873283355417a9337ee889ddfec",
+    "pv_forecast\\day13_data.py": "1dc7b94c86dab6a28a72f70792d1b6d424013cc1160edcf29f806ee14f9cd273",
+    "pv_forecast\\diagnostics.py": "cc96a4519c6292ae493ef039b09451976f68fdc808ce03aae337bfabaca62da3",
+    "pv_forecast\\errors.py": "1c4d4a9c6233a1ed112dd5d37b25915e021922813bb702d361dc0e144e42e47f",
+    "pv_forecast\\experiments.py": "2bec05ecd6ada4c80b733805291db0bb40dfac244e78368a06eb1606285cc20d",
+    "pv_forecast\\metrics.py": "70311ce45b81b99e730f351db88bd5afc6a892e622737091eff5463bd72bee40",
+    "pv_forecast\\models.py": "3048a73016ff8026a3ebdce8fb6da0e60418bc534b72f70d56956389653d3bd1",
+    "pv_forecast\\physics.py": "3cf29aee3774ac4f2fa841042aee9ea39dee5d8ed9cd3eaadbd31ee058c8af09",
+    "pv_forecast\\physics_experiments.py": "18c010b70fdd4bd7cd96a7204eed2fe45fba12af2cc7528b684bed16909a6ef6",
+    "pv_forecast\\physics_tree.py": "c77a26c3566fde48d2010c2518b2b449687627718e3a890969f52c664a791973",
+    "pv_forecast\\pipeline.py": "462e5c894034109a1c9850f5f740f1ad51fc38b26aebdae0ed4afd5b62f5abc0",
+    "pv_forecast\\point_correction.py": "592d506b972fa6f370130bec03f575026cc6c51513a4a0429dc9431da3dd6cf1",
+    "pv_forecast\\point_experiments.py": "f47c848fbca6eca3ff4171ab243b227c8fb605acd2515b4c8df57c6ad242d5c4",
+    "pv_forecast\\recalibration.py": "8d27c384fbf42146d0d5f8e8a284211c4cdb4c7394d9f977b91fe3e6ea7f0253",
+    "pv_forecast\\records.py": "aaff8ce92e7905c578cf16e91c8e7854f0a2d2bde6a013f28012e37626e9da53",
+    "pv_forecast\\visuals.py": "ba2dc0675d13e3ac5d3342f82c158c501f17c6641d8651a12551b3a998ea717a",
+    "pv_forecast\\weather.py": "59396a482945ac8f40f2bf5156d6186247b2dd7bb473c614fea70220075da166"
+  },
+  "PNG_count": 6,
+  "PNG_refs": [
+    "开发验证\\20261026_day13\\cli\\visualizations\\c29f28d8-efa3-4d56-bfa1-017d918290d3_actual_vs_forecast.png",
+    "开发验证\\20261026_day13\\cli\\visualizations\\eb0391fb-b602-4b08-a798-14198ba1badc_forecast_day13.png",
+    "开发验证\\20261026_day13\\cli\\visualizations\\eb0391fb-b602-4b08-a798-14198ba1badc_forecast_profile.png",
+    "开发验证\\20261026_day13\\cli\\visualizations\\eb0391fb-b602-4b08-a798-14198ba1badc_history_forecast.png",
+    "运行结果\\20261026_day13_01\\visualizations\\training_loss.png",
+    "运行结果\\20261026_day13_01\\visualizations\\gru_test_comparison.png"
+  ]
+}

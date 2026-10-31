@@ -1,0 +1,143 @@
+{
+  "schema_version": "pv-model-bundle-2",
+  "sampling_layout": "day13_07_19",
+  "model_id": "pv-power-forecast",
+  "model_version": "0.3.0-candidate+day13",
+  "publication_status": "candidate",
+  "selected_model": "gru",
+  "interval_minutes": 60,
+  "history_days": 3,
+  "history_steps": 39,
+  "horizon_steps": 13,
+  "points_per_day": 13,
+  "forecast_hours": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "target_column": "pv_power_kw",
+  "history_feature_names": [
+    "pv_power_kw"
+  ],
+  "history_weather_columns": [],
+  "feature_names": [
+    "SWGDN",
+    "DHI",
+    "DNI",
+    "rain"
+  ],
+  "weather_columns": [
+    "SWGDN",
+    "DHI",
+    "DNI",
+    "rain"
+  ],
+  "weather_input_policy": "provided_target_day_weather",
+  "input_spec": {
+    "timestamp_col": "timestamp",
+    "target_col": "pv_power_kw",
+    "weather_columns": [],
+    "history_weather_columns": [],
+    "latitude": null,
+    "longitude": null,
+    "coordinate_basis": "not_configured",
+    "timezone": "Asia/Shanghai",
+    "input_kind": "power",
+    "interval_minutes": null,
+    "column_map": {}
+  },
+  "training_data_window": {
+    "start": "2025-01-01T07:00:00+08:00",
+    "end": "2025-09-12T19:00:00+08:00"
+  },
+  "data_splits": {
+    "train": {
+      "samples": 252,
+      "target_start": "2025-01-04T07:00:00+08:00",
+      "target_end": "2025-09-12T19:00:00+08:00"
+    },
+    "selection_validation": {
+      "samples": 27,
+      "target_start": "2025-09-13T07:00:00+08:00",
+      "target_end": "2025-10-09T19:00:00+08:00"
+    },
+    "interval_calibration": {
+      "samples": 28,
+      "target_start": "2025-10-10T07:00:00+08:00",
+      "target_end": "2025-11-06T19:00:00+08:00"
+    },
+    "test": {
+      "samples": 55,
+      "target_start": "2025-11-07T07:00:00+08:00",
+      "target_end": "2025-12-31T19:00:00+08:00"
+    }
+  },
+  "calibration": {
+    "method": "empirical_absolute_residual",
+    "nominal_coverage": 0.8,
+    "quantiles_kw": [
+      252.06229359375,
+      252.06229359375,
+      252.06229359375,
+      252.06229359375,
+      252.06229359375,
+      252.06229359375,
+      252.06229359375,
+      252.06229359375,
+      252.06229359375,
+      252.06229359375,
+      252.06229359375,
+      252.06229359375,
+      252.06229359375
+    ],
+    "global_quantile_kw": 252.06229359375,
+    "step_specific": false,
+    "calibration_samples": 28
+  },
+  "baseline_fallback": {
+    "strategy": "same_slot_mean",
+    "calibration": {
+      "method": "empirical_absolute_residual",
+      "nominal_coverage": 0.8,
+      "quantiles_kw": [
+        968.5462041500002,
+        968.5462041500002,
+        968.5462041500002,
+        968.5462041500002,
+        968.5462041500002,
+        968.5462041500002,
+        968.5462041500002,
+        968.5462041500002,
+        968.5462041500002,
+        968.5462041500002,
+        968.5462041500002,
+        968.5462041500002,
+        968.5462041500002
+      ],
+      "global_quantile_kw": 968.5462041500002,
+      "step_specific": false,
+      "calibration_samples": 28
+    }
+  },
+  "all_daily_training_samples_used": true,
+  "test_used_for_selection": false,
+  "interval_calibration_excluded_from_early_stopping": true,
+  "reference": "参考代码文档/光伏/主代码.py",
+  "differences_from_reference": [
+    "校验完整自然日而非截断尾行",
+    "历史只取前三个自然日功率",
+    "RMSE按均方误差开方一次",
+    "训练专属缩放与最佳权重",
+    "独立区间校准日"
+  ]
+}

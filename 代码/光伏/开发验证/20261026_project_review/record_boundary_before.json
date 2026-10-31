@@ -1,0 +1,5 @@
+{
+  "wrong_end_time": "incorrectly accepted",
+  "missing_interval_step": "incorrectly accepted",
+  "interval_wrong_date": "incorrectly accepted"
+}

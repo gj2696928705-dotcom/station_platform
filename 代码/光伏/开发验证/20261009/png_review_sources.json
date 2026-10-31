@@ -1,0 +1,25 @@
+{
+  "rolling_loss": {
+    "sheet": "rolling_loss_review.png",
+    "source_pngs": [
+      "运行结果\\20260929_000009_045346\\experiments\\month_05\\gru16_scheduled\\visualizations\\training_loss.png",
+      "运行结果\\20260929_000009_045346\\experiments\\month_05\\gru32_control\\visualizations\\training_loss.png",
+      "运行结果\\20260929_000009_045346\\experiments\\month_05\\gru32_scheduled\\visualizations\\training_loss.png",
+      "运行结果\\20260929_000009_045346\\experiments\\month_07\\gru16_scheduled\\visualizations\\training_loss.png",
+      "运行结果\\20260929_000009_045346\\experiments\\month_07\\gru32_control\\visualizations\\training_loss.png",
+      "运行结果\\20260929_000009_045346\\experiments\\month_07\\gru32_scheduled\\visualizations\\training_loss.png",
+      "运行结果\\20260929_000009_045346\\experiments\\month_09\\gru16_scheduled\\visualizations\\training_loss.png",
+      "运行结果\\20260929_000009_045346\\experiments\\month_09\\gru32_control\\visualizations\\training_loss.png",
+      "运行结果\\20260929_000009_045346\\experiments\\month_09\\gru32_scheduled\\visualizations\\training_loss.png"
+    ]
+  },
+  "recalibrated_inference": {
+    "sheet": "recalibrated_inference_review.png",
+    "source_pngs": [
+      "运行结果\\20261009_daylight_recalibration_01\\visualizations\\2912a6ef-9668-4052-9a15-2f4b6dd61a58_actual_vs_forecast.png",
+      "运行结果\\20261009_daylight_recalibration_01\\visualizations\\c1e0127e-c892-43ba-ab65-e2044b19e571_forecast_24h.png",
+      "运行结果\\20261009_daylight_recalibration_01\\visualizations\\c1e0127e-c892-43ba-ab65-e2044b19e571_forecast_profile.png",
+      "运行结果\\20261009_daylight_recalibration_01\\visualizations\\c1e0127e-c892-43ba-ab65-e2044b19e571_history_forecast.png"
+    ]
+  }
+}

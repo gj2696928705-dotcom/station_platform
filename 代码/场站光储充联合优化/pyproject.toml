@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "station-joint"
+version = "0.1.0"
+description = "Four-slot offline station PV, battery and charging optimization"
+requires-python = ">=3.10"
+dependencies = ["ortools==9.15.6755"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["station_joint*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

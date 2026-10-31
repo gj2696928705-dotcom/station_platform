@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "date": "2026-10-27",
+  "headings": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "line_count": 93,
+  "character_count": 5302,
+  "markdown_fences_balanced": true,
+  "existing_local_links": 9,
+  "current_model_metadata_matches": true,
+  "archive_sha256": "21B7F78BD44728F144C0D7E6FCCD6CC193BAB283E63BB9D80CA14E3B14D739A9",
+  "scope": "Markdown交接整理；未修改业务代码、模型或数据库；未重新运行组件测试"
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "case": "wrong_unit",
+    "rejected": false
+  },
+  {
+    "case": "wrong_interval",
+    "rejected": false
+  },
+  {
+    "case": "wrong_semantics",
+    "rejected": false
+  },
+  {
+    "case": "wrong_type",
+    "rejected": false
+  }
+]

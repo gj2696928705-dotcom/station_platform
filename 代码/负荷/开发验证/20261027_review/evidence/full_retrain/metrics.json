@@ -1,0 +1,118 @@
+{
+  "selected_model": "xgboost",
+  "selection": {
+    "baseline:persistence": {
+      "rmse_kw": 206.71940695442277,
+      "mae_kw": 167.55551128893927,
+      "r2": -0.8930674098738238,
+      "nrmse": 0.3218211308475366,
+      "point_count": 60864
+    },
+    "baseline:previous_day": {
+      "rmse_kw": 52.65322695153632,
+      "mae_kw": 40.0335106039695,
+      "r2": 0.8771843916087074,
+      "nrmse": 0.0819706349295565,
+      "point_count": 60864
+    },
+    "baseline:previous_week": {
+      "rmse_kw": 40.94314419224069,
+      "mae_kw": 28.494037347019585,
+      "r2": 0.9257381165217946,
+      "nrmse": 0.06374035780445983,
+      "point_count": 60864
+    },
+    "baseline:same_slot_mean": {
+      "rmse_kw": 49.949774802820954,
+      "mae_kw": 38.34049043651889,
+      "r2": 0.8894724235555699,
+      "nrmse": 0.07776189594123498,
+      "point_count": 60864
+    },
+    "xgboost": {
+      "rmse_kw": 19.78515418264001,
+      "mae_kw": 15.648717958205712,
+      "r2": 0.9826586678689782,
+      "nrmse": 0.030801562305439116,
+      "point_count": 60864
+    }
+  },
+  "test_all_models": {
+    "baseline:persistence": {
+      "rmse_kw": 187.44226186800222,
+      "mae_kw": 152.30940174130197,
+      "r2": -0.8115047224978245,
+      "nrmse": 0.30130904081278603,
+      "point_count": 123936,
+      "coverage": 0.8456622773044152
+    },
+    "baseline:previous_day": {
+      "rmse_kw": 52.405734821842955,
+      "mae_kw": 39.998023325030665,
+      "r2": 0.8584003865016356,
+      "nrmse": 0.08424098991815594,
+      "point_count": 123936,
+      "coverage": 0.8346323909114381
+    },
+    "baseline:previous_week": {
+      "rmse_kw": 38.37996659705021,
+      "mae_kw": 30.67712334799413,
+      "r2": 0.9240524754594783,
+      "nrmse": 0.061694896372556346,
+      "point_count": 123936,
+      "coverage": 0.9353537309579137
+    },
+    "baseline:same_slot_mean": {
+      "rmse_kw": 45.801701422212474,
+      "mae_kw": 36.475882650306836,
+      "r2": 0.8918397554287159,
+      "nrmse": 0.07362516107940917,
+      "point_count": 123936,
+      "coverage": 0.8935418280402788
+    },
+    "xgboost": {
+      "rmse_kw": 25.70981224375084,
+      "mae_kw": 21.228185428498414,
+      "r2": 0.9659197911039322,
+      "nrmse": 0.04132792033899261,
+      "point_count": 123936,
+      "coverage": 0.8885311773818745
+    }
+  },
+  "test": {
+    "rmse_kw": 25.70981224375084,
+    "mae_kw": 21.228185428498414,
+    "r2": 0.9659197911039322,
+    "nrmse": 0.04132792033899261,
+    "point_count": 123936,
+    "coverage": 0.8885311773818745
+  },
+  "xgboost": {
+    "training": {
+      "status": "completed",
+      "actual_rounds": 180,
+      "best_round": 150,
+      "retained_trees": 150,
+      "early_stopped": true,
+      "xgboost_version": "3.4.1",
+      "elapsed_seconds": 12.180684399791062,
+      "model_file": "xgboost.json"
+    },
+    "test": {
+      "rmse_kw": 25.70981224375084,
+      "mae_kw": 21.228185428498414,
+      "r2": 0.9659197911039322,
+      "nrmse": 0.04132792033899261,
+      "point_count": 123936,
+      "coverage": 0.8885311773818745
+    }
+  },
+  "evaluation_scope": "all complete stride-spaced rolling origins; overlapping target timestamps count per origin",
+  "calibration_scope": "second half of validation, separate from early stopping and selection",
+  "source_kind": "simulated",
+  "visualizations": [
+    "visualizations/training_loss.png",
+    "visualizations/test_comparison.png"
+  ],
+  "visualization_errors": []
+}

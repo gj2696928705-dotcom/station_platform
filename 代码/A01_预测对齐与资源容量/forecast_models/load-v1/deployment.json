@@ -1,0 +1,31 @@
+{
+  "schema_version": "candidate-deployment-1",
+  "simulation": true,
+  "kind": "load",
+  "station_id": "HH-Huanghua-CSS",
+  "meter_boundary": "M-PCC/AC-BUS",
+  "binding_evidence": "synthetic Huanghua data and registry; no real site binding",
+  "python": "D:\\Anaconda3\\anaconda\\python.exe",
+  "model_version": "20260928_232203_101506-ec41036a",
+  "value_semantics": "interval_average_power",
+  "publication_status": "candidate",
+  "real_dispatch_eligible": false,
+  "original_code_dir": "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\总平台\\..\\代码\\负荷",
+  "original_bundle_dir": "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\总平台\\..\\代码\\负荷\\运行结果\\20260928_232203_101506",
+  "files": {
+    "README.md": "d6491ef4fc480d1b33085551408ab596fdd31b5dcb12b5be778072ca618aa48e",
+    "requirements-lock.txt": "da8c2e4da762e72be3ffe016fbda3be853fb5679de25437b980cbbdc3a742674",
+    "requirements.txt": "edd8382c938255893ebe24abf0874fcadf9b7253093922c129e6826d6044e4b2",
+    "runtime.json": "ba7547790d6b2c05d93d4bd287b2df730a4eba32bde77b8dcdaf59559972cfca",
+    "bundle/interval_calibration.json": "57090d3b0697184a45ad8032f998ea57b62e799effbb2f5c20bf33108a9336a3",
+    "bundle/model_metadata.json": "f4a4d926a4e10bb8f05792abce190656de50e39e7ea5a3df0b8415e8952433ed",
+    "bundle/xgboost.json": "56d600e11d009a81492fd4f3c14893afe4da74e189d6c26cee2d8683ed251863",
+    "source/load_forecast/cli.py": "95baf90d6fa231b6b8e4ee1e627baaeec328302dedf2174e1b9dadc138865ead",
+    "source/load_forecast/data.py": "d2e3c0c9f87606fd4f72bfe310d997c261df51eab85a3937a5243efe1a7d1883",
+    "source/load_forecast/models.py": "3aff1e2304912005068e5642d1fab46c86effab964a564fb08d2326739ecf1c9",
+    "source/load_forecast/pipeline.py": "504019c1aaae5d0950b67e40bd5c81187b557751356ec736f84c5af49c1711e8",
+    "source/load_forecast/visuals.py": "e7e549cb3fded3d3b8bfb87d8332df51ad0b77de328f9537ca1d570319ce8c4f",
+    "source/load_forecast/__init__.py": "84ab645a49364cfb5518a7faa24bdee8416889e81d22d93a217aea642f7c6082"
+  },
+  "manifest_hash": "4031fb46a0fd8b4d80e17c18457d9749a018ded42ca2dd3e65b9ebadf8f16ec5"
+}

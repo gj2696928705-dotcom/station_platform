@@ -1,0 +1,63 @@
+{
+  "passed": true,
+  "independent_verifier": "standard-library Decimal; no station algorithm imports",
+  "checks": [
+    {
+      "scenario_id": "S01_sunny",
+      "slots_verified": 4,
+      "candidates_verified": 1
+    },
+    {
+      "scenario_id": "S02_mismatch",
+      "slots_verified": 4,
+      "candidates_verified": 1
+    },
+    {
+      "scenario_id": "S03_grid",
+      "slots_verified": 4,
+      "candidates_verified": 2
+    },
+    {
+      "scenario_id": "S04_concurrency",
+      "slots_verified": 4,
+      "candidates_verified": 2
+    },
+    {
+      "scenario_id": "S05_pv_surplus",
+      "slots_verified": 4,
+      "candidates_verified": 1
+    },
+    {
+      "scenario_id": "S06_calibration",
+      "slots_verified": 4,
+      "candidates_verified": 1
+    },
+    {
+      "scenario_id": "S07_storage_floor",
+      "slots_verified": 4,
+      "candidates_verified": 2
+    },
+    {
+      "scenario_id": "S08_storage_ceiling",
+      "slots_verified": 4,
+      "candidates_verified": 1
+    },
+    {
+      "scenario_id": "S09_derated",
+      "slots_verified": 4,
+      "candidates_verified": 1
+    },
+    {
+      "scenario_id": "S10_no_booking",
+      "blocked_verified": true
+    },
+    {
+      "scenario_id": "S11_pv_gap",
+      "blocked_verified": true
+    },
+    {
+      "scenario_id": "S12_late_weather",
+      "blocked_verified": true
+    }
+  ]
+}

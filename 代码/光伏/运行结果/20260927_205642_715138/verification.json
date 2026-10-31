@@ -1,0 +1,26 @@
+{
+  "unit_tests_passed": 15,
+  "training_windows": 24145,
+  "epochs_completed": 9,
+  "best_epoch": 4,
+  "selected_model": "gru",
+  "test_metrics": {
+    "count": 495456,
+    "mae": 282.4212865846537,
+    "rmse": 485.4135691793549,
+    "nrmse": 1.3081869129328292,
+    "r2": 0.49229812895879754,
+    "coverage": 0.7532091648905251
+  },
+  "png_verified": [
+    "visualizations/training_loss.png",
+    "visualizations/gru_test_comparison.png",
+    "visualizations/3eb522ff-23db-4b77-abfd-3ccacccbed76_forecast_24h.png",
+    "visualizations/3eb522ff-23db-4b77-abfd-3ccacccbed76_history_forecast.png",
+    "visualizations/3eb522ff-23db-4b77-abfd-3ccacccbed76_forecast_profile.png",
+    "visualizations/503dc07b-4a2d-4aa6-b058-6ad86aab1cac_actual_vs_forecast.png"
+  ],
+  "forecast_schema_valid": true,
+  "data_kind": "simulated",
+  "display_adjustment": "Removed metric-only images as requested during the active run; weights and numeric metrics unchanged."
+}

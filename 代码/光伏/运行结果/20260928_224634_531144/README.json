@@ -1,0 +1,5 @@
+{
+  "message": "Candidate bundle only; no production publication was performed.",
+  "selected_model": "gru",
+  "metrics_file": "metrics.json"
+}

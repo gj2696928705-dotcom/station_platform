@@ -1,0 +1,27 @@
+{
+  "lifecycle_record_id": "38e57a4c-ee5e-44a5-883a-942d8df2fe16",
+  "forecast_type": "pv_power",
+  "asset_scope": "configured_pv_assets",
+  "operation": "evaluation",
+  "current_model_ref": {
+    "model_id": "pv-power-forecast",
+    "model_version": "0.1.0-candidate"
+  },
+  "candidate_model_ref": {
+    "model_id": "pv-power-forecast",
+    "model_version": "0.1.0-candidate"
+  },
+  "previous_model_ref": null,
+  "data_quality_summary": {
+    "source_rows": 35040,
+    "regular_rows": 35040,
+    "missing_target_rows": 0,
+    "missing_weather_rows": 0,
+    "interpolated_target_rows": 0,
+    "interpolated_weather_rows": 0,
+    "first_timestamp": "2025-01-01T00:00:00+08:00",
+    "last_timestamp": "2025-12-31T23:45:00+08:00"
+  },
+  "metrics_ref": "metrics.json",
+  "publication_status": "candidate_only_until_real_data_review"
+}

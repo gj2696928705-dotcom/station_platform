@@ -1,0 +1,61 @@
+{
+  "status": "in_progress",
+  "completed_training_artifacts": {
+    "month_05/gru32_control": {
+      "epochs": 9,
+      "best_epoch": 4,
+      "lr_reductions": 0,
+      "stop_reason": "early_stopping",
+      "scalers_match_training_range": true
+    },
+    "month_05/gru32_scheduled": {
+      "epochs": 18,
+      "best_epoch": 10,
+      "lr_reductions": 4,
+      "stop_reason": "early_stopping",
+      "scalers_match_training_range": true
+    },
+    "month_05/gru16_scheduled": {
+      "epochs": 14,
+      "best_epoch": 6,
+      "lr_reductions": 4,
+      "stop_reason": "early_stopping",
+      "scalers_match_training_range": true
+    },
+    "month_07/gru32_control": {
+      "epochs": 18,
+      "best_epoch": 13,
+      "lr_reductions": 0,
+      "stop_reason": "early_stopping",
+      "scalers_match_training_range": true
+    },
+    "month_07/gru32_scheduled": {
+      "epochs": 27,
+      "best_epoch": 19,
+      "lr_reductions": 5,
+      "stop_reason": "early_stopping",
+      "scalers_match_training_range": true
+    },
+    "month_07/gru16_scheduled": {
+      "epochs": 18,
+      "best_epoch": 10,
+      "lr_reductions": 5,
+      "stop_reason": "early_stopping",
+      "scalers_match_training_range": true
+    },
+    "month_09/gru32_control": {
+      "epochs": 27,
+      "best_epoch": 22,
+      "lr_reductions": 0,
+      "stop_reason": "early_stopping",
+      "scalers_match_training_range": true
+    },
+    "month_09/gru32_scheduled": {
+      "epochs": 39,
+      "best_epoch": 31,
+      "lr_reductions": 4,
+      "stop_reason": "early_stopping",
+      "scalers_match_training_range": true
+    }
+  }
+}

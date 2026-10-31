@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-29",
+  "simulation": true,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "algorithm_directory": "代码/场站光储充联合优化",
+  "package": "station_joint",
+  "test_evidence_scope": {
+    "tests.xml": "standalone_algorithm",
+    "regression.xml": "combined_platform_regression; run stage recorded in 验收记录.md"
+  },
+  "ortools": "9.15.6755",
+  "tests": {
+    "tests.xml": {
+      "tests": 48,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "regression.xml": {
+      "tests": 74,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "replay_source_refs": {
+    "linked_validation_report": "6d2c0b8fe4699434128268046c1b6586f9daf54229adeb36fc0f04b7086f2f50",
+    "scenario_inputs.csv": "3c923806bfc989af50fded18d32ba9916815785040a7e86c115059f2f34b242c",
+    "forecast_vintages.csv": "bab97f8761bbd2ea57d1375400baa4a4a3348ead8e1ff466a3a6686a3f01f18a",
+    "forecast_values.csv": "23cdaffb280195ed943f57dd61669ec843c5f46374dd4ad3eb020d9af268ad0e",
+    "booking_events.csv": "253f6908d1be5ecd7d8b18431a100e7ce9cfd9c0d00311919a5838d9af9d9188",
+    "vehicle_requests.csv": "494e9f6e1d005f674b97a31d84b7b6115bd83a1ce8bac442766a3038be3073f9",
+    "tariff_intervals.csv": "63b81b965fadf0ec3bf7da500dc7608a7958d97ff304ff176f87f533e62fd2f7",
+    "source_manifest.json": "47a278959970998c1a894b21dfcdf4fdbf8d2473c89182632a0c0268a4aa7d32",
+    "场站配置与设备台账/设备台账.csv": "8843ffc5cfe4279edab887ed335f5be026614dd0ab8bab4f35db64c16fb9cc44",
+    "储能参数与初始状态/储能参数.csv": "3536c8694ed45036842a96c75a09a6684db7ec4ff1ffb302a88585f90e90aaa3"
+  },
+  "replay_optimal_count": 9,
+  "replay_input_unavailable_count": 3,
+  "timed_stress_status": "UNKNOWN",
+  "sha256": {
+    "station_joint/__init__.py": "384839545bda487ff870015f6b4fc10e11ab647571cd1907cf859bf895f45b59",
+    "station_joint/__main__.py": "96bf502e49ff19a4bc4817281e0f4055c6d97fcea230ab16410159ca47254947",
+    "station_joint/contract.py": "f09669270b8174ad67950b487769d20b167c24e1d8c0fb163fd087352b13d58f",
+    "station_joint/replay.py": "8b844c564cfa2292343c293d63be8b29f417fe4192ec2b7608040f812f684e47",
+    "station_joint/solver.py": "f4180d9529896cf79f8e9f49b104773a7bad2d2b46051a7272ef6119c9e8006e",
+    "station_joint/verify.py": "cc013d9de16097fa8ea3d8a53bf3dfa1edc7e0861bf02e3469edd1f17b9dd012",
+    "tests/test_joint.py": "94c45994e5fcc749bca0ed958fc29b6fd6ae78156113241815b5689bbed3302e",
+    "README.md": "499bbed837b0718d4801dbd9b8262f0a5e29da3016e097e5a0f0201165f6b388",
+    "运行.py": "a8f710ec60b01461e7177ccbce3973bde8e7ea951191349f99b34bcd898dfb54",
+    "pyproject.toml": "c1ff3429e263e233e937fdd31555c32c9cc1c5b5d61e6692f7e9e8d2b9837fcd",
+    "requirements.txt": "672c02ea3f723bea4a8e39643caab8c57c513418c812767096ebed55224240cf",
+    "requirements-dev.txt": "8636f9ab1a075be9f3039e2a6471837259c4f36b625bcaf7a3d9a1edd2419c6d",
+    "开发验证/collect_evidence.py": "ab71b65adc2db9f765c7a80d6671d5eba13d8d63e8408ba3be35d0ce0891382c",
+    "开发验证/验收记录.md": "73edc4864b6e236cd0214ea0dac716fd486b6906ffc6e56e11f1fb006c12bbf6",
+    "开发验证/hand_input.json": "6215b82883317730b8ac401010707cad125ccd8b760f8989e6e34f4bb490ea83",
+    "开发验证/hand_result.json": "73cd942a23caaaae3dc5c26b7304b160934b5666a2f136fc3e61b679b564319e",
+    "开发验证/replay_strict.json": "f1be1dc7eaca0daf745f03d20dd081619af575b2f29c73816c6c07d82949706a",
+    "开发验证/replay_demo.json": "815205f69cc7dce6ba7cb233e4f846e5287ed3c85b7b74ebdc09fcf770fa7c2b",
+    "开发验证/timed_stress.json": "b3dd69533b6cad4c57d8cd22c15c3bc825b487bc3b8b47d968a02095eeff5458",
+    "开发验证/rejections.json": "3e84c1458376592743820d13efd78018513a1bd2f2943eb19fde783f17656d8a",
+    "开发验证/double_gate.json": "5e7450d19c73415465adc108c53d34a91efb364f4b31906f32066dfb7b3a95bd",
+    "开发验证/comparison.csv": "0fe061958bedb1185668cf8ce8ba2f35d608aca4f8034b5c12ab29a569dd8b17",
+    "开发验证/tests.xml": "0b1c9f4406ff574436696c9e59077b9f3b9d81f245c2ac36d864a1ba5d24719a",
+    "开发验证/regression.xml": "a40f93dabedc065f44becce09a52232fe0f88538f43d4489686d81d023c8683d"
+  }
+}

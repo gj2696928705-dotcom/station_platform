@@ -1,0 +1,160 @@
+{
+  "status": "passed",
+  "full_GRU_fits": [
+    {
+      "path": "运行结果/20261015_physics_comparison_recovery_01/experiments/month_05/physics_gru32_control",
+      "training_windows": 11137,
+      "epochs_completed": 9,
+      "best_epoch": 4,
+      "stopped_early": true,
+      "full_windows": true,
+      "train_only_scalers_count_verified": true,
+      "history_features": 13,
+      "future_features": 8
+    },
+    {
+      "path": "运行结果/20261015_physics_comparison_recovery_01/experiments/month_05/physics_gru32_scheduled",
+      "training_windows": 11137,
+      "epochs_completed": 22,
+      "best_epoch": 14,
+      "stopped_early": true,
+      "full_windows": true,
+      "train_only_scalers_count_verified": true,
+      "history_features": 13,
+      "future_features": 8
+    },
+    {
+      "path": "运行结果/20261015_physics_comparison_recovery_01/experiments/month_05/physics_gru16_scheduled",
+      "training_windows": 11137,
+      "epochs_completed": 16,
+      "best_epoch": 8,
+      "stopped_early": true,
+      "full_windows": true,
+      "train_only_scalers_count_verified": true,
+      "history_features": 13,
+      "future_features": 8
+    },
+    {
+      "path": "运行结果/20261015_physics_comparison_recovery_01/experiments/month_07/physics_gru32_control",
+      "training_windows": 16993,
+      "epochs_completed": 11,
+      "best_epoch": 6,
+      "stopped_early": true,
+      "full_windows": true,
+      "train_only_scalers_count_verified": true,
+      "history_features": 13,
+      "future_features": 8
+    },
+    {
+      "path": "运行结果/20261015_physics_comparison_recovery_01/experiments/month_07/physics_gru32_scheduled",
+      "training_windows": 16993,
+      "epochs_completed": 28,
+      "best_epoch": 20,
+      "stopped_early": true,
+      "full_windows": true,
+      "train_only_scalers_count_verified": true,
+      "history_features": 13,
+      "future_features": 8
+    },
+    {
+      "path": "运行结果/20261015_physics_comparison_recovery_01/experiments/month_07/physics_gru16_scheduled",
+      "training_windows": 16993,
+      "epochs_completed": 50,
+      "best_epoch": 50,
+      "stopped_early": false,
+      "full_windows": true,
+      "train_only_scalers_count_verified": true,
+      "history_features": 13,
+      "future_features": 8
+    },
+    {
+      "path": "运行结果/20261015_physics_comparison_recovery_01/experiments/month_09/physics_gru32_control",
+      "training_windows": 22945,
+      "epochs_completed": 15,
+      "best_epoch": 10,
+      "stopped_early": true,
+      "full_windows": true,
+      "train_only_scalers_count_verified": true,
+      "history_features": 13,
+      "future_features": 8
+    },
+    {
+      "path": "运行结果/20261015_physics_comparison_recovery_01/experiments/month_09/physics_gru32_scheduled",
+      "training_windows": 22945,
+      "epochs_completed": 50,
+      "best_epoch": 48,
+      "stopped_early": true,
+      "full_windows": true,
+      "train_only_scalers_count_verified": true,
+      "history_features": 13,
+      "future_features": 8
+    },
+    {
+      "path": "运行结果/20261015_physics_comparison_recovery_01/experiments/month_09/physics_gru16_scheduled",
+      "training_windows": 22945,
+      "epochs_completed": 49,
+      "best_epoch": 49,
+      "stopped_early": true,
+      "full_windows": true,
+      "train_only_scalers_count_verified": true,
+      "history_features": 13,
+      "future_features": 8
+    },
+    {
+      "path": "运行结果/20261015_physics_comparison_recovery_01/bundles/enhanced_gru",
+      "training_windows": 24145,
+      "epochs_completed": 50,
+      "best_epoch": 49,
+      "stopped_early": false,
+      "full_windows": true,
+      "train_only_scalers_count_verified": true,
+      "history_features": 13,
+      "future_features": 8
+    }
+  ],
+  "nine_rolling_plus_one_final": true,
+  "all_four_tree_fits_full_windows": true,
+  "control_predictions_match_original_rolling_results": true,
+  "test_and_future_weather_excluded_from_selection": true,
+  "calibration_excluded_from_final_early_stopping": true,
+  "three_frozen_full_year_paths": [
+    2026101401,
+    2026101402,
+    2026101403
+  ],
+  "evaluated_windows": 103971,
+  "scored_labels_per_model": 9981216,
+  "four_comparable_frozen_bundles": true,
+  "code_and_bundle_frozen_hashes_preserved": true,
+  "original_data_generator_config_and_control_preserved": true,
+  "previous_frozen_source_snapshot_verified": true,
+  "hand_computed_physical_units_and_ratio_floors_verified": true,
+  "independent_float64_truth_moments_verified": {
+    "status": "passed",
+    "reason": "independent helper cast float64 truth to float32; actual backtest targets are float64",
+    "frozen_script_preserved_sha256": "4ef3e614bc6eeb628d620d8894ec673fc31cdcc9d7d265e87231f71e02e6d327",
+    "correction_script_sha256": "eac209fbda526ead31e4df108f0d3eaa4a5841ab293858ca9a8105b36a8ce36f",
+    "executed_source_sha256": "1ede8e6fabcd051ff50bf5a8b9729a93ec5152019fc81f1b2d2d4b0b30e571b8",
+    "only_executable_change": "independent target moments dtype np.float32 -> np.float64",
+    "per_group_R2_checks": 276,
+    "max_absolute_R2_difference": 1.0658141036401503e-14,
+    "original_absolute_tolerance_preserved": 3e-08,
+    "model_predictions_data_and_adoption_rules_unchanged": true,
+    "backtest_reports_preserved_sha256": {
+      "2026101401": "9527e54ab1ffceb644a395d9c08e59d1efda19d5dc34fe454504ebad69c84e3a",
+      "2026101402": "8546492f48ed1767abbbf087a27fab70410059d9b92866505b9d12d27a82b0b0",
+      "2026101403": "3c511ec62f312d2f86d056c1a82514f4e9177906f8b4ed92960608ad7ca369ff"
+    },
+    "new_paths_regenerated": false
+  },
+  "full_regression": {
+    "tests": 61,
+    "seconds": 897.797,
+    "status": "passed"
+  },
+  "CLI_reload_causality_units_fallback_PNG_verified": true,
+  "stable_point_gain": false,
+  "recommendation": "20261009_point_correction_01",
+  "production_accepted": false,
+  "oracle_selection_eligible": false
+}

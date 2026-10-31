@@ -1,0 +1,124 @@
+{
+  "schema_version": "a02-joint-v1",
+  "simulation": true,
+  "execution_mode": "offline_replay",
+  "task_id": "hand-example",
+  "task_version": 1,
+  "station_id": "test-station",
+  "meter_boundary": "station_ac",
+  "as_of": "2025-06-01T10:00:00+08:00",
+  "window_start": "2025-06-01T10:00:00+08:00",
+  "window_end": "2025-06-01T11:00:00+08:00",
+  "interval_minutes": 15,
+  "source_refs": {
+    "synthetic_test": "ed0adf5c51ba6b1c72d4f19a7d5c63ed365b5962c38ab2ebcd8721e1b69f8a71"
+  },
+  "assumptions": [],
+  "commitment_status": "complete",
+  "base_load_kw": [
+    4,
+    4,
+    4,
+    4
+  ],
+  "pv_available_kw": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "existing_charge_by_port_kw": {
+    "P1": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "P2": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "grid_import_limit_kw": [
+    20,
+    20,
+    20,
+    20
+  ],
+  "grid_export_limit_kw": 0,
+  "rates_cny_per_kwh": [
+    1,
+    1,
+    3,
+    3
+  ],
+  "new_charge_limit_kw": null,
+  "ports": [
+    {
+      "port_id": "P1",
+      "connector": "DC",
+      "max_power_kw": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "occupied_slots": []
+    },
+    {
+      "port_id": "P2",
+      "connector": "DC",
+      "max_power_kw": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "occupied_slots": []
+    }
+  ],
+  "vehicles": [
+    {
+      "vehicle_id": "V1",
+      "connector": "DC",
+      "allowed_port_ids": [
+        "P1",
+        "P2"
+      ],
+      "arrival_slot": 0,
+      "deadline_slot": 4,
+      "required_energy_kwh": 1,
+      "max_power_kw": 4
+    }
+  ],
+  "storage": {
+    "storage_id": "B1",
+    "capacity_kwh": 10,
+    "initial_energy_kwh": 5,
+    "min_soc": 0.1,
+    "max_soc": 0.9,
+    "reserve_soc": 0.3,
+    "max_charge_kw": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "max_discharge_kw": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "charge_efficiency": 1,
+    "discharge_efficiency": 1,
+    "terminal_rule": "hard_equality_at_window_end",
+    "terminal_energy_kwh": 5
+  },
+  "objective": {
+    "throughput_cost_cny_per_kwh": 0,
+    "curtailment_cost_cny_per_kwh": 0
+  }
+}

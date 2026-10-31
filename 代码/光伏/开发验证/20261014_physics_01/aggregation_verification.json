@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "groups": 24,
+  "repetitions_tested": [
+    1,
+    3
+  ],
+  "source": "already seen 2026 seed20261010",
+  "new_final_paths_loaded": false,
+  "counts_and_exact_repeated_float32_target_moments_match": true,
+  "heterogeneous_month_and_weather_groups_reconstruct_overall_scores": true,
+  "pooled_SSE_SAE_R2_match_independent_existing_report": true
+}

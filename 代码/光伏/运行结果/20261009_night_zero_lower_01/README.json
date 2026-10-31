@@ -1,0 +1,6 @@
+{
+  "message": "Candidate interval recalibration; no weight fitting or publication.",
+  "parent_bundle": "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346",
+  "selected_model": "gru",
+  "metrics_file": "metrics.json"
+}

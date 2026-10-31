@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "independent_verifier": "standard-library Decimal; no station algorithm imports",
+  "checks": [
+    {
+      "scenario_id": "candidate_smoke_synthetic_weather_and_empty_bookings",
+      "slots_verified": 4,
+      "candidates_verified": 1
+    }
+  ]
+}

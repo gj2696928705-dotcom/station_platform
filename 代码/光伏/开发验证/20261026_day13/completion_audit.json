@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "requirements": {
+    "reference_code_followed": true,
+    "current_day_07_to_19_inclusive": true,
+    "hourly_60_minutes": true,
+    "history_previous_three_calendar_days_39_power_points": true,
+    "future_13_rows_SWGDN_DHI_DNI_rain_only": true,
+    "thirteen_rows_per_complete_day": true,
+    "default_runner_CLI_and_Python_entry_updated": true,
+    "real_full_GRU_training_saved_and_reloaded": true,
+    "regression_tests": {
+      "count": 75,
+      "seconds": 378.324,
+      "status": "passed"
+    },
+    "CLI_and_visual_validation_passed": true,
+    "old_artifacts_preserved": true
+  },
+  "scope": "user-requested day13 contract",
+  "performance_is_conditional_on_known_simulated_target_day_weather": true,
+  "source_hashes": {
+    "pv_forecast\\__init__.py": "8e2e8d79842f0a14971c35790baf251527bc75d36752474f7bdd796a19f3d883",
+    "pv_forecast\\backtesting.py": "29d89f69a0ff3c04588a2569c5646e47c1489e04e6e85f037e5f17f33d91b03c",
+    "pv_forecast\\baselines.py": "2ae903e99f170445b628259c3d477c03485fb3ee48709d54317f43c708d5c003",
+    "pv_forecast\\cli.py": "78d2101b6d24d9c9089b62af78c7b24b92d590b2fbc30dd32acb3281a07dc668",
+    "pv_forecast\\data.py": "38c3a75303ad14b76ba6f0ad97d6b6f0183df96f53896138beb68ec83d89e912",
+    "pv_forecast\\day13.py": "132c65bb2eb0a19eb0a2375b57dba25e80421873283355417a9337ee889ddfec",
+    "pv_forecast\\day13_data.py": "1dc7b94c86dab6a28a72f70792d1b6d424013cc1160edcf29f806ee14f9cd273",
+    "pv_forecast\\diagnostics.py": "cc96a4519c6292ae493ef039b09451976f68fdc808ce03aae337bfabaca62da3",
+    "pv_forecast\\errors.py": "1c4d4a9c6233a1ed112dd5d37b25915e021922813bb702d361dc0e144e42e47f",
+    "pv_forecast\\experiments.py": "2bec05ecd6ada4c80b733805291db0bb40dfac244e78368a06eb1606285cc20d",
+    "pv_forecast\\metrics.py": "70311ce45b81b99e730f351db88bd5afc6a892e622737091eff5463bd72bee40",
+    "pv_forecast\\models.py": "3048a73016ff8026a3ebdce8fb6da0e60418bc534b72f70d56956389653d3bd1",
+    "pv_forecast\\physics.py": "3cf29aee3774ac4f2fa841042aee9ea39dee5d8ed9cd3eaadbd31ee058c8af09",
+    "pv_forecast\\physics_experiments.py": "18c010b70fdd4bd7cd96a7204eed2fe45fba12af2cc7528b684bed16909a6ef6",
+    "pv_forecast\\physics_tree.py": "c77a26c3566fde48d2010c2518b2b449687627718e3a890969f52c664a791973",
+    "pv_forecast\\pipeline.py": "462e5c894034109a1c9850f5f740f1ad51fc38b26aebdae0ed4afd5b62f5abc0",
+    "pv_forecast\\point_correction.py": "592d506b972fa6f370130bec03f575026cc6c51513a4a0429dc9431da3dd6cf1",
+    "pv_forecast\\point_experiments.py": "f47c848fbca6eca3ff4171ab243b227c8fb605acd2515b4c8df57c6ad242d5c4",
+    "pv_forecast\\recalibration.py": "8d27c384fbf42146d0d5f8e8a284211c4cdb4c7394d9f977b91fe3e6ea7f0253",
+    "pv_forecast\\records.py": "aaff8ce92e7905c578cf16e91c8e7854f0a2d2bde6a013f28012e37626e9da53",
+    "pv_forecast\\visuals.py": "ba2dc0675d13e3ac5d3342f82c158c501f17c6641d8651a12551b3a998ea717a",
+    "pv_forecast\\weather.py": "59396a482945ac8f40f2bf5156d6186247b2dd7bb473c614fea70220075da166"
+  },
+  "runner_sha256": "fbe51de66165f36c24b0dfc4f214f74e23b9ebac4ac7cd1eb830c7bdc7e01ac3",
+  "schema_sha256": "6d9d6e0c49999d79c7a3b35abae48e9fa83f2080c99ab3cb8f16494ac09c0d50",
+  "note_ref": "开发记录.md",
+  "model_bundle": "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20261026_day13_01"
+}

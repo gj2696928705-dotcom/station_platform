@@ -1,0 +1,42 @@
+{
+  "data_kind": "simulated",
+  "commands": {
+    "predict": {
+      "exit_code": 0,
+      "status": "available",
+      "png_ids": [
+        "forecast_24h",
+        "history_forecast",
+        "forecast_profile"
+      ]
+    },
+    "evaluate": {
+      "exit_code": 0,
+      "status": "available",
+      "png_ids": [
+        "actual_vs_forecast"
+      ]
+    }
+  },
+  "source_sha256": "28a0842c8b7c28ac5e90ae209bba2a5a215ef1f48ae3f25d616d083515bed1c8",
+  "reload_max_difference_kw": 0.0,
+  "retained_gru_reload": {
+    "status": "passed",
+    "history_shape": [
+      288,
+      4
+    ],
+    "future_shape": [
+      96,
+      6
+    ]
+  },
+  "fallback": {
+    "missing_model": "degraded",
+    "missing_weather": "degraded",
+    "insufficient_history": "unavailable",
+    "stale_history": "unavailable",
+    "intervals_use_baseline_calibration": true
+  },
+  "status": "passed"
+}

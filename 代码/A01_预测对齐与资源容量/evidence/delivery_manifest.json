@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-10-29T13:18:33.989761+08:00",
+  "algorithm_root": "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\A01_预测对齐与资源容量",
+  "simulation_only": true,
+  "tests": {
+    "passed": 96,
+    "skipped": 2,
+    "failed": 0,
+    "errors": 0,
+    "algorithm_passed": 53
+  },
+  "data_sources_unchanged": true,
+  "model_package_hashes_verified": true,
+  "files": {
+    "capacity_alignment\\__init__.py": "b8d47d2afed0371d978e1c2cd9756b46a5a73fdd89218818084d42d501d82bc4",
+    "capacity_alignment\\common.py": "f772f68372a3329cfcbb09438fa26334e832494a276119b62e9895b5907fb3bd",
+    "capacity_alignment\\forecast_adapter.py": "090305fe8a0a74300e6e245516a0968ad974cc41697160cc64e873950dfc76ca",
+    "capacity_alignment\\forecast_capacity.py": "8fa9701868a8ff5667521e4e5980c63ad94d6a3a5818539a9eb8d11e6bedcb46",
+    "capacity_alignment\\forecast_replay.py": "0b9696d86af1610152661acc4c8d88167e84fb0d168f7eebc7b3f6b82ac6cd4c",
+    "capacity_alignment\\forecast_runtime.py": "0f44b068e7736eca4df8ac1dd6bf4ad9eff55692f50b5e8bc1e4df1506b08b00",
+    "capacity_alignment\\forecast_worker.py": "7f43656c09a28695efe7bb7d2a3d49765e00116d270f6bf388034aef54aad45a",
+    "capacity_alignment\\platform_support.py": "a5412f370336168ebcc0f53238de349914e34b4f2c153528db553e2eddb6c009",
+    "package_forecast_models.py": "cf96469903a29fae6d882df1f9c84c1d813d5232be5d7a3cf6f61d88a44095c1",
+    "pyproject.toml": "1f3d4d48aae76c88299ae9c4dc8bf0c9b0888af19cf97456860b36018d68ccf8",
+    "README.md": "e7fa35d2c02632e526f0f638e7e88d0c4e4158af7a895bdd51fb36bf7d9f6fc4",
+    "tests\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests\\conftest.py": "e139fa4ce190811ec53daf511e73d44d7d7da678028359491e2db0af045a4881",
+    "tests\\test_forecast_adapter.py": "9fcb7a8759389e90699c75e6b4cd94fb4265fd86c1bb6aeb62ed49380eae757a",
+    "tests\\test_forecast_capacity.py": "307985d3cecdcb2578983fab7e562f326c4516a3feea277b781f3763a368b97d",
+    "verify_a01_evidence.py": "46e49fa07945a53bd6f65416c4add1c09cd3d4ab649bdbcba92fbbeafc426377",
+    "verify_a01_models.py": "d0b2ece13f202802bd00a8e5610989b5d8d33c0b84aa029599c9d21ee5ff90bb",
+    "验收记录.md": "ad346471d4d0909cb882c2a8a37bba5ce7163a1ee07e370711ae67b8fb53656b"
+  },
+  "evidence": {
+    "final-tests.xml": "90e1b3fb08bc3fe2ab4e365fa78c5ec59315055f4cdcb4c6bb87e45052920441",
+    "forecast-tests.xml": "15c39732377dc5298b19c233a7e230ed0bc6f10f7cfc600602fec362f66c03bf",
+    "independent_replay_verification.json": "e8f7d847f7f60e540c3f35982770f0ce92ac8379c8addb07fdc41ea880034048",
+    "independent_model_verification.json": "b40ecc45e142163e7728caa7004c3e01575cb9a18352f3acc79c5d7b7e755db5",
+    "standalone_core_check.json": "0d4ffd3fee7bc6577481cdf4144173a39fed18334990e1558019405e5149cabd",
+    "disabled_without_algorithm_check.json": "ba02b7ad2eca5d046a9d4fb12a31b7362c47d1420b44c2b3c5887fedbe329799"
+  }
+}

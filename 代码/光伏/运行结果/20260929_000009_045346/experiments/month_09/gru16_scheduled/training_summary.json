@@ -1,0 +1,39 @@
+{
+  "status": "completed",
+  "epochs_completed": 50,
+  "epochs_requested": 50,
+  "best_epoch": 50,
+  "best_monitor_value": 0.015988241881132126,
+  "monitor": "val_loss",
+  "stopped_early": false,
+  "stop_reason": "epoch_limit",
+  "shuffle": false,
+  "training_windows_used": 22945,
+  "history_feature_count": 4,
+  "learning_rate_schedule": {
+    "enabled": true,
+    "initial": 0.0003,
+    "factor": 0.5,
+    "patience": 2,
+    "minimum": 1e-05,
+    "min_delta": 1e-05,
+    "reductions": 5
+  },
+  "metric_units": {
+    "loss": "normalized MSE",
+    "rmse_kw": "kW",
+    "mae_kw": "kW",
+    "r2": "dimensionless"
+  },
+  "visualizations": [
+    {
+      "id": "training_loss",
+      "kind": "training",
+      "title": "GRU 训练与验证损失",
+      "path": "visualizations/training_loss.png",
+      "mime_type": "image/png",
+      "description": "每轮更新；验证指标在整套验证窗口上计算；训练指标为更新权重过程中的累计统计"
+    }
+  ],
+  "visualization_errors": []
+}

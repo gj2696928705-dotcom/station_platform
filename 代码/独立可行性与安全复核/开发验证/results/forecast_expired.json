@@ -1,0 +1,82 @@
+{
+  "certified_safety_service": false,
+  "checked_at": "2025-06-01T10:00:00+08:00",
+  "constraints_hash": "db08a77a5a0e57b2a59b41c638a096e45d0570d8b93dc0b2096cf40a9fdecc24",
+  "device_dispatch_authorized": false,
+  "eligible_for_offline_simulation": false,
+  "frozen_fingerprint": "313b284634ae98b281a02ac5c458d581f383e0c42f3907622a5e79053917a9e0",
+  "governance": {
+    "checked_at": "2025-06-01T10:00:00+08:00",
+    "frozen_fingerprint": "313b284634ae98b281a02ac5c458d581f383e0c42f3907622a5e79053917a9e0",
+    "passed": true,
+    "plan_fingerprint": "37b28423c6517c19a794d386e09dfaaf4997c74648bb46c9187f9fce2a5d51bb",
+    "plan_version": 1,
+    "policy_hash": "2c1e78e33ab19476c12f092503c4d1a7b3c9330a78e4eb025443b1bd2d1b0de3",
+    "rule_version": "a03-offline-governance-v1",
+    "state_hash": "3387212dd1cc1b2411bc90016fc6663946740367cd01e7117a6495adc542323b",
+    "state_reference": {
+      "available_at": "2025-06-01T10:00:00+08:00",
+      "measured_at": "2025-06-01T10:00:00+08:00",
+      "revision": 1,
+      "state_id": "explicit-synthetic-snapshot",
+      "valid_until": "2025-06-01T10:01:00+08:00"
+    },
+    "violations": []
+  },
+  "on_failure": "reject_and_request_new_plan_or_state",
+  "passed": false,
+  "physical": {
+    "checked_at": "2025-06-01T10:00:00+08:00",
+    "frozen_fingerprint": "313b284634ae98b281a02ac5c458d581f383e0c42f3907622a5e79053917a9e0",
+    "metrics": null,
+    "passed": false,
+    "plan_fingerprint": "37b28423c6517c19a794d386e09dfaaf4997c74648bb46c9187f9fce2a5d51bb",
+    "plan_version": 1,
+    "policy_hash": "2c1e78e33ab19476c12f092503c4d1a7b3c9330a78e4eb025443b1bd2d1b0de3",
+    "rule_version": "a03-physical-v1",
+    "state_hash": "3387212dd1cc1b2411bc90016fc6663946740367cd01e7117a6495adc542323b",
+    "state_reference": {
+      "available_at": "2025-06-01T10:00:00+08:00",
+      "measured_at": "2025-06-01T10:00:00+08:00",
+      "revision": 1,
+      "state_id": "explicit-synthetic-snapshot",
+      "valid_until": "2025-06-01T10:01:00+08:00"
+    },
+    "violations": [
+      {
+        "actual": null,
+        "code": "DEPENDENCY_EXPIRED_OR_FUTURE",
+        "expected": null,
+        "field": "load"
+      }
+    ]
+  },
+  "plan_fingerprint": "37b28423c6517c19a794d386e09dfaaf4997c74648bb46c9187f9fce2a5d51bb",
+  "plan_version": 1,
+  "policy_hash": "2c1e78e33ab19476c12f092503c4d1a7b3c9330a78e4eb025443b1bd2d1b0de3",
+  "review_fingerprint": "66d0235f30381a7bcd680302349a7570f477ae77819788a14f3e28c697c5d78b",
+  "rule_version": "a03-offline-governance-v1",
+  "schema_version": "a03-review-v1",
+  "simulation": true,
+  "state_hash": "3387212dd1cc1b2411bc90016fc6663946740367cd01e7117a6495adc542323b",
+  "state_reference": {
+    "available_at": "2025-06-01T10:00:00+08:00",
+    "measured_at": "2025-06-01T10:00:00+08:00",
+    "revision": 1,
+    "state_id": "explicit-synthetic-snapshot",
+    "valid_until": "2025-06-01T10:01:00+08:00"
+  },
+  "status": "REJECTED",
+  "task_id": "A03-HAND",
+  "task_version": 1,
+  "valid_until": null,
+  "violations": [
+    {
+      "actual": null,
+      "code": "DEPENDENCY_EXPIRED_OR_FUTURE",
+      "expected": null,
+      "field": "load",
+      "layer": "physical"
+    }
+  ]
+}

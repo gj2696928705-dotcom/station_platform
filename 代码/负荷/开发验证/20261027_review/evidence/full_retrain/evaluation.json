@@ -1,0 +1,19 @@
+{
+  "status": "available",
+  "scope": "last 24 hours only; full held-out test is in metrics.json",
+  "forecast_start_at": "2025-12-31T00:00:00+08:00",
+  "selected_model": "xgboost",
+  "metrics": {
+    "rmse_kw": 20.512907306124124,
+    "mae_kw": 17.106455190327964,
+    "r2": 0.9767871379586126,
+    "nrmse": 0.032360907981706856,
+    "point_count": 96,
+    "coverage": 0.9895833333333334
+  },
+  "reason": null,
+  "visualizations": [
+    "visualizations/last_day_backtest.png"
+  ],
+  "visualization_errors": []
+}

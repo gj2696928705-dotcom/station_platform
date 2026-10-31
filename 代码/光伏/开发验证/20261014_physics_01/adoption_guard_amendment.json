@@ -1,0 +1,8 @@
+{
+  "registered_at_utc": "2026-10-14T10:18:08.625915+00:00",
+  "basis": "May development fold; enhanced scheduled GRU 0-1h RMSE 432.6235 vs control 203.1248 kW",
+  "guard": "pooled 0-1h and 1-3h daylight RMSE/MAE not worse",
+  "new_data_directory_existed": false,
+  "training_implementation_unchanged": true,
+  "candidate_parameters_changed": false
+}

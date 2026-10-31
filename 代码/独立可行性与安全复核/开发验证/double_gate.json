@@ -1,0 +1,597 @@
+[
+  {
+    "expected_governance": true,
+    "expected_physical": true,
+    "review": {
+      "certified_safety_service": false,
+      "checked_at": "2025-06-01T10:00:00+08:00",
+      "constraints_hash": "db08a77a5a0e57b2a59b41c638a096e45d0570d8b93dc0b2096cf40a9fdecc24",
+      "device_dispatch_authorized": false,
+      "eligible_for_offline_simulation": true,
+      "frozen_fingerprint": "1e3f94b240bcbf15ab92f2a4928eb5a4923d0191ce595336837cb3a794108dc2",
+      "governance": {
+        "checked_at": "2025-06-01T10:00:00+08:00",
+        "frozen_fingerprint": "1e3f94b240bcbf15ab92f2a4928eb5a4923d0191ce595336837cb3a794108dc2",
+        "passed": true,
+        "plan_fingerprint": "37b28423c6517c19a794d386e09dfaaf4997c74648bb46c9187f9fce2a5d51bb",
+        "plan_version": 1,
+        "policy_hash": "e92bd5636e9885636f507244e25d4b8d6e546a6fb7a42a9ac611bdb077c023d4",
+        "rule_version": "a03-offline-governance-v1",
+        "state_hash": "3387212dd1cc1b2411bc90016fc6663946740367cd01e7117a6495adc542323b",
+        "state_reference": {
+          "available_at": "2025-06-01T10:00:00+08:00",
+          "measured_at": "2025-06-01T10:00:00+08:00",
+          "revision": 1,
+          "state_id": "explicit-synthetic-snapshot",
+          "valid_until": "2025-06-01T10:01:00+08:00"
+        },
+        "violations": []
+      },
+      "on_failure": "reject_and_request_new_plan_or_state",
+      "passed": true,
+      "physical": {
+        "checked_at": "2025-06-01T10:00:00+08:00",
+        "frozen_fingerprint": "1e3f94b240bcbf15ab92f2a4928eb5a4923d0191ce595336837cb3a794108dc2",
+        "metrics": {
+          "delivered_plus_planned_by_vehicle_kwh": {
+            "V1": 1.0
+          },
+          "execute_from_slot": 0,
+          "interval_count": 4,
+          "live_head_grid_kw": 7.0,
+          "pv_cap_rule": "min_frozen_forecast_latest_snapshot_and_rating_over_suffix",
+          "reconstructed_charge_by_port_kw": {
+            "P1": [
+              0.0,
+              4.0,
+              0.0,
+              0.0
+            ],
+            "P2": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "reconstructed_new_charge_kw": [
+            0.0,
+            4.0,
+            0.0,
+            0.0
+          ],
+          "reconstructed_remaining_energy_kwh": [
+            5,
+            5.5,
+            5.5,
+            5.0,
+            5.0
+          ],
+          "reconstructed_remaining_grid_kw": [
+            7.0,
+            7.0,
+            1.0,
+            3.0
+          ],
+          "remaining_commitment_by_vehicle_kwh": {
+            "V1": 1
+          }
+        },
+        "passed": true,
+        "plan_fingerprint": "37b28423c6517c19a794d386e09dfaaf4997c74648bb46c9187f9fce2a5d51bb",
+        "plan_version": 1,
+        "policy_hash": "e92bd5636e9885636f507244e25d4b8d6e546a6fb7a42a9ac611bdb077c023d4",
+        "rule_version": "a03-physical-v1",
+        "state_hash": "3387212dd1cc1b2411bc90016fc6663946740367cd01e7117a6495adc542323b",
+        "state_reference": {
+          "available_at": "2025-06-01T10:00:00+08:00",
+          "measured_at": "2025-06-01T10:00:00+08:00",
+          "revision": 1,
+          "state_id": "explicit-synthetic-snapshot",
+          "valid_until": "2025-06-01T10:01:00+08:00"
+        },
+        "violations": []
+      },
+      "plan_fingerprint": "37b28423c6517c19a794d386e09dfaaf4997c74648bb46c9187f9fce2a5d51bb",
+      "plan_version": 1,
+      "policy_hash": "e92bd5636e9885636f507244e25d4b8d6e546a6fb7a42a9ac611bdb077c023d4",
+      "review_fingerprint": "efbc0b1627baff2076c45bf9bfdddeeb5179bd77470a9b5e3a4d381d599983b3",
+      "rule_version": "a03-offline-governance-v1",
+      "schema_version": "a03-review-v1",
+      "simulation": true,
+      "state_hash": "3387212dd1cc1b2411bc90016fc6663946740367cd01e7117a6495adc542323b",
+      "state_reference": {
+        "available_at": "2025-06-01T10:00:00+08:00",
+        "measured_at": "2025-06-01T10:00:00+08:00",
+        "revision": 1,
+        "state_id": "explicit-synthetic-snapshot",
+        "valid_until": "2025-06-01T10:01:00+08:00"
+      },
+      "status": "SIMULATION_ALLOWED",
+      "task_id": "A03-HAND",
+      "task_version": 1,
+      "valid_until": "2025-06-01T10:01:00+08:00",
+      "violations": []
+    }
+  },
+  {
+    "expected_governance": false,
+    "expected_physical": true,
+    "review": {
+      "certified_safety_service": false,
+      "checked_at": "2025-06-01T10:00:00+08:00",
+      "constraints_hash": "db08a77a5a0e57b2a59b41c638a096e45d0570d8b93dc0b2096cf40a9fdecc24",
+      "device_dispatch_authorized": false,
+      "eligible_for_offline_simulation": false,
+      "frozen_fingerprint": "1e3f94b240bcbf15ab92f2a4928eb5a4923d0191ce595336837cb3a794108dc2",
+      "governance": {
+        "checked_at": "2025-06-01T10:00:00+08:00",
+        "frozen_fingerprint": "1e3f94b240bcbf15ab92f2a4928eb5a4923d0191ce595336837cb3a794108dc2",
+        "passed": false,
+        "plan_fingerprint": "37b28423c6517c19a794d386e09dfaaf4997c74648bb46c9187f9fce2a5d51bb",
+        "plan_version": 1,
+        "policy_hash": "b3295fcaca27cb70ed82551b69988fa34a63800c74c9afd04a94d0367fc35c2b",
+        "rule_version": "a03-offline-governance-v1",
+        "state_hash": "3387212dd1cc1b2411bc90016fc6663946740367cd01e7117a6495adc542323b",
+        "state_reference": {
+          "available_at": "2025-06-01T10:00:00+08:00",
+          "measured_at": "2025-06-01T10:00:00+08:00",
+          "revision": 1,
+          "state_id": "explicit-synthetic-snapshot",
+          "valid_until": "2025-06-01T10:01:00+08:00"
+        },
+        "violations": [
+          {
+            "actual": null,
+            "code": "SIMULATION_RELEASE_MISSING",
+            "expected": null,
+            "field": "approval.released"
+          }
+        ]
+      },
+      "on_failure": "reject_and_request_new_plan_or_state",
+      "passed": false,
+      "physical": {
+        "checked_at": "2025-06-01T10:00:00+08:00",
+        "frozen_fingerprint": "1e3f94b240bcbf15ab92f2a4928eb5a4923d0191ce595336837cb3a794108dc2",
+        "metrics": {
+          "delivered_plus_planned_by_vehicle_kwh": {
+            "V1": 1.0
+          },
+          "execute_from_slot": 0,
+          "interval_count": 4,
+          "live_head_grid_kw": 7.0,
+          "pv_cap_rule": "min_frozen_forecast_latest_snapshot_and_rating_over_suffix",
+          "reconstructed_charge_by_port_kw": {
+            "P1": [
+              0.0,
+              4.0,
+              0.0,
+              0.0
+            ],
+            "P2": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "reconstructed_new_charge_kw": [
+            0.0,
+            4.0,
+            0.0,
+            0.0
+          ],
+          "reconstructed_remaining_energy_kwh": [
+            5,
+            5.5,
+            5.5,
+            5.0,
+            5.0
+          ],
+          "reconstructed_remaining_grid_kw": [
+            7.0,
+            7.0,
+            1.0,
+            3.0
+          ],
+          "remaining_commitment_by_vehicle_kwh": {
+            "V1": 1
+          }
+        },
+        "passed": true,
+        "plan_fingerprint": "37b28423c6517c19a794d386e09dfaaf4997c74648bb46c9187f9fce2a5d51bb",
+        "plan_version": 1,
+        "policy_hash": "b3295fcaca27cb70ed82551b69988fa34a63800c74c9afd04a94d0367fc35c2b",
+        "rule_version": "a03-physical-v1",
+        "state_hash": "3387212dd1cc1b2411bc90016fc6663946740367cd01e7117a6495adc542323b",
+        "state_reference": {
+          "available_at": "2025-06-01T10:00:00+08:00",
+          "measured_at": "2025-06-01T10:00:00+08:00",
+          "revision": 1,
+          "state_id": "explicit-synthetic-snapshot",
+          "valid_until": "2025-06-01T10:01:00+08:00"
+        },
+        "violations": []
+      },
+      "plan_fingerprint": "37b28423c6517c19a794d386e09dfaaf4997c74648bb46c9187f9fce2a5d51bb",
+      "plan_version": 1,
+      "policy_hash": "b3295fcaca27cb70ed82551b69988fa34a63800c74c9afd04a94d0367fc35c2b",
+      "review_fingerprint": "993a9c86716984df1cf27d07ebf3d4fce41a5af197d1ecabf5b295852decc642",
+      "rule_version": "a03-offline-governance-v1",
+      "schema_version": "a03-review-v1",
+      "simulation": true,
+      "state_hash": "3387212dd1cc1b2411bc90016fc6663946740367cd01e7117a6495adc542323b",
+      "state_reference": {
+        "available_at": "2025-06-01T10:00:00+08:00",
+        "measured_at": "2025-06-01T10:00:00+08:00",
+        "revision": 1,
+        "state_id": "explicit-synthetic-snapshot",
+        "valid_until": "2025-06-01T10:01:00+08:00"
+      },
+      "status": "REJECTED",
+      "task_id": "A03-HAND",
+      "task_version": 1,
+      "valid_until": null,
+      "violations": [
+        {
+          "actual": null,
+          "code": "SIMULATION_RELEASE_MISSING",
+          "expected": null,
+          "field": "approval.released",
+          "layer": "governance"
+        }
+      ]
+    }
+  },
+  {
+    "expected_governance": true,
+    "expected_physical": false,
+    "review": {
+      "certified_safety_service": false,
+      "checked_at": "2025-06-01T10:00:00+08:00",
+      "constraints_hash": "db08a77a5a0e57b2a59b41c638a096e45d0570d8b93dc0b2096cf40a9fdecc24",
+      "device_dispatch_authorized": false,
+      "eligible_for_offline_simulation": false,
+      "frozen_fingerprint": "7cf5c1eed9197b9fff5f960de307f28c69ff850d8247fc80ed06516ef6e6e0bc",
+      "governance": {
+        "checked_at": "2025-06-01T10:00:00+08:00",
+        "frozen_fingerprint": "7cf5c1eed9197b9fff5f960de307f28c69ff850d8247fc80ed06516ef6e6e0bc",
+        "passed": true,
+        "plan_fingerprint": "77a1a15f7a1e2d5939e6cb2abdb32483e4e191e0004105f255ebd161e3f7940d",
+        "plan_version": 1,
+        "policy_hash": "b5146c1e0997acd96cd31c4086020484bd5990806dd159917c1e06bab17013e5",
+        "rule_version": "a03-offline-governance-v1",
+        "state_hash": "3387212dd1cc1b2411bc90016fc6663946740367cd01e7117a6495adc542323b",
+        "state_reference": {
+          "available_at": "2025-06-01T10:00:00+08:00",
+          "measured_at": "2025-06-01T10:00:00+08:00",
+          "revision": 1,
+          "state_id": "explicit-synthetic-snapshot",
+          "valid_until": "2025-06-01T10:01:00+08:00"
+        },
+        "violations": []
+      },
+      "on_failure": "reject_and_request_new_plan_or_state",
+      "passed": false,
+      "physical": {
+        "checked_at": "2025-06-01T10:00:00+08:00",
+        "frozen_fingerprint": "7cf5c1eed9197b9fff5f960de307f28c69ff850d8247fc80ed06516ef6e6e0bc",
+        "metrics": {
+          "delivered_plus_planned_by_vehicle_kwh": {
+            "V1": 1.0
+          },
+          "execute_from_slot": 0,
+          "interval_count": 4,
+          "live_head_grid_kw": 7.0,
+          "pv_cap_rule": "min_frozen_forecast_latest_snapshot_and_rating_over_suffix",
+          "reconstructed_charge_by_port_kw": {
+            "P1": [
+              0.0,
+              4.0,
+              0.0,
+              0.0
+            ],
+            "P2": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "reconstructed_new_charge_kw": [
+            0.0,
+            4.0,
+            0.0,
+            0.0
+          ],
+          "reconstructed_remaining_energy_kwh": [
+            5,
+            5.5,
+            5.5,
+            5.0,
+            5.0
+          ],
+          "reconstructed_remaining_grid_kw": [
+            7.0,
+            7.0,
+            1.0,
+            3.0
+          ],
+          "remaining_commitment_by_vehicle_kwh": {
+            "V1": 1
+          }
+        },
+        "passed": false,
+        "plan_fingerprint": "77a1a15f7a1e2d5939e6cb2abdb32483e4e191e0004105f255ebd161e3f7940d",
+        "plan_version": 1,
+        "policy_hash": "b5146c1e0997acd96cd31c4086020484bd5990806dd159917c1e06bab17013e5",
+        "rule_version": "a03-physical-v1",
+        "state_hash": "3387212dd1cc1b2411bc90016fc6663946740367cd01e7117a6495adc542323b",
+        "state_reference": {
+          "available_at": "2025-06-01T10:00:00+08:00",
+          "measured_at": "2025-06-01T10:00:00+08:00",
+          "revision": 1,
+          "state_id": "explicit-synthetic-snapshot",
+          "valid_until": "2025-06-01T10:01:00+08:00"
+        },
+        "violations": [
+          {
+            "actual": 100,
+            "code": "POWER_BALANCE",
+            "expected": 7.0,
+            "field": "net_import_kw",
+            "slot": 0
+          },
+          {
+            "actual": 100,
+            "code": "GRID_IMPORT_EXPORT",
+            "expected": [
+              0,
+              20
+            ],
+            "field": "net_import_kw",
+            "slot": 0
+          },
+          {
+            "actual": 100,
+            "code": "LIVE_POWER_BALANCE",
+            "expected": 7.0,
+            "field": "net_import_kw",
+            "slot": 0
+          }
+        ]
+      },
+      "plan_fingerprint": "77a1a15f7a1e2d5939e6cb2abdb32483e4e191e0004105f255ebd161e3f7940d",
+      "plan_version": 1,
+      "policy_hash": "b5146c1e0997acd96cd31c4086020484bd5990806dd159917c1e06bab17013e5",
+      "review_fingerprint": "75b8c1fe033b6498bb964c9c84ede5c7271470bc7cd86fb8bb9997ba159a7a46",
+      "rule_version": "a03-offline-governance-v1",
+      "schema_version": "a03-review-v1",
+      "simulation": true,
+      "state_hash": "3387212dd1cc1b2411bc90016fc6663946740367cd01e7117a6495adc542323b",
+      "state_reference": {
+        "available_at": "2025-06-01T10:00:00+08:00",
+        "measured_at": "2025-06-01T10:00:00+08:00",
+        "revision": 1,
+        "state_id": "explicit-synthetic-snapshot",
+        "valid_until": "2025-06-01T10:01:00+08:00"
+      },
+      "status": "REJECTED",
+      "task_id": "A03-HAND",
+      "task_version": 1,
+      "valid_until": null,
+      "violations": [
+        {
+          "actual": 100,
+          "code": "POWER_BALANCE",
+          "expected": 7.0,
+          "field": "net_import_kw",
+          "layer": "physical",
+          "slot": 0
+        },
+        {
+          "actual": 100,
+          "code": "GRID_IMPORT_EXPORT",
+          "expected": [
+            0,
+            20
+          ],
+          "field": "net_import_kw",
+          "layer": "physical",
+          "slot": 0
+        },
+        {
+          "actual": 100,
+          "code": "LIVE_POWER_BALANCE",
+          "expected": 7.0,
+          "field": "net_import_kw",
+          "layer": "physical",
+          "slot": 0
+        }
+      ]
+    }
+  },
+  {
+    "expected_governance": false,
+    "expected_physical": false,
+    "review": {
+      "certified_safety_service": false,
+      "checked_at": "2025-06-01T10:00:00+08:00",
+      "constraints_hash": "db08a77a5a0e57b2a59b41c638a096e45d0570d8b93dc0b2096cf40a9fdecc24",
+      "device_dispatch_authorized": false,
+      "eligible_for_offline_simulation": false,
+      "frozen_fingerprint": "7cf5c1eed9197b9fff5f960de307f28c69ff850d8247fc80ed06516ef6e6e0bc",
+      "governance": {
+        "checked_at": "2025-06-01T10:00:00+08:00",
+        "frozen_fingerprint": "7cf5c1eed9197b9fff5f960de307f28c69ff850d8247fc80ed06516ef6e6e0bc",
+        "passed": false,
+        "plan_fingerprint": "77a1a15f7a1e2d5939e6cb2abdb32483e4e191e0004105f255ebd161e3f7940d",
+        "plan_version": 1,
+        "policy_hash": "e9da61be131e66e73fa5ee903b03aea861225e1fbb9a788859651289da36f376",
+        "rule_version": "a03-offline-governance-v1",
+        "state_hash": "3387212dd1cc1b2411bc90016fc6663946740367cd01e7117a6495adc542323b",
+        "state_reference": {
+          "available_at": "2025-06-01T10:00:00+08:00",
+          "measured_at": "2025-06-01T10:00:00+08:00",
+          "revision": 1,
+          "state_id": "explicit-synthetic-snapshot",
+          "valid_until": "2025-06-01T10:01:00+08:00"
+        },
+        "violations": [
+          {
+            "actual": null,
+            "code": "SIMULATION_RELEASE_MISSING",
+            "expected": null,
+            "field": "approval.released"
+          }
+        ]
+      },
+      "on_failure": "reject_and_request_new_plan_or_state",
+      "passed": false,
+      "physical": {
+        "checked_at": "2025-06-01T10:00:00+08:00",
+        "frozen_fingerprint": "7cf5c1eed9197b9fff5f960de307f28c69ff850d8247fc80ed06516ef6e6e0bc",
+        "metrics": {
+          "delivered_plus_planned_by_vehicle_kwh": {
+            "V1": 1.0
+          },
+          "execute_from_slot": 0,
+          "interval_count": 4,
+          "live_head_grid_kw": 7.0,
+          "pv_cap_rule": "min_frozen_forecast_latest_snapshot_and_rating_over_suffix",
+          "reconstructed_charge_by_port_kw": {
+            "P1": [
+              0.0,
+              4.0,
+              0.0,
+              0.0
+            ],
+            "P2": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "reconstructed_new_charge_kw": [
+            0.0,
+            4.0,
+            0.0,
+            0.0
+          ],
+          "reconstructed_remaining_energy_kwh": [
+            5,
+            5.5,
+            5.5,
+            5.0,
+            5.0
+          ],
+          "reconstructed_remaining_grid_kw": [
+            7.0,
+            7.0,
+            1.0,
+            3.0
+          ],
+          "remaining_commitment_by_vehicle_kwh": {
+            "V1": 1
+          }
+        },
+        "passed": false,
+        "plan_fingerprint": "77a1a15f7a1e2d5939e6cb2abdb32483e4e191e0004105f255ebd161e3f7940d",
+        "plan_version": 1,
+        "policy_hash": "e9da61be131e66e73fa5ee903b03aea861225e1fbb9a788859651289da36f376",
+        "rule_version": "a03-physical-v1",
+        "state_hash": "3387212dd1cc1b2411bc90016fc6663946740367cd01e7117a6495adc542323b",
+        "state_reference": {
+          "available_at": "2025-06-01T10:00:00+08:00",
+          "measured_at": "2025-06-01T10:00:00+08:00",
+          "revision": 1,
+          "state_id": "explicit-synthetic-snapshot",
+          "valid_until": "2025-06-01T10:01:00+08:00"
+        },
+        "violations": [
+          {
+            "actual": 100,
+            "code": "POWER_BALANCE",
+            "expected": 7.0,
+            "field": "net_import_kw",
+            "slot": 0
+          },
+          {
+            "actual": 100,
+            "code": "GRID_IMPORT_EXPORT",
+            "expected": [
+              0,
+              20
+            ],
+            "field": "net_import_kw",
+            "slot": 0
+          },
+          {
+            "actual": 100,
+            "code": "LIVE_POWER_BALANCE",
+            "expected": 7.0,
+            "field": "net_import_kw",
+            "slot": 0
+          }
+        ]
+      },
+      "plan_fingerprint": "77a1a15f7a1e2d5939e6cb2abdb32483e4e191e0004105f255ebd161e3f7940d",
+      "plan_version": 1,
+      "policy_hash": "e9da61be131e66e73fa5ee903b03aea861225e1fbb9a788859651289da36f376",
+      "review_fingerprint": "186f165d3db9e3f02aec5db82f7d42b2e3d8f66d3f7c59b8efba7c13766ba1e6",
+      "rule_version": "a03-offline-governance-v1",
+      "schema_version": "a03-review-v1",
+      "simulation": true,
+      "state_hash": "3387212dd1cc1b2411bc90016fc6663946740367cd01e7117a6495adc542323b",
+      "state_reference": {
+        "available_at": "2025-06-01T10:00:00+08:00",
+        "measured_at": "2025-06-01T10:00:00+08:00",
+        "revision": 1,
+        "state_id": "explicit-synthetic-snapshot",
+        "valid_until": "2025-06-01T10:01:00+08:00"
+      },
+      "status": "REJECTED",
+      "task_id": "A03-HAND",
+      "task_version": 1,
+      "valid_until": null,
+      "violations": [
+        {
+          "actual": 100,
+          "code": "POWER_BALANCE",
+          "expected": 7.0,
+          "field": "net_import_kw",
+          "layer": "physical",
+          "slot": 0
+        },
+        {
+          "actual": 100,
+          "code": "GRID_IMPORT_EXPORT",
+          "expected": [
+            0,
+            20
+          ],
+          "field": "net_import_kw",
+          "layer": "physical",
+          "slot": 0
+        },
+        {
+          "actual": 100,
+          "code": "LIVE_POWER_BALANCE",
+          "expected": 7.0,
+          "field": "net_import_kw",
+          "layer": "physical",
+          "slot": 0
+        },
+        {
+          "actual": null,
+          "code": "SIMULATION_RELEASE_MISSING",
+          "expected": null,
+          "field": "approval.released",
+          "layer": "governance"
+        }
+      ]
+    }
+  }
+]

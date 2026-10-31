@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "station-capacity-alignment"
+version = "1.0.0"
+description = "Simulation-only forecast overlap alignment and interval capacity"
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["capacity_alignment*"]

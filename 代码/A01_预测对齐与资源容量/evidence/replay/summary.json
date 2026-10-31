@@ -1,0 +1,107 @@
+{
+  "simulation": true,
+  "execution_mode": "offline_replay",
+  "commitment_policy": "rated_from_as_of",
+  "scenarios": [
+    {
+      "scenario_id": "S01_sunny",
+      "status": "planned_simulation",
+      "code": null,
+      "context_hash": "a00b9a72ac2f4bb42ce791b706dd4b8a6b943f54eee1789f0d0f931f61370e6f",
+      "issues": []
+    },
+    {
+      "scenario_id": "S02_mismatch",
+      "status": "planned_simulation",
+      "code": null,
+      "context_hash": "e37c2182e6ad80d3742b96d8332df641e7bb43125eff0f22306e31034bf7c90f",
+      "issues": []
+    },
+    {
+      "scenario_id": "S03_grid",
+      "status": "planned_simulation",
+      "code": null,
+      "context_hash": "da251f35499f3b09166ca99afecd931ad40c1969cdb69d87b263b81ebf2c343b",
+      "issues": []
+    },
+    {
+      "scenario_id": "S04_concurrency",
+      "status": "planned_simulation",
+      "code": null,
+      "context_hash": "ce1886f7d0e0707ddb1d17346dd8a709d6ff0251c6da309af8caa6039cb2cf80",
+      "issues": []
+    },
+    {
+      "scenario_id": "S05_pv_surplus",
+      "status": "planned_simulation",
+      "code": null,
+      "context_hash": "e264505f1ceaeb589406ff3d5742834b26296bcbe73dba0711140f401e94607a",
+      "issues": []
+    },
+    {
+      "scenario_id": "S06_calibration",
+      "status": "planned_simulation",
+      "code": null,
+      "context_hash": "a07a20d2733af4ace3095a9bcc2cb455b1dbb208624fac4d52c16b82722c4849",
+      "issues": []
+    },
+    {
+      "scenario_id": "S07_storage_floor",
+      "status": "planned_simulation",
+      "code": null,
+      "context_hash": "1927acc24f350c67e4c9ded2771bc3f045f64dbf388b4eeefc14a93578343d46",
+      "issues": []
+    },
+    {
+      "scenario_id": "S08_storage_ceiling",
+      "status": "planned_simulation",
+      "code": null,
+      "context_hash": "6beef1b2e0e9f9b9d9ee34072c452d0d3720919f15541d6d9409f752cf01c6f3",
+      "issues": []
+    },
+    {
+      "scenario_id": "S09_derated",
+      "status": "planned_simulation",
+      "code": null,
+      "context_hash": "3b2eef49ceb1d61f61d53da4597ab2af9821128cc52c3f910551d4bb062ac8c2",
+      "issues": []
+    },
+    {
+      "scenario_id": "S10_no_booking",
+      "status": "blocked",
+      "code": "FORECAST_CONTEXT_UNAVAILABLE",
+      "context_hash": "d4156283926c80cb76d152079a3587746bdc76044363af1b0b990659d4bbfdf6",
+      "issues": [
+        {
+          "code": "COMMITMENT_UNKNOWN",
+          "message": "既有预约仅有电量或状态未知，不能推断逐段功率为零"
+        }
+      ]
+    },
+    {
+      "scenario_id": "S11_pv_gap",
+      "status": "blocked",
+      "code": "FORECAST_CONTEXT_UNAVAILABLE",
+      "context_hash": "b639755f2412c6416a4755456586be59f371c765cdd3d61e0290841b68545a3f",
+      "issues": [
+        {
+          "code": "FORECAST_UNAVAILABLE",
+          "message": "pv_forecast: 2_of_4_intervals"
+        }
+      ]
+    },
+    {
+      "scenario_id": "S12_late_weather",
+      "status": "blocked",
+      "code": "FORECAST_CONTEXT_UNAVAILABLE",
+      "context_hash": "46b87779d7575612742cdaa42aec89f5fdaeaa44ebb863d5c42a104173b9f137",
+      "issues": [
+        {
+          "code": "FORECAST_UNAVAILABLE",
+          "message": "pv_forecast: no_complete_same_batch_issued_by_D07:00"
+        }
+      ]
+    }
+  ],
+  "planned_count": 9
+}

@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "actual_rounds": 180,
+  "best_round": 150,
+  "retained_trees": 150,
+  "early_stopped": true,
+  "xgboost_version": "3.4.1",
+  "elapsed_seconds": 12.180684399791062,
+  "model_file": "xgboost.json"
+}

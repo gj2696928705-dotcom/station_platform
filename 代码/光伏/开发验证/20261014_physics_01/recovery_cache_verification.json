@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "all_nine_scaler_sets_exactly_match": [
+    "experiments\\month_05\\physics_gru16_scheduled",
+    "experiments\\month_05\\physics_gru32_control",
+    "experiments\\month_05\\physics_gru32_scheduled",
+    "experiments\\month_07\\physics_gru16_scheduled",
+    "experiments\\month_07\\physics_gru32_control",
+    "experiments\\month_07\\physics_gru32_scheduled",
+    "experiments\\month_09\\physics_gru16_scheduled",
+    "experiments\\month_09\\physics_gru32_control",
+    "experiments\\month_09\\physics_gru32_scheduled"
+  ],
+  "all_original_training_artifacts_unchanged": true,
+  "no_unseen_trajectory_loaded": true
+}

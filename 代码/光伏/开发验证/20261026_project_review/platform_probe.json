@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "simulation_only": true,
+  "platform_python": "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\station_platform\\.venv\\Scripts\\python.exe",
+  "platform_dependencies": {
+    "fastapi": true,
+    "numpy": false,
+    "pandas": false,
+    "sklearn": false,
+    "tensorflow": false
+  },
+  "current_platform_interval_minutes": 15,
+  "current_platform_slots": 4,
+  "current_platform_duration_minutes": 60,
+  "current_platform_forecast_status": "not_used",
+  "injected_record_does_not_change_resources": true,
+  "resource_headroom_kw": [
+    550,
+    550,
+    600,
+    600
+  ],
+  "selected_candidate": "service-cost-57a891df",
+  "new_forecast_interval_minutes": 60,
+  "new_forecast_points": 13,
+  "new_forecast_scope": "configured_pv_assets",
+  "platform_scope": "mock-station-001",
+  "candidate_published_at": null,
+  "runtime_weather_policy": "provided_target_day_weather",
+  "real_platform_configuration_or_execution_changed": false
+}

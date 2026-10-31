@@ -1,0 +1,87 @@
+{
+  "status": "passed",
+  "candidates": {
+    "physics_tree": {
+      "status": "passed",
+      "commands": {
+        "predict": {
+          "exit_code": 0,
+          "png_count": 3
+        },
+        "evaluate": {
+          "exit_code": 0,
+          "png_count": 1
+        }
+      },
+      "reload_points_match": true,
+      "physical_units_and_bounds": "96 kW points, 15 minutes, [0,5000], night zero",
+      "future_numeric_observations_and_weather_labels_isolated": true,
+      "degraded_uses_own_baseline_and_intervals": true,
+      "bundle_hashes_preserved": {
+        "interval_calibration.json": "b9d1f10380b35d630c8a9d634352af2c256d96ff25fbbdf2abdcd5c07e396a51",
+        "model_metadata.json": "c913e6a53e679c733e8b121e91b9098632572f0cbf95ad735874df909b8ab307",
+        "physics_tree.joblib": "66b7008743b6bfe69ca8f1526a19aa5fae716df39e629b8b8f2d831455145c49"
+      }
+    },
+    "enhanced_gru": {
+      "status": "passed",
+      "commands": {
+        "predict": {
+          "exit_code": 0,
+          "png_count": 3
+        },
+        "evaluate": {
+          "exit_code": 0,
+          "png_count": 1
+        }
+      },
+      "reload_points_match": true,
+      "physical_units_and_bounds": "96 kW points, 15 minutes, [0,5000], night zero",
+      "future_numeric_observations_and_weather_labels_isolated": true,
+      "degraded_uses_own_baseline_and_intervals": true,
+      "bundle_hashes_preserved": {
+        "gru.keras": "5fad9b760ad880980f5472e7f0dd73c6ea8471e0a6de2bf1e8ab786b379c312a",
+        "interval_calibration.json": "68ecf1cc85b06cd146c6eb3a52858fe6f679461add6b44842098442df37c623a",
+        "model_metadata.json": "4c0c94e0f1b8cc6bca7878152574acbee04f57b913eae03a518ce7e2e6fb8830",
+        "scalers.joblib": "478cf921029d3cc5bf1f714b656d5dbf6197c19671e6f5960cb7ddc19e8270e5"
+      }
+    },
+    "clear_persistence": {
+      "status": "passed",
+      "commands": {
+        "predict": {
+          "exit_code": 0,
+          "png_count": 3
+        },
+        "evaluate": {
+          "exit_code": 0,
+          "png_count": 1
+        }
+      },
+      "reload_points_match": true,
+      "physical_units_and_bounds": "96 kW points, 15 minutes, [0,5000], night zero",
+      "future_numeric_observations_and_weather_labels_isolated": true,
+      "degraded_uses_own_baseline_and_intervals": true,
+      "bundle_hashes_preserved": {
+        "interval_calibration.json": "083dc38bafc6497230eaf0c3d9016ecdeccd329d205af4f5bab5445629920fdc",
+        "model_metadata.json": "9217ed9d847d6aac1d387db0d8bae74b6abb145cacf831af7ff87416e4e85375"
+      }
+    }
+  },
+  "png_count": 12,
+  "png_refs": [
+    "开发验证\\20261014_physics_01\\candidate_cli\\physics_tree\\visualizations\\5f9895fe-ed3e-4555-bf61-3cbde2b50f3f_forecast_24h.png",
+    "开发验证\\20261014_physics_01\\candidate_cli\\physics_tree\\visualizations\\5f9895fe-ed3e-4555-bf61-3cbde2b50f3f_history_forecast.png",
+    "开发验证\\20261014_physics_01\\candidate_cli\\physics_tree\\visualizations\\5f9895fe-ed3e-4555-bf61-3cbde2b50f3f_forecast_profile.png",
+    "开发验证\\20261014_physics_01\\candidate_cli\\physics_tree\\visualizations\\c6e6197b-1107-4339-99b6-9900c623807f_actual_vs_forecast.png",
+    "开发验证\\20261014_physics_01\\candidate_cli\\enhanced_gru\\visualizations\\84ddf79c-abf9-4695-be90-83bb4972ce86_forecast_24h.png",
+    "开发验证\\20261014_physics_01\\candidate_cli\\enhanced_gru\\visualizations\\84ddf79c-abf9-4695-be90-83bb4972ce86_history_forecast.png",
+    "开发验证\\20261014_physics_01\\candidate_cli\\enhanced_gru\\visualizations\\84ddf79c-abf9-4695-be90-83bb4972ce86_forecast_profile.png",
+    "开发验证\\20261014_physics_01\\candidate_cli\\enhanced_gru\\visualizations\\43fe9429-d75c-4254-87d0-ec3134c93ac7_actual_vs_forecast.png",
+    "开发验证\\20261014_physics_01\\candidate_cli\\clear_persistence\\visualizations\\834e6133-d44d-498a-aa9a-fd52212c70c8_forecast_24h.png",
+    "开发验证\\20261014_physics_01\\candidate_cli\\clear_persistence\\visualizations\\834e6133-d44d-498a-aa9a-fd52212c70c8_history_forecast.png",
+    "开发验证\\20261014_physics_01\\candidate_cli\\clear_persistence\\visualizations\\834e6133-d44d-498a-aa9a-fd52212c70c8_forecast_profile.png",
+    "开发验证\\20261014_physics_01\\candidate_cli\\clear_persistence\\visualizations\\1e2694e0-3ed2-4628-9a43-e5461bc74fcf_actual_vs_forecast.png"
+  ],
+  "publication_status": "candidate"
+}

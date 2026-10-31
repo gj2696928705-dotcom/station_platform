@@ -1,0 +1,12 @@
+{
+  "name": "month_07",
+  "train_start": "2025-01-01T00:00:00+08:00",
+  "train_end": "2025-06-30T23:45:00+08:00",
+  "validation_start": "2025-07-01T00:00:00+08:00",
+  "validation_end": "2025-07-31T23:45:00+08:00",
+  "training_days": 181.0,
+  "training_windows_available": 16993,
+  "training_windows_used": 16993,
+  "validation_windows": 2881,
+  "scalers_fit_on": "this fold training windows only"
+}

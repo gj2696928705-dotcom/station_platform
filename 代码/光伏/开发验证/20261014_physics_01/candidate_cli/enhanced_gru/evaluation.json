@@ -1,0 +1,22 @@
+{
+  "status": "available",
+  "metrics": {
+    "count": 96,
+    "mae": 106.97720766052248,
+    "rmse": 181.37975103796282,
+    "nrmse": 1.004061463490109,
+    "r2": 0.517313323336428,
+    "coverage": null
+  },
+  "visualizations": [
+    {
+      "id": "actual_vs_forecast",
+      "kind": "actual_vs_forecast",
+      "title": "实际功率与预测功率对比",
+      "path": "visualizations/43fe9429-d75c-4254-87d0-ec3134c93ac7_actual_vs_forecast.png",
+      "mime_type": "image/png",
+      "description": "评估窗口的实际值、预测值及预测区间"
+    }
+  ],
+  "visualization_errors": []
+}

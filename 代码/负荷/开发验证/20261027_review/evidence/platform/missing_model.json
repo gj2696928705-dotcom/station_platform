@@ -1,0 +1,40 @@
+{
+  "schema_version": "station-load-forecast-1",
+  "forecast_id": "86b66b03-c4c0-4bba-b9ea-1cccf5a9a808",
+  "forecast_type": "station_load",
+  "asset_scope": null,
+  "generated_at": "2026-10-27T04:25:30.474586+00:00",
+  "interval_minutes": 15,
+  "forecast_start_at": null,
+  "forecast_end_at": null,
+  "forecast_values": [],
+  "prediction_interval": {
+    "available": false,
+    "values": []
+  },
+  "status": "unavailable",
+  "reason": "[Errno 2] No such file or directory: 'D:\\\\源网荷储\\\\codex\\\\2026.10.09\\\\场站智能体（4）\\\\代码\\\\负荷\\\\开发验证\\\\20261027_review\\\\evidence\\\\platform\\\\absent_bundle\\\\model_metadata.json'",
+  "target_semantics": null,
+  "model_id": null,
+  "model_version": null,
+  "model_published_at": null,
+  "selected_model": null,
+  "training_data_window": null,
+  "fallback_forecast_ref": null,
+  "publication_status": "candidate",
+  "decision_eligible": false,
+  "execution_mode": "offline_replay",
+  "input_data_quality_summary": {},
+  "confidence": {
+    "source": "held_out_empirical_residuals",
+    "limitations": [
+      "Candidate model, no production publication or energy Agent integration",
+      "Forecast is not a device limit; synthetic-data metrics are not field accuracy"
+    ]
+  },
+  "audit_refs": [
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\负荷\\开发验证\\20261027_review\\evidence\\platform\\absent_bundle\\model_metadata.json"
+  ],
+  "visualizations": [],
+  "visualization_errors": []
+}

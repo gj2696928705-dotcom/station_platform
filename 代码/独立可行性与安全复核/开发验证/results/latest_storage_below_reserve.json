@@ -1,0 +1,291 @@
+{
+  "certified_safety_service": false,
+  "checked_at": "2025-06-01T10:00:00+08:00",
+  "constraints_hash": "db08a77a5a0e57b2a59b41c638a096e45d0570d8b93dc0b2096cf40a9fdecc24",
+  "device_dispatch_authorized": false,
+  "eligible_for_offline_simulation": false,
+  "frozen_fingerprint": "1e3f94b240bcbf15ab92f2a4928eb5a4923d0191ce595336837cb3a794108dc2",
+  "governance": {
+    "checked_at": "2025-06-01T10:00:00+08:00",
+    "frozen_fingerprint": "1e3f94b240bcbf15ab92f2a4928eb5a4923d0191ce595336837cb3a794108dc2",
+    "passed": true,
+    "plan_fingerprint": "37b28423c6517c19a794d386e09dfaaf4997c74648bb46c9187f9fce2a5d51bb",
+    "plan_version": 1,
+    "policy_hash": "928132df59c9dedcc3b2aa3aca86109ea282ec9877c6e03f52a7ebb9ad11077b",
+    "rule_version": "a03-offline-governance-v1",
+    "state_hash": "4083ddf38aff649f6a82e57c01d51268f6e104e76f3b458b6d2ee71166060938",
+    "state_reference": {
+      "available_at": "2025-06-01T10:00:00+08:00",
+      "measured_at": "2025-06-01T10:00:00+08:00",
+      "revision": 1,
+      "state_id": "explicit-synthetic-snapshot",
+      "valid_until": "2025-06-01T10:01:00+08:00"
+    },
+    "violations": []
+  },
+  "on_failure": "reject_and_request_new_plan_or_state",
+  "passed": false,
+  "physical": {
+    "checked_at": "2025-06-01T10:00:00+08:00",
+    "frozen_fingerprint": "1e3f94b240bcbf15ab92f2a4928eb5a4923d0191ce595336837cb3a794108dc2",
+    "metrics": {
+      "delivered_plus_planned_by_vehicle_kwh": {
+        "V1": 1.0
+      },
+      "execute_from_slot": 0,
+      "interval_count": 4,
+      "live_head_grid_kw": 7.0,
+      "pv_cap_rule": "min_frozen_forecast_latest_snapshot_and_rating_over_suffix",
+      "reconstructed_charge_by_port_kw": {
+        "P1": [
+          0.0,
+          4.0,
+          0.0,
+          0.0
+        ],
+        "P2": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "reconstructed_new_charge_kw": [
+        0.0,
+        4.0,
+        0.0,
+        0.0
+      ],
+      "reconstructed_remaining_energy_kwh": [
+        2,
+        2.5,
+        2.5,
+        2.0,
+        2.0
+      ],
+      "reconstructed_remaining_grid_kw": [
+        7.0,
+        7.0,
+        1.0,
+        3.0
+      ],
+      "remaining_commitment_by_vehicle_kwh": {
+        "V1": 1
+      }
+    },
+    "passed": false,
+    "plan_fingerprint": "37b28423c6517c19a794d386e09dfaaf4997c74648bb46c9187f9fce2a5d51bb",
+    "plan_version": 1,
+    "policy_hash": "928132df59c9dedcc3b2aa3aca86109ea282ec9877c6e03f52a7ebb9ad11077b",
+    "rule_version": "a03-physical-v1",
+    "state_hash": "4083ddf38aff649f6a82e57c01d51268f6e104e76f3b458b6d2ee71166060938",
+    "state_reference": {
+      "available_at": "2025-06-01T10:00:00+08:00",
+      "measured_at": "2025-06-01T10:00:00+08:00",
+      "revision": 1,
+      "state_id": "explicit-synthetic-snapshot",
+      "valid_until": "2025-06-01T10:01:00+08:00"
+    },
+    "violations": [
+      {
+        "actual": 5,
+        "code": "STORAGE_LIVE_INITIAL",
+        "expected": 2,
+        "field": "storage_energy_kwh",
+        "slot": 0
+      },
+      {
+        "actual": 2,
+        "code": "STORAGE_LIVE_SOC",
+        "expected": [
+          3.0,
+          9.0
+        ],
+        "field": "measurement.storage_energy_kwh"
+      },
+      {
+        "actual": 5.5,
+        "code": "STORAGE_DYNAMICS",
+        "expected": 2.5,
+        "field": "storage_energy_kwh",
+        "slot": 1
+      },
+      {
+        "actual": 2.5,
+        "code": "STORAGE_RECOMPUTED_SOC",
+        "expected": [
+          3.0,
+          9.0
+        ],
+        "field": "recomputed_storage_energy_kwh",
+        "slot": 1
+      },
+      {
+        "actual": 5.5,
+        "code": "STORAGE_DYNAMICS",
+        "expected": 2.5,
+        "field": "storage_energy_kwh",
+        "slot": 2
+      },
+      {
+        "actual": 2.5,
+        "code": "STORAGE_RECOMPUTED_SOC",
+        "expected": [
+          3.0,
+          9.0
+        ],
+        "field": "recomputed_storage_energy_kwh",
+        "slot": 2
+      },
+      {
+        "actual": 5,
+        "code": "STORAGE_DYNAMICS",
+        "expected": 2.0,
+        "field": "storage_energy_kwh",
+        "slot": 3
+      },
+      {
+        "actual": 2.0,
+        "code": "STORAGE_RECOMPUTED_SOC",
+        "expected": [
+          3.0,
+          9.0
+        ],
+        "field": "recomputed_storage_energy_kwh",
+        "slot": 3
+      },
+      {
+        "actual": 5,
+        "code": "STORAGE_DYNAMICS",
+        "expected": 2.0,
+        "field": "storage_energy_kwh",
+        "slot": 4
+      },
+      {
+        "actual": 2.0,
+        "code": "STORAGE_RECOMPUTED_SOC",
+        "expected": [
+          3.0,
+          9.0
+        ],
+        "field": "recomputed_storage_energy_kwh",
+        "slot": 4
+      }
+    ]
+  },
+  "plan_fingerprint": "37b28423c6517c19a794d386e09dfaaf4997c74648bb46c9187f9fce2a5d51bb",
+  "plan_version": 1,
+  "policy_hash": "928132df59c9dedcc3b2aa3aca86109ea282ec9877c6e03f52a7ebb9ad11077b",
+  "review_fingerprint": "efdc917332d7cce3fe46593c5e02a915f2236839b52a8eed8ed9119249367f42",
+  "rule_version": "a03-offline-governance-v1",
+  "schema_version": "a03-review-v1",
+  "simulation": true,
+  "state_hash": "4083ddf38aff649f6a82e57c01d51268f6e104e76f3b458b6d2ee71166060938",
+  "state_reference": {
+    "available_at": "2025-06-01T10:00:00+08:00",
+    "measured_at": "2025-06-01T10:00:00+08:00",
+    "revision": 1,
+    "state_id": "explicit-synthetic-snapshot",
+    "valid_until": "2025-06-01T10:01:00+08:00"
+  },
+  "status": "REJECTED",
+  "task_id": "A03-HAND",
+  "task_version": 1,
+  "valid_until": null,
+  "violations": [
+    {
+      "actual": 5,
+      "code": "STORAGE_LIVE_INITIAL",
+      "expected": 2,
+      "field": "storage_energy_kwh",
+      "layer": "physical",
+      "slot": 0
+    },
+    {
+      "actual": 2,
+      "code": "STORAGE_LIVE_SOC",
+      "expected": [
+        3.0,
+        9.0
+      ],
+      "field": "measurement.storage_energy_kwh",
+      "layer": "physical"
+    },
+    {
+      "actual": 5.5,
+      "code": "STORAGE_DYNAMICS",
+      "expected": 2.5,
+      "field": "storage_energy_kwh",
+      "layer": "physical",
+      "slot": 1
+    },
+    {
+      "actual": 2.5,
+      "code": "STORAGE_RECOMPUTED_SOC",
+      "expected": [
+        3.0,
+        9.0
+      ],
+      "field": "recomputed_storage_energy_kwh",
+      "layer": "physical",
+      "slot": 1
+    },
+    {
+      "actual": 5.5,
+      "code": "STORAGE_DYNAMICS",
+      "expected": 2.5,
+      "field": "storage_energy_kwh",
+      "layer": "physical",
+      "slot": 2
+    },
+    {
+      "actual": 2.5,
+      "code": "STORAGE_RECOMPUTED_SOC",
+      "expected": [
+        3.0,
+        9.0
+      ],
+      "field": "recomputed_storage_energy_kwh",
+      "layer": "physical",
+      "slot": 2
+    },
+    {
+      "actual": 5,
+      "code": "STORAGE_DYNAMICS",
+      "expected": 2.0,
+      "field": "storage_energy_kwh",
+      "layer": "physical",
+      "slot": 3
+    },
+    {
+      "actual": 2.0,
+      "code": "STORAGE_RECOMPUTED_SOC",
+      "expected": [
+        3.0,
+        9.0
+      ],
+      "field": "recomputed_storage_energy_kwh",
+      "layer": "physical",
+      "slot": 3
+    },
+    {
+      "actual": 5,
+      "code": "STORAGE_DYNAMICS",
+      "expected": 2.0,
+      "field": "storage_energy_kwh",
+      "layer": "physical",
+      "slot": 4
+    },
+    {
+      "actual": 2.0,
+      "code": "STORAGE_RECOMPUTED_SOC",
+      "expected": [
+        3.0,
+        9.0
+      ],
+      "field": "recomputed_storage_energy_kwh",
+      "layer": "physical",
+      "slot": 4
+    }
+  ]
+}

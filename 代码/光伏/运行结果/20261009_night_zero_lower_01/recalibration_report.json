@@ -1,0 +1,166 @@
+{
+  "status": "completed",
+  "operation": "daylight_interval_recalibration",
+  "weights_retrained": false,
+  "parent_bundle": "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346",
+  "parent_model_version": "0.2.0-candidate",
+  "parent_bundle_sha256": {
+    "model_metadata.json": "6108d88a019b6e06bdec300bf47d6d08432a902e7f9ed675c4ba10bbf36c7a9c",
+    "interval_calibration.json": "b2a29e3e1578102bf8ebc73557a33af9c94c979066d3f4f515912c150a565172",
+    "gru.keras": "74e08dac78c6b84f3a6c811117e7cf6c74579814b78672fd9473476f45ca4078",
+    "scalers.joblib": "db434b2ccd1d53e58abd91207633d3d7b3b404f93dbbf78d02bde69c34ad743f"
+  },
+  "source_data_sha256": "28a0842c8b7c28ac5e90ae209bba2a5a215ef1f48ae3f25d616d083515bed1c8",
+  "source_hash_basis": "raw_file",
+  "calibration_partition": {
+    "start": "2025-09-13T12:00:00+08:00",
+    "end": "2025-11-07T05:45:00+08:00",
+    "rows": 5256,
+    "days": 54.75,
+    "windows": 5161,
+    "first_forecast_start": "2025-09-13T12:00:00+08:00",
+    "last_forecast_end": "2025-11-07T05:45:00+08:00"
+  },
+  "test_partition": {
+    "start": "2025-11-07T06:00:00+08:00",
+    "end": "2025-12-31T23:45:00+08:00",
+    "rows": 5256,
+    "days": 54.75,
+    "windows": 5161,
+    "first_forecast_start": "2025-11-07T06:00:00+08:00",
+    "last_forecast_end": "2025-12-31T23:45:00+08:00"
+  },
+  "test_used_for_calibration": false,
+  "test_used_for_model_selection": false,
+  "daylight_basis": "solar_elevation_gt_zero",
+  "nominal_coverage": 0.8,
+  "night_lower_bound": "zero",
+  "metrics": {
+    "validation": {
+      "before": {
+        "all_day": {
+          "count": 495456,
+          "mae": 279.0063005768546,
+          "rmse": 498.3318151491248,
+          "nrmse": 0.8932872462494417,
+          "r2": 0.6803629069903829,
+          "coverage": 0.8000266421236194,
+          "mean_interval_width_kw": 824.0524380711581
+        },
+        "daylight": {
+          "count": 237440,
+          "mae": 565.8497639687617,
+          "rmse": 717.8332163168769,
+          "nrmse": 0.6166586966783635,
+          "r2": 0.4371640172052572,
+          "coverage": 0.5837179919137466,
+          "mean_interval_width_kw": 1082.7520951484332
+        },
+        "night": {
+          "count": 258016,
+          "mae": 15.037740689969718,
+          "rmse": 51.70225775498312,
+          "nrmse": null,
+          "r2": null,
+          "coverage": 0.9990853280416718,
+          "mean_interval_width_kw": 585.9833005896525
+        }
+      },
+      "after": {
+        "all_day": {
+          "count": 495456,
+          "mae": 279.0063005768546,
+          "rmse": 498.3318151491248,
+          "nrmse": 0.8932872462494417,
+          "r2": 0.6803629069903829,
+          "coverage": 0.9041024833688561,
+          "mean_interval_width_kw": 807.8503426608316
+        },
+        "daylight": {
+          "count": 237440,
+          "mae": 565.8497639687617,
+          "rmse": 717.8332163168769,
+          "nrmse": 0.6166586966783635,
+          "r2": 0.4371640172052572,
+          "coverage": 0.7998947102425876,
+          "mean_interval_width_kw": 1654.5131540508871
+        },
+        "night": {
+          "count": 258016,
+          "mae": 15.037740689969718,
+          "rmse": 51.70225775498312,
+          "nrmse": null,
+          "r2": null,
+          "coverage": 1.0,
+          "mean_interval_width_kw": 28.70634408533724
+        }
+      }
+    },
+    "test": {
+      "before": {
+        "all_day": {
+          "count": 495456,
+          "mae": 262.6406008312545,
+          "rmse": 444.19889881965935,
+          "nrmse": 1.1971136018250534,
+          "r2": 0.5748522408544954,
+          "coverage": 0.7814255958147646,
+          "mean_interval_width_kw": 816.2729026653608
+        },
+        "daylight": {
+          "count": 210298,
+          "mae": 577.8390382599194,
+          "rmse": 674.0318548349561,
+          "nrmse": 0.7710248223374397,
+          "r2": 0.3048603156379408,
+          "coverage": 0.49048017575060154,
+          "mean_interval_width_kw": 1108.1509498367466
+        },
+        "night": {
+          "count": 285158,
+          "mae": 30.18841294112569,
+          "rmse": 88.18140782279407,
+          "nrmse": null,
+          "r2": null,
+          "coverage": 0.9959916958317845,
+          "mean_interval_width_kw": 601.0190098619044
+        }
+      },
+      "after": {
+        "all_day": {
+          "count": 495456,
+          "mae": 262.6406008312545,
+          "rmse": 444.19889881965935,
+          "nrmse": 1.1971136018250534,
+          "r2": 0.5748522408544954,
+          "coverage": 0.9278563585868371,
+          "mean_interval_width_kw": 745.3044562185152
+        },
+        "daylight": {
+          "count": 210298,
+          "mae": 577.8390382599194,
+          "rmse": 674.0318548349561,
+          "nrmse": 0.7710248223374397,
+          "r2": 0.3048603156379408,
+          "coverage": 0.8300316693454051,
+          "mean_interval_width_kw": 1696.4710673320958
+        },
+        "night": {
+          "count": 285158,
+          "mae": 30.18841294112569,
+          "rmse": 88.18140782279407,
+          "nrmse": null,
+          "r2": null,
+          "coverage": 1.0,
+          "mean_interval_width_kw": 43.839177376737034
+        }
+      }
+    }
+  },
+  "evaluation_scope": "all recorded windows; overlapping target timestamps counted per origin",
+  "limitations": [
+    "Retrospective empirical experiment; validation was also used for checkpoint selection.",
+    "Overlapping windows are dependent; no future conditional coverage guarantee.",
+    "Candidate only; real or unused data acceptance remains outstanding."
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "scope": "offline isolated feasibility probe; no live API/UI/task integration",
+  "numerical_packages_in_platform": {
+    "numpy": false,
+    "pandas": false,
+    "xgboost": false
+  },
+  "checks": {
+    "aligned_and_second_resolution_overlap": true,
+    "reject_binding": true,
+    "reject_unit": true,
+    "reject_semantics": true,
+    "reject_missing_point": true,
+    "reject_coverage": true,
+    "reject_clock": true,
+    "adding_forecasts_does_not_change_platform_resources": true,
+    "resource_schedule_evaluation_and_local_check": true,
+    "live_and_planning_grid_limits_still_block": true,
+    "stale": true,
+    "missing_model": true,
+    "timeout_is_failure": true,
+    "frozen_context_file_roundtrip": true
+  },
+  "cli_calls": [
+    {
+      "case": "cli_replay",
+      "exit_code": 0,
+      "status": "available",
+      "reason": null,
+      "elapsed_seconds": 3.978908699937165
+    },
+    {
+      "case": "stale",
+      "exit_code": 2,
+      "status": "unavailable",
+      "reason": "insufficient or stale history for requested forecast start",
+      "elapsed_seconds": 2.672986200079322
+    },
+    {
+      "case": "missing_model",
+      "exit_code": 2,
+      "status": "unavailable",
+      "reason": "[Errno 2] No such file or directory: 'D:\\\\源网荷储\\\\codex\\\\2026.10.09\\\\场站智能体（4）\\\\代码\\\\负荷\\\\开发验证\\\\20261027_review\\\\evidence\\\\platform\\\\absent_bundle\\\\model_metadata.json'",
+      "elapsed_seconds": 1.0024847001768649
+    }
+  ],
+  "projection": {
+    "base_kw": [
+      438.3939514160156,
+      441.7646026611328,
+      442.9949645996094,
+      446.5584411621094
+    ],
+    "lower_kw": [
+      398.38593357812505,
+      401.3655076103516,
+      401.7074865078125,
+      405.7013442402344
+    ],
+    "upper_kw": [
+      478.4019692539062,
+      482.16369771191404,
+      484.28244269140623,
+      487.41553808398436
+    ]
+  },
+  "existing_charging_kw": [
+    20.0,
+    30.0,
+    40.0,
+    50.0
+  ],
+  "platform_base_load_kw": [
+    458.3939514160156,
+    471.7646026611328,
+    482.9949645996094,
+    496.5584411621094
+  ],
+  "charging_headroom_kw": [
+    141.60604858398438,
+    128.2353973388672,
+    167.00503540039062,
+    153.44155883789062
+  ],
+  "local_check": {
+    "passed": true,
+    "violations": [],
+    "checked_at": "2026-10-27T04:25:26.951027+00:00",
+    "state_ref": "offline-load-probe-state",
+    "site_revision": 1,
+    "plan_ref": "offline-probe-plan",
+    "simulation": true,
+    "certified_safety_service": false
+  },
+  "platform_forecast_status": "not_used",
+  "production_integration_implemented": false
+}

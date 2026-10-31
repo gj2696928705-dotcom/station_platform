@@ -1,0 +1,59 @@
+{
+  "status": "development_reference_only",
+  "current_control": {
+    "count": 5012760,
+    "rmse": 651.9293259345661,
+    "mae": 483.21457558887806,
+    "r2": 0.5030368850173915,
+    "nrmse": 0.6206255253018409,
+    "mean_error_kw": -21.301138862226434,
+    "coverage": 0.8251933066813492,
+    "mean_interval_width_kw": 1514.2595774841066
+  },
+  "current_control_daylight_leads": {
+    "00_01h": {
+      "count": 208860,
+      "rmse": 207.3097195831923,
+      "mae": 146.2005575830723,
+      "r2": 0.9497674476102846,
+      "nrmse": 0.19729864637200684,
+      "mean_error_kw": -6.281184676837862
+    },
+    "01_03h": {
+      "count": 417720,
+      "rmse": 376.02000268266903,
+      "mae": 265.0371460452629,
+      "r2": 0.8347399751040481,
+      "nrmse": 0.3578618392193503,
+      "mean_error_kw": -14.455072940815997
+    },
+    "03_06h": {
+      "count": 626580,
+      "rmse": 542.0371330218533,
+      "mae": 390.7215659910952,
+      "r2": 0.6565970698702057,
+      "nrmse": 0.5158619327814937,
+      "mean_error_kw": -22.31320255808139
+    },
+    "06_12h": {
+      "count": 1253211,
+      "rmse": 662.9024501350177,
+      "mae": 496.5797389408702,
+      "r2": 0.4863810319474904,
+      "nrmse": 0.6309261946304968,
+      "mean_error_kw": -20.403975342452245
+    },
+    "12_24h": {
+      "count": 2506389,
+      "rmse": 727.8069844437398,
+      "mae": 564.1001539623536,
+      "r2": 0.3803663888449329,
+      "nrmse": 0.6930391857637689,
+      "mean_error_kw": -23.88932553599605
+    }
+  },
+  "next_phase_rule": "lower daylight RMSE/MAE; clear/partly-cloudy and worst month not worse; improve 12-24h and preserve 0-1h; validate on newly frozen paths",
+  "universal_R2_target": null,
+  "reuse_of_viewed_paths_as_unseen": false,
+  "production_acceptance": false
+}

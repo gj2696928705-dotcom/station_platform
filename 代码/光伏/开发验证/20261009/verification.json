@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "verified_on": "2026-10-09",
+  "scope": "PV implementation and simulated candidate artifacts",
+  "unit_tests": {
+    "total_passed": 40,
+    "seconds": 637.168,
+    "failed": 0,
+    "command": "python -X utf8 -m unittest discover -s tests -v",
+    "log_ref": "开发验证/20261009/unit_tests.log"
+  },
+  "source_file_sha256": {
+    "pv_forecast\\__init__.py": "8e2e8d79842f0a14971c35790baf251527bc75d36752474f7bdd796a19f3d883",
+    "pv_forecast\\baselines.py": "2ae903e99f170445b628259c3d477c03485fb3ee48709d54317f43c708d5c003",
+    "pv_forecast\\cli.py": "fa4c6ff74a295fca83f7c98fe615f31e9364b10962efb1947eb5863927f4a3a2",
+    "pv_forecast\\data.py": "38c3a75303ad14b76ba6f0ad97d6b6f0183df96f53896138beb68ec83d89e912",
+    "pv_forecast\\errors.py": "1c4d4a9c6233a1ed112dd5d37b25915e021922813bb702d361dc0e144e42e47f",
+    "pv_forecast\\experiments.py": "2bec05ecd6ada4c80b733805291db0bb40dfac244e78368a06eb1606285cc20d",
+    "pv_forecast\\metrics.py": "13a839263f3db13bc10526cc58e6f733f3a88df9ebde7fdfe2299eaf5fa2f343",
+    "pv_forecast\\models.py": "3048a73016ff8026a3ebdce8fb6da0e60418bc534b72f70d56956389653d3bd1",
+    "pv_forecast\\pipeline.py": "0d76da5f04bf41eee9fe435899a3f73f2a7d483fa7b25e09f6366950a58db0f9",
+    "pv_forecast\\recalibration.py": "430d0015aae3a106ba02801ca41d7ffbb4779d2cce39a7c848488581d016c7ab",
+    "pv_forecast\\records.py": "642d0d5bb9ba84e288e8d8645c55331730d67a71018de8bb9ab121c76ca99c7c",
+    "pv_forecast\\visuals.py": "d6f4fc2ddf7e4a0a1fcf90e3aef50bb49a6317abebf08ec8db4c74396eab058d",
+    "pv_forecast\\weather.py": "59396a482945ac8f40f2bf5156d6186247b2dd7bb473c614fea70220075da166",
+    "tests\\test_daylight_calibration.py": "894bb4bf395377e26ba24c546208bb41453f77518b6d74a4e03bf0fa45b5e982",
+    "tests\\test_prediction_cutoff.py": "30befe16aca67081891c02b7056644dd8e0e78bf7c043f0b8ef45d7821a5b471",
+    "tests\\test_pv_forecast.py": "699273113ce78a14a962855d671b892c88bc49d232229e9ee072a7319d4f5485",
+    "tests\\test_training_improvements.py": "88b2f134ade0435dbd0253f1663da113b0571672c6e01777d8f9e667a464ce0d"
+  },
+  "original_training_artifacts": "运行结果/20260929_000009_045346/verification/artifact_audit.json",
+  "original_cli_reload_and_fallback": "运行结果/20260929_000009_045346/verification/final_cli/verification.json",
+  "derived_cli_reload_hashes_and_fallback": "运行结果/20261009_daylight_recalibration_01/verification/verification.json",
+  "visual_review": {
+    "status": "reviewed",
+    "sources_ref": "png_review_sources.json",
+    "notes": "Reviewed nine rolling loss charts, final loss/comparison, old CLI charts, and four derived charts."
+  },
+  "regression_evidence": {
+    "before_fix": "prediction_cutoff_before_fix.log",
+    "after_fix": "prediction_cutoff_after_fix.log",
+    "bug": "future rows could fill trailing historical gap and affect input validation/quality"
+  },
+  "model_acceptance": {
+    "status": "candidate_only",
+    "production_accepted": false,
+    "remaining": [
+      "independent real/unused-data acceptance",
+      "nighttime interval undercoverage",
+      "daylight point forecast accuracy"
+    ]
+  }
+}

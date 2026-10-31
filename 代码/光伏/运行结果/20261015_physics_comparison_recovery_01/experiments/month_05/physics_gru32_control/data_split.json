@@ -1,0 +1,8 @@
+{
+  "training_windows_available": 11137,
+  "training_windows_used": 11137,
+  "validation_windows": 2881,
+  "train_end_exclusive": "2025-05-01T00:00:00+08:00",
+  "validation_end_exclusive": "2025-06-01T00:00:00+08:00",
+  "scalers_fit_on": "this fold training windows only"
+}

@@ -1,0 +1,134 @@
+{
+  "status": "passed",
+  "scope": "implementation and one known-simulator new path, not production accuracy",
+  "prior_frozen_source_snapshot_verified": true,
+  "parent_all_nine_GRU_evidence_and_hashes_checked": true,
+  "selected_GRU_rolling_predictions_match_original": true,
+  "original_weights_scalers_data_generator_unchanged": true,
+  "test_excluded_from_head_selection_and_fit": true,
+  "frozen_before_new_evaluation_generation": true,
+  "full_evaluation_windows": 34657,
+  "full_evaluation_labels": 3327072,
+  "new_path_accuracy_changes": {
+    "all_day": {
+      "rmse": {
+        "before": 508.9208778659321,
+        "after": 467.3467651871999,
+        "improved": true
+      },
+      "mae": {
+        "before": 318.7289718647063,
+        "after": 241.47754693326684,
+        "improved": true
+      }
+    },
+    "daylight": {
+      "rmse": {
+        "before": 710.5783184757901,
+        "after": 659.4661555455175,
+        "improved": true
+      },
+      "mae": {
+        "before": 563.8845820606812,
+        "after": 480.82085619320975,
+        "improved": true
+      }
+    }
+  },
+  "monthly_daylight_rmse": {
+    "01": {
+      "before": 760.0121801094688,
+      "after": 677.0789036310554,
+      "improved": true
+    },
+    "02": {
+      "before": 639.4363970718505,
+      "after": 612.9807687437338,
+      "improved": true
+    },
+    "03": {
+      "before": 786.4674336883055,
+      "after": 745.6892577983547,
+      "improved": true
+    },
+    "04": {
+      "before": 781.2590205255685,
+      "after": 674.5513746179977,
+      "improved": true
+    },
+    "05": {
+      "before": 651.4966368220257,
+      "after": 607.1179437701202,
+      "improved": true
+    },
+    "06": {
+      "before": 627.8840099152113,
+      "after": 604.0681861671768,
+      "improved": true
+    },
+    "07": {
+      "before": 595.2992819074008,
+      "after": 566.6009570579541,
+      "improved": true
+    },
+    "08": {
+      "before": 772.9178321326278,
+      "after": 733.7030839049536,
+      "improved": true
+    },
+    "09": {
+      "before": 729.180546709112,
+      "after": 675.1220288547487,
+      "improved": true
+    },
+    "10": {
+      "before": 772.6805303649435,
+      "after": 726.0823252862394,
+      "improved": true
+    },
+    "11": {
+      "before": 708.3694687427413,
+      "after": 653.896010391142,
+      "improved": true
+    },
+    "12": {
+      "before": 693.4357935123697,
+      "after": 622.2135862907677,
+      "improved": true
+    }
+  },
+  "months_with_daylight_improvement": 12,
+  "weather_daylight_rmse": {
+    "overcast": {
+      "before": 641.9513361769953,
+      "after": 440.04123310567866,
+      "improved": true,
+      "coverage_after": 0.9607116172172778,
+      "mean_error_after_kw": 331.46375436893527
+    },
+    "clear": {
+      "before": 1014.4410134011387,
+      "after": 1057.403204416413,
+      "improved": false,
+      "coverage_after": 0.49364988300935925,
+      "mean_error_after_kw": -828.6387509792014
+    },
+    "partly_cloudy": {
+      "before": 395.32738041273177,
+      "after": 440.616832044284,
+      "improved": false,
+      "coverage_after": 0.9216934164258608,
+      "mean_error_after_kw": -185.2479780819558
+    },
+    "rain": {
+      "before": 819.8044925492748,
+      "after": 653.2365174329404,
+      "improved": true,
+      "coverage_after": 0.8355475040257649,
+      "mean_error_after_kw": 496.57344905165456
+    }
+  },
+  "daylight_interval_coverage": 0.8240861321906494,
+  "nominal_interval_coverage": 0.8,
+  "production_accepted": false
+}

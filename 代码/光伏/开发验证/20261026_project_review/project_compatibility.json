@@ -1,0 +1,117 @@
+{
+  "status": "verification_completed",
+  "independent_model_matches_requested_day13_contract": true,
+  "direct_current_platform_integration_ready": false,
+  "platform_consumer_uses_new_model": false,
+  "pv_regression": {
+    "tests": 81,
+    "seconds": 412.537,
+    "status": "passed"
+  },
+  "platform_regression": {
+    "tests": 43,
+    "status": "passed",
+    "isolated_local_mock_only": true
+  },
+  "fresh_holdout": {
+    "days": 55,
+    "points": 715,
+    "metrics": {
+      "count": 715,
+      "mae": 107.95475567408536,
+      "rmse": 173.0150216717061,
+      "nrmse": 0.25311717089979946,
+      "r2": 0.9518515544563741,
+      "coverage": 0.8545454545454545
+    },
+    "weather_condition": "known simulated target-day weather"
+  },
+  "bugs_fixed": [
+    "forecast end time consistency",
+    "point/interval length consistency",
+    "point/interval timestamp alignment",
+    "nonfinite or reversed interval rejection"
+  ],
+  "compatibility_gaps": [
+    {
+      "item": "consumer",
+      "status": "not_integrated",
+      "evidence": "actual resources(request) returns not_used and ignores injected forecast"
+    },
+    {
+      "item": "time_grid",
+      "status": "incompatible_for_direct_substitution",
+      "model": "13 hourly points 07:00–19:00",
+      "platform": "rolling next hour, four 15-minute intervals"
+    },
+    {
+      "item": "load_alignment",
+      "status": "adapter_required",
+      "evidence": "load_forecast/data.py: INTERVAL=15min,HORIZON=96"
+    },
+    {
+      "item": "runtime_dependencies",
+      "status": "separate_inference_runtime_required",
+      "evidence": {
+        "fastapi": true,
+        "numpy": false,
+        "pandas": false,
+        "sklearn": false,
+        "tensorflow": false
+      }
+    },
+    {
+      "item": "publication_and_scope",
+      "status": "candidate_only",
+      "published_at": null,
+      "forecast_scope": "configured_pv_assets",
+      "platform_scope": "mock-station-001"
+    },
+    {
+      "item": "future_weather",
+      "status": "offline_conditional_input",
+      "policy": "provided_target_day_weather"
+    },
+    {
+      "item": "deployment",
+      "status": "model_not_in_platform_repository",
+      "evidence": "root .gitignore publishes station_platform only"
+    }
+  ],
+  "existing_model_data_and_calibration_preserved": true,
+  "platform_business_logic_changed": false,
+  "reference_sources_sha256": {
+    "station_platform/domain.py": "e7ef5eafb608fc790c80548672516d58ba71408c60a5a314714ceafde91ed530",
+    "station_platform/defaults.py": "d76967bc2499bd1c2154182540191dae967725cc58c94a4308afd46930e42e09",
+    "station_platform/legacy/demand.py": "6a11cbae07b5edf0e713be91e7ef79e6f6024c8882c0f466f7971cbf79e7cd9b",
+    "station_platform/requirements-lock.txt": "7559c00527a2131e2e022fb5854c27924ffb353049616d89041a667ec2975116",
+    "代码/负荷/load_forecast/data.py": "d2e3c0c9f87606fd4f72bfe310d997c261df51eab85a3937a5243efe1a7d1883",
+    ".gitignore": "7b69df6a41c08ed46eac6abfdd360a1d07fe48bfb26bf7b85822da5c5ac4f92f"
+  },
+  "pv_source_sha256": {
+    "pv_forecast\\__init__.py": "8e2e8d79842f0a14971c35790baf251527bc75d36752474f7bdd796a19f3d883",
+    "pv_forecast\\backtesting.py": "29d89f69a0ff3c04588a2569c5646e47c1489e04e6e85f037e5f17f33d91b03c",
+    "pv_forecast\\baselines.py": "2ae903e99f170445b628259c3d477c03485fb3ee48709d54317f43c708d5c003",
+    "pv_forecast\\cli.py": "78d2101b6d24d9c9089b62af78c7b24b92d590b2fbc30dd32acb3281a07dc668",
+    "pv_forecast\\data.py": "38c3a75303ad14b76ba6f0ad97d6b6f0183df96f53896138beb68ec83d89e912",
+    "pv_forecast\\day13.py": "132c65bb2eb0a19eb0a2375b57dba25e80421873283355417a9337ee889ddfec",
+    "pv_forecast\\day13_data.py": "1dc7b94c86dab6a28a72f70792d1b6d424013cc1160edcf29f806ee14f9cd273",
+    "pv_forecast\\diagnostics.py": "cc96a4519c6292ae493ef039b09451976f68fdc808ce03aae337bfabaca62da3",
+    "pv_forecast\\errors.py": "1c4d4a9c6233a1ed112dd5d37b25915e021922813bb702d361dc0e144e42e47f",
+    "pv_forecast\\experiments.py": "2bec05ecd6ada4c80b733805291db0bb40dfac244e78368a06eb1606285cc20d",
+    "pv_forecast\\metrics.py": "70311ce45b81b99e730f351db88bd5afc6a892e622737091eff5463bd72bee40",
+    "pv_forecast\\models.py": "3048a73016ff8026a3ebdce8fb6da0e60418bc534b72f70d56956389653d3bd1",
+    "pv_forecast\\physics.py": "3cf29aee3774ac4f2fa841042aee9ea39dee5d8ed9cd3eaadbd31ee058c8af09",
+    "pv_forecast\\physics_experiments.py": "18c010b70fdd4bd7cd96a7204eed2fe45fba12af2cc7528b684bed16909a6ef6",
+    "pv_forecast\\physics_tree.py": "c77a26c3566fde48d2010c2518b2b449687627718e3a890969f52c664a791973",
+    "pv_forecast\\pipeline.py": "462e5c894034109a1c9850f5f740f1ad51fc38b26aebdae0ed4afd5b62f5abc0",
+    "pv_forecast\\point_correction.py": "592d506b972fa6f370130bec03f575026cc6c51513a4a0429dc9431da3dd6cf1",
+    "pv_forecast\\point_experiments.py": "f47c848fbca6eca3ff4171ab243b227c8fb605acd2515b4c8df57c6ad242d5c4",
+    "pv_forecast\\recalibration.py": "8d27c384fbf42146d0d5f8e8a284211c4cdb4c7394d9f977b91fe3e6ea7f0253",
+    "pv_forecast\\records.py": "a33c90cb3ed89e52e8f924d2021ea0ce137b8c96d1efa9e1289217f686670af4",
+    "pv_forecast\\visuals.py": "ba2dc0675d13e3ac5d3342f82c158c501f17c6641d8651a12551b3a998ea717a",
+    "pv_forecast\\weather.py": "59396a482945ac8f40f2bf5156d6186247b2dd7bb473c614fea70220075da166"
+  },
+  "local_socket_sandbox_issue": "sandbox socketpair blocked asyncio event loop; same complete platform suite passed with local loopback permitted",
+  "recommendation": "keep independent candidate; implement explicit read-only consumer/time/scope/publication adapter before enabling platform use"
+}

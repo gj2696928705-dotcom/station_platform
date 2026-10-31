@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "seeds": [
+    2026101401,
+    2026101402,
+    2026101403
+  ],
+  "evaluated_windows": 103971,
+  "scored_labels_per_model": 9981216,
+  "protocol_ref": "protocol.json"
+}

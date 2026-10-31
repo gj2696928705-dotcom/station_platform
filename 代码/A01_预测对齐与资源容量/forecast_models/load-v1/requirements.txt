@@ -1,0 +1,8 @@
+numpy>=1.26,<3
+pandas>=2.2,<4
+xgboost-cpu>=3.0,<4; platform_system == "Windows" or platform_system == "Linux"
+xgboost>=2.1,<4; platform_system == "Darwin"
+matplotlib>=3.8,<4
+openpyxl>=3.1
+xlrd>=2.0
+tzdata>=2025.1

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "document": "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\station_platform\\docs\\光伏预测对接说明_v0.3_day13.md",
+  "markdown_fences_balanced": true,
+  "referenced_code_and_artifact_paths_exist": true,
+  "current_model_metadata_matches": true,
+  "python_example_keywords_match_real_API": true,
+  "historical_CLI_replay_succeeded": true,
+  "forecast_points": 13,
+  "interval_minutes": 60,
+  "replay_date": "2025-12-31",
+  "overlap_example_kw": [
+    266.6666666666667,
+    400.0,
+    400.0,
+    400.0
+  ],
+  "overlap_energy_consistent": true,
+  "document_distinguishes_existing_and_planned_interfaces": true,
+  "platform_integration_implemented_by_this_task": false
+}

@@ -1,0 +1,820 @@
+{
+  "input": {
+    "schema_version": "a02-joint-v1",
+    "simulation": true,
+    "execution_mode": "offline_replay",
+    "task_id": "hand-example",
+    "task_version": 1,
+    "station_id": "test-station",
+    "meter_boundary": "station_ac",
+    "as_of": "2025-06-01T10:00:00+08:00",
+    "window_start": "2025-06-01T10:00:00+08:00",
+    "window_end": "2025-06-01T11:00:00+08:00",
+    "interval_minutes": 15,
+    "source_refs": {
+      "synthetic_test": "ed0adf5c51ba6b1c72d4f19a7d5c63ed365b5962c38ab2ebcd8721e1b69f8a71"
+    },
+    "assumptions": [],
+    "commitment_status": "complete",
+    "base_load_kw": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "pv_available_kw": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "existing_charge_by_port_kw": {
+      "P0": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "P1": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "P2": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "P3": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "P4": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "P5": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "P6": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "P7": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "grid_import_limit_kw": [
+      100,
+      100,
+      100,
+      100
+    ],
+    "grid_export_limit_kw": 0,
+    "rates_cny_per_kwh": [
+      1,
+      1,
+      3,
+      3
+    ],
+    "new_charge_limit_kw": null,
+    "ports": [
+      {
+        "port_id": "P0",
+        "connector": "DC",
+        "max_power_kw": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "occupied_slots": []
+      },
+      {
+        "port_id": "P1",
+        "connector": "DC",
+        "max_power_kw": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "occupied_slots": []
+      },
+      {
+        "port_id": "P2",
+        "connector": "DC",
+        "max_power_kw": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "occupied_slots": []
+      },
+      {
+        "port_id": "P3",
+        "connector": "DC",
+        "max_power_kw": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "occupied_slots": []
+      },
+      {
+        "port_id": "P4",
+        "connector": "DC",
+        "max_power_kw": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "occupied_slots": []
+      },
+      {
+        "port_id": "P5",
+        "connector": "DC",
+        "max_power_kw": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "occupied_slots": []
+      },
+      {
+        "port_id": "P6",
+        "connector": "DC",
+        "max_power_kw": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "occupied_slots": []
+      },
+      {
+        "port_id": "P7",
+        "connector": "DC",
+        "max_power_kw": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "occupied_slots": []
+      }
+    ],
+    "vehicles": [
+      {
+        "vehicle_id": "V0",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V1",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V2",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V3",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V4",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V5",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V6",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V7",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V8",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V9",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V10",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V11",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V12",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V13",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V14",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V15",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V16",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V17",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V18",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V19",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V20",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V21",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V22",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V23",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V24",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V25",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V26",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V27",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V28",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V29",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V30",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      },
+      {
+        "vehicle_id": "V31",
+        "connector": "DC",
+        "allowed_port_ids": [
+          "P0",
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5",
+          "P6",
+          "P7"
+        ],
+        "arrival_slot": 0,
+        "deadline_slot": 4,
+        "required_energy_kwh": 0.5,
+        "max_power_kw": 4
+      }
+    ],
+    "storage": {
+      "storage_id": "B1",
+      "capacity_kwh": 10,
+      "initial_energy_kwh": 5,
+      "min_soc": 0.1,
+      "max_soc": 0.9,
+      "reserve_soc": 0.3,
+      "max_charge_kw": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "max_discharge_kw": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "charge_efficiency": 1,
+      "discharge_efficiency": 1,
+      "terminal_rule": "hard_equality_at_window_end",
+      "terminal_energy_kwh": 5
+    },
+    "objective": {
+      "throughput_cost_cny_per_kwh": 0,
+      "curtailment_cost_cny_per_kwh": 0
+    }
+  },
+  "result": {
+    "schema_version": "a02-joint-v1",
+    "simulation": true,
+    "input_hash": "5b74168d9507988afceed010781ef53824b3b3abd74a8d1e81b6240ed17ce487",
+    "status": "UNKNOWN",
+    "plan": null,
+    "reasons": [
+      {
+        "code": "NO_INCUMBENT_FEASIBILITY_UNKNOWN",
+        "detail": "Check vehicle windows/connectors/port conflicts, grid, PCS, reserve and terminal equality; no constraint was relaxed."
+      }
+    ],
+    "storage_idle": false,
+    "solver": {
+      "backend": "SCIP 10.0.0 [LP solver: SoPlex 8.0.0]",
+      "raw_status": 6,
+      "time_limit_seconds": 0.001,
+      "elapsed_seconds": 0.22940920013934374,
+      "nodes": 0,
+      "variables": 3353,
+      "constraints": 3250,
+      "best_bound_cny": null,
+      "objective_cny": null,
+      "absolute_gap_cny": null,
+      "relative_gap": null,
+      "optimality_proven": false
+    }
+  }
+}

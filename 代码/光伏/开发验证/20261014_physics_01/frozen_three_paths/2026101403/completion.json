@@ -1,0 +1,7 @@
+{
+  "status": "completed",
+  "seed": 2026101403,
+  "evaluated_windows": 34657,
+  "source_sha256": "685270fd798f68673892a694b93b4987ffc4c3d1783ea3808dab3f0550028475",
+  "backtest_ref": "backtest.json"
+}

@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "objective": "请先阅读项目交接文档.md，再继续开发。当前任务是继续光伏预测算法开发",
+  "requirements": [
+    {
+      "requirement": "Read the handoff and continue standalone PV algorithm development",
+      "evidence": "项目交接文档.md; archived original handoff; point_correction.py; point_experiments.py; README.md",
+      "status": "proved"
+    },
+    {
+      "requirement": "Preserve complete GRU training, best weights, logs and original runs",
+      "evidence": "original artifact_audit.json; nine parent artifact hashes and training-window counts in point_correction_report.json; evidence_audit.json",
+      "status": "proved"
+    },
+    {
+      "requirement": "Use chronological complete windows, train-only fitting and keep test out of selection",
+      "evidence": "three full rolling correction folds; selection_and_calibration_frozen.json; test-label intervention regression; 24145 final training and 5161 test windows",
+      "status": "proved"
+    },
+    {
+      "requirement": "Deliver saved candidate, prediction/evaluation CLI and correct independent fallback intervals",
+      "evidence": "candidate_cli_verification.json; model_metadata.json; point_correction.joblib SHA256; forecast/evaluation JSON; real missing-artifact fallback checks",
+      "status": "proved"
+    },
+    {
+      "requirement": "Verify actual algorithm behavior and stronger seasonal/weather counterexamples",
+      "evidence": "53 tests; independent Ridge comparison; frozen-before-generation full 34657-window new path; 12 monthly improvements and clear/partly-cloudy regressions reported",
+      "status": "proved"
+    },
+    {
+      "requirement": "Keep loss/power figures and numerical metrics without metric charts",
+      "evidence": "original GRU visual audit; four candidate power PNGs visually reviewed; candidate_png_review.png; metrics JSON and logs",
+      "status": "proved"
+    },
+    {
+      "requirement": "Keep raw data, weights and simulator unchanged; use new output directories",
+      "evidence": "development/evaluation protocol hashes; evidence_audit.json; prior frozen source snapshot",
+      "status": "proved"
+    },
+    {
+      "requirement": "Keep candidate/simulation scope explicit and update the handoff",
+      "evidence": "model publication_status candidate; verification model_acceptance; updated handoff, README and development record with weather failures and real-data limitations",
+      "status": "proved"
+    }
+  ],
+  "scope_basis": "User requested continued PV algorithm development; original handoff describes a standalone simulated candidate and treats real-site deployment and energy-agent integration as subsequent conditional work.",
+  "delivered": "causal optional point correction, interval/frozen evaluation workflows, actual full-window evidence and documentation",
+  "production_accepted": false,
+  "known_accuracy_limits": [
+    "Clear and partly-cloudy daylight RMSE worsened on the new path despite lower aggregate error.",
+    "Clear-weather coverage remains 49.36%; August, September and October daylight coverage is below 80%.",
+    "Night point and zero-width interval assume zero PV power; not validated against real measurements.",
+    "Simulator paths and overlapping windows cannot establish real-site accuracy or future coverage."
+  ]
+}

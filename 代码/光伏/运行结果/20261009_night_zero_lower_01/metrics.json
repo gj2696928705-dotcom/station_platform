@@ -1,0 +1,61 @@
+{
+  "selected_model": "gru",
+  "validation": {
+    "count": 495456,
+    "mae": 279.0063005768546,
+    "rmse": 498.3318151491248,
+    "nrmse": 0.8932872462494417,
+    "r2": 0.6803629069903829,
+    "coverage": 0.9041024833688561,
+    "mean_interval_width_kw": 807.8503426608316
+  },
+  "validation_daylight": {
+    "count": 237440,
+    "mae": 565.8497639687617,
+    "rmse": 717.8332163168769,
+    "nrmse": 0.6166586966783635,
+    "r2": 0.4371640172052572,
+    "coverage": 0.7998947102425876,
+    "mean_interval_width_kw": 1654.5131540508871
+  },
+  "validation_night": {
+    "count": 258016,
+    "mae": 15.037740689969718,
+    "rmse": 51.70225775498312,
+    "nrmse": null,
+    "r2": null,
+    "coverage": 1.0,
+    "mean_interval_width_kw": 28.70634408533724
+  },
+  "test": {
+    "count": 495456,
+    "mae": 262.6406008312545,
+    "rmse": 444.19889881965935,
+    "nrmse": 1.1971136018250534,
+    "r2": 0.5748522408544954,
+    "coverage": 0.9278563585868371,
+    "mean_interval_width_kw": 745.3044562185152
+  },
+  "test_daylight": {
+    "count": 210298,
+    "mae": 577.8390382599194,
+    "rmse": 674.0318548349561,
+    "nrmse": 0.7710248223374397,
+    "r2": 0.3048603156379408,
+    "coverage": 0.8300316693454051,
+    "mean_interval_width_kw": 1696.4710673320958
+  },
+  "test_night": {
+    "count": 285158,
+    "mae": 30.18841294112569,
+    "rmse": 88.18140782279407,
+    "nrmse": null,
+    "r2": null,
+    "coverage": 1.0,
+    "mean_interval_width_kw": 43.839177376737034
+  },
+  "evaluation_scope": "all recorded windows; overlapping target timestamps counted per origin",
+  "recalibration_report_ref": "recalibration_report.json",
+  "visualizations": [],
+  "visualization_errors": []
+}

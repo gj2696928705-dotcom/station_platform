@@ -1,0 +1,973 @@
+{
+  "audit_kind": "strict_D02_adapter_refusal",
+  "device_dispatch_authorized": false,
+  "event_count": 152,
+  "limitation": "Workflow fixture acceptance is not evidence of A03 safety or algorithm feasibility; no truth values used to fill live inputs.",
+  "scenario_count": 22,
+  "scenarios": [
+    {
+      "attempts": [
+        {
+          "checked_at": "2025-09-15T10:00:00+08:00",
+          "event_id": "R01_normal-E003",
+          "passed": false,
+          "plan_fingerprint": "4213bd3f22f63fcde7b79b7e2199efa3c3209e60674bc366afd910beaf978a0a",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R01_normal-E000",
+            "R01_normal-E001",
+            "R01_normal-E002",
+            "R01_normal-E003",
+            "R01_normal-E004"
+          ]
+        }
+      ],
+      "release_count": 0,
+      "scenario_id": "R01_normal"
+    },
+    {
+      "attempts": [
+        {
+          "checked_at": "2025-09-15T10:00:00+08:00",
+          "event_id": "R02_duplicate-E003",
+          "passed": false,
+          "plan_fingerprint": "b29e9458b5c2cff28e2a80c0adc9673b57a750e75d86032e6781110f22a61795",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R02_duplicate-E000",
+            "R02_duplicate-E001",
+            "R02_duplicate-E002",
+            "R02_duplicate-E003",
+            "R02_duplicate-E004"
+          ]
+        }
+      ],
+      "release_count": 0,
+      "scenario_id": "R02_duplicate"
+    },
+    {
+      "attempts": [
+        {
+          "checked_at": "2025-09-15T10:00:00+08:00",
+          "event_id": "R03_rejected-E003",
+          "passed": false,
+          "plan_fingerprint": "74babe03b98d64ab3e92beb2dd93c422ffcfcf8bac57d9f9e93d76601bf23950",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R03_rejected-E000",
+            "R03_rejected-E001",
+            "R03_rejected-E002",
+            "R03_rejected-E003"
+          ]
+        }
+      ],
+      "release_count": 0,
+      "scenario_id": "R03_rejected"
+    },
+    {
+      "attempts": [
+        {
+          "checked_at": "2025-09-15T10:00:00+08:00",
+          "event_id": "R04_soc_drift-E003",
+          "passed": false,
+          "plan_fingerprint": "a052c811224bc3a8256999204f6b1403e8bcbbffbacc0e47c85bff67d8690907",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R04_soc_drift-E000",
+            "R04_soc_drift-E001",
+            "R04_soc_drift-E002",
+            "R04_soc_drift-E003",
+            "R04_soc_drift-E004"
+          ]
+        }
+      ],
+      "release_count": 0,
+      "scenario_id": "R04_soc_drift"
+    },
+    {
+      "attempts": [
+        {
+          "checked_at": "2025-09-15T10:00:00+08:00",
+          "event_id": "R05_pv_drop-E003",
+          "passed": false,
+          "plan_fingerprint": "b36f51c29dc9a79720466862757a33a12af017454f138b9a72309040d10ebd1d",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R05_pv_drop-E000",
+            "R05_pv_drop-E001",
+            "R05_pv_drop-E002",
+            "R05_pv_drop-E003",
+            "R05_pv_drop-E004"
+          ]
+        }
+      ],
+      "release_count": 0,
+      "scenario_id": "R05_pv_drop"
+    },
+    {
+      "attempts": [
+        {
+          "checked_at": "2025-09-15T10:00:00+08:00",
+          "event_id": "R06_grid_derate-E003",
+          "passed": false,
+          "plan_fingerprint": "7ec5bfb3b2f0f27889dbab94a61b7ca9cb91da023bab25800abd97c96475f38c",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R06_grid_derate-E000",
+            "R06_grid_derate-E001",
+            "R06_grid_derate-E002",
+            "R06_grid_derate-E003",
+            "R06_grid_derate-E004"
+          ]
+        }
+      ],
+      "release_count": 0,
+      "scenario_id": "R06_grid_derate"
+    },
+    {
+      "attempts": [
+        {
+          "checked_at": "2025-09-15T10:00:00+08:00",
+          "event_id": "R07_cancel_ack_late-E003",
+          "passed": false,
+          "plan_fingerprint": "47335f26dbc808b04342a20679cdb450e5d7075909819f6a9db514758e9d308a",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R07_cancel_ack_late-E000",
+            "R07_cancel_ack_late-E001",
+            "R07_cancel_ack_late-E002",
+            "R07_cancel_ack_late-E003",
+            "R07_cancel_ack_late-E004"
+          ]
+        },
+        {
+          "checked_at": "2025-09-15T10:17:00+08:00",
+          "event_id": "R07_cancel_ack_late-E007",
+          "passed": false,
+          "plan_fingerprint": "f5872cff87d36e3d5799b3cb9dae70c15fdafb795adada2a6bb859ab5d36f3ac",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R07_cancel_ack_late-E000",
+            "R07_cancel_ack_late-E001",
+            "R07_cancel_ack_late-E002",
+            "R07_cancel_ack_late-E003",
+            "R07_cancel_ack_late-E004",
+            "R07_cancel_ack_late-E005",
+            "R07_cancel_ack_late-E006",
+            "R07_cancel_ack_late-E007"
+          ]
+        },
+        {
+          "checked_at": "2025-09-15T10:30:00+08:00",
+          "event_id": "R07_cancel_ack_late-E009",
+          "passed": false,
+          "plan_fingerprint": "f5872cff87d36e3d5799b3cb9dae70c15fdafb795adada2a6bb859ab5d36f3ac",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R07_cancel_ack_late-E000",
+            "R07_cancel_ack_late-E001",
+            "R07_cancel_ack_late-E002",
+            "R07_cancel_ack_late-E003",
+            "R07_cancel_ack_late-E004",
+            "R07_cancel_ack_late-E005",
+            "R07_cancel_ack_late-E006",
+            "R07_cancel_ack_late-E007",
+            "R07_cancel_ack_late-E008",
+            "R07_cancel_ack_late-E009",
+            "R07_cancel_ack_late-E010"
+          ]
+        }
+      ],
+      "release_count": 0,
+      "scenario_id": "R07_cancel_ack_late"
+    },
+    {
+      "attempts": [
+        {
+          "checked_at": "2025-09-15T10:00:00+08:00",
+          "event_id": "R08_old_receipt-E003",
+          "passed": false,
+          "plan_fingerprint": "93768b2800ec82429da29e901901b266feb7f02e044a02faa21d454f71252612",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R08_old_receipt-E000",
+            "R08_old_receipt-E001",
+            "R08_old_receipt-E002",
+            "R08_old_receipt-E003",
+            "R08_old_receipt-E004"
+          ]
+        },
+        {
+          "checked_at": "2025-09-15T10:30:00+08:00",
+          "event_id": "R08_old_receipt-E008",
+          "passed": false,
+          "plan_fingerprint": "60fcf485875e226e03c42ded67ecfca98db566a428cc7679d95a791d6ad2e140",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R08_old_receipt-E000",
+            "R08_old_receipt-E001",
+            "R08_old_receipt-E002",
+            "R08_old_receipt-E003",
+            "R08_old_receipt-E004",
+            "R08_old_receipt-E005",
+            "R08_old_receipt-E006",
+            "R08_old_receipt-E007",
+            "R08_old_receipt-E008",
+            "R08_old_receipt-E009"
+          ]
+        }
+      ],
+      "release_count": 0,
+      "scenario_id": "R08_old_receipt"
+    },
+    {
+      "attempts": [
+        {
+          "checked_at": "2025-09-15T10:00:00+08:00",
+          "event_id": "R09_measurement_before_receipt-E003",
+          "passed": false,
+          "plan_fingerprint": "32a8071f18c58d8a7198b1c91025b0531b16d14bf352b57bb9d4d41f37f8842a",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R09_measurement_before_receipt-E000",
+            "R09_measurement_before_receipt-E001",
+            "R09_measurement_before_receipt-E002",
+            "R09_measurement_before_receipt-E003",
+            "R09_measurement_before_receipt-E004"
+          ]
+        },
+        {
+          "checked_at": "2025-09-15T10:30:00+08:00",
+          "event_id": "R09_measurement_before_receipt-E008",
+          "passed": false,
+          "plan_fingerprint": "65400c338634e4d2ca15e2a88b66f686e8b1a1546052b9e226fe55e37ec61f33",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R09_measurement_before_receipt-E000",
+            "R09_measurement_before_receipt-E001",
+            "R09_measurement_before_receipt-E002",
+            "R09_measurement_before_receipt-E003",
+            "R09_measurement_before_receipt-E004",
+            "R09_measurement_before_receipt-E005",
+            "R09_measurement_before_receipt-E006",
+            "R09_measurement_before_receipt-E007",
+            "R09_measurement_before_receipt-E008",
+            "R09_measurement_before_receipt-E009"
+          ]
+        }
+      ],
+      "release_count": 0,
+      "scenario_id": "R09_measurement_before_receipt"
+    },
+    {
+      "attempts": [
+        {
+          "checked_at": "2025-09-15T10:00:00+08:00",
+          "event_id": "R10_event_id_conflict-E003",
+          "passed": false,
+          "plan_fingerprint": "e8eea3c788b2688a25e60a7b1777d0d6cad375e27acda3ad571385809264f8d8",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R10_event_id_conflict-E000",
+            "R10_event_id_conflict-E001",
+            "R10_event_id_conflict-E002",
+            "R10_event_id_conflict-E003",
+            "R10_event_id_conflict-E004"
+          ]
+        }
+      ],
+      "release_count": 0,
+      "scenario_id": "R10_event_id_conflict"
+    },
+    {
+      "attempts": [
+        {
+          "checked_at": "2025-09-15T10:00:00+08:00",
+          "event_id": "R11_restart_replay-E003",
+          "passed": false,
+          "plan_fingerprint": "edc3808a10f88b7f2090764de4fc790725273ace03d06696f994872a65fa5e85",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R11_restart_replay-E000",
+            "R11_restart_replay-E001",
+            "R11_restart_replay-E002",
+            "R11_restart_replay-E003",
+            "R11_restart_replay-E004"
+          ]
+        }
+      ],
+      "release_count": 0,
+      "scenario_id": "R11_restart_replay"
+    },
+    {
+      "attempts": [
+        {
+          "checked_at": "2025-09-15T10:00:00+08:00",
+          "event_id": "R12_protection-E004",
+          "passed": false,
+          "plan_fingerprint": "0f42f5d091fc0da6f12406ebaa977a7a3bedb36971b3caf3754852e49ff694a5",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R12_protection-E000",
+            "R12_protection-E001",
+            "R12_protection-E002",
+            "R12_protection-E003",
+            "R12_protection-E004"
+          ]
+        }
+      ],
+      "release_count": 0,
+      "scenario_id": "R12_protection"
+    },
+    {
+      "attempts": [
+        {
+          "checked_at": "2025-09-15T10:00:00+08:00",
+          "event_id": "R13_manual_takeover-E004",
+          "passed": false,
+          "plan_fingerprint": "fe9e22c3f2066f8a344c5b052eb44b4636cb2753934994b1c985ad475fe3cfea",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R13_manual_takeover-E000",
+            "R13_manual_takeover-E001",
+            "R13_manual_takeover-E002",
+            "R13_manual_takeover-E003",
+            "R13_manual_takeover-E004"
+          ]
+        }
+      ],
+      "release_count": 0,
+      "scenario_id": "R13_manual_takeover"
+    },
+    {
+      "attempts": [
+        {
+          "checked_at": "2025-09-15T10:00:00+08:00",
+          "event_id": "R14_device_frozen-E004",
+          "passed": false,
+          "plan_fingerprint": "751fdfe27be86b17de86402a92d6da660125f2519245f6e440460a1a75021e5d",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R14_device_frozen-E000",
+            "R14_device_frozen-E001",
+            "R14_device_frozen-E002",
+            "R14_device_frozen-E003",
+            "R14_device_frozen-E004"
+          ]
+        }
+      ],
+      "release_count": 0,
+      "scenario_id": "R14_device_frozen"
+    },
+    {
+      "attempts": [
+        {
+          "checked_at": "2025-09-15T10:00:00+08:00",
+          "event_id": "R15_poor_measurement-E003",
+          "passed": false,
+          "plan_fingerprint": "807d5e248c113b06963d6f75f9bbe0120ec64afbc37c7c00cbdc519fe46a8f43",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R15_poor_measurement-E000",
+            "R15_poor_measurement-E001",
+            "R15_poor_measurement-E002",
+            "R15_poor_measurement-E003"
+          ]
+        }
+      ],
+      "release_count": 0,
+      "scenario_id": "R15_poor_measurement"
+    },
+    {
+      "attempts": [
+        {
+          "checked_at": "2025-09-15T10:00:00+08:00",
+          "event_id": "R16_stale_measurement-E003",
+          "passed": false,
+          "plan_fingerprint": "de0a28ee138bf86d6fd9db3a72e63c8e905e41fe6039748a6be642c3238cd5c0",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R16_stale_measurement-E000",
+            "R16_stale_measurement-E001",
+            "R16_stale_measurement-E002",
+            "R16_stale_measurement-E003"
+          ]
+        }
+      ],
+      "release_count": 0,
+      "scenario_id": "R16_stale_measurement"
+    },
+    {
+      "attempts": [
+        {
+          "checked_at": "2025-09-15T10:00:00+08:00",
+          "event_id": "R17_forecast_expired-E003",
+          "passed": false,
+          "plan_fingerprint": "bcbf12eb2348d7be2eb1dfc3c989cce9357e6e9c82fc4f5312101f13119cf4c3",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R17_forecast_expired-E000",
+            "R17_forecast_expired-E001",
+            "R17_forecast_expired-E002",
+            "R17_forecast_expired-E003"
+          ]
+        }
+      ],
+      "release_count": 0,
+      "scenario_id": "R17_forecast_expired"
+    },
+    {
+      "attempts": [
+        {
+          "checked_at": "2025-09-15T10:00:00+08:00",
+          "event_id": "R18_forecast_gap-E003",
+          "passed": false,
+          "plan_fingerprint": "6fbfdbd76719dfe650a281f7848f663182619ec1627c83b512ab016faad42be5",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R18_forecast_gap-E000",
+            "R18_forecast_gap-E001",
+            "R18_forecast_gap-E002",
+            "R18_forecast_gap-E003"
+          ]
+        }
+      ],
+      "release_count": 0,
+      "scenario_id": "R18_forecast_gap"
+    },
+    {
+      "attempts": [
+        {
+          "checked_at": "2025-09-15T10:00:00+08:00",
+          "event_id": "R19_connection_lost-E004",
+          "passed": false,
+          "plan_fingerprint": "35b99b7258daec4ce55494319f1de3654d33d35e561ecafc89cbff16a2635258",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R19_connection_lost-E000",
+            "R19_connection_lost-E001",
+            "R19_connection_lost-E002",
+            "R19_connection_lost-E003",
+            "R19_connection_lost-E004"
+          ]
+        }
+      ],
+      "release_count": 0,
+      "scenario_id": "R19_connection_lost"
+    },
+    {
+      "attempts": [
+        {
+          "checked_at": "2025-09-15T10:00:00+08:00",
+          "event_id": "R20_connection_restored-E004",
+          "passed": false,
+          "plan_fingerprint": "6958a3ed0069ec99337c489e09c9f6fa8cfb73ecd1b98bc52846fc86436d52c1",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R20_connection_restored-E000",
+            "R20_connection_restored-E001",
+            "R20_connection_restored-E002",
+            "R20_connection_restored-E003",
+            "R20_connection_restored-E004"
+          ]
+        }
+      ],
+      "release_count": 0,
+      "scenario_id": "R20_connection_restored"
+    },
+    {
+      "attempts": [
+        {
+          "checked_at": "2025-09-15T10:00:00+08:00",
+          "event_id": "R21_replan_exhausted-E003",
+          "passed": false,
+          "plan_fingerprint": "284de051e6143694184aa84e176a16c14dccac92f0734ab27c70ba1ea7001214",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R21_replan_exhausted-E000",
+            "R21_replan_exhausted-E001",
+            "R21_replan_exhausted-E002",
+            "R21_replan_exhausted-E003",
+            "R21_replan_exhausted-E004"
+          ]
+        }
+      ],
+      "release_count": 0,
+      "scenario_id": "R21_replan_exhausted"
+    },
+    {
+      "attempts": [
+        {
+          "checked_at": "2025-09-15T10:00:00+08:00",
+          "event_id": "R22_remaining_infeasible-E003",
+          "passed": false,
+          "plan_fingerprint": "5c58fd4dacb78331ea6cbd847ad3424d2a60bbd25310ff379daf4a0d40cb2fbb",
+          "stage": "adapter",
+          "violations": [
+            {
+              "code": "D02_WORKFLOW_PLAN_UNSUPPORTED"
+            },
+            {
+              "code": "DEVICE_MAPPING_MISSING"
+            },
+            {
+              "code": "COMMITMENT_PROFILE_MISSING"
+            },
+            {
+              "code": "COMPLETE_LIVE_STATE_MISSING"
+            },
+            {
+              "code": "VERSIONED_APPROVAL_MISSING"
+            }
+          ],
+          "visible_event_ids": [
+            "R22_remaining_infeasible-E000",
+            "R22_remaining_infeasible-E001",
+            "R22_remaining_infeasible-E002",
+            "R22_remaining_infeasible-E003",
+            "R22_remaining_infeasible-E004"
+          ]
+        }
+      ],
+      "release_count": 0,
+      "scenario_id": "R22_remaining_infeasible"
+    }
+  ],
+  "simulation": true,
+  "source_hashes_sha256": {
+    "储能参数与初始状态/储能参数.csv": "3536c8694ed45036842a96c75a09a6684db7ec4ff1ffb302a88585f90e90aaa3",
+    "场站联动模拟数据/booking_events.csv": "253f6908d1be5ecd7d8b18431a100e7ce9cfd9c0d00311919a5838d9af9d9188",
+    "场站联动模拟数据/forecast_values.csv": "23cdaffb280195ed943f57dd61669ec843c5f46374dd4ad3eb020d9af268ad0e",
+    "场站联动模拟数据/scenario_inputs.csv": "3c923806bfc989af50fded18d32ba9916815785040a7e86c115059f2f34b242c",
+    "场站联动模拟数据/scenario_truth.csv": "3348816745e08e0568d1720be296fd25fad496c27743eacd4daf4252631b062f",
+    "场站联动模拟数据/station_interval_truth.csv": "d631a3cf7b2ff3a361b2c7fe5ccc27096ce1b1d312e15c5fb2e3f900107766f4",
+    "滚动事件模拟数据/events.jsonl": "fc789af1a60277b326bfd1640a39afbf6217c195f75f99d26a3dddacc894f2ba",
+    "滚动事件模拟数据/scenario_manifest.json": "56791cebe61ecd4014434227a4fe83a37a7bae341b3af58cc45061ffea228973",
+    "滚动事件模拟数据/simulation_config.json": "f3f4fcd9881dba31d3fa09e7d8346e9fe45ba1a4fa04ae8924d4f59253e777ab"
+  }
+}

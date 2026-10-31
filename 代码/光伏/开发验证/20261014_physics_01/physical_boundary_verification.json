@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "hand_computed_horizontal_1000_W_m2_power_kw": 3938.0,
+  "ambient_temperature_plus_10_C_power_kw": 3762.0,
+  "capacity_clipped_power_kw": 5000.0,
+  "night_zero": true,
+  "negative_and_nonfinite_irradiance_rejected": true,
+  "low_sun_and_night_nonzero_sensor_history_finite": true,
+  "power_ratio_floor_kw": 50.0,
+  "irradiance_ratio_floor_W_m2": 20.0,
+  "all_288_history_points_and_96_targets_retained": true
+}

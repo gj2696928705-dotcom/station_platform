@@ -1,0 +1,18 @@
+{
+  "history": [
+    "pv_power_kw",
+    "SWGDN",
+    "temperature_c",
+    "cloud_cover"
+  ],
+  "future": [
+    "sin_time_of_day",
+    "cos_time_of_day",
+    "sin_day_of_year",
+    "cos_day_of_year",
+    "is_daylight",
+    "solar_elevation_deg"
+  ],
+  "training_weather_issue_times": [],
+  "validation_weather_issue_times": []
+}

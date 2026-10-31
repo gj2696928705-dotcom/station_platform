@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "verified_date": "2026-10-26",
+  "public_predict_record_default_is_current_day": true,
+  "explicit_date_matches": true,
+  "hours": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "interval_minutes": 60,
+  "input_kind": "synthetic date-shifted 4-day block; contract check, no actual current-day forecast claimed"
+}

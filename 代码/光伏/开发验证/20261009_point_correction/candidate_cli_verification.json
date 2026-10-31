@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "commands": {
+    "predict": {
+      "exit_code": 0,
+      "png_count": 3
+    },
+    "evaluate": {
+      "exit_code": 0,
+      "png_count": 1
+    }
+  },
+  "reload_points_match_saved": true,
+  "point_transformation_independently_checked": true,
+  "missing_correction_and_GRU_use_own_baseline": true,
+  "png_refs": [
+    "运行结果/20261009_point_correction_01/visualizations/ab2000cc-7d6e-4d16-b87f-b630920dfdca_forecast_24h.png",
+    "运行结果/20261009_point_correction_01/visualizations/ab2000cc-7d6e-4d16-b87f-b630920dfdca_history_forecast.png",
+    "运行结果/20261009_point_correction_01/visualizations/ab2000cc-7d6e-4d16-b87f-b630920dfdca_forecast_profile.png",
+    "运行结果/20261009_point_correction_01/visualizations/fa7640a7-10f2-42d7-86a5-cfc000990798_actual_vs_forecast.png"
+  ],
+  "candidate_only": true
+}

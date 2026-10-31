@@ -1,0 +1,192 @@
+[
+  {
+    "numeric_expected": false,
+    "governance_expected": false,
+    "gate": {
+      "eligible_for_offline_simulation": false,
+      "numeric": {
+        "passed": false,
+        "simulation": true,
+        "certified_safety_service": false,
+        "violations": [
+          {
+            "code": "POWER_BALANCE",
+            "slot": 0,
+            "actual": 13.0,
+            "expected": 12.0
+          }
+        ],
+        "metrics": {
+          "purchase_cost_cny": 5.25,
+          "throughput_cost_cny": 0.0,
+          "curtailment_cost_cny": 0.0,
+          "total_objective_cny": 5.25,
+          "grid_import_kwh": 5.25,
+          "pv_used_kwh": 0.0,
+          "pv_curtailed_kwh": 0.0,
+          "storage_throughput_kwh": 4.0,
+          "storage_loss_kwh": 0.0,
+          "storage_initial_kwh": 5.0,
+          "storage_terminal_kwh": 5.0,
+          "peak_import_kw": 13.0,
+          "delivered_energy_by_vehicle_kwh": {
+            "V1": 1.0
+          },
+          "max_balance_residual_kw": 1.0
+        },
+        "plan_fingerprint": "912e0c05491149398fcbff48fbae04aed0fb3e30333418f2bd5420e0725cad02",
+        "input_hash": "44fe346c3120dff7179d7cc1aeb865d5a4aeef3789b77d291825e898f92c4fc6",
+        "checked_input_hash": "44fe346c3120dff7179d7cc1aeb865d5a4aeef3789b77d291825e898f92c4fc6"
+      },
+      "governance": {
+        "passed": false,
+        "violations": [
+          "EXPLICIT_ASSUMPTIONS_NOT_ACCEPTED"
+        ],
+        "rule_version": "a02-offline-governance-v1",
+        "plan_fingerprint": "912e0c05491149398fcbff48fbae04aed0fb3e30333418f2bd5420e0725cad02",
+        "input_hash": "44fe346c3120dff7179d7cc1aeb865d5a4aeef3789b77d291825e898f92c4fc6",
+        "checked_input_hash": "44fe346c3120dff7179d7cc1aeb865d5a4aeef3789b77d291825e898f92c4fc6"
+      },
+      "device_dispatch_authorized": false
+    }
+  },
+  {
+    "numeric_expected": false,
+    "governance_expected": true,
+    "gate": {
+      "eligible_for_offline_simulation": false,
+      "numeric": {
+        "passed": false,
+        "simulation": true,
+        "certified_safety_service": false,
+        "violations": [
+          {
+            "code": "POWER_BALANCE",
+            "slot": 0,
+            "actual": 13.0,
+            "expected": 12.0
+          }
+        ],
+        "metrics": {
+          "purchase_cost_cny": 5.25,
+          "throughput_cost_cny": 0.0,
+          "curtailment_cost_cny": 0.0,
+          "total_objective_cny": 5.25,
+          "grid_import_kwh": 5.25,
+          "pv_used_kwh": 0.0,
+          "pv_curtailed_kwh": 0.0,
+          "storage_throughput_kwh": 4.0,
+          "storage_loss_kwh": 0.0,
+          "storage_initial_kwh": 5.0,
+          "storage_terminal_kwh": 5.0,
+          "peak_import_kw": 13.0,
+          "delivered_energy_by_vehicle_kwh": {
+            "V1": 1.0
+          },
+          "max_balance_residual_kw": 1.0
+        },
+        "plan_fingerprint": "912e0c05491149398fcbff48fbae04aed0fb3e30333418f2bd5420e0725cad02",
+        "input_hash": "44fe346c3120dff7179d7cc1aeb865d5a4aeef3789b77d291825e898f92c4fc6",
+        "checked_input_hash": "44fe346c3120dff7179d7cc1aeb865d5a4aeef3789b77d291825e898f92c4fc6"
+      },
+      "governance": {
+        "passed": true,
+        "violations": [],
+        "rule_version": "a02-offline-governance-v1",
+        "plan_fingerprint": "912e0c05491149398fcbff48fbae04aed0fb3e30333418f2bd5420e0725cad02",
+        "input_hash": "44fe346c3120dff7179d7cc1aeb865d5a4aeef3789b77d291825e898f92c4fc6",
+        "checked_input_hash": "44fe346c3120dff7179d7cc1aeb865d5a4aeef3789b77d291825e898f92c4fc6"
+      },
+      "device_dispatch_authorized": false
+    }
+  },
+  {
+    "numeric_expected": true,
+    "governance_expected": false,
+    "gate": {
+      "eligible_for_offline_simulation": false,
+      "numeric": {
+        "passed": true,
+        "simulation": true,
+        "certified_safety_service": false,
+        "violations": [],
+        "metrics": {
+          "purchase_cost_cny": 5.0,
+          "throughput_cost_cny": 0.0,
+          "curtailment_cost_cny": 0.0,
+          "total_objective_cny": 5.0,
+          "grid_import_kwh": 5.0,
+          "pv_used_kwh": 0.0,
+          "pv_curtailed_kwh": 0.0,
+          "storage_throughput_kwh": 4.0,
+          "storage_loss_kwh": 0.0,
+          "storage_initial_kwh": 5.0,
+          "storage_terminal_kwh": 5.0,
+          "peak_import_kw": 12.0,
+          "delivered_energy_by_vehicle_kwh": {
+            "V1": 1.0
+          },
+          "max_balance_residual_kw": 0.0
+        },
+        "plan_fingerprint": "322d47478511898d2c29379a0851eac4108c619e34bf9c09e9a93dfbe2f66d64",
+        "input_hash": "44fe346c3120dff7179d7cc1aeb865d5a4aeef3789b77d291825e898f92c4fc6",
+        "checked_input_hash": "44fe346c3120dff7179d7cc1aeb865d5a4aeef3789b77d291825e898f92c4fc6"
+      },
+      "governance": {
+        "passed": false,
+        "violations": [
+          "EXPLICIT_ASSUMPTIONS_NOT_ACCEPTED"
+        ],
+        "rule_version": "a02-offline-governance-v1",
+        "plan_fingerprint": "322d47478511898d2c29379a0851eac4108c619e34bf9c09e9a93dfbe2f66d64",
+        "input_hash": "44fe346c3120dff7179d7cc1aeb865d5a4aeef3789b77d291825e898f92c4fc6",
+        "checked_input_hash": "44fe346c3120dff7179d7cc1aeb865d5a4aeef3789b77d291825e898f92c4fc6"
+      },
+      "device_dispatch_authorized": false
+    }
+  },
+  {
+    "numeric_expected": true,
+    "governance_expected": true,
+    "gate": {
+      "eligible_for_offline_simulation": true,
+      "numeric": {
+        "passed": true,
+        "simulation": true,
+        "certified_safety_service": false,
+        "violations": [],
+        "metrics": {
+          "purchase_cost_cny": 5.0,
+          "throughput_cost_cny": 0.0,
+          "curtailment_cost_cny": 0.0,
+          "total_objective_cny": 5.0,
+          "grid_import_kwh": 5.0,
+          "pv_used_kwh": 0.0,
+          "pv_curtailed_kwh": 0.0,
+          "storage_throughput_kwh": 4.0,
+          "storage_loss_kwh": 0.0,
+          "storage_initial_kwh": 5.0,
+          "storage_terminal_kwh": 5.0,
+          "peak_import_kw": 12.0,
+          "delivered_energy_by_vehicle_kwh": {
+            "V1": 1.0
+          },
+          "max_balance_residual_kw": 0.0
+        },
+        "plan_fingerprint": "322d47478511898d2c29379a0851eac4108c619e34bf9c09e9a93dfbe2f66d64",
+        "input_hash": "44fe346c3120dff7179d7cc1aeb865d5a4aeef3789b77d291825e898f92c4fc6",
+        "checked_input_hash": "44fe346c3120dff7179d7cc1aeb865d5a4aeef3789b77d291825e898f92c4fc6"
+      },
+      "governance": {
+        "passed": true,
+        "violations": [],
+        "rule_version": "a02-offline-governance-v1",
+        "plan_fingerprint": "322d47478511898d2c29379a0851eac4108c619e34bf9c09e9a93dfbe2f66d64",
+        "input_hash": "44fe346c3120dff7179d7cc1aeb865d5a4aeef3789b77d291825e898f92c4fc6",
+        "checked_input_hash": "44fe346c3120dff7179d7cc1aeb865d5a4aeef3789b77d291825e898f92c4fc6"
+      },
+      "device_dispatch_authorized": false
+    }
+  }
+]

@@ -1,0 +1,2525 @@
+{
+  "scenario_id": "S10_no_booking",
+  "simulation": true,
+  "request": {
+    "request_id": "needs-fee803315c334a4f869242e2e469de40",
+    "user_demand": {
+      "vehicles": [
+        {
+          "vehicle_id": "S10_no_booking-R001",
+          "requested_energy_kwh": 50.0,
+          "arrival_minutes": 0,
+          "departure_minutes": 60,
+          "priority": "ordinary"
+        },
+        {
+          "vehicle_id": "S10_no_booking-R002",
+          "requested_energy_kwh": 50.0,
+          "arrival_minutes": 0,
+          "departure_minutes": 60,
+          "priority": "ordinary"
+        },
+        {
+          "vehicle_id": "S10_no_booking-R003",
+          "requested_energy_kwh": 50.0,
+          "arrival_minutes": 0,
+          "departure_minutes": 60,
+          "priority": "ordinary"
+        },
+        {
+          "vehicle_id": "S10_no_booking-R004",
+          "requested_energy_kwh": 50.0,
+          "arrival_minutes": 0,
+          "departure_minutes": 60,
+          "priority": "ordinary"
+        }
+      ]
+    },
+    "station_state_snapshot": {
+      "request_id": "needs-fee803315c334a4f869242e2e469de40",
+      "snapshot_id": "mock-state-d29f71240cc24f91b602d2266de335df",
+      "station_id": "HH-Huanghua-CSS",
+      "rule_version": "mock-rule-v2",
+      "strategy_version": "service-search-v1",
+      "generated_at": "2025-12-01T10:00:00+08:00",
+      "expires_at": "2025-12-01T11:00:00+08:00",
+      "clock_source": "test_runner_utc",
+      "operation_mode": "normal",
+      "data_quality_summary": "B",
+      "vehicles": [
+        {
+          "vehicle_id": "S10_no_booking-R001",
+          "requested_energy_kwh": 50.0,
+          "arrival_slot": 0,
+          "deadline_slot": 4,
+          "priority": "ordinary",
+          "max_charge_power_kw": 240.0,
+          "connector": "DC",
+          "soc_percent": 30,
+          "data_quality": "B",
+          "required_charger_id": "SIM-G-001"
+        },
+        {
+          "vehicle_id": "S10_no_booking-R002",
+          "requested_energy_kwh": 50.0,
+          "arrival_slot": 0,
+          "deadline_slot": 4,
+          "priority": "ordinary",
+          "max_charge_power_kw": 240.0,
+          "connector": "DC",
+          "soc_percent": 30,
+          "data_quality": "B",
+          "required_charger_id": "SIM-G-002"
+        },
+        {
+          "vehicle_id": "S10_no_booking-R003",
+          "requested_energy_kwh": 50.0,
+          "arrival_slot": 0,
+          "deadline_slot": 4,
+          "priority": "ordinary",
+          "max_charge_power_kw": 240.0,
+          "connector": "DC",
+          "soc_percent": 30,
+          "data_quality": "B",
+          "required_charger_id": "SIM-G-003"
+        },
+        {
+          "vehicle_id": "S10_no_booking-R004",
+          "requested_energy_kwh": 50.0,
+          "arrival_slot": 0,
+          "deadline_slot": 4,
+          "priority": "ordinary",
+          "max_charge_power_kw": 240.0,
+          "connector": "DC",
+          "soc_percent": 30,
+          "data_quality": "B",
+          "required_charger_id": "SIM-G-004"
+        }
+      ],
+      "equipment": [
+        {
+          "asset_id": "SIM-G-001",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-002",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-003",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-004",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-005",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-006",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-007",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-008",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-009",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-010",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-011",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-012",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-013",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-014",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-015",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-016",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-017",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-018",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-019",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-020",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-021",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-022",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-023",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-024",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-025",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-026",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-027",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-028",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-029",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-030",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-031",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-032",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-033",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-034",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-035",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-036",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-037",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-038",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-039",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-040",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-041",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-042",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-043",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-044",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-045",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-046",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-047",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-048",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-049",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-050",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-051",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-052",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-053",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-054",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-055",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-056",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-057",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-058",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-059",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-060",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-061",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-062",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-063",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-064",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-065",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-066",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-067",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-068",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-069",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-070",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-071",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-072",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-073",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-074",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-075",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-076",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-077",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-078",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-079",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-080",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-081",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-082",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-083",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-084",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-085",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-086",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-087",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-088",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-089",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-090",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-091",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-092",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-093",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-094",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-095",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-096",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-097",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-098",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-099",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-100",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-101",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-102",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-103",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-104",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-105",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-106",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-107",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-108",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-109",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-110",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-111",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-112",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-113",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-114",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-115",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-116",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-117",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-118",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-119",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-120",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-121",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-122",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-123",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-124",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-125",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-126",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-127",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        },
+        {
+          "asset_id": "SIM-G-128",
+          "max_power_kw": 240.0,
+          "connector": "DC",
+          "availability": "available",
+          "occupied_slots": [],
+          "data_quality": "B"
+        }
+      ],
+      "energy": {
+        "pv_available_kw": [
+          100,
+          100,
+          150,
+          150
+        ],
+        "base_load_kw": [
+          50,
+          50,
+          50,
+          50
+        ],
+        "grid_import_limit_kw": 10000.0,
+        "reverse_export_allowed": false,
+        "storage": {
+          "capacity_kwh": 500,
+          "soc_percent": 60,
+          "reserve_soc_percent": 30,
+          "dispatch_mode": "idle",
+          "data_quality": "A"
+        }
+      },
+      "safety": {
+        "protection_active": false,
+        "manual_takeover": false,
+        "frozen_assets": [],
+        "limits_known": true
+      },
+      "economic_context": {
+        "tariff_config_ref": "mock-tariff",
+        "tariff_version": "mock-tariff-v1",
+        "effective_from": "2025-12-01T10:00:00+08:00",
+        "effective_to": "2025-12-01T11:00:00+08:00",
+        "rates_cny_per_kwh": [
+          0.8,
+          0.8,
+          0.8,
+          0.8
+        ],
+        "cost_tolerance_ref": "mock-cost-tolerance",
+        "cost_tolerance_version": "mock-tolerance-v1",
+        "cost_tolerance_cny": 20,
+        "joint_approval_ref": "mock-approval-not-real",
+        "data_quality_summary": "A"
+      },
+      "audit_refs": [
+        "mock-station-adapter-v2"
+      ],
+      "simulation_assumptions": [
+        "D01 simulated station, AC ports and tariffs; not a real station binding",
+        "A01 replay uses only decision-visible files; storage idle",
+        "Existing charge profile policy: None"
+      ],
+      "source_state_id": "S10_no_booking-synthetic-state"
+    },
+    "service_orchestration_plan": null,
+    "poc_context": {
+      "simulation": true,
+      "evaluation_window": {
+        "effective_from": "2025-12-01T10:00:00+08:00",
+        "effective_to": "2025-12-01T11:00:00+08:00"
+      },
+      "interval_minutes": 15,
+      "green_data_available": true,
+      "baseline": null,
+      "capacity_result": {
+        "request_id": "needs-fee803315c334a4f869242e2e469de40",
+        "snapshot_id": "mock-state-d29f71240cc24f91b602d2266de335df",
+        "station_id": "HH-Huanghua-CSS",
+        "rule_version": "mock-rule-v2",
+        "strategy_version": "service-search-v1",
+        "result_id": "mock-capacity-result",
+        "simulation": true,
+        "expires_at": "2025-12-01T11:00:00+08:00",
+        "grid_import_limit_kw": 10000.0,
+        "soc_reserve_percent": 30,
+        "source": "mock-station-adapter-v2"
+      }
+    },
+    "forecast_context": {
+      "mode": "simulation_use",
+      "context": {
+        "schema_version": "simulation-capacity-1",
+        "simulation": true,
+        "real_dispatch_eligible": false,
+        "storage_dispatch": "idle",
+        "status": "unavailable",
+        "issues": [
+          {
+            "code": "COMMITMENT_UNKNOWN",
+            "message": "既有预约仅有电量或状态未知，不能推断逐段功率为零"
+          }
+        ],
+        "slots": [],
+        "inputs": {
+          "execution_mode": "offline_replay",
+          "meter_boundary": "M-PCC/AC-BUS",
+          "binding": {
+            "station_id": "HH-Huanghua-CSS",
+            "meter_boundary": "M-PCC/AC-BUS",
+            "simulation": true,
+            "issued_at": "2025-12-01T10:00:00+08:00",
+            "available_at": "2025-12-01T10:00:00+08:00",
+            "expires_at": "2025-12-01T11:00:00+08:00",
+            "evidence_ref": "D01 synthetic registry/M-PCC; sha256=432f036170f77f78cfd3bc6d6126cfe67f5c4ea48baeb45f73a0c5e41a671a22"
+          },
+          "source_hashes": {
+            "场站联动模拟数据/scenario_inputs.csv": "3c923806bfc989af50fded18d32ba9916815785040a7e86c115059f2f34b242c",
+            "场站联动模拟数据/forecast_vintages.csv": "bab97f8761bbd2ea57d1375400baa4a4a3348ead8e1ff466a3a6686a3f01f18a",
+            "场站联动模拟数据/forecast_values.csv": "23cdaffb280195ed943f57dd61669ec843c5f46374dd4ad3eb020d9af268ad0e",
+            "场站联动模拟数据/booking_events.csv": "253f6908d1be5ecd7d8b18431a100e7ce9cfd9c0d00311919a5838d9af9d9188",
+            "场站联动模拟数据/vehicle_requests.csv": "494e9f6e1d005f674b97a31d84b7b6115bd83a1ce8bac442766a3038be3073f9",
+            "场站联动模拟数据/tariff_intervals.csv": "63b81b965fadf0ec3bf7da500dc7608a7958d97ff304ff176f87f533e62fd2f7",
+            "场站配置与设备台账/设备台账.csv": "8843ffc5cfe4279edab887ed335f5be026614dd0ab8bab4f35db64c16fb9cc44",
+            "场站配置与设备台账/计量关系.csv": "432f036170f77f78cfd3bc6d6126cfe67f5c4ea48baeb45f73a0c5e41a671a22"
+          },
+          "load_forecast": {
+            "station_id": "HH-Huanghua-CSS",
+            "meter_boundary": "M-PCC/AC-BUS",
+            "simulation": true,
+            "issued_at": "2025-12-01T10:00:00+08:00",
+            "available_at": "2025-12-01T10:00:00+08:00",
+            "expires_at": "2025-12-01T11:00:00+08:00",
+            "record_id": "S10_no_booking-load-past_only",
+            "target_semantics": "base_load_excluding_charging_pv_storage",
+            "unit": "kW",
+            "value_semantics": "interval_average_power",
+            "status": "available",
+            "reason": "past_only_baseline",
+            "model_version": "linked_baseline_v1",
+            "method_hash": "dd6d0b9879fb9706e2281d6a0cf5b880a997bf74ed7e1654be1650798a872740",
+            "bundle_hash": null,
+            "input_hash": "cdc44c8197f2230163537b634435347575695ff29a75c80352371aef4325faa1",
+            "source_ref": "forecast_vintages.csv#S10_no_booking-load-past_only",
+            "raw_vintage": {
+              "station_id": "HH-Huanghua-CSS",
+              "scenario_id": "S10_no_booking",
+              "dataset_id": "huanghua_linked_2025_offline_replay_v1",
+              "is_simulated": "true",
+              "source_version": "linked_baseline_v1",
+              "vintage_id": "S10_no_booking-load-past_only",
+              "resource": "load",
+              "issued_at": "2025-12-01T10:00:00+08:00",
+              "as_of": "2025-12-01T10:00:00+08:00",
+              "native_grid": "15min_interval_average",
+              "window_start": "2025-12-01T10:00:00+08:00",
+              "window_end": "2025-12-01T11:00:00+08:00",
+              "point_count": "4",
+              "status": "usable",
+              "reason": "past_only_baseline",
+              "method": "previous_week_same_slot_base_load; past interval must have ended by issued_at",
+              "bundle_sha256": "",
+              "method_sha256": "dd6d0b9879fb9706e2281d6a0cf5b880a997bf74ed7e1654be1650798a872740",
+              "input_sha256": "cdc44c8197f2230163537b634435347575695ff29a75c80352371aef4325faa1",
+              "selected": "true"
+            },
+            "raw_values": [
+              {
+                "station_id": "HH-Huanghua-CSS",
+                "scenario_id": "S10_no_booking",
+                "dataset_id": "huanghua_linked_2025_offline_replay_v1",
+                "is_simulated": "true",
+                "source_version": "linked_baseline_v1",
+                "vintage_id": "S10_no_booking-load-past_only",
+                "resource": "load",
+                "timestamp": "2025-12-01T10:00:00+08:00",
+                "interval_end": "2025-12-01T10:15:00+08:00",
+                "issued_at": "2025-12-01T10:00:00+08:00",
+                "as_of": "2025-12-01T10:00:00+08:00",
+                "source_observation_end": "2025-11-24T10:15:00+08:00",
+                "native_grid": "15min_interval_average",
+                "point_kw": "660.640487",
+                "lower_kw": "494.576438",
+                "upper_kw": "826.704536",
+                "interval_kind": "heuristic_uncalibrated",
+                "status": "usable"
+              },
+              {
+                "station_id": "HH-Huanghua-CSS",
+                "scenario_id": "S10_no_booking",
+                "dataset_id": "huanghua_linked_2025_offline_replay_v1",
+                "is_simulated": "true",
+                "source_version": "linked_baseline_v1",
+                "vintage_id": "S10_no_booking-load-past_only",
+                "resource": "load",
+                "timestamp": "2025-12-01T10:15:00+08:00",
+                "interval_end": "2025-12-01T10:30:00+08:00",
+                "issued_at": "2025-12-01T10:00:00+08:00",
+                "as_of": "2025-12-01T10:00:00+08:00",
+                "source_observation_end": "2025-11-24T10:30:00+08:00",
+                "native_grid": "15min_interval_average",
+                "point_kw": "679.144579",
+                "lower_kw": "511.230121",
+                "upper_kw": "847.059037",
+                "interval_kind": "heuristic_uncalibrated",
+                "status": "usable"
+              },
+              {
+                "station_id": "HH-Huanghua-CSS",
+                "scenario_id": "S10_no_booking",
+                "dataset_id": "huanghua_linked_2025_offline_replay_v1",
+                "is_simulated": "true",
+                "source_version": "linked_baseline_v1",
+                "vintage_id": "S10_no_booking-load-past_only",
+                "resource": "load",
+                "timestamp": "2025-12-01T10:30:00+08:00",
+                "interval_end": "2025-12-01T10:45:00+08:00",
+                "issued_at": "2025-12-01T10:00:00+08:00",
+                "as_of": "2025-12-01T10:00:00+08:00",
+                "source_observation_end": "2025-11-24T10:45:00+08:00",
+                "native_grid": "15min_interval_average",
+                "point_kw": "681.558115",
+                "lower_kw": "513.402304",
+                "upper_kw": "849.713926",
+                "interval_kind": "heuristic_uncalibrated",
+                "status": "usable"
+              },
+              {
+                "station_id": "HH-Huanghua-CSS",
+                "scenario_id": "S10_no_booking",
+                "dataset_id": "huanghua_linked_2025_offline_replay_v1",
+                "is_simulated": "true",
+                "source_version": "linked_baseline_v1",
+                "vintage_id": "S10_no_booking-load-past_only",
+                "resource": "load",
+                "timestamp": "2025-12-01T10:45:00+08:00",
+                "interval_end": "2025-12-01T11:00:00+08:00",
+                "issued_at": "2025-12-01T10:00:00+08:00",
+                "as_of": "2025-12-01T10:00:00+08:00",
+                "source_observation_end": "2025-11-24T11:00:00+08:00",
+                "native_grid": "15min_interval_average",
+                "point_kw": "691.550319",
+                "lower_kw": "522.395287",
+                "upper_kw": "860.705351",
+                "interval_kind": "heuristic_uncalibrated",
+                "status": "usable"
+              }
+            ],
+            "publication_status": "simulation_baseline",
+            "values": [
+              {
+                "start": "2025-12-01T10:00:00+08:00",
+                "end": "2025-12-01T10:15:00+08:00",
+                "value": "660.640487",
+                "source_observation_end": "2025-11-24T10:15:00+08:00"
+              },
+              {
+                "start": "2025-12-01T10:15:00+08:00",
+                "end": "2025-12-01T10:30:00+08:00",
+                "value": "679.144579",
+                "source_observation_end": "2025-11-24T10:30:00+08:00"
+              },
+              {
+                "start": "2025-12-01T10:30:00+08:00",
+                "end": "2025-12-01T10:45:00+08:00",
+                "value": "681.558115",
+                "source_observation_end": "2025-11-24T10:45:00+08:00"
+              },
+              {
+                "start": "2025-12-01T10:45:00+08:00",
+                "end": "2025-12-01T11:00:00+08:00",
+                "value": "691.550319",
+                "source_observation_end": "2025-11-24T11:00:00+08:00"
+              }
+            ]
+          },
+          "pv_forecast": {
+            "station_id": "HH-Huanghua-CSS",
+            "meter_boundary": "M-PCC/AC-BUS",
+            "simulation": true,
+            "issued_at": "2025-12-01T10:00:00+08:00",
+            "available_at": "2025-12-01T10:00:00+08:00",
+            "expires_at": "2025-12-01T11:00:00+08:00",
+            "record_id": "S10_no_booking-pv-past_only",
+            "target_semantics": "pv_available_ac",
+            "unit": "kW",
+            "value_semantics": "interval_average_power",
+            "status": "available",
+            "reason": "past_only_baseline",
+            "model_version": "linked_baseline_v1",
+            "method_hash": "dd6d0b9879fb9706e2281d6a0cf5b880a997bf74ed7e1654be1650798a872740",
+            "bundle_hash": null,
+            "input_hash": "43ce5e02600bf02da5c892017b4430775ce75fa102b5feb1d1fd7f2e7a396f69",
+            "source_ref": "forecast_vintages.csv#S10_no_booking-pv-past_only",
+            "raw_vintage": {
+              "station_id": "HH-Huanghua-CSS",
+              "scenario_id": "S10_no_booking",
+              "dataset_id": "huanghua_linked_2025_offline_replay_v1",
+              "is_simulated": "true",
+              "source_version": "linked_baseline_v1",
+              "vintage_id": "S10_no_booking-pv-past_only",
+              "resource": "pv",
+              "issued_at": "2025-12-01T10:00:00+08:00",
+              "as_of": "2025-12-01T10:00:00+08:00",
+              "native_grid": "15min_interval_average",
+              "window_start": "2025-12-01T10:00:00+08:00",
+              "window_end": "2025-12-01T11:00:00+08:00",
+              "point_count": "4",
+              "status": "usable",
+              "reason": "past_only_baseline",
+              "method": "previous_day_same_slot_trapezoid_interval_average; past interval must have ended by issued_at",
+              "bundle_sha256": "",
+              "method_sha256": "dd6d0b9879fb9706e2281d6a0cf5b880a997bf74ed7e1654be1650798a872740",
+              "input_sha256": "43ce5e02600bf02da5c892017b4430775ce75fa102b5feb1d1fd7f2e7a396f69",
+              "selected": "true"
+            },
+            "raw_values": [
+              {
+                "station_id": "HH-Huanghua-CSS",
+                "scenario_id": "S10_no_booking",
+                "dataset_id": "huanghua_linked_2025_offline_replay_v1",
+                "is_simulated": "true",
+                "source_version": "linked_baseline_v1",
+                "vintage_id": "S10_no_booking-pv-past_only",
+                "resource": "pv",
+                "timestamp": "2025-12-01T10:00:00+08:00",
+                "interval_end": "2025-12-01T10:15:00+08:00",
+                "issued_at": "2025-12-01T10:00:00+08:00",
+                "as_of": "2025-12-01T10:00:00+08:00",
+                "source_observation_end": "2025-11-30T10:15:00+08:00",
+                "native_grid": "15min_interval_average",
+                "point_kw": "600.501072",
+                "lower_kw": "350.375804",
+                "upper_kw": "850.626340",
+                "interval_kind": "heuristic_uncalibrated",
+                "status": "usable"
+              },
+              {
+                "station_id": "HH-Huanghua-CSS",
+                "scenario_id": "S10_no_booking",
+                "dataset_id": "huanghua_linked_2025_offline_replay_v1",
+                "is_simulated": "true",
+                "source_version": "linked_baseline_v1",
+                "vintage_id": "S10_no_booking-pv-past_only",
+                "resource": "pv",
+                "timestamp": "2025-12-01T10:15:00+08:00",
+                "interval_end": "2025-12-01T10:30:00+08:00",
+                "issued_at": "2025-12-01T10:00:00+08:00",
+                "as_of": "2025-12-01T10:00:00+08:00",
+                "source_observation_end": "2025-11-30T10:30:00+08:00",
+                "native_grid": "15min_interval_average",
+                "point_kw": "658.017514",
+                "lower_kw": "393.513136",
+                "upper_kw": "922.521892",
+                "interval_kind": "heuristic_uncalibrated",
+                "status": "usable"
+              },
+              {
+                "station_id": "HH-Huanghua-CSS",
+                "scenario_id": "S10_no_booking",
+                "dataset_id": "huanghua_linked_2025_offline_replay_v1",
+                "is_simulated": "true",
+                "source_version": "linked_baseline_v1",
+                "vintage_id": "S10_no_booking-pv-past_only",
+                "resource": "pv",
+                "timestamp": "2025-12-01T10:30:00+08:00",
+                "interval_end": "2025-12-01T10:45:00+08:00",
+                "issued_at": "2025-12-01T10:00:00+08:00",
+                "as_of": "2025-12-01T10:00:00+08:00",
+                "source_observation_end": "2025-11-30T10:45:00+08:00",
+                "native_grid": "15min_interval_average",
+                "point_kw": "673.341188",
+                "lower_kw": "405.005891",
+                "upper_kw": "941.676485",
+                "interval_kind": "heuristic_uncalibrated",
+                "status": "usable"
+              },
+              {
+                "station_id": "HH-Huanghua-CSS",
+                "scenario_id": "S10_no_booking",
+                "dataset_id": "huanghua_linked_2025_offline_replay_v1",
+                "is_simulated": "true",
+                "source_version": "linked_baseline_v1",
+                "vintage_id": "S10_no_booking-pv-past_only",
+                "resource": "pv",
+                "timestamp": "2025-12-01T10:45:00+08:00",
+                "interval_end": "2025-12-01T11:00:00+08:00",
+                "issued_at": "2025-12-01T10:00:00+08:00",
+                "as_of": "2025-12-01T10:00:00+08:00",
+                "source_observation_end": "2025-11-30T11:00:00+08:00",
+                "native_grid": "15min_interval_average",
+                "point_kw": "648.900187",
+                "lower_kw": "386.675140",
+                "upper_kw": "911.125234",
+                "interval_kind": "heuristic_uncalibrated",
+                "status": "usable"
+              }
+            ],
+            "publication_status": "simulation_baseline",
+            "values": [
+              {
+                "start": "2025-12-01T10:00:00+08:00",
+                "end": "2025-12-01T10:15:00+08:00",
+                "value": "600.501072",
+                "source_observation_end": "2025-11-30T10:15:00+08:00"
+              },
+              {
+                "start": "2025-12-01T10:15:00+08:00",
+                "end": "2025-12-01T10:30:00+08:00",
+                "value": "658.017514",
+                "source_observation_end": "2025-11-30T10:30:00+08:00"
+              },
+              {
+                "start": "2025-12-01T10:30:00+08:00",
+                "end": "2025-12-01T10:45:00+08:00",
+                "value": "673.341188",
+                "source_observation_end": "2025-11-30T10:45:00+08:00"
+              },
+              {
+                "start": "2025-12-01T10:45:00+08:00",
+                "end": "2025-12-01T11:00:00+08:00",
+                "value": "648.900187",
+                "source_observation_end": "2025-11-30T11:00:00+08:00"
+              }
+            ]
+          },
+          "commitments": {
+            "station_id": "HH-Huanghua-CSS",
+            "meter_boundary": "M-PCC/AC-BUS",
+            "simulation": true,
+            "issued_at": "2025-12-01T10:00:00+08:00",
+            "available_at": "2025-12-01T10:00:00+08:00",
+            "expires_at": "2025-12-01T11:00:00+08:00",
+            "status": "unknown",
+            "source_ref": "booking_events.csv: energy-only; no power profile",
+            "coverage_start": "2025-12-01T10:00:00+08:00",
+            "coverage_end": "2025-12-01T11:00:00+08:00",
+            "sessions": [],
+            "visible_events": []
+          },
+          "task_id": "replay-S10_no_booking",
+          "task_version": 1,
+          "station_id": "HH-Huanghua-CSS",
+          "as_of": "2025-12-01T10:00:00+08:00",
+          "start": "2025-12-01T10:00:00+08:00",
+          "end": "2025-12-01T11:00:00+08:00",
+          "interval_minutes": 15,
+          "state": {
+            "station_id": "HH-Huanghua-CSS",
+            "meter_boundary": "M-PCC/AC-BUS",
+            "simulation": true,
+            "issued_at": "2025-12-01T10:00:00+08:00",
+            "available_at": "2025-12-01T10:00:00+08:00",
+            "expires_at": "2025-12-01T11:00:00+08:00",
+            "quality": "B",
+            "source_state_id": "S10_no_booking-synthetic-state",
+            "site_revision": null,
+            "grid_import_limit_kw": 10000.0,
+            "protection_active": false,
+            "manual_takeover": false,
+            "limits_known": true,
+            "devices": [
+              {
+                "asset_id": "SIM-G-001",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-002",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-003",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-004",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-005",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-006",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-007",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-008",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-009",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-010",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-011",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-012",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-013",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-014",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-015",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-016",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-017",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-018",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-019",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-020",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-021",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-022",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-023",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-024",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-025",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-026",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-027",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-028",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-029",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-030",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-031",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-032",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-033",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-034",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-035",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-036",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-037",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-038",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-039",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-040",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-041",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-042",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-043",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-044",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-045",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-046",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-047",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-048",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-049",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-050",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-051",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-052",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-053",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-054",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-055",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-056",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-057",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-058",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-059",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-060",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-061",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-062",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-063",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-064",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-065",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-066",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-067",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-068",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-069",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-070",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-071",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-072",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-073",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-074",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-075",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-076",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-077",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-078",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-079",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-080",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-081",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-082",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-083",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-084",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-085",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-086",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-087",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-088",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-089",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-090",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-091",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-092",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-093",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-094",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-095",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-096",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-097",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-098",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-099",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-100",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-101",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-102",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-103",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-104",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-105",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-106",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-107",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-108",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-109",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-110",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-111",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-112",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-113",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-114",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-115",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-116",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-117",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-118",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-119",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-120",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-121",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-122",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-123",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-124",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-125",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-126",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-127",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              },
+              {
+                "asset_id": "SIM-G-128",
+                "max_power_kw": 240.0,
+                "availability": "available",
+                "frozen": false,
+                "occupied_intervals": []
+              }
+            ]
+          },
+          "new_session_ids": [
+            "S10_no_booking-R001",
+            "S10_no_booking-R002",
+            "S10_no_booking-R003",
+            "S10_no_booking-R004"
+          ]
+        },
+        "input_hash": "85edd257b237bf8359b5a5f9b8e70da4da029b4664cf97d33786ad23d38909b7",
+        "expires_at": null,
+        "projection": "constant_native_interval_overlap_weighted",
+        "limitations": [
+          "模拟点预测容量；不保证未来实况或区间覆盖率",
+          "储能 idle；端口按独占会话保守占用"
+        ],
+        "context_hash": "d4156283926c80cb76d152079a3587746bdc76044363af1b0b990659d4bbfdf6"
+      },
+      "request_hash": "737cda56fbb6ec4d573da3ae95456ab2fb41ca0af2d47f80a3db3e8b6242a4b4",
+      "wrapper_hash": "7b64f58a539a2d8be24d381b205552e96ee717968611b219ec69031cacf465c5"
+    }
+  },
+  "resource": {
+    "energy_recommendation_id": "resource-d4156283926c80cb76d1",
+    "snapshot_id": "mock-state-d29f71240cc24f91b602d2266de335df",
+    "simulation": true,
+    "real_dispatch_eligible": false,
+    "forecast_status": "unavailable",
+    "forecast_mode": "simulation_use",
+    "frozen_context_hash": "d4156283926c80cb76d152079a3587746bdc76044363af1b0b990659d4bbfdf6",
+    "forecast_diagnostics": {
+      "context_hash": "d4156283926c80cb76d152079a3587746bdc76044363af1b0b990659d4bbfdf6",
+      "status": "unavailable",
+      "issues": [
+        {
+          "code": "COMMITMENT_UNKNOWN",
+          "message": "既有预约仅有电量或状态未知，不能推断逐段功率为零"
+        }
+      ]
+    },
+    "storage_dispatch": "idle",
+    "grid_import_limit_kw": 10000.0,
+    "charging_headroom_kw": null,
+    "usable": false,
+    "slots": [],
+    "expires_at": null,
+    "source_ref": "S10_no_booking-synthetic-state"
+  },
+  "status": "blocked",
+  "code": "FORECAST_CONTEXT_UNAVAILABLE",
+  "message": "仿真预测上下文不可用：COMMITMENT_UNKNOWN"
+}

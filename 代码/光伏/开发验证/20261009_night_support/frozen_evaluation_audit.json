@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "protocol_frozen_before_generation": true,
+  "no_fitting_or_model_selection": true,
+  "evaluated_windows": 34657,
+  "scored_labels": 3327072,
+  "twelve_months_checked": true,
+  "shared_point_predictions_unchanged": true,
+  "daylight_metrics_unchanged_from_grouped_candidate": true,
+  "night_zero_support_all_months_checked": true,
+  "bundle_and_source_hashes_unchanged": true,
+  "cli_ref": "运行结果\\20261009_night_zero_lower_01\\verification\\verification.json",
+  "png_refs_checked": [
+    "运行结果\\20261009_night_zero_lower_01\\visualizations\\21106a68-ab06-47f1-8121-6537c46c55cc_forecast_24h.png",
+    "运行结果\\20261009_night_zero_lower_01\\visualizations\\21106a68-ab06-47f1-8121-6537c46c55cc_history_forecast.png",
+    "运行结果\\20261009_night_zero_lower_01\\visualizations\\21106a68-ab06-47f1-8121-6537c46c55cc_forecast_profile.png",
+    "运行结果\\20261009_night_zero_lower_01\\visualizations\\b125751b-6417-43a5-add2-8fc912bb2a71_actual_vs_forecast.png"
+  ],
+  "production_accepted": false,
+  "scope": "new random path of a known simulator; not real-site accuracy"
+}

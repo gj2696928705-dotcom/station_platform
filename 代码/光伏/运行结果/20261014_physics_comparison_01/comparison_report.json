@@ -1,0 +1,3503 @@
+{
+  "status": "running",
+  "scope": "all available 15-minute windows",
+  "input_policy": "unchanged historical power/SWGDN/temperature/cloud, future solar/calendar only",
+  "physics_config": {
+    "station": {
+      "station_id": "HH-Huanghua-CSS",
+      "station_name": "黄花充换电站",
+      "latitude_deg": 30.9,
+      "longitude_deg": 111.35,
+      "coordinate_basis": "宜昌地区太阳位置计算用近似坐标，未经实站地址核验",
+      "capacity_kw": 5000.0,
+      "inverter_count_reference": 10,
+      "inverter_rated_kw_reference": 500.0,
+      "capacity_basis": "沿用既有场站算法样例并经用户选择的模拟容量，非实站核实容量"
+    },
+    "pv": {
+      "tilt_deg": 20.0,
+      "azimuth_deg": 180.0,
+      "albedo": 0.2,
+      "noct_c": 45.0,
+      "temperature_coefficient_per_c": -0.004,
+      "reference_cell_temperature_c": 25.0,
+      "reference_irradiance_w_m2": 1000.0,
+      "system_loss_fraction": 0.12,
+      "relative_noise_stationary_std": 0.003,
+      "relative_noise_ar": 0.85,
+      "relative_noise_clip": 0.015
+    },
+    "clear_ghi_coefficient": 1098.0,
+    "clear_ghi_attenuation": 0.059,
+    "clear_diffuse_fraction": 0.12,
+    "ambient_reference_c": 20.0,
+    "power_ratio_floor_fraction": 0.01,
+    "ghi_ratio_floor_w_m2": 20.0,
+    "parameter_basis": "configured_simulated_plant; not real-site verified"
+  },
+  "gru_candidates": {
+    "gru32_control": {
+      "interval_minutes": 15,
+      "history_days": 3,
+      "horizon_steps": 96,
+      "train_ratio": 0.7,
+      "val_ratio": 0.15,
+      "nominal_coverage": 0.8,
+      "min_gru_days": 60,
+      "gru_epochs": 30,
+      "gru_batch_size": 128,
+      "gru_patience": 5,
+      "gru_units": 32,
+      "gru_learning_rate": 0.001,
+      "gru_dropout": 0.2,
+      "reduce_lr": false,
+      "lr_patience": 2,
+      "lr_factor": 0.5,
+      "min_lr": 1e-05,
+      "min_delta": 0.0,
+      "max_gru_samples": null,
+      "skip_gru": false,
+      "require_gru": true,
+      "seed": 42,
+      "model_id": "pv-power-forecast",
+      "model_version": "0.2.0-candidate",
+      "interval_conditioning": "daylight",
+      "night_lower_bound": "zero"
+    },
+    "gru32_scheduled": {
+      "interval_minutes": 15,
+      "history_days": 3,
+      "horizon_steps": 96,
+      "train_ratio": 0.7,
+      "val_ratio": 0.15,
+      "nominal_coverage": 0.8,
+      "min_gru_days": 60,
+      "gru_epochs": 50,
+      "gru_batch_size": 128,
+      "gru_patience": 8,
+      "gru_units": 32,
+      "gru_learning_rate": 0.0003,
+      "gru_dropout": 0.2,
+      "reduce_lr": true,
+      "lr_patience": 2,
+      "lr_factor": 0.5,
+      "min_lr": 1e-05,
+      "min_delta": 1e-05,
+      "max_gru_samples": null,
+      "skip_gru": false,
+      "require_gru": true,
+      "seed": 42,
+      "model_id": "pv-power-forecast",
+      "model_version": "0.2.0-candidate",
+      "interval_conditioning": "daylight",
+      "night_lower_bound": "zero"
+    },
+    "gru16_scheduled": {
+      "interval_minutes": 15,
+      "history_days": 3,
+      "horizon_steps": 96,
+      "train_ratio": 0.7,
+      "val_ratio": 0.15,
+      "nominal_coverage": 0.8,
+      "min_gru_days": 60,
+      "gru_epochs": 50,
+      "gru_batch_size": 128,
+      "gru_patience": 8,
+      "gru_units": 16,
+      "gru_learning_rate": 0.0003,
+      "gru_dropout": 0.2,
+      "reduce_lr": true,
+      "lr_patience": 2,
+      "lr_factor": 0.5,
+      "min_lr": 1e-05,
+      "min_delta": 1e-05,
+      "max_gru_samples": null,
+      "skip_gru": false,
+      "require_gru": true,
+      "seed": 42,
+      "model_id": "pv-power-forecast",
+      "model_version": "0.2.0-candidate",
+      "interval_conditioning": "daylight",
+      "night_lower_bound": "zero"
+    }
+  },
+  "tree_config": {
+    "iterations": 200,
+    "learning_rate": 0.05,
+    "max_leaf_nodes": 31,
+    "l2_regularization": 10.0,
+    "log_every": 50,
+    "seed": 42
+  },
+  "control_bundle": "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20261009_point_correction_01",
+  "control_hashes": {
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20261009_point_correction_01\\model_metadata.json": "533bd15bdce9edc4048b561815c8643594fde328ebac19f280567327485b79f4",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20261009_point_correction_01\\gru.keras": "74e08dac78c6b84f3a6c811117e7cf6c74579814b78672fd9473476f45ca4078",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20261009_point_correction_01\\scalers.joblib": "db434b2ccd1d53e58abd91207633d3d7b3b404f93dbbf78d02bde69c34ad743f",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\rolling_validation.json": "6b827cdcdd010c7c8812805955d8e84a1c25373c0c666535c587fd0079df6133",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20261009_point_correction_01\\point_correction.joblib": "e71daa1ee63b1d5b9541eb48f9f176df52e519f1708198c583b5f3cf2bedf9a5",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_05\\gru32_control\\gru.keras": "837e3186b56d8667c6cb64c80ed052aea27f13b45f5995788212f8a811018eea",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_05\\gru32_control\\scalers.joblib": "4cddbdc80fd96a0017940f9a383aa0664e1ae4ffe82c1699fab60efa071d8f43",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_05\\gru32_control\\training_summary.json": "442d701f7b582b476cd5204cc1af29382d031fc24f31a5843fb4c0229b16652f",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_05\\gru32_scheduled\\gru.keras": "13419280e6fa099af6916a5a7925f12bdaa6c7039aeed18696573483c2d851e7",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_05\\gru32_scheduled\\scalers.joblib": "4cddbdc80fd96a0017940f9a383aa0664e1ae4ffe82c1699fab60efa071d8f43",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_05\\gru32_scheduled\\training_summary.json": "5d364b03c5f7fb27bd0d2dc0aa4aaaf56b6c7497c2d54967bbe213e583be2572",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_05\\gru16_scheduled\\gru.keras": "38b3cb2ff254728be9fbb73f51fc9e636402b9712eea275158aeb29ba99b80da",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_05\\gru16_scheduled\\scalers.joblib": "4cddbdc80fd96a0017940f9a383aa0664e1ae4ffe82c1699fab60efa071d8f43",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_05\\gru16_scheduled\\training_summary.json": "2f60b064d97ef2bc8207b022f3c7d5432f34a3bb7158ff4e61dba4a6fa0b97fe",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_07\\gru32_control\\gru.keras": "fef6c8ea6aff125e07654e364d349a16ca384e874b1a23728b57c8a179791072",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_07\\gru32_control\\scalers.joblib": "294a4778399476b5f662f9fb02162aac836305c9baf3e46d911e589539f1c2c1",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_07\\gru32_control\\training_summary.json": "40333aff66adae170d8a8a074784be54bdaeab0db226c313425da78ccae928f0",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_07\\gru32_scheduled\\gru.keras": "143a9de142627f670fd3bfa17e891c5b3c500b66c182acdcad3e49d64a245050",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_07\\gru32_scheduled\\scalers.joblib": "294a4778399476b5f662f9fb02162aac836305c9baf3e46d911e589539f1c2c1",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_07\\gru32_scheduled\\training_summary.json": "3955a03d7f9c9f7746a17c7e53bafbad4c5997445d002a7a211017b657495418",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_07\\gru16_scheduled\\gru.keras": "b7d9813aac860df4f680e00835a544e91d7fa603ff103e9cbd89b609bdaa9cbe",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_07\\gru16_scheduled\\scalers.joblib": "294a4778399476b5f662f9fb02162aac836305c9baf3e46d911e589539f1c2c1",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_07\\gru16_scheduled\\training_summary.json": "1e29846f675b8ec7bd7d435d2d926ecaf3b746c105e1f6c46cc7d820993b3c07",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_09\\gru32_control\\gru.keras": "364998070a6429d936a1b0b4502c40d471bed9934b5e9175f705b2f43d01d6cc",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_09\\gru32_control\\scalers.joblib": "d4a07e9ebaeebf9bf8066a954d26042075b8e4958dcdebfdcc98bb4422981aae",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_09\\gru32_control\\training_summary.json": "256331f2fa307fa21c7a89813b0b638f0dbee2988a3ca0542356b16e566a632b",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_09\\gru32_scheduled\\gru.keras": "b284fd7ada625c5ec0478eac475e73c87229cfd3c51a46dc14de02e5b02fbf96",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_09\\gru32_scheduled\\scalers.joblib": "d4a07e9ebaeebf9bf8066a954d26042075b8e4958dcdebfdcc98bb4422981aae",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_09\\gru32_scheduled\\training_summary.json": "e758f02d6dbe5a3d3f56c569f601d930a6f8a1a55abae114c4c0c730f9739fdb",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_09\\gru16_scheduled\\gru.keras": "bac849e6dc60b2f99b56abba5c0901bfc7ab2186af53819c9d58c79718985355",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_09\\gru16_scheduled\\scalers.joblib": "d4a07e9ebaeebf9bf8066a954d26042075b8e4958dcdebfdcc98bb4422981aae",
+    "D:\\源网荷储\\codex\\2026.10.09\\场站智能体（4）\\代码\\光伏\\运行结果\\20260929_000009_045346\\experiments\\month_09\\gru16_scheduled\\training_summary.json": "c51e845d4a85f0519bf17ab5941093fca74c5003cc7d6d076a0b56db4807a6b0"
+  },
+  "test_used_for_selection": false,
+  "oracle_used_for_selection": false,
+  "selection_metric": "pooled rolling daylight RMSE, then MAE; report weather and worst-fold counterexamples",
+  "reserved_test_start": "2025-11-07T06:00:00+08:00",
+  "folds": [
+    {
+      "name": "month_05",
+      "training_windows": 11137,
+      "validation_windows": 2881,
+      "train_end_exclusive": "2025-05-01T00:00:00+08:00",
+      "validation_end_exclusive": "2025-06-01T00:00:00+08:00",
+      "results": {
+        "current_gru_ridge": {
+          "all_day": {
+            "count": 276576,
+            "rmse": 505.30536305385823,
+            "mae": 284.6063597150872,
+            "r2": 0.6903801226656812,
+            "nrmse": 0.8062043658960582,
+            "mean_error_kw": 39.19385192791638
+          },
+          "diagnostics": {
+            "daylight": {
+              "count": 156145,
+              "rmse": 672.5074693594534,
+              "mae": 504.11661304915276,
+              "r2": 0.5105535047269891,
+              "nrmse": 0.6057618812661391,
+              "mean_error_kw": 69.42315662246885
+            },
+            "daylight_by_lead": {
+              "00_01h": {
+                "count": 6500,
+                "rmse": 203.12484775812996,
+                "mae": 140.09340285560506,
+                "r2": 0.955174565595493,
+                "nrmse": 0.18218269355013453,
+                "mean_error_kw": 24.892678516293348
+              },
+              "01_03h": {
+                "count": 13000,
+                "rmse": 394.0613026011956,
+                "mae": 272.36992260031633,
+                "r2": 0.8312957674410943,
+                "nrmse": 0.35343361643891763,
+                "mean_error_kw": 73.68853513746308
+              },
+              "03_06h": {
+                "count": 19501,
+                "rmse": 585.7964348146287,
+                "mae": 426.7715417997525,
+                "r2": 0.6271929052224317,
+                "nrmse": 0.5254277611080812,
+                "mean_error_kw": 89.98417667846212
+              },
+              "06_12h": {
+                "count": 39048,
+                "rmse": 694.9612561366004,
+                "mae": 517.3984932112219,
+                "r2": 0.47632556276115234,
+                "nrmse": 0.6248284605444531,
+                "mean_error_kw": 30.266475992987772
+              },
+              "12_24h": {
+                "count": 78096,
+                "rmse": 740.137517883185,
+                "mae": 585.6641086950118,
+                "r2": 0.4088523674101112,
+                "nrmse": 0.6687251363250171,
+                "mean_error_kw": 86.86358635130603
+              }
+            },
+            "daylight_weather_by_lead": {
+              "00_01h": {
+                "clear": {
+                  "count": 1460,
+                  "rmse": 185.55655166798218,
+                  "mae": 137.48603245667115,
+                  "r2": 0.9765029100313243,
+                  "nrmse": 0.09267909230474818,
+                  "mean_error_kw": 43.38306038556826
+                },
+                "overcast": {
+                  "count": 1344,
+                  "rmse": 129.06182678390246,
+                  "mae": 93.65551351383192,
+                  "r2": 0.8718332769441532,
+                  "nrmse": 0.20228021448907874,
+                  "mean_error_kw": 20.091329578716255
+                },
+                "partly_cloudy": {
+                  "count": 2248,
+                  "rmse": 248.85281775492967,
+                  "mae": 187.038498030823,
+                  "r2": 0.8972273916496678,
+                  "nrmse": 0.20067706996156504,
+                  "mean_error_kw": 30.14476839639886
+                },
+                "rain": {
+                  "count": 1448,
+                  "rmse": 197.21472126608853,
+                  "mae": 112.94334077266087,
+                  "r2": 0.7437203080374053,
+                  "nrmse": 0.420649232722102,
+                  "mean_error_kw": 2.551765113313421
+                }
+              },
+              "01_03h": {
+                "clear": {
+                  "count": 2920,
+                  "rmse": 379.1960754084397,
+                  "mae": 276.64553449471595,
+                  "r2": 0.9018728554615377,
+                  "nrmse": 0.18939535014241732,
+                  "mean_error_kw": -93.65997929167715
+                },
+                "overcast": {
+                  "count": 2688,
+                  "rmse": 300.4583296494727,
+                  "mae": 208.8353188492302,
+                  "r2": 0.30537859579900994,
+                  "nrmse": 0.4709120960164977,
+                  "mean_error_kw": 156.19026568819558
+                },
+                "partly_cloudy": {
+                  "count": 4496,
+                  "rmse": 393.70823146963824,
+                  "mae": 305.58347651823783,
+                  "r2": 0.7427583754647422,
+                  "nrmse": 0.3174897315765335,
+                  "mean_error_kw": 42.16152739814581
+                },
+                "rain": {
+                  "count": 2896,
+                  "rmse": 477.1225870543522,
+                  "mae": 275.46663866947995,
+                  "r2": -0.5000146005318795,
+                  "nrmse": 1.0176788470471476,
+                  "mean_error_kw": 214.7929678752707
+                }
+              },
+              "03_06h": {
+                "clear": {
+                  "count": 4380,
+                  "rmse": 662.6355121865431,
+                  "mae": 496.92967404406147,
+                  "r2": 0.7003523282483802,
+                  "nrmse": 0.3309635647262216,
+                  "mean_error_kw": -380.07583190322424
+                },
+                "overcast": {
+                  "count": 4032,
+                  "rmse": 485.15648855145884,
+                  "mae": 355.715329854796,
+                  "r2": -0.8111038455122108,
+                  "nrmse": 0.7603918293305748,
+                  "mean_error_kw": 343.85673032684736
+                },
+                "partly_cloudy": {
+                  "count": 6744,
+                  "rmse": 474.732052733072,
+                  "mae": 363.02403942859235,
+                  "r2": 0.6259847036876378,
+                  "nrmse": 0.38282804357526656,
+                  "mean_error_kw": -26.03218641997093
+                },
+                "rain": {
+                  "count": 4345,
+                  "rmse": 727.5255056253808,
+                  "mae": 520.9301570639863,
+                  "r2": -2.4872944606855087,
+                  "nrmse": 1.5521313379441506,
+                  "mean_error_kw": 508.3185964743953
+                }
+              },
+              "06_12h": {
+                "clear": {
+                  "count": 8760,
+                  "rmse": 980.3953168592749,
+                  "mae": 773.1906104275472,
+                  "r2": 0.34406025049768063,
+                  "nrmse": 0.48967361836365636,
+                  "mean_error_kw": -708.893507353541
+                },
+                "overcast": {
+                  "count": 7788,
+                  "rmse": 587.4096208305253,
+                  "mae": 469.97930498913183,
+                  "r2": -1.6506696840000106,
+                  "nrmse": 0.9129660363302284,
+                  "mean_error_kw": 464.35600058154597
+                },
+                "partly_cloudy": {
+                  "count": 13488,
+                  "rmse": 455.3742868685538,
+                  "mae": 322.8851520926974,
+                  "r2": 0.6558646691379943,
+                  "nrmse": 0.3672177733370604,
+                  "mean_error_kw": -106.51646926581998
+                },
+                "rain": {
+                  "count": 9012,
+                  "rmse": 741.4975642001511,
+                  "mae": 600.8602815007564,
+                  "r2": -2.6849146419630636,
+                  "nrmse": 1.608175064381328,
+                  "mean_error_kw": 578.3446608876504
+                }
+              },
+              "12_24h": {
+                "clear": {
+                  "count": 17520,
+                  "rmse": 1048.7537675187054,
+                  "mae": 878.7226837581717,
+                  "r2": 0.24939999750112174,
+                  "nrmse": 0.5238163047928097,
+                  "mean_error_kw": -804.8393535619141
+                },
+                "overcast": {
+                  "count": 14124,
+                  "rmse": 622.088895162439,
+                  "mae": 550.4323155580252,
+                  "r2": -1.8658447929349053,
+                  "nrmse": 0.9926461690376805,
+                  "mean_error_kw": 547.2297828416562
+                },
+                "partly_cloudy": {
+                  "count": 26976,
+                  "rmse": 374.3872682555925,
+                  "mae": 287.8652083095951,
+                  "r2": 0.7673867782687324,
+                  "nrmse": 0.30190913931477253,
+                  "mean_error_kw": -48.35162269119778
+                },
+                "rain": {
+                  "count": 19476,
+                  "rmse": 855.804990063154,
+                  "mae": 760.0659749897969,
+                  "r2": -4.222507504886392,
+                  "nrmse": 1.840756906572403,
+                  "mean_error_kw": 742.4391063338741
+                }
+              }
+            },
+            "daylight_ramps_kw_per_15min": {
+              "count": 151668,
+              "rmse": 110.23871282416127,
+              "mae": 79.13332467081625,
+              "r2": 0.331424959677158,
+              "nrmse": null,
+              "mean_error_kw": 1.6938265849177812
+            },
+            "weather_transition_points": {
+              "count": 2690,
+              "rmse": 497.88959226025725,
+              "mae": 347.18353918051207,
+              "r2": 0.6445437395847757,
+              "nrmse": 0.7552244245083305,
+              "mean_error_kw": 187.82206489903874
+            },
+            "weather_transition_ramps_kw_per_15min": {
+              "count": 2352,
+              "rmse": 169.93856482560133,
+              "mae": 119.99599033315562,
+              "r2": -0.010689299752999926,
+              "nrmse": null,
+              "mean_error_kw": 13.686714986383954
+            },
+            "peaks": {
+              "windows": 2881,
+              "mean_peak_error_kw": -277.899880569299,
+              "peak_mae_kw": 791.0160023587157,
+              "timing_windows": 2881,
+              "timing_mae_minutes": 204.98090940645608
+            },
+            "normalized_daylight_shape": {
+              "points": 156145,
+              "rmse": 0.20282793214843292
+            },
+            "definitions": {
+              "leads": "half-open hours from origin: [0,1),[1,3),[3,6),[6,12),[12,24)",
+              "bias": "prediction minus observed power",
+              "shape": "each daylight curve divided by its own peak; requires both peaks >1 kW",
+              "transitions": "observed weather_type changes used only after prediction; no forecast input",
+              "overlap": "points and ramps count separately for every forecast origin"
+            }
+          }
+        },
+        "clear_persistence": {
+          "all_day": {
+            "count": 276576,
+            "rmse": 587.15208267855,
+            "mae": 285.95852845622534,
+            "r2": 0.5819557730424614,
+            "nrmse": 0.936789132099428,
+            "mean_error_kw": 107.48117758658027
+          },
+          "diagnostics": {
+            "daylight": {
+              "count": 156145,
+              "rmse": 781.436711585421,
+              "mae": 506.51167803201497,
+              "r2": 0.3391565053410639,
+              "nrmse": 0.703880022256523,
+              "mean_error_kw": 190.37890532636993
+            },
+            "daylight_by_lead": {
+              "00_01h": {
+                "count": 6500,
+                "rmse": 219.93838457152424,
+                "mae": 132.65134240589992,
+                "r2": 0.9474466429954246,
+                "nrmse": 0.19726275617455521,
+                "mean_error_kw": 17.439554138676566
+              },
+              "01_03h": {
+                "count": 13000,
+                "rmse": 428.2308934675231,
+                "mae": 254.21168954620575,
+                "r2": 0.8007701576206112,
+                "nrmse": 0.38408032544689746,
+                "mean_error_kw": 65.25636498165414
+              },
+              "03_06h": {
+                "count": 19501,
+                "rmse": 671.8331757278003,
+                "mae": 420.7372228322809,
+                "r2": 0.5096416082167421,
+                "nrmse": 0.6025980705609698,
+                "mean_error_kw": 168.26037381776044
+              },
+              "06_12h": {
+                "count": 39048,
+                "rmse": 849.2435002811691,
+                "mae": 567.2034571416389,
+                "r2": 0.21800378496573936,
+                "nrmse": 0.7635411387649583,
+                "mean_error_kw": 313.21453719471947
+              },
+              "12_24h": {
+                "count": 78096,
+                "rmse": 844.4244893644584,
+                "mae": 570.6991792108552,
+                "r2": 0.23052811568177523,
+                "nrmse": 0.7629499493303006,
+                "mean_error_kw": 169.70622730131606
+              }
+            },
+            "daylight_weather_by_lead": {
+              "00_01h": {
+                "clear": {
+                  "count": 1460,
+                  "rmse": 172.70608439300597,
+                  "mae": 96.5156521387016,
+                  "r2": 0.9796447345934581,
+                  "nrmse": 0.08626072748803355,
+                  "mean_error_kw": -52.31169698531708
+                },
+                "overcast": {
+                  "count": 1344,
+                  "rmse": 154.3582827916039,
+                  "mae": 98.42650285065594,
+                  "r2": 0.8166674658833973,
+                  "nrmse": 0.24192766621482495,
+                  "mean_error_kw": 46.87504655860368
+                },
+                "partly_cloudy": {
+                  "count": 2248,
+                  "rmse": 266.67400731328473,
+                  "mae": 195.87343551762694,
+                  "r2": 0.8819805386952853,
+                  "nrmse": 0.21504823174331456,
+                  "mean_error_kw": 1.9886215809858827
+                },
+                "rain": {
+                  "count": 1448,
+                  "rmse": 233.55652478112845,
+                  "mae": 102.70177530451528,
+                  "r2": 0.6405656804323379,
+                  "nrmse": 0.4981644996666674,
+                  "mean_error_kw": 84.43487265962774
+                }
+              },
+              "01_03h": {
+                "clear": {
+                  "count": 2920,
+                  "rmse": 344.7288559873053,
+                  "mae": 190.2879021966091,
+                  "r2": 0.9189007627182538,
+                  "nrmse": 0.17218016382048634,
+                  "mean_error_kw": -129.65277744464262
+                },
+                "overcast": {
+                  "count": 2688,
+                  "rmse": 395.8068669079531,
+                  "mae": 232.37331095377556,
+                  "r2": -0.2054419850915956,
+                  "nrmse": 0.6203530503907074,
+                  "mean_error_kw": 169.94275035067508
+                },
+                "partly_cloudy": {
+                  "count": 4496,
+                  "rmse": 439.42830525004064,
+                  "mae": 312.3616877148443,
+                  "r2": 0.6795440720045448,
+                  "nrmse": 0.3543587954973336,
+                  "mean_error_kw": 24.02180124884167
+                },
+                "rain": {
+                  "count": 2896,
+                  "rmse": 508.11088591888176,
+                  "mae": 248.65803932212955,
+                  "r2": -0.7011888674208799,
+                  "nrmse": 1.0837753537229349,
+                  "mean_error_kw": 228.6293934884163
+                }
+              },
+              "03_06h": {
+                "clear": {
+                  "count": 4380,
+                  "rmse": 532.2756243104641,
+                  "mae": 313.02323570618586,
+                  "r2": 0.8066542413518549,
+                  "nrmse": 0.265853300643919,
+                  "mean_error_kw": -222.309428565733
+                },
+                "overcast": {
+                  "count": 4032,
+                  "rmse": 764.2955481090718,
+                  "mae": 463.8201968834017,
+                  "r2": -3.494716708557619,
+                  "nrmse": 1.1978899668250638,
+                  "mean_error_kw": 405.7174495070546
+                },
+                "partly_cloudy": {
+                  "count": 6744,
+                  "rmse": 634.4779903383323,
+                  "mae": 449.4423535048768,
+                  "r2": 0.3319247600858256,
+                  "nrmse": 0.5116485527665939,
+                  "mean_error_kw": 110.64358764283233
+                },
+                "rain": {
+                  "count": 4345,
+                  "rmse": 757.1483762828332,
+                  "mae": 444.7853956705298,
+                  "r2": -2.7770624344516963,
+                  "nrmse": 1.6153299275630464,
+                  "mean_error_kw": 431.05356397292314
+                }
+              },
+              "06_12h": {
+                "clear": {
+                  "count": 8760,
+                  "rmse": 654.6833850911875,
+                  "mae": 396.5177293106081,
+                  "r2": 0.7075011707330126,
+                  "nrmse": 0.3269917517427154,
+                  "mean_error_kw": -262.9762445845154
+                },
+                "overcast": {
+                  "count": 7788,
+                  "rmse": 1100.1460356238856,
+                  "mae": 720.5664448537188,
+                  "r2": -8.297671046415783,
+                  "nrmse": 1.7098731956549504,
+                  "mean_error_kw": 674.1449806481697
+                },
+                "partly_cloudy": {
+                  "count": 13488,
+                  "rmse": 740.024827002025,
+                  "mae": 540.3615175802098,
+                  "r2": 0.09116543913668951,
+                  "nrmse": 0.5967624370153977,
+                  "mean_error_kw": 266.99851464339764
+                },
+                "rain": {
+                  "count": 9012,
+                  "rmse": 918.0134636776539,
+                  "mae": 640.7565095498392,
+                  "r2": -4.648148103644505,
+                  "nrmse": 1.9910063529948898,
+                  "mean_error_kw": 630.5543803974332
+                }
+              },
+              "12_24h": {
+                "clear": {
+                  "count": 17520,
+                  "rmse": 864.9798124457308,
+                  "mae": 516.7251100536279,
+                  "r2": 0.48940866900227575,
+                  "nrmse": 0.43202755795355846,
+                  "mean_error_kw": -421.92490818892105
+                },
+                "overcast": {
+                  "count": 14124,
+                  "rmse": 874.1867992192875,
+                  "mae": 554.3330110856405,
+                  "r2": -4.659215823667447,
+                  "nrmse": 1.3949102515995724,
+                  "mean_error_kw": 465.3982654232775
+                },
+                "partly_cloudy": {
+                  "count": 26976,
+                  "rmse": 785.9942431040776,
+                  "mae": 589.0724181169642,
+                  "r2": -0.02525284715283105,
+                  "nrmse": 0.6338325727463447,
+                  "mean_error_kw": 107.82964305816786
+                },
+                "rain": {
+                  "count": 19476,
+                  "rmse": 881.0800038070117,
+                  "mae": 605.6727342274886,
+                  "r2": -4.535541790697522,
+                  "nrmse": 1.8951211094608262,
+                  "mean_error_kw": 573.1877370516515
+                }
+              }
+            },
+            "daylight_ramps_kw_per_15min": {
+              "count": 151668,
+              "rmse": 111.45981969860406,
+              "mae": 76.88439537108869,
+              "r2": 0.3165314042333398,
+              "nrmse": null,
+              "mean_error_kw": 0.03292186900307759
+            },
+            "weather_transition_points": {
+              "count": 2690,
+              "rmse": 570.5775447005425,
+              "mae": 297.3197930423334,
+              "r2": 0.533180033380489,
+              "nrmse": 0.8654812322499718,
+              "mean_error_kw": 174.27636817302988
+            },
+            "weather_transition_ramps_kw_per_15min": {
+              "count": 2352,
+              "rmse": 170.65405943392213,
+              "mae": 114.12356741159674,
+              "r2": -0.01921785328269121,
+              "nrmse": null,
+              "mean_error_kw": -4.310269787052636
+            },
+            "peaks": {
+              "windows": 2881,
+              "mean_peak_error_kw": -77.40129913535341,
+              "peak_mae_kw": 753.8631083378112,
+              "timing_windows": 2881,
+              "timing_mae_minutes": 185.47205831308574
+            },
+            "normalized_daylight_shape": {
+              "points": 156145,
+              "rmse": 0.1994867897972123
+            },
+            "definitions": {
+              "leads": "half-open hours from origin: [0,1),[1,3),[3,6),[6,12),[12,24)",
+              "bias": "prediction minus observed power",
+              "shape": "each daylight curve divided by its own peak; requires both peaks >1 kW",
+              "transitions": "observed weather_type changes used only after prediction; no forecast input",
+              "overlap": "points and ramps count separately for every forecast origin"
+            }
+          }
+        },
+        "physics_tree": {
+          "all_day": {
+            "count": 276576,
+            "rmse": 945.6700530559709,
+            "mae": 508.1191634023367,
+            "r2": -0.08442692359391368,
+            "nrmse": 1.5087972169209285,
+            "mean_error_kw": 437.00306361268406
+          },
+          "diagnostics": {
+            "daylight": {
+              "count": 156145,
+              "rmse": 1258.5858388403963,
+              "mae": 900.0196339118427,
+              "r2": -0.7142599554731583,
+              "nrmse": 1.1336726507990318,
+              "mean_error_kw": 774.0533435059831
+            },
+            "daylight_by_lead": {
+              "00_01h": {
+                "count": 6500,
+                "rmse": 1123.7383910560025,
+                "mae": 803.4373516870788,
+                "r2": -0.37192015946167745,
+                "nrmse": 1.0078810602829507,
+                "mean_error_kw": 708.9079862098004
+              },
+              "01_03h": {
+                "count": 13000,
+                "rmse": 1133.2749710179892,
+                "mae": 808.437322836333,
+                "r2": -0.39530450319267785,
+                "nrmse": 1.0164344196769708,
+                "mean_error_kw": 702.6107668357387
+              },
+              "03_06h": {
+                "count": 19501,
+                "rmse": 1169.7638974087665,
+                "mae": 835.5890352953744,
+                "r2": -0.4865761036174987,
+                "nrmse": 1.0492150329235885,
+                "mean_error_kw": 707.2593338039125
+              },
+              "06_12h": {
+                "count": 39048,
+                "rmse": 1252.6144078759282,
+                "mae": 893.8616007196375,
+                "r2": -0.7012768530815123,
+                "nrmse": 1.126205418241442,
+                "mean_error_kw": 762.026686722339
+              },
+              "12_24h": {
+                "count": 78096,
+                "rmse": 1312.259924945755,
+                "mae": 942.4709100610895,
+                "r2": -0.8582786970595979,
+                "nrmse": 1.1856461481820302,
+                "mean_error_kw": 814.0600685165621
+              }
+            },
+            "daylight_weather_by_lead": {
+              "00_01h": {
+                "clear": {
+                  "count": 1460,
+                  "rmse": 381.04103683847643,
+                  "mae": 276.7371103607642,
+                  "r2": 0.9009156661254388,
+                  "nrmse": 0.19031684469023055,
+                  "mean_error_kw": -86.46597293528731
+                },
+                "overcast": {
+                  "count": 1344,
+                  "rmse": 1434.5688914707366,
+                  "mae": 1157.1171382071398,
+                  "r2": -14.83516096966755,
+                  "nrmse": 2.248417756800685,
+                  "mean_error_kw": 1152.2093355308189
+                },
+                "partly_cloudy": {
+                  "count": 2248,
+                  "rmse": 791.8415234060062,
+                  "mae": 584.9528434578316,
+                  "r2": -0.04056400251818748,
+                  "nrmse": 0.6385478702817361,
+                  "mean_error_kw": 553.0968479411504
+                },
+                "rain": {
+                  "count": 1448,
+                  "rmse": 1624.3741112529965,
+                  "mae": 1345.4193225108395,
+                  "r2": -16.386319314842382,
+                  "nrmse": 3.4647095265788996,
+                  "mean_error_kw": 1341.3060564392927
+                }
+              },
+              "01_03h": {
+                "clear": {
+                  "count": 2920,
+                  "rmse": 368.62267403506274,
+                  "mae": 277.5180888564423,
+                  "r2": 0.9072688631752738,
+                  "nrmse": 0.18411430114118477,
+                  "mean_error_kw": -129.93801696603688
+                },
+                "overcast": {
+                  "count": 2688,
+                  "rmse": 1442.0122640276122,
+                  "mae": 1168.3073679266045,
+                  "r2": -14.999911208383692,
+                  "nrmse": 2.260083847656875,
+                  "mean_error_kw": 1162.634745619768
+                },
+                "partly_cloudy": {
+                  "count": 4496,
+                  "rmse": 781.5171603213918,
+                  "mae": 573.1250325288421,
+                  "r2": -0.013606275916348443,
+                  "nrmse": 0.6302222143710197,
+                  "mean_error_kw": 537.9769540827956
+                },
+                "rain": {
+                  "count": 2896,
+                  "rmse": 1658.2954676794268,
+                  "mae": 1375.0524952262192,
+                  "r2": -17.12004870224289,
+                  "nrmse": 3.5370620997644413,
+                  "mean_error_kw": 1370.6672640273637
+                }
+              },
+              "03_06h": {
+                "clear": {
+                  "count": 4380,
+                  "rmse": 415.2475378807787,
+                  "mae": 308.96389620102934,
+                  "r2": 0.8823273251321727,
+                  "nrmse": 0.20740181118171022,
+                  "mean_error_kw": -196.8412435663518
+                },
+                "overcast": {
+                  "count": 4032,
+                  "rmse": 1491.291330483684,
+                  "mae": 1216.966641227105,
+                  "r2": -16.11215285049071,
+                  "nrmse": 2.337319544539163,
+                  "mean_error_kw": 1212.2324466188734
+                },
+                "partly_cloudy": {
+                  "count": 6744,
+                  "rmse": 777.5330654862204,
+                  "mae": 562.9649156020458,
+                  "r2": -0.0032980951024919047,
+                  "nrmse": 0.6270094057511126,
+                  "mean_error_kw": 525.9904403269453
+                },
+                "rain": {
+                  "count": 4345,
+                  "rmse": 1722.0426873519964,
+                  "mae": 1435.69966022709,
+                  "r2": -18.53799521168123,
+                  "nrmse": 3.6738731489819383,
+                  "mean_error_kw": 1431.3988863057534
+                }
+              },
+              "06_12h": {
+                "clear": {
+                  "count": 8760,
+                  "rmse": 426.60967685738217,
+                  "mae": 315.76829238843567,
+                  "r2": 0.8757996275088664,
+                  "nrmse": 0.21307680738920723,
+                  "mean_error_kw": -205.956826909934
+                },
+                "overcast": {
+                  "count": 7788,
+                  "rmse": 1627.2227622291557,
+                  "mae": 1345.8291205739677,
+                  "r2": -19.340776216923633,
+                  "nrmse": 2.5290684094656513,
+                  "mean_error_kw": 1342.7662992434946
+                },
+                "partly_cloudy": {
+                  "count": 13488,
+                  "rmse": 843.089876742257,
+                  "mae": 604.7764490282196,
+                  "r2": -0.17961423017655131,
+                  "nrmse": 0.6798749867703341,
+                  "mean_error_kw": 566.2934313113348
+                },
+                "rain": {
+                  "count": 9012,
+                  "rmse": 1808.1821372078036,
+                  "mae": 1497.8734585058835,
+                  "r2": -20.91251992347075,
+                  "nrmse": 3.9216223563108157,
+                  "mean_error_kw": 1494.0268671581557
+                }
+              },
+              "12_24h": {
+                "clear": {
+                  "count": 17520,
+                  "rmse": 432.035953633212,
+                  "mae": 319.5587109496859,
+                  "r2": 0.8726199915514979,
+                  "nrmse": 0.21578704532830237,
+                  "mean_error_kw": -192.05745250286895
+                },
+                "overcast": {
+                  "count": 14124,
+                  "rmse": 1700.680540410868,
+                  "mae": 1400.9637042780337,
+                  "r2": -20.418707179031927,
+                  "nrmse": 2.7137183066978983,
+                  "mean_error_kw": 1397.2404028550682
+                },
+                "partly_cloudy": {
+                  "count": 26976,
+                  "rmse": 911.2142599326535,
+                  "mae": 661.9244808062626,
+                  "r2": -0.37794939632025915,
+                  "nrmse": 0.7348110800600266,
+                  "mean_error_kw": 627.465086060969
+                },
+                "rain": {
+                  "count": 19476,
+                  "rmse": 1868.0495348464792,
+                  "mae": 1558.9060085664235,
+                  "r2": -23.883199424524733,
+                  "nrmse": 4.018000739671159,
+                  "mean_error_kw": 1554.6600979263712
+                }
+              }
+            },
+            "daylight_ramps_kw_per_15min": {
+              "count": 151668,
+              "rmse": 159.65348755848095,
+              "mae": 120.93206208796352,
+              "r2": -0.40229282452105797,
+              "nrmse": null,
+              "mean_error_kw": 2.066171816182611
+            },
+            "weather_transition_points": {
+              "count": 2690,
+              "rmse": 1140.4989045932036,
+              "mae": 705.1265926519204,
+              "r2": -0.8651330445209753,
+              "nrmse": 1.7299671297879773,
+              "mean_error_kw": 681.7498391550704
+            },
+            "weather_transition_ramps_kw_per_15min": {
+              "count": 2352,
+              "rmse": 206.70066950028675,
+              "mae": 160.52934144351178,
+              "r2": -0.4952628454116832,
+              "nrmse": null,
+              "mean_error_kw": -31.3468830884199
+            },
+            "peaks": {
+              "windows": 2881,
+              "mean_peak_error_kw": 1201.4212841137048,
+              "peak_mae_kw": 1296.387724271311,
+              "timing_windows": 2881,
+              "timing_mae_minutes": 192.90697674418604
+            },
+            "normalized_daylight_shape": {
+              "points": 156145,
+              "rmse": 0.1833997082105174
+            },
+            "definitions": {
+              "leads": "half-open hours from origin: [0,1),[1,3),[3,6),[6,12),[12,24)",
+              "bias": "prediction minus observed power",
+              "shape": "each daylight curve divided by its own peak; requires both peaks >1 kW",
+              "transitions": "observed weather_type changes used only after prediction; no forecast input",
+              "overlap": "points and ramps count separately for every forecast origin"
+            }
+          }
+        },
+        "physics_gru32_control": {
+          "all_day": {
+            "count": 276576,
+            "rmse": 517.0705577701523,
+            "mae": 321.363051984945,
+            "r2": 0.6757943059971514,
+            "nrmse": 0.8249754932962684,
+            "mean_error_kw": 109.89288153869019
+          },
+          "diagnostics": {
+            "daylight": {
+              "count": 156145,
+              "rmse": 688.1656869516005,
+              "mae": 569.2228855601408,
+              "r2": 0.4874962743237935,
+              "nrmse": 0.6198660388823035,
+              "mean_error_kw": 194.65070033907443
+            },
+            "daylight_by_lead": {
+              "00_01h": {
+                "count": 6500,
+                "rmse": 482.40224830089363,
+                "mae": 390.28970286386834,
+                "r2": 0.7471767278697561,
+                "nrmse": 0.4326666182895886,
+                "mean_error_kw": 152.18808333359434
+              },
+              "01_03h": {
+                "count": 13000,
+                "rmse": 575.11379007012,
+                "mae": 494.9131945718802,
+                "r2": 0.6406596687329975,
+                "nrmse": 0.515819608133626,
+                "mean_error_kw": 277.27018848308353
+              },
+              "03_06h": {
+                "count": 19501,
+                "rmse": 658.8186626733698,
+                "mae": 555.1340739301476,
+                "r2": 0.5284556923566918,
+                "nrmse": 0.5909247553106556,
+                "mean_error_kw": 208.40134579833358
+              },
+              "06_12h": {
+                "count": 39048,
+                "rmse": 698.1839667404062,
+                "mae": 579.544244989804,
+                "r2": 0.47145748075251037,
+                "nrmse": 0.6277259476886292,
+                "mean_error_kw": 183.13117646851225
+              },
+              "12_24h": {
+                "count": 78096,
+                "rmse": 721.331323303219,
+                "mae": 594.8427526847076,
+                "r2": 0.4385117155524403,
+                "nrmse": 0.6517334628449174,
+                "mean_error_kw": 186.75806429702624
+              }
+            },
+            "daylight_weather_by_lead": {
+              "00_01h": {
+                "clear": {
+                  "count": 1460,
+                  "rmse": 633.8392223344648,
+                  "mae": 513.1713788825674,
+                  "r2": 0.7258301378421794,
+                  "nrmse": 0.3165808119683973,
+                  "mean_error_kw": -217.53902309101198
+                },
+                "overcast": {
+                  "count": 1344,
+                  "rmse": 420.4835039770904,
+                  "mae": 354.6476005485244,
+                  "r2": -0.3604343524839999,
+                  "nrmse": 0.6590290521458354,
+                  "mean_error_kw": 340.03438888331965
+                },
+                "partly_cloudy": {
+                  "count": 2248,
+                  "rmse": 391.972996704322,
+                  "mae": 316.85785812594264,
+                  "r2": 0.7450209186160244,
+                  "nrmse": 0.31609042321611125,
+                  "mean_error_kw": 117.1296028866814
+                },
+                "rain": {
+                  "count": 1448,
+                  "rmse": 486.73887552094317,
+                  "mae": 413.4737674325002,
+                  "r2": -0.5610887787863468,
+                  "nrmse": 1.0381899140665722,
+                  "mean_error_kw": 405.0524512657454
+                }
+              },
+              "01_03h": {
+                "clear": {
+                  "count": 2920,
+                  "rmse": 587.1954120688183,
+                  "mae": 510.014497912612,
+                  "r2": 0.7646973594395488,
+                  "nrmse": 0.2932838388451307,
+                  "mean_error_kw": -247.88450385574063
+                },
+                "overcast": {
+                  "count": 2688,
+                  "rmse": 587.0052938260707,
+                  "mae": 545.031845785869,
+                  "r2": -1.6513294775748366,
+                  "nrmse": 0.920020735024745,
+                  "mean_error_kw": 545.031845785869
+                },
+                "partly_cloudy": {
+                  "count": 4496,
+                  "rmse": 393.8331621818258,
+                  "mae": 318.9792145849981,
+                  "r2": 0.742595094762573,
+                  "nrmse": 0.31759047678607616,
+                  "mean_error_kw": 184.1255458916561
+                },
+                "rain": {
+                  "count": 2896,
+                  "rmse": 759.2538164534176,
+                  "mae": 706.302847128124,
+                  "r2": -2.7984769935055174,
+                  "nrmse": 1.619450785834291,
+                  "mean_error_kw": 702.8526055723573
+                }
+              },
+              "03_06h": {
+                "clear": {
+                  "count": 4380,
+                  "rmse": 800.9254032032362,
+                  "mae": 681.9341798413483,
+                  "r2": 0.5622303687355327,
+                  "nrmse": 0.40003459164033717,
+                  "mean_error_kw": -467.6023752996067
+                },
+                "overcast": {
+                  "count": 4032,
+                  "rmse": 638.4470748617643,
+                  "mae": 586.8484881532447,
+                  "r2": -2.136385718373647,
+                  "nrmse": 1.0006460815032454,
+                  "mean_error_kw": 586.4595331772713
+                },
+                "partly_cloudy": {
+                  "count": 6744,
+                  "rmse": 379.9272926712248,
+                  "mae": 312.5421466673817,
+                  "r2": 0.760451619248818,
+                  "nrmse": 0.30637666303933603,
+                  "mean_error_kw": 63.724147357345146
+                },
+                "rain": {
+                  "count": 4345,
+                  "rmse": 836.1236299907874,
+                  "mae": 774.4166919788254,
+                  "r2": -3.6060979357411,
+                  "nrmse": 1.783818819367377,
+                  "mean_error_kw": 763.584018567753
+                }
+              },
+              "06_12h": {
+                "clear": {
+                  "count": 8760,
+                  "rmse": 898.2311538656859,
+                  "mae": 760.8227935348158,
+                  "r2": 0.44939808024812467,
+                  "nrmse": 0.44863545518496883,
+                  "mean_error_kw": -604.4675425742561
+                },
+                "overcast": {
+                  "count": 7788,
+                  "rmse": 708.1180049479259,
+                  "mae": 648.6408247391265,
+                  "r2": -2.8519866620901038,
+                  "nrmse": 1.1005738845702295,
+                  "mean_error_kw": 648.6324475085428
+                },
+                "partly_cloudy": {
+                  "count": 13488,
+                  "rmse": 355.27292197707334,
+                  "mae": 291.3220543835549,
+                  "r2": 0.7905325867540071,
+                  "nrmse": 0.2864951647413302,
+                  "mean_error_kw": 40.237658130394124
+                },
+                "rain": {
+                  "count": 9012,
+                  "rmse": 840.0120586047439,
+                  "mae": 774.9966039062556,
+                  "r2": -3.7291056436230345,
+                  "nrmse": 1.8218353122777533,
+                  "mean_error_kw": 760.2936992491855
+                }
+              },
+              "12_24h": {
+                "clear": {
+                  "count": 17520,
+                  "rmse": 918.2822552372711,
+                  "mae": 770.8765911194457,
+                  "r2": 0.42454167423263933,
+                  "nrmse": 0.45865028817321113,
+                  "mean_error_kw": -641.3555586805871
+                },
+                "overcast": {
+                  "count": 14124,
+                  "rmse": 702.3541177708939,
+                  "mae": 638.3585964352302,
+                  "r2": -2.6530871621946854,
+                  "nrmse": 1.1207226647745716,
+                  "mean_error_kw": 638.0192471593288
+                },
+                "partly_cloudy": {
+                  "count": 26976,
+                  "rmse": 370.5399481038832,
+                  "mae": 300.5299629131901,
+                  "r2": 0.7721430255165149,
+                  "nrmse": 0.2988066269855393,
+                  "mean_error_kw": 49.43330848479307
+                },
+                "rain": {
+                  "count": 19476,
+                  "rmse": 883.1397356632755,
+                  "mae": 812.5800288383051,
+                  "r2": -4.561453305734211,
+                  "nrmse": 1.8995514010390804,
+                  "mean_error_kw": 794.6554939854341
+                }
+              }
+            },
+            "daylight_ramps_kw_per_15min": {
+              "count": 151668,
+              "rmse": 119.20062143954054,
+              "mae": 81.91065482513044,
+              "r2": 0.21830212564782447,
+              "nrmse": null,
+              "mean_error_kw": 7.545095806947454
+            },
+            "weather_transition_points": {
+              "count": 2690,
+              "rmse": 551.4865120672745,
+              "mae": 455.965210912777,
+              "r2": 0.5638962090241952,
+              "nrmse": 0.8365229765285045,
+              "mean_error_kw": 330.6895522121584
+            },
+            "weather_transition_ramps_kw_per_15min": {
+              "count": 2352,
+              "rmse": 173.02515250078557,
+              "mae": 116.7894784628852,
+              "r2": -0.04773694171607645,
+              "nrmse": null,
+              "mean_error_kw": 12.570868241346712
+            },
+            "peaks": {
+              "windows": 2881,
+              "mean_peak_error_kw": -275.42334674557173,
+              "peak_mae_kw": 818.9769212560336,
+              "timing_windows": 2881,
+              "timing_mae_minutes": 174.45505032974663
+            },
+            "normalized_daylight_shape": {
+              "points": 156145,
+              "rmse": 0.23277210760229122
+            },
+            "definitions": {
+              "leads": "half-open hours from origin: [0,1),[1,3),[3,6),[6,12),[12,24)",
+              "bias": "prediction minus observed power",
+              "shape": "each daylight curve divided by its own peak; requires both peaks >1 kW",
+              "transitions": "observed weather_type changes used only after prediction; no forecast input",
+              "overlap": "points and ramps count separately for every forecast origin"
+            }
+          }
+        },
+        "physics_gru32_scheduled": {
+          "all_day": {
+            "count": 276576,
+            "rmse": 476.4302403551645,
+            "mae": 279.6936006850656,
+            "r2": 0.7247548608161498,
+            "nrmse": 0.7601346985472277,
+            "mean_error_kw": 56.94374899489552
+          },
+          "diagnostics": {
+            "daylight": {
+              "count": 156145,
+              "rmse": 634.0777650393107,
+              "mae": 495.4147574566761,
+              "r2": 0.5648930234249685,
+              "nrmse": 0.5711462806280615,
+              "mean_error_kw": 100.86313568806061
+            },
+            "daylight_by_lead": {
+              "00_01h": {
+                "count": 6500,
+                "rmse": 432.62353223032267,
+                "mae": 327.95980436216723,
+                "r2": 0.7966619384240231,
+                "nrmse": 0.38802008353376866,
+                "mean_error_kw": 48.09603165324955
+              },
+              "01_03h": {
+                "count": 13000,
+                "rmse": 451.2719458072875,
+                "mae": 372.4993628035322,
+                "r2": 0.7787541808837435,
+                "nrmse": 0.40474584728638346,
+                "mean_error_kw": 161.30635182137792
+              },
+              "03_06h": {
+                "count": 19501,
+                "rmse": 569.4831842573436,
+                "mae": 450.7617239493356,
+                "r2": 0.6476676425402783,
+                "nrmse": 0.5107956564940922,
+                "mean_error_kw": 91.31531771233084
+              },
+              "06_12h": {
+                "count": 39048,
+                "rmse": 632.4469932658077,
+                "mae": 496.70273585890163,
+                "r2": 0.5663009686787075,
+                "nrmse": 0.5686228947136711,
+                "mean_error_kw": 118.611188855751
+              },
+              "12_24h": {
+                "count": 78096,
+                "rmse": 688.0503642336126,
+                "mae": 540.319018255971,
+                "r2": 0.48912861902241067,
+                "nrmse": 0.6216636266954109,
+                "mean_error_kw": 88.70361900021334
+              }
+            },
+            "daylight_weather_by_lead": {
+              "00_01h": {
+                "clear": {
+                  "count": 1460,
+                  "rmse": 667.4090841783388,
+                  "mae": 545.8545208768397,
+                  "r2": 0.6960195030008395,
+                  "nrmse": 0.33334779915650253,
+                  "mean_error_kw": -225.3937535141946
+                },
+                "overcast": {
+                  "count": 1344,
+                  "rmse": 274.39155718499524,
+                  "mae": 227.34330901336796,
+                  "r2": 0.420676490099436,
+                  "nrmse": 0.43005731767850675,
+                  "mean_error_kw": 167.07811829928136
+                },
+                "partly_cloudy": {
+                  "count": 2248,
+                  "rmse": 393.10443034509314,
+                  "mae": 314.54890732222935,
+                  "r2": 0.7435467952449295,
+                  "nrmse": 0.3170028211143319,
+                  "mean_error_kw": 65.84021125365103
+                },
+                "rain": {
+                  "count": 1448,
+                  "rmse": 285.04230212875297,
+                  "mae": 222.4694591847809,
+                  "r2": 0.4646298329344405,
+                  "nrmse": 0.6079811127386616,
+                  "mean_error_kw": 185.86830109420205
+                }
+              },
+              "01_03h": {
+                "clear": {
+                  "count": 2920,
+                  "rmse": 524.9695620394202,
+                  "mae": 448.25513762217565,
+                  "r2": 0.8119255758959206,
+                  "nrmse": 0.26220417473855145,
+                  "mean_error_kw": -230.2832418807266
+                },
+                "overcast": {
+                  "count": 2688,
+                  "rmse": 408.1197181687318,
+                  "mae": 346.8123258523395,
+                  "r2": -0.28160685215171455,
+                  "nrmse": 0.6396511360917002,
+                  "mean_error_kw": 346.1018564507863
+                },
+                "partly_cloudy": {
+                  "count": 4496,
+                  "rmse": 360.49998816491,
+                  "mae": 290.06865172835296,
+                  "r2": 0.7843235316980443,
+                  "nrmse": 0.2907103162374375,
+                  "mean_error_kw": 122.09011615094037
+                },
+                "rain": {
+                  "count": 2896,
+                  "rmse": 529.0758684188735,
+                  "mae": 447.93042974012536,
+                  "r2": -0.8444693379932173,
+                  "nrmse": 1.1284926230324355,
+                  "mean_error_kw": 445.50092804395496
+                }
+              },
+              "03_06h": {
+                "clear": {
+                  "count": 4380,
+                  "rmse": 755.566774155381,
+                  "mae": 628.5382346437283,
+                  "r2": 0.6104105417860489,
+                  "nrmse": 0.3773795221720012,
+                  "mean_error_kw": -491.59752738374823
+                },
+                "overcast": {
+                  "count": 4032,
+                  "rmse": 500.7521471033483,
+                  "mae": 404.38318908005704,
+                  "r2": -0.9294134638884994,
+                  "nrmse": 0.7848350999365051,
+                  "mean_error_kw": 403.47152807275216
+                },
+                "partly_cloudy": {
+                  "count": 6744,
+                  "rmse": 377.82196394883573,
+                  "mae": 301.3364932972516,
+                  "r2": 0.7630991297305345,
+                  "nrmse": 0.30467890770296274,
+                  "mean_error_kw": -4.607205105061409
+                },
+                "rain": {
+                  "count": 4345,
+                  "rmse": 652.5499474128809,
+                  "mae": 546.5179705014974,
+                  "r2": -1.8055608402573515,
+                  "nrmse": 1.3921755527769437,
+                  "mean_error_kw": 538.1383131618362
+                }
+              },
+              "06_12h": {
+                "clear": {
+                  "count": 8760,
+                  "rmse": 834.029141624261,
+                  "mae": 681.4426744159788,
+                  "r2": 0.5252948487027703,
+                  "nrmse": 0.41656876626891104,
+                  "mean_error_kw": -576.3062284299473
+                },
+                "overcast": {
+                  "count": 7788,
+                  "rmse": 653.6282395625119,
+                  "mae": 540.3477308466961,
+                  "r2": -2.281973840406221,
+                  "nrmse": 1.0158845921916866,
+                  "mean_error_kw": 539.7872066971278
+                },
+                "partly_cloudy": {
+                  "count": 13488,
+                  "rmse": 359.48623720319847,
+                  "mae": 279.5257226719565,
+                  "r2": 0.7855348205511731,
+                  "nrmse": 0.2898928186719998,
+                  "mean_error_kw": 12.07732916663812
+                },
+                "rain": {
+                  "count": 9012,
+                  "rmse": 703.090364836067,
+                  "mae": 604.4540087329113,
+                  "r2": -2.3130673730199103,
+                  "nrmse": 1.524876745826946,
+                  "mean_error_kw": 589.5706260462557
+                }
+              },
+              "12_24h": {
+                "clear": {
+                  "count": 17520,
+                  "rmse": 949.7094771793969,
+                  "mae": 779.6265293821455,
+                  "r2": 0.384478769356252,
+                  "nrmse": 0.47434710069248937,
+                  "mean_error_kw": -695.0761396046342
+                },
+                "overcast": {
+                  "count": 14124,
+                  "rmse": 613.9146114412777,
+                  "mae": 507.88919540628035,
+                  "r2": -1.7910248833452433,
+                  "nrmse": 0.9796027415090166,
+                  "mean_error_kw": 505.8289503863716
+                },
+                "partly_cloudy": {
+                  "count": 26976,
+                  "rmse": 402.21054394392013,
+                  "mae": 307.43636161434887,
+                  "r2": 0.7315279020167181,
+                  "nrmse": 0.3243460700766539,
+                  "mean_error_kw": -25.932743713164452
+                },
+                "rain": {
+                  "count": 19476,
+                  "rmse": 767.8306643241318,
+                  "mae": 671.1268724643733,
+                  "r2": -3.2039771644816506,
+                  "nrmse": 1.6515323173430212,
+                  "mean_error_kw": 650.0495684156432
+                }
+              }
+            },
+            "daylight_ramps_kw_per_15min": {
+              "count": 151668,
+              "rmse": 116.94296595935636,
+              "mae": 80.03156457006895,
+              "r2": 0.24763237245368608,
+              "nrmse": null,
+              "mean_error_kw": 3.903455380804281
+            },
+            "weather_transition_points": {
+              "count": 2690,
+              "rmse": 489.4582461883723,
+              "mae": 359.55623348678637,
+              "r2": 0.6564805189593479,
+              "nrmse": 0.7424353271181576,
+              "mean_error_kw": 228.60963116334526
+            },
+            "weather_transition_ramps_kw_per_15min": {
+              "count": 2352,
+              "rmse": 172.5666009348228,
+              "mae": 115.13270812330408,
+              "r2": -0.04219087196771021,
+              "nrmse": null,
+              "mean_error_kw": 16.40038188522131
+            },
+            "peaks": {
+              "windows": 2881,
+              "mean_peak_error_kw": -329.53662147046657,
+              "peak_mae_kw": 761.5803555448873,
+              "timing_windows": 2881,
+              "timing_mae_minutes": 172.19541825754945
+            },
+            "normalized_daylight_shape": {
+              "points": 156145,
+              "rmse": 0.20891925335836614
+            },
+            "definitions": {
+              "leads": "half-open hours from origin: [0,1),[1,3),[3,6),[6,12),[12,24)",
+              "bias": "prediction minus observed power",
+              "shape": "each daylight curve divided by its own peak; requires both peaks >1 kW",
+              "transitions": "observed weather_type changes used only after prediction; no forecast input",
+              "overlap": "points and ramps count separately for every forecast origin"
+            }
+          }
+        },
+        "physics_gru16_scheduled": {
+          "all_day": {
+            "count": 276576,
+            "rmse": 533.5645517695579,
+            "mae": 323.3377941763228,
+            "r2": 0.6547807882607617,
+            "nrmse": 0.8512913231798448,
+            "mean_error_kw": 64.45841094999648
+          },
+          "diagnostics": {
+            "daylight": {
+              "count": 156145,
+              "rmse": 710.117431332726,
+              "mae": 572.7207003881688,
+              "r2": 0.45427814667003275,
+              "nrmse": 0.6396390980366495,
+              "mean_error_kw": 114.17368130203482
+            },
+            "daylight_by_lead": {
+              "00_01h": {
+                "count": 6500,
+                "rmse": 776.1018050615257,
+                "mae": 517.6323408697127,
+                "r2": 0.3456113043730611,
+                "nrmse": 0.6960857761901807,
+                "mean_error_kw": -346.0546520414615
+              },
+              "01_03h": {
+                "count": 13000,
+                "rmse": 627.3093332695954,
+                "mae": 507.9520921857445,
+                "r2": 0.572474622009219,
+                "nrmse": 0.5626337953507202,
+                "mean_error_kw": 67.97010675389157
+              },
+              "03_06h": {
+                "count": 19501,
+                "rmse": 665.8381366886358,
+                "mae": 551.8297462810737,
+                "r2": 0.5183538947274013,
+                "nrmse": 0.5972208443559307,
+                "mean_error_kw": 133.4745998716251
+              },
+              "06_12h": {
+                "count": 39048,
+                "rmse": 700.8970287208932,
+                "mae": 575.6518762622402,
+                "r2": 0.46734178975870855,
+                "nrmse": 0.6301652179726351,
+                "mean_error_kw": 162.088465293656
+              },
+              "12_24h": {
+                "count": 78096,
+                "rmse": 732.2969677264931,
+                "mae": 591.8382503780941,
+                "r2": 0.4213105196531918,
+                "nrmse": 0.6616410839081196,
+                "mean_error_kw": 131.3930899468846
+              }
+            },
+            "daylight_weather_by_lead": {
+              "00_01h": {
+                "clear": {
+                  "count": 1460,
+                  "rmse": 1358.196682508141,
+                  "mae": 1126.0729552482444,
+                  "r2": -0.2588872186443396,
+                  "nrmse": 0.6783723591253543,
+                  "mean_error_kw": -1011.4215010263848
+                },
+                "overcast": {
+                  "count": 1344,
+                  "rmse": 255.2956820055077,
+                  "mae": 196.31965465716942,
+                  "r2": 0.4985050047716951,
+                  "nrmse": 0.4001281137967808,
+                  "mean_error_kw": -16.698793446808313
+                },
+                "partly_cloudy": {
+                  "count": 2248,
+                  "rmse": 671.685456153296,
+                  "mae": 512.5186351754325,
+                  "r2": 0.251271881791835,
+                  "nrmse": 0.5416529758139358,
+                  "mean_error_kw": -387.2057009646125
+                },
+                "rain": {
+                  "count": 1448,
+                  "rmse": 288.001969075071,
+                  "mae": 210.32333788472934,
+                  "r2": 0.4534543435438394,
+                  "nrmse": 0.6142939357474565,
+                  "mean_error_kw": 83.01225648479367
+                }
+              },
+              "01_03h": {
+                "clear": {
+                  "count": 2920,
+                  "rmse": 965.893639788473,
+                  "mae": 808.1067055888612,
+                  "r2": 0.3633216146419068,
+                  "nrmse": 0.4824305312522762,
+                  "mean_error_kw": -682.4134016761741
+                },
+                "overcast": {
+                  "count": 2688,
+                  "rmse": 455.47884835140263,
+                  "mae": 408.79810869838616,
+                  "r2": -0.5963058027479113,
+                  "nrmse": 0.7138776928520275,
+                  "mean_error_kw": 407.2964081579873
+                },
+                "partly_cloudy": {
+                  "count": 4496,
+                  "rmse": 396.14597072664446,
+                  "mae": 331.1556648041168,
+                  "r2": 0.7395629665830665,
+                  "nrmse": 0.31945554565024853,
+                  "mean_error_kw": 37.814363873803686
+                },
+                "rain": {
+                  "count": 2896,
+                  "rmse": 624.1806064823008,
+                  "mae": 571.8164478434509,
+                  "r2": -1.5671785466813413,
+                  "nrmse": 1.3313463189319428,
+                  "mean_error_kw": 556.4338382561214
+                }
+              },
+              "03_06h": {
+                "clear": {
+                  "count": 4380,
+                  "rmse": 930.3267806811918,
+                  "mae": 778.7751447345404,
+                  "r2": 0.40934682978571,
+                  "nrmse": 0.464666112865736,
+                  "mean_error_kw": -653.4668167401367
+                },
+                "overcast": {
+                  "count": 4032,
+                  "rmse": 563.7207131746708,
+                  "mae": 507.8684213758528,
+                  "r2": -1.4451620681531026,
+                  "nrmse": 0.8835265206948972,
+                  "mean_error_kw": 506.2801362035554
+                },
+                "partly_cloudy": {
+                  "count": 6744,
+                  "rmse": 402.3434599364226,
+                  "mae": 341.08711012810005,
+                  "r2": 0.7313504321215468,
+                  "nrmse": 0.32445325468548036,
+                  "mean_error_kw": 70.7952877201854
+                },
+                "rain": {
+                  "count": 4345,
+                  "rmse": 755.7441396584961,
+                  "mae": 690.9504724047376,
+                  "r2": -2.763065254586365,
+                  "nrmse": 1.6123340742855055,
+                  "mean_error_kw": 678.0915764926799
+                }
+              },
+              "06_12h": {
+                "clear": {
+                  "count": 8760,
+                  "rmse": 959.1504664531601,
+                  "mae": 787.4856742218707,
+                  "r2": 0.3721802433906941,
+                  "nrmse": 0.4790625489398618,
+                  "mean_error_kw": -650.2685419335595
+                },
+                "overcast": {
+                  "count": 7788,
+                  "rmse": 649.5138717286336,
+                  "mae": 585.3768850992951,
+                  "r2": -2.24078605932062,
+                  "nrmse": 1.0094899436192142,
+                  "mean_error_kw": 584.1029610402142
+                },
+                "partly_cloudy": {
+                  "count": 13488,
+                  "rmse": 395.1156886665369,
+                  "mae": 333.0303433327332,
+                  "r2": 0.7409158753590013,
+                  "nrmse": 0.3186247172637284,
+                  "mean_error_kw": 80.96172520290965
+                },
+                "rain": {
+                  "count": 9012,
+                  "rmse": 797.5528090307544,
+                  "mae": 724.4619957921832,
+                  "r2": -3.263113278358351,
+                  "nrmse": 1.7297488244537662,
+                  "mean_error_kw": 708.4528639599007
+                }
+              },
+              "12_24h": {
+                "clear": {
+                  "count": 17520,
+                  "rmse": 1022.93409448234,
+                  "mae": 847.3271901547388,
+                  "r2": 0.2859036694959062,
+                  "nrmse": 0.5109202693841681,
+                  "mean_error_kw": -731.5717116506308
+                },
+                "overcast": {
+                  "count": 14124,
+                  "rmse": 618.0457724978145,
+                  "mae": 543.7558659004429,
+                  "r2": -1.828714058926852,
+                  "nrmse": 0.9861946952126398,
+                  "mean_error_kw": 542.2714423862925
+                },
+                "partly_cloudy": {
+                  "count": 26976,
+                  "rmse": 408.25924147065695,
+                  "mae": 325.3929351691628,
+                  "r2": 0.7233922764926876,
+                  "nrmse": 0.3292237922085555,
+                  "mean_error_kw": 33.45857292823385
+                },
+                "rain": {
+                  "count": 19476,
+                  "rmse": 837.3443359786394,
+                  "mae": 765.9283200305719,
+                  "r2": -3.999627150061249,
+                  "nrmse": 1.8010497572796573,
+                  "mean_error_kw": 745.3681877713556
+                }
+              }
+            },
+            "daylight_ramps_kw_per_15min": {
+              "count": 151668,
+              "rmse": 117.6042572691923,
+              "mae": 83.90831863416737,
+              "r2": 0.2390993084482793,
+              "nrmse": null,
+              "mean_error_kw": 12.378896274166102
+            },
+            "weather_transition_points": {
+              "count": 2690,
+              "rmse": 517.0857772876816,
+              "mae": 391.2548661829601,
+              "r2": 0.6166060490585002,
+              "nrmse": 0.7843421807648499,
+              "mean_error_kw": 215.01832368267324
+            },
+            "weather_transition_ramps_kw_per_15min": {
+              "count": 2352,
+              "rmse": 175.3498008116341,
+              "mae": 126.68328579290585,
+              "r2": -0.07607942883918639,
+              "nrmse": null,
+              "mean_error_kw": 25.63617672183856
+            },
+            "peaks": {
+              "windows": 2881,
+              "mean_peak_error_kw": -443.4508160402909,
+              "peak_mae_kw": 877.3803168817415,
+              "timing_windows": 2881,
+              "timing_mae_minutes": 211.18188129121833
+            },
+            "normalized_daylight_shape": {
+              "points": 156145,
+              "rmse": 0.24598829473241401
+            },
+            "definitions": {
+              "leads": "half-open hours from origin: [0,1),[1,3),[3,6),[6,12),[12,24)",
+              "bias": "prediction minus observed power",
+              "shape": "each daylight curve divided by its own peak; requires both peaks >1 kW",
+              "transitions": "observed weather_type changes used only after prediction; no forecast input",
+              "overlap": "points and ramps count separately for every forecast origin"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "month_07",
+      "training_windows": 16993,
+      "validation_windows": 2881,
+      "train_end_exclusive": "2025-07-01T00:00:00+08:00",
+      "validation_end_exclusive": "2025-08-01T00:00:00+08:00",
+      "results": {
+        "current_gru_ridge": {
+          "all_day": {
+            "count": 276576,
+            "rmse": 511.7552178494187,
+            "mae": 283.51667141183214,
+            "r2": 0.7419583303351196,
+            "nrmse": 0.6893414345171783,
+            "mean_error_kw": -98.67393015571903
+          },
+          "diagnostics": {
+            "daylight": {
+              "count": 159325,
+              "rmse": 674.260256597225,
+              "mae": 492.1632318368046,
+              "r2": 0.5701984810291669,
+              "nrmse": 0.5232016458664,
+              "mean_error_kw": -171.29038698727848
+            },
+            "daylight_by_lead": {
+              "00_01h": {
+                "count": 6640,
+                "rmse": 179.91608456164445,
+                "mae": 127.59635573213477,
+                "r2": 0.9700311074677578,
+                "nrmse": 0.13733848458814102,
+                "mean_error_kw": 1.5370112471768935
+              },
+              "01_03h": {
+                "count": 13280,
+                "rmse": 356.6889484044299,
+                "mae": 260.8786155840574,
+                "r2": 0.8822095668248513,
+                "nrmse": 0.27227759965184006,
+                "mean_error_kw": -54.81664510520215
+              },
+              "03_06h": {
+                "count": 19920,
+                "rmse": 541.0197457139168,
+                "mae": 394.9225364890845,
+                "r2": 0.7290077044035063,
+                "nrmse": 0.41298604396402616,
+                "mean_error_kw": -112.71260295506933
+              },
+              "06_12h": {
+                "count": 39840,
+                "rmse": 703.4854894025907,
+                "mae": 524.2111305242526,
+                "r2": 0.5416561115678753,
+                "nrmse": 0.5392722626975537,
+                "mean_error_kw": -187.26040362933048
+              },
+              "12_24h": {
+                "count": 79645,
+                "rmse": 751.5175845427591,
+                "mae": 569.4113971803936,
+                "r2": 0.45426127570401365,
+                "nrmse": 0.5916683202689673,
+                "mean_error_kw": -211.78218448081884
+              }
+            },
+            "daylight_weather_by_lead": {
+              "00_01h": {
+                "clear": {
+                  "count": 2272,
+                  "rmse": 165.49783597851427,
+                  "mae": 126.57344576491212,
+                  "r2": 0.9802355157555165,
+                  "nrmse": 0.08231209787269345,
+                  "mean_error_kw": -30.86421538813979
+                },
+                "overcast": {
+                  "count": 664,
+                  "rmse": 207.1630541600192,
+                  "mae": 134.7550134168626,
+                  "r2": 0.8560192860251143,
+                  "nrmse": 0.27477505060176416,
+                  "mean_error_kw": 42.690267185520604
+                },
+                "partly_cloudy": {
+                  "count": 2472,
+                  "rmse": 200.9095271715002,
+                  "mae": 151.07848542854174,
+                  "r2": 0.9284564429415684,
+                  "nrmse": 0.16014074949212875,
+                  "mean_error_kw": 4.294955493666293
+                },
+                "rain": {
+                  "count": 1232,
+                  "rmse": 140.81301703090554,
+                  "mae": 78.50778278842746,
+                  "r2": 0.8330836757971476,
+                  "nrmse": 0.32826745125285095,
+                  "mean_error_kw": 33.57612390550279
+                }
+              },
+              "01_03h": {
+                "clear": {
+                  "count": 4544,
+                  "rmse": 393.81040319022486,
+                  "mae": 316.45613862964103,
+                  "r2": 0.8880883712890285,
+                  "nrmse": 0.19586576621392784,
+                  "mean_error_kw": -233.96240291304383
+                },
+                "overcast": {
+                  "count": 1328,
+                  "rmse": 423.63577874028687,
+                  "mae": 272.0894010420886,
+                  "r2": 0.397905061327945,
+                  "nrmse": 0.5618981773176872,
+                  "mean_error_kw": 199.29125194261192
+                },
+                "partly_cloudy": {
+                  "count": 4944,
+                  "rmse": 312.55278237768346,
+                  "mae": 235.32205114503125,
+                  "r2": 0.8268525082780482,
+                  "nrmse": 0.24912923508643137,
+                  "mean_error_kw": -71.33580225866504
+                },
+                "rain": {
+                  "count": 2464,
+                  "rmse": 327.0494976226587,
+                  "mae": 203.6219056729971,
+                  "r2": 0.0995902739465514,
+                  "nrmse": 0.7624274181594466,
+                  "mean_error_kw": 171.747376471931
+                }
+              },
+              "03_06h": {
+                "clear": {
+                  "count": 6816,
+                  "rmse": 670.1908363827049,
+                  "mae": 532.3337402084088,
+                  "r2": 0.675885979704225,
+                  "nrmse": 0.33332649573059825,
+                  "mean_error_kw": -477.68773541835196
+                },
+                "overcast": {
+                  "count": 1992,
+                  "rmse": 537.6290416616722,
+                  "mae": 376.87969130322074,
+                  "r2": 0.030282678029731724,
+                  "nrmse": 0.7130955262585335,
+                  "mean_error_kw": 354.72666248251835
+                },
+                "partly_cloudy": {
+                  "count": 7416,
+                  "rmse": 376.17007992226587,
+                  "mae": 281.48900032837383,
+                  "r2": 0.749193975347864,
+                  "nrmse": 0.2998372420828182,
+                  "mean_error_kw": -141.43298551396134
+                },
+                "rain": {
+                  "count": 3696,
+                  "rmse": 556.3522206006166,
+                  "mae": 378.842906409852,
+                  "r2": -1.6056306635020006,
+                  "nrmse": 1.2969846773139182,
+                  "mean_error_kw": 366.0541295056459
+                }
+              },
+              "06_12h": {
+                "clear": {
+                  "count": 13356,
+                  "rmse": 960.9957969807965,
+                  "mae": 785.3995653936022,
+                  "r2": 0.3315995445987623,
+                  "nrmse": 0.474014605763576,
+                  "mean_error_kw": -762.3691585305255
+                },
+                "overcast": {
+                  "count": 4284,
+                  "rmse": 545.0555068657501,
+                  "mae": 450.20905430930355,
+                  "r2": -0.01992024339777254,
+                  "nrmse": 0.7494808908380731,
+                  "mean_error_kw": 427.35564347996694
+                },
+                "partly_cloudy": {
+                  "count": 14808,
+                  "rmse": 387.86183519298174,
+                  "mae": 290.8813472593554,
+                  "r2": 0.7325859225417987,
+                  "nrmse": 0.30865675936435466,
+                  "mean_error_kw": -216.30323297722563
+                },
+                "rain": {
+                  "count": 7392,
+                  "rmse": 724.6500113598253,
+                  "mae": 562.5958151801515,
+                  "r2": -3.4204838833534748,
+                  "nrmse": 1.6893254423149655,
+                  "mean_error_kw": 553.8385684523474
+                }
+              },
+              "12_24h": {
+                "clear": {
+                  "count": 25120,
+                  "rmse": 1081.0983619188692,
+                  "mae": 907.4735234615424,
+                  "r2": 0.15566727291162308,
+                  "nrmse": 0.5416648431385538,
+                  "mean_error_kw": -881.0480363254404
+                },
+                "overcast": {
+                  "count": 9996,
+                  "rmse": 542.324699899137,
+                  "mae": 447.8669720163641,
+                  "r2": -0.12073819576569145,
+                  "nrmse": 0.7281296006718319,
+                  "mean_error_kw": 411.462497008861
+                },
+                "partly_cloudy": {
+                  "count": 29745,
+                  "rmse": 407.16556720190437,
+                  "mae": 308.94521969477165,
+                  "r2": 0.706677212293703,
+                  "nrmse": 0.3252272853406372,
+                  "mean_error_kw": -252.78999577567254
+                },
+                "rain": {
+                  "count": 14784,
+                  "rmse": 724.0729618277776,
+                  "mae": 601.229843545856,
+                  "r2": -3.4134464929408663,
+                  "nrmse": 1.6879802074558163,
+                  "mean_error_kw": 586.4985047190917
+                }
+              }
+            },
+            "daylight_ramps_kw_per_15min": {
+              "count": 154815,
+              "rmse": 106.63810356088686,
+              "mae": 76.53585477000644,
+              "r2": 0.4146172935678384,
+              "nrmse": null,
+              "mean_error_kw": -3.1113154869307933
+            },
+            "weather_transition_points": {
+              "count": 2521,
+              "rmse": 394.50621764327974,
+              "mae": 262.5144259249796,
+              "r2": 0.7568184983973146,
+              "nrmse": 0.5510311377655126,
+              "mean_error_kw": 20.10988498647021
+            },
+            "weather_transition_ramps_kw_per_15min": {
+              "count": 2138,
+              "rmse": 166.01758464662714,
+              "mae": 130.10291450778024,
+              "r2": 0.042204781977495553,
+              "nrmse": null,
+              "mean_error_kw": 70.18697267906099
+            },
+            "peaks": {
+              "windows": 2881,
+              "mean_peak_error_kw": -557.4443048500049,
+              "peak_mae_kw": 818.8365616195582,
+              "timing_windows": 2881,
+              "timing_mae_minutes": 191.02742103436307
+            },
+            "normalized_daylight_shape": {
+              "points": 159325,
+              "rmse": 0.17231156608429188
+            },
+            "definitions": {
+              "leads": "half-open hours from origin: [0,1),[1,3),[3,6),[6,12),[12,24)",
+              "bias": "prediction minus observed power",
+              "shape": "each daylight curve divided by its own peak; requires both peaks >1 kW",
+              "transitions": "observed weather_type changes used only after prediction; no forecast input",
+              "overlap": "points and ramps count separately for every forecast origin"
+            }
+          }
+        },
+        "clear_persistence": {
+          "all_day": {
+            "count": 276576,
+            "rmse": 608.8032517850457,
+            "mae": 305.08226071662284,
+            "r2": 0.6348097185731363,
+            "nrmse": 0.8200664932892057,
+            "mean_error_kw": 79.93732789316762
+          },
+          "diagnostics": {
+            "daylight": {
+              "count": 159325,
+              "rmse": 802.125356905682,
+              "mae": 529.5994435271342,
+              "r2": 0.3917287162399167,
+              "nrmse": 0.6224203529986815,
+              "mean_error_kw": 138.76508017813106
+            },
+            "daylight_by_lead": {
+              "00_01h": {
+                "count": 6640,
+                "rmse": 199.83011308727546,
+                "mae": 118.18630911673688,
+                "r2": 0.9630297335725214,
+                "nrmse": 0.152539807507205,
+                "mean_error_kw": 8.252421605633737
+              },
+              "01_03h": {
+                "count": 13280,
+                "rmse": 396.6778294644702,
+                "mae": 230.87486963452614,
+                "r2": 0.8543177741141927,
+                "nrmse": 0.302803010087168,
+                "mean_error_kw": 39.301154989608825
+              },
+              "03_06h": {
+                "count": 19920,
+                "rmse": 657.4173010014218,
+                "mae": 408.76065246734674,
+                "r2": 0.5998590764724263,
+                "nrmse": 0.5018378211239114,
+                "mean_error_kw": 109.21948079327355
+              },
+              "06_12h": {
+                "count": 39840,
+                "rmse": 847.8399591379657,
+                "mae": 572.4595846274037,
+                "r2": 0.33425345737646184,
+                "nrmse": 0.6499303540120019,
+                "mean_error_kw": 202.2317966200246
+              },
+              "12_24h": {
+                "count": 79645,
+                "rmse": 888.7382110759485,
+                "mae": 622.4917311817907,
+                "r2": 0.23677219563751506,
+                "nrmse": 0.6997018503912795,
+                "mean_error_kw": 141.87286266449274
+              }
+            },
+            "daylight_weather_by_lead": {
+              "00_01h": {
+                "clear": {
+                  "count": 2272,
+                  "rmse": 141.30089710972564,
+                  "mae": 77.69826931970557,
+                  "r2": 0.9855924317539192,
+                  "nrmse": 0.07027749458854005,
+                  "mean_error_kw": -33.98337384112548
+                },
+                "overcast": {
+                  "count": 664,
+                  "rmse": 270.29901927187507,
+                  "mae": 161.54820933840438,
+                  "r2": 0.7548856978975353,
+                  "nrmse": 0.3585167586912826,
+                  "mean_error_kw": 131.27304392851784
+                },
+                "partly_cloudy": {
+                  "count": 2472,
+                  "rmse": 221.94008490945814,
+                  "mae": 157.19280068246124,
+                  "r2": 0.9126946291389816,
+                  "nrmse": 0.17690376379915668,
+                  "mean_error_kw": -17.316862080468987
+                },
+                "rain": {
+                  "count": 1232,
+                  "rmse": 200.46451050608252,
+                  "mae": 91.21591749433209,
+                  "r2": 0.6617107473768291,
+                  "nrmse": 0.4673287691580319,
+                  "mean_error_kw": 71.1430898724258
+                }
+              },
+              "01_03h": {
+                "clear": {
+                  "count": 4544,
+                  "rmse": 281.30746505587666,
+                  "mae": 145.07123876787705,
+                  "r2": 0.9428964166964824,
+                  "nrmse": 0.13991124088779447,
+                  "mean_error_kw": -92.69711503212136
+                },
+                "overcast": {
+                  "count": 1328,
+                  "rmse": 603.8552601276621,
+                  "mae": 397.9420067092022,
+                  "r2": -0.22333505326223313,
+                  "nrmse": 0.8009360565304018,
+                  "mean_error_kw": 369.133333984644
+                },
+                "partly_cloudy": {
+                  "count": 4944,
+                  "rmse": 368.30867214854754,
+                  "mae": 258.3190053654778,
+                  "r2": 0.75956739856887,
+                  "nrmse": 0.2935710796430855,
+                  "mean_error_kw": -19.605838271558266
+                },
+                "rain": {
+                  "count": 2464,
+                  "rmse": 483.1427967508105,
+                  "mae": 244.00097903755324,
+                  "r2": -0.9650075471241861,
+                  "nrmse": 1.1263167129339564,
+                  "mean_error_kw": 223.15634166028474
+                }
+              },
+              "03_06h": {
+                "clear": {
+                  "count": 6816,
+                  "rmse": 459.1245141854992,
+                  "mae": 247.64362248249228,
+                  "r2": 0.8478885834584482,
+                  "nrmse": 0.22835042962311553,
+                  "mean_error_kw": -198.98712197638127
+                },
+                "overcast": {
+                  "count": 1992,
+                  "rmse": 1004.2040554020675,
+                  "mae": 758.4246152913739,
+                  "r2": -2.383168701786052,
+                  "nrmse": 1.3319470561795388,
+                  "mean_error_kw": 730.6276521384631
+                },
+                "partly_cloudy": {
+                  "count": 7416,
+                  "rmse": 550.5386006752857,
+                  "mae": 399.66427822838233,
+                  "r2": 0.46278885357310373,
+                  "nrmse": 0.4388227147696678,
+                  "mean_error_kw": 20.888864160639073
+                },
+                "rain": {
+                  "count": 3696,
+                  "rmse": 888.2459749708112,
+                  "mae": 535.6821280591936,
+                  "r2": -5.641706823790733,
+                  "nrmse": 2.070705169432422,
+                  "mean_error_kw": 519.9205035492171
+                }
+              },
+              "06_12h": {
+                "clear": {
+                  "count": 13356,
+                  "rmse": 632.3594509307773,
+                  "mae": 389.7121260621384,
+                  "r2": 0.7105844990330712,
+                  "nrmse": 0.3119135554760534,
+                  "mean_error_kw": -287.78758268432085
+                },
+                "overcast": {
+                  "count": 4284,
+                  "rmse": 1253.733827753943,
+                  "mae": 975.7056952171465,
+                  "r2": -4.396291928574658,
+                  "nrmse": 1.723952027385521,
+                  "mean_error_kw": 906.3533062344112
+                },
+                "partly_cloudy": {
+                  "count": 14808,
+                  "rmse": 661.453755013396,
+                  "mae": 494.19059919909085,
+                  "r2": 0.22226947914267858,
+                  "nrmse": 0.5263786069341859,
+                  "mean_error_kw": 132.74868543934215
+                },
+                "rain": {
+                  "count": 7392,
+                  "rmse": 1168.0323656885823,
+                  "mae": 825.7436559279563,
+                  "r2": -10.484787366919022,
+                  "nrmse": 2.7229514412099736,
+                  "mean_error_kw": 818.7291171238602
+                }
+              },
+              "12_24h": {
+                "clear": {
+                  "count": 25120,
+                  "rmse": 801.6811875992647,
+                  "mae": 540.4344847486959,
+                  "r2": 0.5357129294757481,
+                  "nrmse": 0.40166790555240234,
+                  "mean_error_kw": -425.77213297983263
+                },
+                "overcast": {
+                  "count": 9996,
+                  "rmse": 1147.2182218369876,
+                  "mae": 853.5055977029443,
+                  "r2": -4.01507551814594,
+                  "nrmse": 1.5402646162068045,
+                  "mean_error_kw": 761.2939818222745
+                },
+                "partly_cloudy": {
+                  "count": 29745,
+                  "rmse": 724.0647997256788,
+                  "mae": 539.4247416745495,
+                  "r2": 0.07240460105602076,
+                  "nrmse": 0.578353495959354,
+                  "mean_error_kw": 106.16179978418913
+                },
+                "rain": {
+                  "count": 14784,
+                  "rmse": 1103.828268292174,
+                  "mae": 772.8496196792721,
+                  "r2": -9.256902530885867,
+                  "nrmse": 2.5732769590015354,
+                  "mean_error_kw": 759.4144176468316
+                }
+              }
+            },
+            "daylight_ramps_kw_per_15min": {
+              "count": 154815,
+              "rmse": 108.78209598329437,
+              "mae": 75.6017043885872,
+              "r2": 0.39084206328830373,
+              "nrmse": null,
+              "mean_error_kw": 0.48220407471667537
+            },
+            "weather_transition_points": {
+              "count": 2521,
+              "rmse": 679.9963320140894,
+              "mae": 348.8235739927671,
+              "r2": 0.27750312778349073,
+              "nrmse": 0.9497927681456956,
+              "mean_error_kw": 212.2691858189938
+            },
+            "weather_transition_ramps_kw_per_15min": {
+              "count": 2138,
+              "rmse": 163.87972674509834,
+              "mae": 128.37726407358483,
+              "r2": 0.06671358455945053,
+              "nrmse": null,
+              "mean_error_kw": 30.687206684780296
+            },
+            "peaks": {
+              "windows": 2881,
+              "mean_peak_error_kw": -116.41850139409468,
+              "peak_mae_kw": 791.3082920855021,
+              "timing_windows": 2881,
+              "timing_mae_minutes": 196.36410968413745
+            },
+            "normalized_daylight_shape": {
+              "points": 159325,
+              "rmse": 0.1899353437700495
+            },
+            "definitions": {
+              "leads": "half-open hours from origin: [0,1),[1,3),[3,6),[6,12),[12,24)",
+              "bias": "prediction minus observed power",
+              "shape": "each daylight curve divided by its own peak; requires both peaks >1 kW",
+              "transitions": "observed weather_type changes used only after prediction; no forecast input",
+              "overlap": "points and ramps count separately for every forecast origin"
+            }
+          }
+        },
+        "physics_tree": {
+          "all_day": {
+            "count": 276576,
+            "rmse": 524.2811433622379,
+            "mae": 291.16823000590745,
+            "r2": 0.7291718767298812,
+            "nrmse": 0.7062140313378771,
+            "mean_error_kw": -57.44751735848501
+          },
+          "diagnostics": {
+            "daylight": {
+              "count": 159325,
+              "rmse": 690.7637204717768,
+              "mae": 505.4457516529977,
+              "r2": 0.5489010014828641,
+              "nrmse": 0.5360077387321406,
+              "mean_error_kw": -99.7244912031404
+            },
+            "daylight_by_lead": {
+              "00_01h": {
+                "count": 6640,
+                "rmse": 409.61312443485866,
+                "mae": 305.07440835491565,
+                "r2": 0.8446617390099882,
+                "nrmse": 0.3126771345339183,
+                "mean_error_kw": -14.158860130469252
+              },
+              "01_03h": {
+                "count": 13280,
+                "rmse": 449.28325705631795,
+                "mae": 339.30190590554525,
+                "r2": 0.8131164044700558,
+                "nrmse": 0.3429592291610671,
+                "mean_error_kw": -16.23179674012229
+              },
+              "03_06h": {
+                "count": 19920,
+                "rmse": 571.7123790185168,
+                "mae": 431.1364157574863,
+                "r2": 0.6973881686537711,
+                "nrmse": 0.43641518736909507,
+                "mean_error_kw": -59.93598222592557
+              },
+              "06_12h": {
+                "count": 39840,
+                "rmse": 727.5669810653193,
+                "mae": 538.299624962033,
+                "r2": 0.5097392559057535,
+                "nrmse": 0.5577324593806725,
+                "mean_error_kw": -125.04560114925285
+              },
+              "12_24h": {
+                "count": 79645,
+                "rmse": 748.5522494289493,
+                "mae": 552.0048532843877,
+                "r2": 0.4585595263318536,
+                "nrmse": 0.5893337177501322,
+                "mean_error_kw": -118.06503802170296
+              }
+            },
+            "daylight_weather_by_lead": {
+              "00_01h": {
+                "clear": {
+                  "count": 2272,
+                  "rmse": 461.3782318362321,
+                  "mae": 384.5646900195811,
+                  "r2": 0.8463915709072543,
+                  "nrmse": 0.2294713399162787,
+                  "mean_error_kw": -370.6351998924323
+                },
+                "overcast": {
+                  "count": 664,
+                  "rmse": 382.3106539810718,
+                  "mae": 286.4992539521079,
+                  "r2": 0.5096428477004652,
+                  "nrmse": 0.5070857335985166,
+                  "mean_error_kw": 257.95634737767335
+                },
+                "partly_cloudy": {
+                  "count": 2472,
+                  "rmse": 241.26792858030763,
+                  "mae": 167.91362768234055,
+                  "r2": 0.8968263827899084,
+                  "nrmse": 0.19230958061178816,
+                  "mean_error_kw": 13.457908324640188
+                },
+                "rain": {
+                  "count": 1232,
+                  "rmse": 562.268236300536,
+                  "mae": 443.70544115032936,
+                  "r2": -1.6613396528789108,
+                  "nrmse": 1.3107762672985157,
+                  "mean_error_kw": 441.1667036136402
+                }
+              },
+              "01_03h": {
+                "clear": {
+                  "count": 4544,
+                  "rmse": 497.37668781479516,
+                  "mae": 423.1935054690101,
+                  "r2": 0.8214862394346891,
+                  "nrmse": 0.24737555246536608,
+                  "mean_error_kw": -410.29403347568683
+                },
+                "overcast": {
+                  "count": 1328,
+                  "rmse": 471.7480339689993,
+                  "mae": 353.7166018262052,
+                  "r2": 0.2533794996309796,
+                  "nrmse": 0.6257128735174395,
+                  "mean_error_kw": 343.7401663509201
+                },
+                "partly_cloudy": {
+                  "count": 4944,
+                  "rmse": 259.8796756735085,
+                  "mae": 183.4042811362405,
+                  "r2": 0.8802945019294596,
+                  "nrmse": 0.207144611935708,
+                  "mean_error_kw": -1.502414092671002
+                },
+                "rain": {
+                  "count": 2464,
+                  "rmse": 613.3931582789517,
+                  "mae": 489.6313345826646,
+                  "r2": -2.167313559365075,
+                  "nrmse": 1.4299601906830415,
+                  "mean_error_kw": 486.9151062357306
+                }
+              },
+              "03_06h": {
+                "clear": {
+                  "count": 6816,
+                  "rmse": 696.4845460956984,
+                  "mae": 591.3617264536687,
+                  "r2": 0.6499550503065892,
+                  "nrmse": 0.3464039501549152,
+                  "mean_error_kw": -580.5454610182306
+                },
+                "overcast": {
+                  "count": 1992,
+                  "rmse": 541.5934449751359,
+                  "mae": 434.74396170418277,
+                  "r2": 0.015928823888614385,
+                  "nrmse": 0.71835379552609,
+                  "mean_error_kw": 418.8292143409501
+                },
+                "partly_cloudy": {
+                  "count": 7416,
+                  "rmse": 293.74799505797364,
+                  "mae": 207.40311018470894,
+                  "r2": 0.8470606331508961,
+                  "nrmse": 0.23414033546671448,
+                  "mean_error_kw": -27.843027692040334
+                },
+                "rain": {
+                  "count": 3696,
+                  "rmse": 731.9921136229816,
+                  "mae": 582.6310707620098,
+                  "r2": -3.5105137276985596,
+                  "nrmse": 1.7064415672839743,
+                  "mean_error_kw": 577.7189379753303
+                }
+              },
+              "06_12h": {
+                "clear": {
+                  "count": 13356,
+                  "rmse": 971.8042579487709,
+                  "mae": 825.961800260197,
+                  "r2": 0.3164797967515045,
+                  "nrmse": 0.4793459177014031,
+                  "mean_error_kw": -813.0123518920027
+                },
+                "overcast": {
+                  "count": 4284,
+                  "rmse": 620.5417535648389,
+                  "mae": 503.2562624862975,
+                  "r2": -0.3219857242426669,
+                  "nrmse": 0.8532785751278504,
+                  "mean_error_kw": 468.6789957779248
+                },
+                "partly_cloudy": {
+                  "count": 14808,
+                  "rmse": 311.4782746421508,
+                  "mae": 215.04316191111042,
+                  "r2": 0.8275410686103918,
+                  "nrmse": 0.24787144838731565,
+                  "mean_error_kw": -74.81518023306418
+                },
+                "rain": {
+                  "count": 7392,
+                  "rmse": 853.8885341533318,
+                  "mae": 686.4180579195323,
+                  "r2": -5.137840079466939,
+                  "nrmse": 1.9906100918143546,
+                  "mean_error_kw": 673.2709135635743
+                }
+              },
+              "12_24h": {
+                "clear": {
+                  "count": 25120,
+                  "rmse": 1020.447909004418,
+                  "mae": 863.5168398085937,
+                  "r2": 0.2477453433024963,
+                  "nrmse": 0.511277027171579,
+                  "mean_error_kw": -839.0025152589069
+                },
+                "overcast": {
+                  "count": 9996,
+                  "rmse": 679.1687709573148,
+                  "mae": 544.3513061824685,
+                  "r2": -0.7576840861186829,
+                  "nrmse": 0.9118575755039391,
+                  "mean_error_kw": 513.6312016568148
+                },
+                "partly_cloudy": {
+                  "count": 29745,
+                  "rmse": 324.083704067015,
+                  "mae": 224.27956153406595,
+                  "r2": 0.8141690256892776,
+                  "nrmse": 0.25886487411296194,
+                  "mean_error_kw": -111.35929438241924
+                },
+                "rain": {
+                  "count": 14784,
+                  "rmse": 852.1177951240502,
+                  "mae": 687.2532676821178,
+                  "r2": -5.1124099598695105,
+                  "nrmse": 1.9864820928535152,
+                  "mean_error_kw": 666.2999154294336
+                }
+              }
+            },
+            "daylight_ramps_kw_per_15min": {
+              "count": 154815,
+              "rmse": 117.20892736501611,
+              "mae": 84.40921088789612,
+              "r2": 0.292809455667396,
+              "nrmse": null,
+              "mean_error_kw": -1.348904467462765
+            },
+            "weather_transition_points": {
+              "count": 2521,
+              "rmse": 527.1281956456221,
+              "mae": 327.88256091783387,
+              "r2": 0.5658344853077351,
+              "nrmse": 0.7362724246276193,
+              "mean_error_kw": 74.2655299842045
+            },
+            "weather_transition_ramps_kw_per_15min": {
+              "count": 2138,
+              "rmse": 145.00604027242164,
+              "mae": 114.11394659976538,
+              "r2": 0.2693041029169948,
+              "nrmse": null,
+              "mean_error_kw": 27.581135235199927
+            },
+            "peaks": {
+              "windows": 2881,
+              "mean_peak_error_kw": -365.7419338232609,
+              "peak_mae_kw": 767.3596356397363,
+              "timing_windows": 2881,
+              "timing_mae_minutes": 171.52898299201667
+            },
+            "normalized_daylight_shape": {
+              "points": 159325,
+              "rmse": 0.1706696099223064
+            },
+            "definitions": {
+              "leads": "half-open hours from origin: [0,1),[1,3),[3,6),[6,12),[12,24)",
+              "bias": "prediction minus observed power",
+              "shape": "each daylight curve divided by its own peak; requires both peaks >1 kW",
+              "transitions": "observed weather_type changes used only after prediction; no forecast input",
+              "overlap": "points and ramps count separately for every forecast origin"
+            }
+          }
+        },
+        "physics_gru32_control": {
+          "all_day": {
+            "count": 276576,
+            "rmse": 510.98221083935607,
+            "mae": 293.44007881675856,
+            "r2": 0.7427372862273847,
+            "nrmse": 0.6883001832653636,
+            "mean_error_kw": -65.65395053938956
+          },
+          "diagnostics": {
+            "daylight": {
+              "count": 159325,
+              "rmse": 673.2417854868638,
+              "mae": 509.38950722625964,
+              "r2": 0.5714959320421819,
+              "nrmse": 0.5224113490099642,
+              "mean_error_kw": -113.97023081363376
+            },
+            "daylight_by_lead": {
+              "00_01h": {
+                "count": 6640,
+                "rmse": 410.29036075491183,
+                "mae": 299.8806999817228,
+                "r2": 0.8441476554854606,
+                "nrmse": 0.31319410115272156,
+                "mean_error_kw": -101.87496140138258
+              },
+              "01_03h": {
+                "count": 13280,
+                "rmse": 418.2885564861402,
+                "mae": 329.9193101222891,
+                "r2": 0.8380120614202367,
+                "nrmse": 0.3192995034787148,
+                "mean_error_kw": -30.634044749154672
+              },
+              "03_06h": {
+                "count": 19920,
+                "rmse": 569.555074576718,
+                "mae": 440.39788614710966,
+                "r2": 0.6996676160908508,
+                "nrmse": 0.434768414521888,
+                "mean_error_kw": -86.63891650271151
+              },
+              "06_12h": {
+                "count": 39840,
+                "rmse": 695.6610420706442,
+                "mae": 529.4689074700332,
+                "r2": 0.5517951794098392,
+                "nrmse": 0.5332742606340855,
+                "mean_error_kw": -105.442897002353
+              },
+              "12_24h": {
+                "count": 79645,
+                "rmse": 735.0427043369698,
+                "mae": 563.9924638943388,
+                "r2": 0.4779265351420072,
+                "nrmse": 0.5786976793971074,
+                "mean_error_kw": -139.97545273526896
+              }
+            },
+            "daylight_weather_by_lead": {
+              "00_01h": {
+                "clear": {
+                  "count": 2272,
+                  "rmse": 583.4437393484221,
+                  "mae": 475.0151292394,
+                  "r2": 0.754360154751664,
+                  "nrmse": 0.29018191018940176,
+                  "mean_error_kw": -286.56549287657026
+                },
+                "overcast": {
+                  "count": 664,
+                  "rmse": 221.26344168269063,
+                  "mae": 159.0264482675643,
+                  "r2": 0.8357523973035847,
+                  "nrmse": 0.2934773945634138,
+                  "mean_error_kw": 28.971380431991715
+                },
+                "partly_cloudy": {
+                  "count": 2472,
+                  "rmse": 331.31219201705136,
+                  "mae": 262.07745389531203,
+                  "r2": 0.8054441465955179,
+                  "nrmse": 0.26408196511358356,
+                  "mean_error_kw": -44.43059507297455
+                },
+                "rain": {
+                  "count": 1232,
+                  "rmse": 181.3281106209994,
+                  "mae": 128.6724403959808,
+                  "r2": 0.7232144091078341,
+                  "nrmse": 0.4227174303138905,
+                  "mean_error_kw": 52.940333217481985
+                }
+              },
+              "01_03h": {
+                "clear": {
+                  "count": 4544,
+                  "rmse": 528.8587121621526,
+                  "mae": 446.37651171411454,
+                  "r2": 0.7981725777935446,
+                  "nrmse": 0.2630334700084488,
+                  "mean_error_kw": -323.76708203697234
+                },
+                "overcast": {
+                  "count": 1328,
+                  "rmse": 386.1357347314419,
+                  "mae": 290.98793604635466,
+                  "r2": 0.4997815539813436,
+                  "nrmse": 0.5121592094699764,
+                  "mean_error_kw": 285.58143514397125
+                },
+                "partly_cloudy": {
+                  "count": 4944,
+                  "rmse": 310.7083448784872,
+                  "mae": 242.13153446126347,
+                  "r2": 0.8288900356414013,
+                  "nrmse": 0.24765907283145505,
+                  "mean_error_kw": -15.54276625860842
+                },
+                "rain": {
+                  "count": 2464,
+                  "rmse": 391.3238389987998,
+                  "mae": 312.28217684619227,
+                  "r2": -0.28909764695588125,
+                  "nrmse": 0.9122656552016276,
+                  "mean_error_kw": 309.2405832055984
+                }
+              },
+              "03_06h": {
+                "clear": {
+                  "count": 6816,
+                  "rmse": 755.54373680864,
+                  "mae": 636.1138651795027,
+                  "r2": 0.5880731824071643,
+                  "nrmse": 0.37577766285335096,
+                  "mean_error_kw": -535.5629711629955
+                },
+                "overcast": {
+                  "count": 1992,
+                  "rmse": 505.7212611654437,
+                  "mae": 410.09679406603726,
+                  "r2": 0.1419706627813726,
+                  "nrmse": 0.6707739741073043,
+                  "mean_error_kw": 395.66706882784615
+                },
+                "partly_cloudy": {
+                  "count": 7416,
+                  "rmse": 338.6442658370908,
+                  "mae": 261.011252853811,
+                  "r2": 0.796737661270079,
+                  "nrmse": 0.26992620661573224,
+                  "mean_error_kw": -71.63517886186996
+                },
+                "rain": {
+                  "count": 3696,
+                  "rmse": 572.430074143304,
+                  "mae": 455.73634254424405,
+                  "r2": -1.758405371329426,
+                  "nrmse": 1.3344658428720442,
+                  "mean_error_kw": 451.1979653808232
+                }
+              },
+              "06_12h": {
+                "clear": {
+                  "count": 13356,
+                  "rmse": 949.2296648108182,
+                  "mae": 787.4368405233414,
+                  "r2": 0.3478667186242652,
+                  "nrmse": 0.46821091908832013,
+                  "mean_error_kw": -696.87840850273
+                },
+                "overcast": {
+                  "count": 4284,
+                  "rmse": 622.2925248482404,
+                  "mae": 549.1642511782404,
+                  "r2": -0.32945584092801816,
+                  "nrmse": 0.8556859806207018,
+                  "mean_error_kw": 524.8904613456091
+                },
+                "partly_cloudy": {
+                  "count": 14808,
+                  "rmse": 331.8934996124595,
+                  "mae": 256.17811324761266,
+                  "r2": 0.8041932482098821,
+                  "nrmse": 0.2641176902427292,
+                  "mean_error_kw": -101.90015376890578
+                },
+                "rain": {
+                  "count": 7392,
+                  "rmse": 731.5525628393375,
+                  "mae": 599.4223049997493,
+                  "r2": -3.5050983562885367,
+                  "nrmse": 1.705416873555472,
+                  "mean_error_kw": 590.769716990542
+                }
+              },
+              "12_24h": {
+                "clear": {
+                  "count": 25120,
+                  "rmse": 1019.8227071491591,
+                  "mae": 849.1137650842362,
+                  "r2": 0.24866683459900163,
+                  "nrmse": 0.5109637810537534,
+                  "mean_error_kw": -791.9396836645249
+                },
+                "overcast": {
+                  "count": 9996,
+                  "rmse": 609.5090954094941,
+                  "mae": 519.1896889343564,
+                  "r2": -0.41561705302439056,
+                  "nrmse": 0.8183319224237874,
+                  "mean_error_kw": 476.5908659986655
+                },
+                "partly_cloudy": {
+                  "count": 29745,
+                  "rmse": 398.3703802260282,
+                  "mae": 306.4395433673979,
+                  "r2": 0.7192124830332185,
+                  "nrmse": 0.3182020479074112,
+                  "mean_error_kw": -173.40894357083545
+                },
+                "rain": {
+                  "count": 14784,
+                  "rmse": 756.9764199757823,
+                  "mae": 628.0152637917697,
+                  "r2": -3.823673537915872,
+                  "nrmse": 1.7646857178652675,
+                  "mean_error_kw": 618.1836208430876
+                }
+              }
+            },
+            "daylight_ramps_kw_per_15min": {
+              "count": 154815,
+              "rmse": 113.43309465541542,
+              "mae": 80.08940340600007,
+              "r2": 0.33763919807000364,
+              "nrmse": null,
+              "mean_error_kw": 1.6713958114273892
+            },
+            "weather_transition_points": {
+              "count": 2521,
+              "rmse": 430.0077477350312,
+              "mae": 296.6607347481145,
+              "r2": 0.7110814727391981,
+              "nrmse": 0.6006183119189074,
+              "mean_error_kw": 123.62610914662099
+            },
+            "weather_transition_ramps_kw_per_15min": {
+              "count": 2138,
+              "rmse": 172.17483679830343,
+              "mae": 131.65356693215597,
+              "r2": -0.030158006284853434,
+              "nrmse": null,
+              "mean_error_kw": 73.64632337653504
+            },
+            "peaks": {
+              "windows": 2881,
+              "mean_peak_error_kw": -630.7054702886638,
+              "peak_mae_kw": 875.9391101809919,
+              "timing_windows": 2881,
+              "timing_mae_minutes": 177.4175633460604
+            },
+            "normalized_daylight_shape": {
+              "points": 159325,
+              "rmse": 0.19249373902992306
+            },
+            "definitions": {
+              "leads": "half-open hours from origin: [0,1),[1,3),[3,6),[6,12),[12,24)",
+              "bias": "prediction minus observed power",
+              "shape": "each daylight curve divided by its own peak; requires both peaks >1 kW",
+              "transitions": "observed weather_type changes used only after prediction; no forecast input",
+              "overlap": "points and ramps count separately for every forecast origin"
+            }
+          }
+        },
+        "physics_gru32_scheduled": {
+          "all_day": {
+            "count": 276576,
+            "rmse": 499.5664339936535,
+            "mae": 281.94281926777876,
+            "r2": 0.7541038182335222,
+            "nrmse": 0.6729229722229153,
+            "mean_error_kw": -65.47858805346128
+          },
+          "diagnostics": {
+            "daylight": {
+              "count": 159325,
+              "rmse": 658.2009918480875,
+              "mae": 489.4311450293749,
+              "r2": 0.5904283499265226,
+              "nrmse": 0.5107402355045371,
+              "mean_error_kw": -113.66581496610144
+            },
+            "daylight_by_lead": {
+              "00_01h": {
+                "count": 6640,
+                "rmse": 341.52221218992327,
+                "mae": 249.67421597303402,
+                "r2": 0.8920137097096335,
+                "nrmse": 0.26070011021878864,
+                "mean_error_kw": -33.68393951195238
+              },
+              "01_03h": {
+                "count": 13280,
+                "rmse": 351.44055645784084,
+                "mae": 260.2308816355621,
+                "r2": 0.8856504478987494,
+                "nrmse": 0.2682712530362757,
+                "mean_error_kw": 5.904095615092419
+              },
+              "03_06h": {
+                "count": 19920,
+                "rmse": 534.25063489512,
+                "mae": 405.92449626540275,
+                "r2": 0.7357464648647182,
+                "nrmse": 0.40781886047330157,
+                "mean_error_kw": -71.92519820333531
+              },
+              "06_12h": {
+                "count": 39840,
+                "rmse": 687.5057421636627,
+                "mae": 516.650611102476,
+                "r2": 0.5622422768403597,
+                "nrmse": 0.5270226362579383,
+                "mean_error_kw": -134.9846029921757
+              },
+              "12_24h": {
+                "count": 79645,
+                "rmse": 726.9842309948016,
+                "mae": 554.9066227345656,
+                "r2": 0.4893110525319364,
+                "nrmse": 0.5723532591408683,
+                "mean_error_kw": -140.04663782364813
+              }
+            },
+            "daylight_weather_by_lead": {
+              "00_01h": {
+                "clear": {
+                  "count": 2272,
+                  "rmse": 459.32647589648826,
+                  "mae": 362.2343219391728,
+                  "r2": 0.8477547311470572,
+                  "nrmse": 0.2284508774146119,
+                  "mean_error_kw": -140.92028171051078
+                },
+                "overcast": {
+                  "count": 664,
+                  "rmse": 220.74494406624353,
+                  "mae": 148.93969604419004,
+                  "r2": 0.8365212745089335,
+                  "nrmse": 0.29278967440320564,
+                  "mean_error_kw": 32.2610240259321
+                },
+                "partly_cloudy": {
+                  "count": 2472,
+                  "rmse": 304.60173535526616,
+                  "mae": 244.02718234923424,
+                  "r2": 0.8355498733539453,
+                  "nrmse": 0.24279162309090782,
+                  "mean_error_kw": 14.059699092621294
+                },
+                "rain": {
+                  "count": 1232,
+                  "rmse": 164.67900292820383,
+                  "mae": 107.71855655397421,
+                  "r2": 0.7717085416185849,
+                  "nrmse": 0.38390454026162557,
+                  "mean_error_kw": 32.73752076033927
+                }
+              },
+              "01_03h": {
+                "clear": {
+                  "count": 4544,
+                  "rmse": 357.3445689457371,
+                  "mae": 275.41288540635117,
+                  "r2": 0.9078542691563979,
+                  "nrmse": 0.17772909814455579,
+                  "mean_error_kw": -192.32422039265728
+                },
+                "overcast": {
+                  "count": 1328,
+                  "rmse": 419.56516683556737,
+                  "mae": 282.63474629701784,
+                  "r2": 0.40942023509293435,
+                  "nrmse": 0.5564990360633036,
+                  "mean_error_kw": 279.17974952476067
+                },
+                "partly_cloudy": {
+                  "count": 4944,
+                  "rmse": 307.4076497674897,
+                  "mae": 230.01799193656146,
+                  "r2": 0.8325061724895093,
+                  "nrmse": 0.24502815832798833,
+                  "mean_error_kw": -20.28722874502521
+                },
+                "rain": {
+                  "count": 2464,
+                  "rmse": 381.700164973627,
+                  "mae": 280.7800574744343,
+                  "r2": -0.22647274070344903,
+                  "nrmse": 0.8898306629648065,
+                  "mean_error_kw": 276.73579495908456
+                }
+              },
+              "03_06h": {
+                "clear": {
+                  "count": 6816,
+                  "rmse": 658.498995081432,
+                  "mae": 534.4752678166752,
+                  "r2": 0.6870960250739583,
+                  "nrmse": 0.32751143488818746,
+                  "mean_error_kw": -486.22582104595415
+                },
+                "overcast": {
+                  "count": 1992,
+                  "rmse": 558.108712020156,
+                  "mae": 435.18899212617765,
+                  "r2": -0.045002468513411165,
+                  "nrmse": 0.7402591654599189,
+                  "mean_error_kw": 428.57531186928685
+                },
+                "partly_cloudy": {
+                  "count": 7416,
+                  "rmse": 335.8705590153521,
+                  "mae": 252.4025966446932,
+                  "r2": 0.8000537147015419,
+                  "nrmse": 0.2677153433701804,
+                  "mean_error_kw": -89.55872189624654
+                },
+                "rain": {
+                  "count": 3696,
+                  "rmse": 586.8808593279797,
+                  "mae": 461.12511123808804,
+                  "r2": -1.8994331228227268,
+                  "nrmse": 1.3681539387682837,
+                  "mean_error_kw": 457.74099252644186
+                }
+              },
+              "06_12h": {
+                "clear": {
+                  "count": 13356,
+                  "rmse": 946.9813124548666,
+                  "mae": 781.8299715212368,
+                  "r2": 0.35095235532050606,
+                  "nrmse": 0.4671019112664625,
+                  "mean_error_kw": -734.574164045215
+                },
+                "overcast": {
+                  "count": 4284,
+                  "rmse": 600.5197655942147,
+                  "mae": 516.761203155651,
+                  "r2": -0.2380533537089926,
+                  "nrmse": 0.8257472554887505,
+                  "mean_error_kw": 489.84074767523646
+                },
+                "partly_cloudy": {
+                  "count": 14808,
+                  "rmse": 321.08223194889814,
+                  "mae": 242.93131767831792,
+                  "r2": 0.8167420953848972,
+                  "nrmse": 0.25551418626561023,
+                  "mean_error_kw": -129.76869191630684
+                },
+                "rain": {
+                  "count": 7392,
+                  "rmse": 715.2960365159953,
+                  "mae": 585.7829139861551,
+                  "r2": -3.3070988786008257,
+                  "nrmse": 1.66751918075043,
+                  "mean_error_kw": 575.801268754812
+                }
+              },
+              "12_24h": {
+                "clear": {
+                  "count": 25120,
+                  "rmse": 1019.6693319314625,
+                  "mae": 852.8130193021659,
+                  "r2": 0.24889280960741256,
+                  "nrmse": 0.5108869351661253,
+                  "mean_error_kw": -805.6218187764133
+                },
+                "overcast": {
+                  "count": 9996,
+                  "rmse": 608.4578737878614,
+                  "mae": 520.7733937371152,
+                  "r2": -0.4107382284845005,
+                  "nrmse": 0.816920543632227,
+                  "mean_error_kw": 484.2216470859937
+                },
+                "partly_cloudy": {
+                  "count": 29745,
+                  "rmse": 362.8093461109339,
+                  "mae": 278.0449781338302,
+                  "r2": 0.7671047406994203,
+                  "nrmse": 0.289797341024565,
+                  "mean_error_kw": -163.96250988507617
+                },
+                "rain": {
+                  "count": 14784,
+                  "rmse": 751.9310722315713,
+                  "mae": 628.8403817936343,
+                  "r2": -3.7595869832047075,
+                  "nrmse": 1.7529238546540493,
+                  "mean_error_kw": 616.8825007074569
+                }
+              }
+            },
+            "daylight_ramps_kw_per_15min": {
+              "count": 154815,
+              "rmse": 112.89098991138997,
+              "mae": 79.07078954523845,
+              "r2": 0.34395500786463096,
+              "nrmse": null,
+              "mean_error_kw": 1.425521159856688
+            },
+            "weather_transition_points": {
+              "count": 2521,
+              "rmse": 407.838022640071,
+              "mae": 277.6656197207623,
+              "r2": 0.7401048014550793,
+              "nrmse": 0.5696524911113107,
+              "mean_error_kw": 71.72497271047635
+            },
+            "weather_transition_ramps_kw_per_15min": {
+              "count": 2138,
+              "rmse": 168.69510263450326,
+              "mae": 130.0393350044992,
+              "r2": 0.011061164684477043,
+              "nrmse": null,
+              "mean_error_kw": 64.75722315724383
+            },
+            "peaks": {
+              "windows": 2881,
+              "mean_peak_error_kw": -568.7821994669684,
+              "peak_mae_kw": 827.090837382818,
+              "timing_windows": 2881,
+              "timing_mae_minutes": 183.36862200624782
+            },
+            "normalized_daylight_shape": {
+              "points": 159325,
+              "rmse": 0.18258529625228584
+            },
+            "definitions": {
+              "leads": "half-open hours from origin: [0,1),[1,3),[3,6),[6,12),[12,24)",
+              "bias": "prediction minus observed power",
+              "shape": "each daylight curve divided by its own peak; requires both peaks >1 kW",
+              "transitions": "observed weather_type changes used only after prediction; no forecast input",
+              "overlap": "points and ramps count separately for every forecast origin"
+            }
+          }
+        },
+        "physics_gru16_scheduled": {
+          "all_day": {
+            "count": 276576,
+            "rmse": 537.2229795825472,
+            "mae": 297.16008105351796,
+            "r2": 0.7156361097494112,
+            "nrmse": 0.7236468656974075,
+            "mean_error_kw": -142.29090304138163
+          },
+          "diagnostics": {
+            "daylight": {
+              "count": 159325,
+              "rmse": 707.8151651984481,
+              "mae": 515.8471462573847,
+              "r2": 0.52635544434011,
+              "nrmse": 0.5492390449794011,
+              "mean_error_kw": -247.0061120324692
+            },
+            "daylight_by_lead": {
+              "00_01h": {
+                "count": 6640,
+                "rmse": 377.3254219451645,
+                "mae": 276.9185836767412,
+                "r2": 0.8681856037520177,
+                "nrmse": 0.28803039913184814,
+                "mean_error_kw": -97.49312808598427
+              },
+              "01_03h": {
+                "count": 13280,
+                "rmse": 398.8496832923129,
+                "mae": 281.4790977829629,
+                "r2": 0.8527181552810983,
+                "nrmse": 0.30446088917112873,
+                "mean_error_kw": -141.0133937470678
+              },
+              "03_06h": {
+                "count": 19920,
+                "rmse": 579.209677513901,
+                "mae": 424.98841425282956,
+                "r2": 0.6893993708894511,
+                "nrmse": 0.44213823106677086,
+                "mean_error_kw": -210.17570056517616
+              },
+              "06_12h": {
+                "count": 39840,
+                "rmse": 714.1231308634774,
+                "mae": 529.4751040631097,
+                "r2": 0.5276897638268361,
+                "nrmse": 0.5474267805473095,
+                "mean_error_kw": -228.34536160154718
+              },
+              "12_24h": {
+                "count": 79645,
+                "rmse": 790.4581386464237,
+                "mae": 590.7528081548853,
+                "r2": 0.39624015132128254,
+                "nrmse": 0.6223261421360047,
+                "mean_error_kw": -295.69034338197275
+              }
+            },
+            "daylight_weather_by_lead": {
+              "00_01h": {
+                "clear": {
+                  "count": 2272,
+                  "rmse": 521.4942826090904,
+                  "mae": 426.56279552378703,
+                  "r2": 0.8037543902083891,
+                  "nrmse": 0.2593706931354817,
+                  "mean_error_kw": -203.16978602768611
+                },
+                "overcast": {
+                  "count": 664,
+                  "rmse": 223.7482097115462,
+                  "mae": 168.17812209763952,
+                  "r2": 0.8320427130640664,
+                  "nrmse": 0.2967731186182207,
+                  "mean_error_kw": -30.11327559022806
+                },
+                "partly_cloudy": {
+                  "count": 2472,
+                  "rmse": 325.8708723334413,
+                  "mae": 253.23154996736122,
+                  "r2": 0.8117822609534087,
+                  "nrmse": 0.2597448038817234,
+                  "mean_error_kw": -57.507134523115774
+                },
+                "rain": {
+                  "count": 1232,
+                  "rmse": 160.49240903823178,
+                  "mae": 107.08608733065589,
+                  "r2": 0.7831685885697833,
+                  "nrmse": 0.3741446293196546,
+                  "mean_error_kw": -19.155653492677825
+                }
+              },
+              "01_03h": {
+                "clear": {
+                  "count": 4544,
+                  "rmse": 536.5528181334971,
+                  "mae": 440.4286761032012,
+                  "r2": 0.7922572828592349,
+                  "nrmse": 0.266860214932403,
+                  "mean_error_kw": -418.0509594968517
+                },
+                "overcast": {
+                  "count": 1328,
+                  "rmse": 367.8541418408945,
+                  "mae": 221.03423788972472,
+                  "r2": 0.5460259658993655,
+                  "nrmse": 0.4879110363005422,
+                  "mean_error_kw": 178.1728488576936
+                },
+                "partly_cloudy": {
+                  "count": 4944,
+                  "rmse": 302.87119963041056,
+                  "mae": 217.72183874951435,
+                  "r2": 0.8374131484029753,
+                  "nrmse": 0.2414122495395246,
+                  "mean_error_kw": -104.66523416675469
+                },
+                "rain": {
+                  "count": 2464,
+                  "rmse": 263.5999711006776,
+                  "mae": 148.8572547279413,
+                  "r2": 0.41506996589887,
+                  "nrmse": 0.6145120137902647,
+                  "mean_error_kw": 124.92575707388474
+                }
+              },
+              "03_06h": {
+                "clear": {
+                  "count": 6816,
+                  "rmse": 799.1357083095337,
+                  "mae": 664.3168476499935,
+                  "r2": 0.5391687509054051,
+                  "nrmse": 0.39745859060343375,
+                  "mean_error_kw": -659.0889208015118
+                },
+                "overcast": {
+                  "count": 1992,
+                  "rmse": 468.95333372900643,
+                  "mae": 322.0421522360113,
+                  "r2": 0.26219946175841413,
+                  "nrmse": 0.62200606439081,
+                  "mean_error_kw": 302.6474589885236
+                },
+                "partly_cloudy": {
+                  "count": 7416,
+                  "rmse": 379.22266975484985,
+                  "mae": 278.15494771538994,
+                  "r2": 0.7451069180029528,
+                  "nrmse": 0.3022703970982335,
+                  "mean_error_kw": -200.4225682433291
+                },
+                "rain": {
+                  "count": 3696,
+                  "rmse": 472.5844213148195,
+                  "mae": 333.73390660783116,
+                  "r2": -0.8800612876551872,
+                  "nrmse": 1.1017027172478704,
+                  "mean_error_kw": 321.728938504379
+                }
+              },
+              "06_12h": {
+                "clear": {
+                  "count": 13356,
+                  "rmse": 1020.9233188121734,
+                  "mae": 855.1464145949243,
+                  "r2": 0.24563764462408244,
+                  "nrmse": 0.503574069732653,
+                  "mean_error_kw": -845.9102727886068
+                },
+                "overcast": {
+                  "count": 4284,
+                  "rmse": 521.103748076775,
+                  "mae": 417.5005876589781,
+                  "r2": 0.06774839040503877,
+                  "nrmse": 0.7165459231362952,
+                  "mean_error_kw": 380.38502875787043
+                },
+                "partly_cloudy": {
+                  "count": 14808,
+                  "rmse": 360.360590616688,
+                  "mae": 268.9207398313482,
+                  "r2": 0.7691633568657279,
+                  "nrmse": 0.28677153050397475,
+                  "mean_error_kw": -215.3261475051605
+                },
+                "rain": {
+                  "count": 7392,
+                  "rmse": 669.1897524230648,
+                  "mae": 527.8952650961597,
+                  "r2": -2.7697432169296365,
+                  "nrmse": 1.5600348537680437,
+                  "mean_error_kw": 508.61451923927103
+                }
+              },
+              "12_24h": {
+                "clear": {
+                  "count": 25120,
+                  "rmse": 1187.024575766516,
+                  "mae": 1008.1278904673796,
+                  "r2": -0.017894167094623548,
+                  "nrmse": 0.5947372628453115,
+                  "mean_error_kw": -993.204722880193
+                },
+                "overcast": {
+                  "count": 9996,
+                  "rmse": 467.1120320751982,
+                  "mae": 372.09572744780655,
+                  "r2": 0.16856651258539346,
+                  "nrmse": 0.6271484545092231,
+                  "mean_error_kw": 307.0861375069542
+                },
+                "partly_cloudy": {
+                  "count": 29745,
+                  "rmse": 441.3768751260754,
+                  "mae": 339.13258286249294,
+                  "r2": 0.6553146165651922,
+                  "nrmse": 0.352553885869737,
+                  "mean_error_kw": -309.14958840363016
+                },
+                "rain": {
+                  "count": 14784,
+                  "rmse": 657.620242865064,
+                  "mae": 535.6714845875366,
+                  "r2": -2.6405210889490087,
+                  "nrmse": 1.5330636724459588,
+                  "mean_error_kw": 509.0007248809317
+                }
+              }
+            },
+            "daylight_ramps_kw_per_15min": {
+              "count": 154815,
+              "rmse": 111.83089856919105,
+              "mae": 79.21969378740191,
+              "r2": 0.3562182054482884,
+              "nrmse": null,
+              "mean_error_kw": -0.5201121459963489
+            },
+            "weather_transition_points": {
+              "count": 2521,
+              "rmse": 411.13353277108183,
+              "mae": 269.42256732321067,
+              "r2": 0.735887697563548,
+              "nrmse": 0.5742555331314257,
+              "mean_error_kw": -50.13265145403459
+            },
+            "weather_transition_ramps_kw_per_15min": {
+              "count": 2138,
+              "rmse": 165.25199373645384,
+              "mae": 126.82015602075006,
+              "r2": 0.051018168266659725,
+              "nrmse": null,
+              "mean_error_kw": 54.89435119678319
+            },
+            "peaks": {
+              "windows": 2881,
+              "mean_peak_error_kw": -725.259318232188,
+              "peak_mae_kw": 932.7561976269294,
+              "timing_windows": 2881,
+              "timing_mae_minutes": 201.5237764665047
+            },
+            "normalized_daylight_shape": {
+              "points": 159325,
+              "rmse": 0.17929283510452573
+            },
+            "definitions": {
+              "leads": "half-open hours from origin: [0,1),[1,3),[3,6),[6,12),[12,24)",
+              "bias": "prediction minus observed power",
+              "shape": "each daylight curve divided by its own peak; requires both peaks >1 kW",
+              "transitions": "observed weather_type changes used only after prediction; no forecast input",
+              "overlap": "points and ramps count separately for every forecast origin"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

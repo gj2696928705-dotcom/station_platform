@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "reviewed": [
+    "candidate_png_review.png",
+    "training_loss_review.png"
+  ],
+  "power_images": 12,
+  "loss_images": 10,
+  "labels_legends_axes_readable": true,
+  "loss_best_epoch_markers_present": true,
+  "forecast_night_zero_and_historical_join_reviewed": true
+}

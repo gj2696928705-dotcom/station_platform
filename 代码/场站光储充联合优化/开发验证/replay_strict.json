@@ -1,0 +1,91 @@
+{
+  "simulation": true,
+  "execution_mode": "offline_replay",
+  "demo_assumptions": false,
+  "scenarios": [
+    {
+      "scenario_id": "S01_sunny",
+      "status": "INPUT_UNAVAILABLE",
+      "reason": "COMMITMENT_PROFILE_MISSING",
+      "detail": "booking energy has no power/window profile; supply every visible booking explicitly"
+    },
+    {
+      "scenario_id": "S02_mismatch",
+      "status": "INPUT_UNAVAILABLE",
+      "reason": "COMMITMENT_PROFILE_MISSING",
+      "detail": "booking energy has no power/window profile; supply every visible booking explicitly"
+    },
+    {
+      "scenario_id": "S03_grid",
+      "status": "INPUT_UNAVAILABLE",
+      "reason": "COMMITMENT_PROFILE_MISSING",
+      "detail": "booking energy has no power/window profile; supply every visible booking explicitly"
+    },
+    {
+      "scenario_id": "S04_concurrency",
+      "status": "INPUT_UNAVAILABLE",
+      "reason": "COMMITMENT_PROFILE_MISSING",
+      "detail": "booking energy has no power/window profile; supply every visible booking explicitly"
+    },
+    {
+      "scenario_id": "S05_pv_surplus",
+      "status": "INPUT_UNAVAILABLE",
+      "reason": "COMMITMENT_PROFILE_MISSING",
+      "detail": "booking energy has no power/window profile; supply every visible booking explicitly"
+    },
+    {
+      "scenario_id": "S06_calibration",
+      "status": "INPUT_UNAVAILABLE",
+      "reason": "COMMITMENT_PROFILE_MISSING",
+      "detail": "booking energy has no power/window profile; supply every visible booking explicitly"
+    },
+    {
+      "scenario_id": "S07_storage_floor",
+      "status": "INPUT_UNAVAILABLE",
+      "reason": "COMMITMENT_PROFILE_MISSING",
+      "detail": "booking energy has no power/window profile; supply every visible booking explicitly"
+    },
+    {
+      "scenario_id": "S08_storage_ceiling",
+      "status": "INPUT_UNAVAILABLE",
+      "reason": "COMMITMENT_PROFILE_MISSING",
+      "detail": "booking energy has no power/window profile; supply every visible booking explicitly"
+    },
+    {
+      "scenario_id": "S09_derated",
+      "status": "INPUT_UNAVAILABLE",
+      "reason": "COMMITMENT_PROFILE_MISSING",
+      "detail": "booking energy has no power/window profile; supply every visible booking explicitly"
+    },
+    {
+      "scenario_id": "S10_no_booking",
+      "status": "INPUT_UNAVAILABLE",
+      "reason": "COMMITMENT_UNKNOWN",
+      "detail": "no known existing commitments"
+    },
+    {
+      "scenario_id": "S11_pv_gap",
+      "status": "INPUT_UNAVAILABLE",
+      "reason": "FORECAST_UNAVAILABLE",
+      "detail": "unavailable_incomplete_coverage"
+    },
+    {
+      "scenario_id": "S12_late_weather",
+      "status": "INPUT_UNAVAILABLE",
+      "reason": "FORECAST_UNAVAILABLE",
+      "detail": "unavailable_weather_after_cutoff"
+    }
+  ],
+  "source_refs": {
+    "linked_validation_report": "6d2c0b8fe4699434128268046c1b6586f9daf54229adeb36fc0f04b7086f2f50",
+    "scenario_inputs.csv": "3c923806bfc989af50fded18d32ba9916815785040a7e86c115059f2f34b242c",
+    "forecast_vintages.csv": "bab97f8761bbd2ea57d1375400baa4a4a3348ead8e1ff466a3a6686a3f01f18a",
+    "forecast_values.csv": "23cdaffb280195ed943f57dd61669ec843c5f46374dd4ad3eb020d9af268ad0e",
+    "booking_events.csv": "253f6908d1be5ecd7d8b18431a100e7ce9cfd9c0d00311919a5838d9af9d9188",
+    "vehicle_requests.csv": "494e9f6e1d005f674b97a31d84b7b6115bd83a1ce8bac442766a3038be3073f9",
+    "tariff_intervals.csv": "63b81b965fadf0ec3bf7da500dc7608a7958d97ff304ff176f87f533e62fd2f7",
+    "source_manifest.json": "47a278959970998c1a894b21dfcdf4fdbf8d2473c89182632a0c0268a4aa7d32",
+    "场站配置与设备台账/设备台账.csv": "8843ffc5cfe4279edab887ed335f5be026614dd0ab8bab4f35db64c16fb9cc44",
+    "储能参数与初始状态/储能参数.csv": "3536c8694ed45036842a96c75a09a6684db7ec4ff1ffb302a88585f90e90aaa3"
+  }
+}

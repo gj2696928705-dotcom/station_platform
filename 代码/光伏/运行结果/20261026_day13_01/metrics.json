@@ -1,0 +1,192 @@
+{
+  "status": "completed",
+  "selected_model": "gru",
+  "validation": {
+    "count": 351,
+    "mae": 103.69622768020699,
+    "rmse": 153.77532333774596,
+    "nrmse": 0.14669138092650524,
+    "r2": 0.9764282297248891,
+    "coverage": null
+  },
+  "test": {
+    "count": 715,
+    "mae": 107.95475567408536,
+    "rmse": 173.0150216717061,
+    "nrmse": 0.25311717089979946,
+    "r2": 0.9518515544563741,
+    "coverage": 0.8545454545454545
+  },
+  "baseline_test": {
+    "count": 715,
+    "mae": 451.3623009334499,
+    "rmse": 706.4798010777345,
+    "nrmse": 1.0335644085631024,
+    "r2": 0.19718746180137636,
+    "coverage": null
+  },
+  "gru": {
+    "status": "completed",
+    "training": {
+      "status": "completed",
+      "epochs_completed": 47,
+      "epochs_requested": 50,
+      "best_epoch": 39,
+      "best_monitor_value": 0.0016496769385412335,
+      "monitor": "val_loss",
+      "stopped_early": true,
+      "stop_reason": "early_stopping",
+      "shuffle": false,
+      "training_windows_used": 252,
+      "history_feature_count": 1,
+      "learning_rate_schedule": {
+        "enabled": true,
+        "initial": 0.0003,
+        "factor": 0.5,
+        "patience": 2,
+        "minimum": 1e-05,
+        "min_delta": 1e-05,
+        "reductions": 5
+      },
+      "metric_units": {
+        "loss": "normalized MSE",
+        "rmse_kw": "kW",
+        "mae_kw": "kW",
+        "r2": "dimensionless"
+      },
+      "visualizations": [
+        {
+          "id": "training_loss",
+          "kind": "training",
+          "title": "GRU 训练与验证损失",
+          "path": "visualizations/training_loss.png",
+          "mime_type": "image/png",
+          "description": "每轮更新；验证指标在整套验证窗口上计算；训练指标为更新权重过程中的累计统计"
+        }
+      ],
+      "visualization_errors": []
+    }
+  },
+  "per_hour_test": {
+    "7": {
+      "count": 55,
+      "mae": 108.47714235395954,
+      "rmse": 111.00334064140701,
+      "nrmse": 1.6732234353315978,
+      "r2": -1.1745223452958986,
+      "coverage": null
+    },
+    "8": {
+      "count": 55,
+      "mae": 111.55097938405541,
+      "rmse": 164.13852573104577,
+      "nrmse": 0.3429968348576404,
+      "r2": 0.8048800505036777,
+      "coverage": null
+    },
+    "9": {
+      "count": 55,
+      "mae": 146.91345819248934,
+      "rmse": 217.77401955656387,
+      "nrmse": 0.2645636515133677,
+      "r2": 0.8741676115280418,
+      "coverage": null
+    },
+    "10": {
+      "count": 55,
+      "mae": 169.33793794176137,
+      "rmse": 246.71046351624818,
+      "nrmse": 0.21785866540557117,
+      "r2": 0.9091237763705907,
+      "coverage": null
+    },
+    "11": {
+      "count": 55,
+      "mae": 153.88331207155534,
+      "rmse": 235.21718306256136,
+      "nrmse": 0.17889919146913702,
+      "r2": 0.939909887678065,
+      "coverage": null
+    },
+    "12": {
+      "count": 55,
+      "mae": 152.3090232446377,
+      "rmse": 214.23760285830687,
+      "nrmse": 0.15939302922672974,
+      "r2": 0.9451711747281181,
+      "coverage": null
+    },
+    "13": {
+      "count": 55,
+      "mae": 155.74763492347302,
+      "rmse": 238.7572506851417,
+      "nrmse": 0.19171238442285587,
+      "r2": 0.9200576526679902,
+      "coverage": null
+    },
+    "14": {
+      "count": 55,
+      "mae": 114.76985847549714,
+      "rmse": 164.27038586660174,
+      "nrmse": 0.1529060305575708,
+      "r2": 0.9526449409268141,
+      "coverage": null
+    },
+    "15": {
+      "count": 55,
+      "mae": 59.885266881534086,
+      "rmse": 83.69654821623473,
+      "nrmse": 0.10027124779306677,
+      "r2": 0.9819651967284894,
+      "coverage": null
+    },
+    "16": {
+      "count": 55,
+      "mae": 79.24310693074396,
+      "rmse": 120.47651008664054,
+      "nrmse": 0.24653682067671728,
+      "r2": 0.9061212248728149,
+      "coverage": null
+    },
+    "17": {
+      "count": 55,
+      "mae": 124.98913303340288,
+      "rmse": 180.64012042567862,
+      "nrmse": 2.162206556168073,
+      "r2": -4.869331427959772,
+      "coverage": null
+    },
+    "18": {
+      "count": 55,
+      "mae": 25.588976307348773,
+      "rmse": 47.09486333453142,
+      "nrmse": null,
+      "r2": null,
+      "coverage": null
+    },
+    "19": {
+      "count": 55,
+      "mae": 0.7159940226511522,
+      "rmse": 2.5802535017496733,
+      "nrmse": null,
+      "r2": null,
+      "coverage": null
+    }
+  },
+  "evaluation_scope": "one 13-point sample per complete calendar day; held-out target days only",
+  "weather_input_policy": "provided_target_day_weather",
+  "limitations": [
+    "按参考代码使用提供的当日辐照和降雨；其可提前获得性未经证明，离线精度以这些未来输入已知为条件"
+  ],
+  "visualizations": [
+    {
+      "id": "gru_test_comparison",
+      "kind": "evaluation",
+      "title": "GRU 留出测试集：前 7 个不重叠预测窗口",
+      "path": "visualizations/gru_test_comparison.png",
+      "mime_type": "image/png",
+      "description": "完整指标见 metrics.json；功率曲线展示固定选取的测试窗口"
+    }
+  ],
+  "visualization_errors": []
+}

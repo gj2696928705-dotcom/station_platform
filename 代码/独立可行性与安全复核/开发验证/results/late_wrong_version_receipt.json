@@ -1,0 +1,82 @@
+{
+  "certified_safety_service": false,
+  "checked_at": "2025-06-01T10:15:00+08:00",
+  "constraints_hash": "db08a77a5a0e57b2a59b41c638a096e45d0570d8b93dc0b2096cf40a9fdecc24",
+  "device_dispatch_authorized": false,
+  "eligible_for_offline_simulation": false,
+  "frozen_fingerprint": "f9e09f918483ac0cd9543dd8a699bdd316a67d5e1870f06f1b5e722e7bb9b537",
+  "governance": {
+    "checked_at": "2025-06-01T10:15:00+08:00",
+    "frozen_fingerprint": "f9e09f918483ac0cd9543dd8a699bdd316a67d5e1870f06f1b5e722e7bb9b537",
+    "passed": true,
+    "plan_fingerprint": "37b28423c6517c19a794d386e09dfaaf4997c74648bb46c9187f9fce2a5d51bb",
+    "plan_version": 2,
+    "policy_hash": "a0f677cd4f7035ebc0e9e23562234559db2d5a7ac114707129d8247e11a71adc",
+    "rule_version": "a03-offline-governance-v1",
+    "state_hash": "f7f8394379fafa0fd348957d28182c03bbba4af6f684b2d7c697b7fc6c231378",
+    "state_reference": {
+      "available_at": "2025-06-01T10:15:00+08:00",
+      "measured_at": "2025-06-01T10:15:00+08:00",
+      "revision": 1,
+      "state_id": "explicit-synthetic-snapshot",
+      "valid_until": "2025-06-01T10:16:00+08:00"
+    },
+    "violations": []
+  },
+  "on_failure": "reject_and_request_new_plan_or_state",
+  "passed": false,
+  "physical": {
+    "checked_at": "2025-06-01T10:15:00+08:00",
+    "frozen_fingerprint": "f9e09f918483ac0cd9543dd8a699bdd316a67d5e1870f06f1b5e722e7bb9b537",
+    "metrics": null,
+    "passed": false,
+    "plan_fingerprint": "37b28423c6517c19a794d386e09dfaaf4997c74648bb46c9187f9fce2a5d51bb",
+    "plan_version": 2,
+    "policy_hash": "a0f677cd4f7035ebc0e9e23562234559db2d5a7ac114707129d8247e11a71adc",
+    "rule_version": "a03-physical-v1",
+    "state_hash": "f7f8394379fafa0fd348957d28182c03bbba4af6f684b2d7c697b7fc6c231378",
+    "state_reference": {
+      "available_at": "2025-06-01T10:15:00+08:00",
+      "measured_at": "2025-06-01T10:15:00+08:00",
+      "revision": 1,
+      "state_id": "explicit-synthetic-snapshot",
+      "valid_until": "2025-06-01T10:16:00+08:00"
+    },
+    "violations": [
+      {
+        "actual": null,
+        "code": "RECEIPT_OLD_VERSION",
+        "expected": null,
+        "field": "receipt-0"
+      }
+    ]
+  },
+  "plan_fingerprint": "37b28423c6517c19a794d386e09dfaaf4997c74648bb46c9187f9fce2a5d51bb",
+  "plan_version": 2,
+  "policy_hash": "a0f677cd4f7035ebc0e9e23562234559db2d5a7ac114707129d8247e11a71adc",
+  "review_fingerprint": "cbaa14c2485fa13f120db52e2fe6013eb09f4a2ca7ad72f07749b3c0fca738e5",
+  "rule_version": "a03-offline-governance-v1",
+  "schema_version": "a03-review-v1",
+  "simulation": true,
+  "state_hash": "f7f8394379fafa0fd348957d28182c03bbba4af6f684b2d7c697b7fc6c231378",
+  "state_reference": {
+    "available_at": "2025-06-01T10:15:00+08:00",
+    "measured_at": "2025-06-01T10:15:00+08:00",
+    "revision": 1,
+    "state_id": "explicit-synthetic-snapshot",
+    "valid_until": "2025-06-01T10:16:00+08:00"
+  },
+  "status": "REJECTED",
+  "task_id": "A03-HAND",
+  "task_version": 1,
+  "valid_until": null,
+  "violations": [
+    {
+      "actual": null,
+      "code": "RECEIPT_OLD_VERSION",
+      "expected": null,
+      "field": "receipt-0",
+      "layer": "physical"
+    }
+  ]
+}

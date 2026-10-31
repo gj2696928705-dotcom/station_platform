@@ -1,0 +1,619 @@
+{
+  "status": "completed",
+  "folds": [
+    {
+      "name": "month_05",
+      "train_start": "2025-01-01T00:00:00+08:00",
+      "train_end": "2025-04-30T23:45:00+08:00",
+      "validation_start": "2025-05-01T00:00:00+08:00",
+      "validation_end": "2025-05-31T23:45:00+08:00",
+      "training_days": 120.0,
+      "training_windows_available": 11137,
+      "training_windows_used": 11137,
+      "validation_windows": 2881,
+      "scalers_fit_on": "this fold training windows only",
+      "results": {
+        "baseline:persistence": {
+          "all_day": {
+            "count": 276576,
+            "mae": 820.3925840214663,
+            "rmse": 1222.538682471869,
+            "nrmse": 1.9505354491568756,
+            "r2": -0.8123673849813267,
+            "coverage": null
+          },
+          "daylight": {
+            "count": 156145,
+            "mae": 967.7054674480131,
+            "rmse": 1305.2431481165697,
+            "nrmse": 1.1756992761224219,
+            "r2": -0.8437152274048314,
+            "coverage": null
+          }
+        },
+        "baseline:previous_day": {
+          "all_day": {
+            "count": 276576,
+            "mae": 321.5921230846278,
+            "rmse": 637.8389411090563,
+            "nrmse": 1.0176589774405989,
+            "r2": 0.5066636922048082,
+            "coverage": null
+          },
+          "daylight": {
+            "count": 156145,
+            "mae": 569.6286338611804,
+            "rmse": 848.895506574002,
+            "nrmse": 0.7646436099073063,
+            "r2": 0.22013493151616859,
+            "coverage": null
+          }
+        },
+        "baseline:same_slot_mean": {
+          "all_day": {
+            "count": 276576,
+            "mae": 372.50541286468945,
+            "rmse": 672.8528633337323,
+            "nrmse": 1.0735229738052487,
+            "r2": 0.45101405139320994,
+            "coverage": null
+          },
+          "daylight": {
+            "count": 156145,
+            "mae": 659.810157664122,
+            "rmse": 895.4952974120735,
+            "nrmse": 0.8066184254310143,
+            "r2": 0.13216408838768157,
+            "coverage": null
+          }
+        },
+        "gru32_control": {
+          "all_day": {
+            "count": 276576,
+            "mae": 389.27528493210207,
+            "rmse": 571.1322125362268,
+            "nrmse": 0.9112297571270863,
+            "r2": 0.6044564289502783,
+            "coverage": null
+          },
+          "daylight": {
+            "count": 156145,
+            "mae": 637.8605392948812,
+            "rmse": 754.414775060696,
+            "nrmse": 0.6795399816614905,
+            "r2": 0.3840699836729904,
+            "coverage": null
+          },
+          "training_summary_ref": "experiments/month_05/gru32_control/training_summary.json"
+        },
+        "gru32_scheduled": {
+          "all_day": {
+            "count": 276576,
+            "mae": 336.1920461858342,
+            "rmse": 508.2881146413163,
+            "nrmse": 0.8109632850131224,
+            "r2": 0.686714042885305,
+            "coverage": null
+          },
+          "daylight": {
+            "count": 156145,
+            "mae": 539.6736177759559,
+            "rmse": 671.7296986333595,
+            "nrmse": 0.6050613033845564,
+            "r2": 0.5116849628662627,
+            "coverage": null
+          },
+          "training_summary_ref": "experiments/month_05/gru32_scheduled/training_summary.json"
+        },
+        "gru16_scheduled": {
+          "all_day": {
+            "count": 276576,
+            "mae": 396.23296816127976,
+            "rmse": 596.0025964259918,
+            "nrmse": 0.9509099456615239,
+            "r2": 0.5692578986836654,
+            "coverage": null
+          },
+          "daylight": {
+            "count": 156145,
+            "mae": 664.3748069481481,
+            "rmse": 788.0082568041469,
+            "nrmse": 0.7097993492170287,
+            "r2": 0.3279949532329042,
+            "coverage": null
+          },
+          "training_summary_ref": "experiments/month_05/gru16_scheduled/training_summary.json"
+        }
+      }
+    },
+    {
+      "name": "month_07",
+      "train_start": "2025-01-01T00:00:00+08:00",
+      "train_end": "2025-06-30T23:45:00+08:00",
+      "validation_start": "2025-07-01T00:00:00+08:00",
+      "validation_end": "2025-07-31T23:45:00+08:00",
+      "training_days": 181.0,
+      "training_windows_available": 16993,
+      "training_windows_used": 16993,
+      "validation_windows": 2881,
+      "scalers_fit_on": "this fold training windows only",
+      "results": {
+        "baseline:persistence": {
+          "all_day": {
+            "count": 276576,
+            "mae": 974.0296475216975,
+            "rmse": 1390.2715443949614,
+            "nrmse": 1.8727152110125265,
+            "r2": -0.9044279742776957,
+            "coverage": null
+          },
+          "daylight": {
+            "count": 159325,
+            "mae": 1134.1645787709024,
+            "rmse": 1471.6851250071497,
+            "nrmse": 1.1419745892880027,
+            "r2": -1.04758822582754,
+            "coverage": null
+          }
+        },
+        "baseline:previous_day": {
+          "all_day": {
+            "count": 276576,
+            "mae": 385.049370849394,
+            "rmse": 712.3295579294271,
+            "nrmse": 0.9595178753146473,
+            "r2": 0.5000492596752203,
+            "coverage": null
+          },
+          "daylight": {
+            "count": 159325,
+            "mae": 668.4162233927005,
+            "rmse": 938.5258689294066,
+            "nrmse": 0.7282622318423025,
+            "r2": 0.16726787622616168,
+            "coverage": null
+          }
+        },
+        "baseline:same_slot_mean": {
+          "all_day": {
+            "count": 276576,
+            "mae": 340.3389603699345,
+            "rmse": 621.0140718071469,
+            "nrmse": 0.8365146386076635,
+            "r2": 0.620013500585681,
+            "coverage": null
+          },
+          "daylight": {
+            "count": 159325,
+            "mae": 590.8023744048894,
+            "rmse": 818.2136552838865,
+            "nrmse": 0.6349042924097723,
+            "r2": 0.36708371617348956,
+            "coverage": null
+          }
+        },
+        "gru32_control": {
+          "all_day": {
+            "count": 276576,
+            "mae": 291.52474827692976,
+            "rmse": 497.66655953491744,
+            "nrmse": 0.6703638147603078,
+            "r2": 0.7559705711027699,
+            "coverage": null
+          },
+          "daylight": {
+            "count": 159325,
+            "mae": 493.27051859842084,
+            "rmse": 655.0365048652386,
+            "nrmse": 0.5082847077145632,
+            "r2": 0.5943571453129737,
+            "coverage": null
+          },
+          "training_summary_ref": "experiments/month_07/gru32_control/training_summary.json"
+        },
+        "gru32_scheduled": {
+          "all_day": {
+            "count": 276576,
+            "mae": 308.9433162559748,
+            "rmse": 534.9790227272249,
+            "nrmse": 0.7206242244351593,
+            "r2": 0.7180066994919596,
+            "coverage": null
+          },
+          "daylight": {
+            "count": 159325,
+            "mae": 522.9292561258925,
+            "rmse": 704.3953660734094,
+            "nrmse": 0.5465854041734274,
+            "r2": 0.5309212020977949,
+            "coverage": null
+          },
+          "training_summary_ref": "experiments/month_07/gru32_scheduled/training_summary.json"
+        },
+        "gru16_scheduled": {
+          "all_day": {
+            "count": 276576,
+            "mae": 340.4039945665523,
+            "rmse": 580.3992005620471,
+            "nrmse": 0.7818058391068332,
+            "r2": 0.6680911017882671,
+            "coverage": null
+          },
+          "daylight": {
+            "count": 159325,
+            "mae": 578.7187479161704,
+            "rmse": 764.0246108666068,
+            "nrmse": 0.5928555479529499,
+            "r2": 0.4481417750366249,
+            "coverage": null
+          },
+          "training_summary_ref": "experiments/month_07/gru16_scheduled/training_summary.json"
+        }
+      }
+    },
+    {
+      "name": "month_09",
+      "train_start": "2025-01-01T00:00:00+08:00",
+      "train_end": "2025-08-31T23:45:00+08:00",
+      "validation_start": "2025-09-01T00:00:00+08:00",
+      "validation_end": "2025-09-30T23:45:00+08:00",
+      "training_days": 243.0,
+      "training_windows_available": 22945,
+      "training_windows_used": 22945,
+      "validation_windows": 2785,
+      "scalers_fit_on": "this fold training windows only",
+      "results": {
+        "baseline:persistence": {
+          "all_day": {
+            "count": 267360,
+            "mae": 791.8861615430952,
+            "rmse": 1209.7918245214537,
+            "nrmse": 2.1120733476681033,
+            "r2": -0.8750530663485538,
+            "coverage": null
+          },
+          "daylight": {
+            "count": 136571,
+            "mae": 998.5131316191358,
+            "rmse": 1338.0402932849722,
+            "nrmse": 1.1932449349911274,
+            "r2": -0.961026123077444,
+            "coverage": null
+          }
+        },
+        "baseline:previous_day": {
+          "all_day": {
+            "count": 267360,
+            "mae": 397.08914574507037,
+            "rmse": 786.3992186151426,
+            "nrmse": 1.372907963666447,
+            "r2": 0.2077204992084991,
+            "coverage": null
+          },
+          "daylight": {
+            "count": 136571,
+            "mae": 777.3667470136558,
+            "rmse": 1100.3023610257844,
+            "nrmse": 0.9812336936651367,
+            "r2": -0.3260780459120509,
+            "coverage": null
+          }
+        },
+        "baseline:same_slot_mean": {
+          "all_day": {
+            "count": 267360,
+            "mae": 352.30436109908493,
+            "rmse": 644.1739149997393,
+            "nrmse": 1.1246088207548806,
+            "r2": 0.4683833897249443,
+            "coverage": null
+          },
+          "daylight": {
+            "count": 136571,
+            "mae": 689.6932160304749,
+            "rmse": 901.3056763122706,
+            "nrmse": 0.8037713352398401,
+            "r2": 0.11020654324198098,
+            "coverage": null
+          }
+        },
+        "gru32_control": {
+          "all_day": {
+            "count": 267360,
+            "mae": 293.4462206449206,
+            "rmse": 499.907169073455,
+            "nrmse": 0.8727456961662853,
+            "r2": 0.6798371018965015,
+            "coverage": null
+          },
+          "daylight": {
+            "count": 136571,
+            "mae": 534.7241792468607,
+            "rmse": 698.0246326339211,
+            "nrmse": 0.6224882476032259,
+            "r2": 0.46631316121637656,
+            "coverage": null
+          },
+          "training_summary_ref": "experiments/month_09/gru32_control/training_summary.json"
+        },
+        "gru32_scheduled": {
+          "all_day": {
+            "count": 267360,
+            "mae": 280.13307706745104,
+            "rmse": 500.6737971728527,
+            "nrmse": 0.8740840874031014,
+            "r2": 0.6788543831442513,
+            "coverage": null
+          },
+          "daylight": {
+            "count": 136571,
+            "mae": 529.9701443935163,
+            "rmse": 699.8175853488101,
+            "nrmse": 0.6240871768406013,
+            "r2": 0.4635679738944317,
+            "coverage": null
+          },
+          "training_summary_ref": "experiments/month_09/gru32_scheduled/training_summary.json"
+        },
+        "gru16_scheduled": {
+          "all_day": {
+            "count": 267360,
+            "mae": 279.7362854261679,
+            "rmse": 493.2505199209322,
+            "nrmse": 0.861124414740134,
+            "r2": 0.6883067652650614,
+            "coverage": null
+          },
+          "daylight": {
+            "count": 136571,
+            "mae": 534.3379774377099,
+            "rmse": 689.7272462911794,
+            "nrmse": 0.6150887587561195,
+            "r2": 0.47892557270707437,
+            "coverage": null
+          },
+          "training_summary_ref": "experiments/month_09/gru16_scheduled/training_summary.json"
+        }
+      }
+    }
+  ],
+  "candidates": {
+    "gru32_control": {
+      "interval_minutes": 15,
+      "history_days": 3,
+      "horizon_steps": 96,
+      "train_ratio": 0.7,
+      "val_ratio": 0.15,
+      "nominal_coverage": 0.8,
+      "min_gru_days": 60,
+      "gru_epochs": 30,
+      "gru_batch_size": 128,
+      "gru_patience": 5,
+      "gru_units": 32,
+      "gru_learning_rate": 0.001,
+      "gru_dropout": 0.2,
+      "reduce_lr": false,
+      "lr_patience": 2,
+      "lr_factor": 0.5,
+      "min_lr": 1e-05,
+      "min_delta": 0.0,
+      "max_gru_samples": 0,
+      "skip_gru": false,
+      "require_gru": true,
+      "seed": 42,
+      "model_id": "pv-power-forecast",
+      "model_version": "0.2.0-candidate"
+    },
+    "gru32_scheduled": {
+      "interval_minutes": 15,
+      "history_days": 3,
+      "horizon_steps": 96,
+      "train_ratio": 0.7,
+      "val_ratio": 0.15,
+      "nominal_coverage": 0.8,
+      "min_gru_days": 60,
+      "gru_epochs": 50,
+      "gru_batch_size": 128,
+      "gru_patience": 8,
+      "gru_units": 32,
+      "gru_learning_rate": 0.0003,
+      "gru_dropout": 0.2,
+      "reduce_lr": true,
+      "lr_patience": 2,
+      "lr_factor": 0.5,
+      "min_lr": 1e-05,
+      "min_delta": 1e-05,
+      "max_gru_samples": 0,
+      "skip_gru": false,
+      "require_gru": true,
+      "seed": 42,
+      "model_id": "pv-power-forecast",
+      "model_version": "0.2.0-candidate"
+    },
+    "gru16_scheduled": {
+      "interval_minutes": 15,
+      "history_days": 3,
+      "horizon_steps": 96,
+      "train_ratio": 0.7,
+      "val_ratio": 0.15,
+      "nominal_coverage": 0.8,
+      "min_gru_days": 60,
+      "gru_epochs": 50,
+      "gru_batch_size": 128,
+      "gru_patience": 8,
+      "gru_units": 16,
+      "gru_learning_rate": 0.0003,
+      "gru_dropout": 0.2,
+      "reduce_lr": true,
+      "lr_patience": 2,
+      "lr_factor": 0.5,
+      "min_lr": 1e-05,
+      "min_delta": 1e-05,
+      "max_gru_samples": 0,
+      "skip_gru": false,
+      "require_gru": true,
+      "seed": 42,
+      "model_id": "pv-power-forecast",
+      "model_version": "0.2.0-candidate"
+    }
+  },
+  "selection_metric": "pooled rolling validation RMSE (kW)",
+  "feature_policy": "identical historical weather and solar/calendar features for all GRU candidates",
+  "reserved_test_start": "2025-11-07T06:00:00+08:00",
+  "test_used_for_selection": false,
+  "scope": "full_windows",
+  "history_weather_columns": [
+    "SWGDN",
+    "temperature_c",
+    "cloud_cover"
+  ],
+  "input_spec": {
+    "timestamp_col": "timestamp",
+    "target_col": "pv_power_kw",
+    "weather_columns": [],
+    "history_weather_columns": [
+      "SWGDN",
+      "temperature_c",
+      "cloud_cover"
+    ],
+    "latitude": 30.9,
+    "longitude": 111.35,
+    "coordinate_basis": "宜昌地区太阳位置计算用近似坐标，未经实站地址核验",
+    "timezone": "Asia/Shanghai",
+    "input_kind": "power",
+    "interval_minutes": null,
+    "column_map": {}
+  },
+  "aggregate": {
+    "gru32_control": {
+      "all_day": {
+        "count": 820512,
+        "rmse": 524.2782063320979,
+        "mae": 325.1003416603866,
+        "r2": 0.6874464156942665,
+        "nrmse": 0.8088787384154378
+      },
+      "daylight": {
+        "count": 452041,
+        "rmse": 703.5827852490797,
+        "mae": 555.7391368654959,
+        "r2": 0.4921222350924995,
+        "nrmse": 0.5980392800483783
+      },
+      "worst_fold_rmse": 571.1322125362268
+    },
+    "gru32_scheduled": {
+      "all_day": {
+        "count": 820512,
+        "rmse": 515.0142257850569,
+        "mae": 308.74056380340505,
+        "r2": 0.6983944531127425,
+        "nrmse": 0.7945858748039204
+      },
+      "daylight": {
+        "count": 452041,
+        "rmse": 691.8838853759869,
+        "mae": 530.8403294609369,
+        "r2": 0.508871404764973,
+        "nrmse": 0.5880953163753818
+      },
+      "worst_fold_rmse": 534.9790227272249
+    },
+    "gru16_scheduled": {
+      "all_day": {
+        "count": 820512,
+        "rmse": 559.0725863214599,
+        "mae": 339.454386864486,
+        "r2": 0.6445837594438137,
+        "nrmse": 0.8625609892697004
+      },
+      "daylight": {
+        "count": 452041,
+        "rmse": 750.9722682125791,
+        "mae": 594.8978978882622,
+        "r2": 0.42140245138337173,
+        "nrmse": 0.6383199305525303
+      },
+      "worst_fold_rmse": 596.0025964259918
+    },
+    "baseline:persistence": {
+      "all_day": {
+        "count": 820512,
+        "rmse": 1277.585094198238,
+        "mae": 862.8914717413566,
+        "r2": -0.856011001327309,
+        "nrmse": 1.9711126778343266
+      },
+      "daylight": {
+        "count": 452041,
+        "rmse": 1375.7746490146108,
+        "mae": 1035.6827779464718,
+        "r2": -0.9418844988197512,
+        "nrmse": 1.1693965484306656
+      },
+      "worst_fold_rmse": 1390.2715443949614
+    },
+    "baseline:previous_day": {
+      "all_day": {
+        "count": 820512,
+        "rmse": 713.9216222417756,
+        "mae": 367.5824751285759,
+        "r2": 0.42043527465218067,
+        "nrmse": 1.1014686747452456
+      },
+      "daylight": {
+        "count": 452041,
+        "rmse": 961.8427824735817,
+        "mae": 667.2090182808595,
+        "r2": 0.05084536965512254,
+        "nrmse": 0.817558043218173
+      },
+      "worst_fold_rmse": 786.3992186151426
+    },
+    "baseline:same_slot_mean": {
+      "all_day": {
+        "count": 820512,
+        "rmse": 646.3860080223062,
+        "mae": 355.08041241955107,
+        "r2": 0.5249002874776242,
+        "nrmse": 0.9972718537289004
+      },
+      "daylight": {
+        "count": 452041,
+        "rmse": 870.8543026836547,
+        "mae": 644.516177906476,
+        "r2": 0.22192798786110668,
+        "nrmse": 0.7402186226310126
+      },
+      "worst_fold_rmse": 672.8528633337323
+    }
+  },
+  "best_gru_candidate": "gru32_scheduled",
+  "selected_candidate": "gru32_scheduled",
+  "selected_config": {
+    "interval_minutes": 15,
+    "history_days": 3,
+    "horizon_steps": 96,
+    "train_ratio": 0.7,
+    "val_ratio": 0.15,
+    "nominal_coverage": 0.8,
+    "min_gru_days": 60,
+    "gru_epochs": 50,
+    "gru_batch_size": 128,
+    "gru_patience": 8,
+    "gru_units": 32,
+    "gru_learning_rate": 0.0003,
+    "gru_dropout": 0.2,
+    "reduce_lr": true,
+    "lr_patience": 2,
+    "lr_factor": 0.5,
+    "min_lr": 1e-05,
+    "min_delta": 1e-05,
+    "max_gru_samples": 0,
+    "skip_gru": false,
+    "require_gru": true,
+    "seed": 42,
+    "model_id": "pv-power-forecast",
+    "model_version": "0.2.0-candidate"
+  }
+}

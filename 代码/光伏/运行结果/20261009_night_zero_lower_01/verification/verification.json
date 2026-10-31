@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "commands": {
+    "predict": {
+      "exit_code": 0,
+      "png_count": 3
+    },
+    "evaluate": {
+      "exit_code": 0,
+      "png_count": 1
+    }
+  },
+  "data_kind": "simulated",
+  "parent_hashes_unchanged": true,
+  "weights_and_scalers_identical": true,
+  "point_predictions_and_metrics_unchanged": true,
+  "full_window_counts_checked": true,
+  "conditioned_primary_and_fallback_intervals_checked": true,
+  "missing_weight_and_weather_fallback_checked": true,
+  "insufficient_and_stale_history_checked": true,
+  "test_scope": "retrospective; not independent production acceptance"
+}

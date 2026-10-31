@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-27",
+  "files": [
+    {
+      "path": "代码\\负荷\\load_forecast\\pipeline.py",
+      "sha256": "504019c1aaae5d0950b67e40bd5c81187b557751356ec736f84c5af49c1711e8"
+    },
+    {
+      "path": "代码\\负荷\\tests\\test_load_forecast.py",
+      "sha256": "205093f71069b9daf461994ebfea7ca8501e2cad6884d7bb46cbcb7613c53602"
+    },
+    {
+      "path": "代码\\负荷\\开发验证\\20261027_review\\verify_algorithm.py",
+      "sha256": "733842215704914db7a439668aae5df79ad1ba1fbd01675bafff8d7313969cfa"
+    },
+    {
+      "path": "代码\\负荷\\开发验证\\20261027_review\\platform_probe.py",
+      "sha256": "6fa05c3e8391b21dfc9947b73e53a476406fc5fb1b6602da86f6879e8ffcdd19"
+    },
+    {
+      "path": "代码\\负荷\\开发验证\\20261027_review\\验证报告.md",
+      "sha256": "c504946a6820a12e8308a35e3e3e5fbc029036d819ef81ca3a07ec53c846ba6e"
+    },
+    {
+      "path": "代码\\负荷\\开发验证\\20261027_review\\evidence\\algorithm_verification.json",
+      "sha256": "4a12bf823c6a4e9a381731f0a157548073b564289eee56bbf4440010504c5c61"
+    },
+    {
+      "path": "代码\\负荷\\开发验证\\20261027_review\\evidence\\platform\\platform_verification.json",
+      "sha256": "03cf34e484cf200c1a37a373b7ecf29b02ac239e8c993287d3dece5cb7cf8e4e"
+    },
+    {
+      "path": "代码\\负荷\\开发验证\\20261027_review\\tests.log",
+      "sha256": "514b67a9c0258381e8a3814edb0a08499520c167a28aa023bf9bb61b603aa8ee"
+    },
+    {
+      "path": "代码\\负荷\\开发验证\\20261027_review\\platform_tests_verified.log",
+      "sha256": "3cbf38f74d36fdb0c54348dd07c8ffff699da69e9f8a9405dd6c04dbf9b777ef"
+    },
+    {
+      "path": "代码\\负荷\\开发验证\\20261027_review\\platform_tests_verified.xml",
+      "sha256": "d0a79f260e5392bc9d0cf90d0197f493be9bd58cc4c983ea349b23e1e6916e63"
+    },
+    {
+      "path": "station_platform\\docs\\负荷预测适配验证与接入约定_v0.1.md",
+      "sha256": "c1aeb7d8720c8f0d09d9abffbcd0e64a583fdbd0a9a68677202f37ae464aa54d"
+    },
+    {
+      "path": "代码\\数据\\负荷数据\\黄花站_2025年_15分钟负荷模拟数据.csv",
+      "sha256": "c4989c0c8a62a488bdc9e3abd3118bf5cc34333181246ad1f41a672a2d7b0c39"
+    },
+    {
+      "path": "代码\\负荷\\运行结果\\20260928_232203_101506\\model_metadata.json",
+      "sha256": "f4a4d926a4e10bb8f05792abce190656de50e39e7ea5a3df0b8415e8952433ed"
+    },
+    {
+      "path": "代码\\负荷\\运行结果\\20260928_232203_101506\\xgboost.json",
+      "sha256": "56d600e11d009a81492fd4f3c14893afe4da74e189d6c26cee2d8683ed251863"
+    }
+  ]
+}

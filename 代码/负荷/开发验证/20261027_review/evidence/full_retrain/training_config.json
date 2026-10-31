@@ -1,0 +1,24 @@
+{
+  "config": {
+    "rounds": 500,
+    "patience": 30,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "stride": 4,
+    "threads": 4,
+    "seed": 42,
+    "nominal_coverage": 0.8,
+    "train_fraction": 0.7,
+    "validation_fraction": 0.15,
+    "model_id": "huanghua-load-xgboost"
+  },
+  "input_spec": {
+    "timestamp_col": "timestamp",
+    "target_col": "base_load_kw",
+    "timezone": "Asia/Shanghai",
+    "station_id": "HH-Huanghua-CSS",
+    "input_kind": "interval_average_power",
+    "energy_interval_minutes": null,
+    "source_target_col": null
+  }
+}

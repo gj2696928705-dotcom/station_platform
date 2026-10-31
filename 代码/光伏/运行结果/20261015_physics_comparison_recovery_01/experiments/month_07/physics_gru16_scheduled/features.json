@@ -1,0 +1,74 @@
+{
+  "history": [
+    "pv_power_kw",
+    "SWGDN",
+    "temperature_c",
+    "cloud_cover",
+    "clear_pv_kw",
+    "clear_ghi_w_m2",
+    "power_clear_ratio",
+    "ghi_clear_ratio",
+    "power_ratio_delta",
+    "cloud_delta",
+    "cloud_squared",
+    "power_ratio_mean_1h",
+    "cloud_mean_1h"
+  ],
+  "future": [
+    "sin_time_of_day",
+    "cos_time_of_day",
+    "sin_day_of_year",
+    "cos_day_of_year",
+    "is_daylight",
+    "solar_elevation_deg",
+    "clear_pv_kw",
+    "clear_ghi_w_m2"
+  ],
+  "raw_history": [
+    "pv_power_kw",
+    "SWGDN",
+    "temperature_c",
+    "cloud_cover"
+  ],
+  "raw_future": [
+    "sin_time_of_day",
+    "cos_time_of_day",
+    "sin_day_of_year",
+    "cos_day_of_year",
+    "is_daylight",
+    "solar_elevation_deg"
+  ],
+  "physics": {
+    "station": {
+      "station_id": "HH-Huanghua-CSS",
+      "station_name": "黄花充换电站",
+      "latitude_deg": 30.9,
+      "longitude_deg": 111.35,
+      "coordinate_basis": "宜昌地区太阳位置计算用近似坐标，未经实站地址核验",
+      "capacity_kw": 5000.0,
+      "inverter_count_reference": 10,
+      "inverter_rated_kw_reference": 500.0,
+      "capacity_basis": "沿用既有场站算法样例并经用户选择的模拟容量，非实站核实容量"
+    },
+    "pv": {
+      "tilt_deg": 20.0,
+      "azimuth_deg": 180.0,
+      "albedo": 0.2,
+      "noct_c": 45.0,
+      "temperature_coefficient_per_c": -0.004,
+      "reference_cell_temperature_c": 25.0,
+      "reference_irradiance_w_m2": 1000.0,
+      "system_loss_fraction": 0.12,
+      "relative_noise_stationary_std": 0.003,
+      "relative_noise_ar": 0.85,
+      "relative_noise_clip": 0.015
+    },
+    "clear_ghi_coefficient": 1098.0,
+    "clear_ghi_attenuation": 0.059,
+    "clear_diffuse_fraction": 0.12,
+    "ambient_reference_c": 20.0,
+    "power_ratio_floor_fraction": 0.01,
+    "ghi_ratio_floor_w_m2": 20.0,
+    "parameter_basis": "configured_simulated_plant; not real-site verified"
+  }
+}

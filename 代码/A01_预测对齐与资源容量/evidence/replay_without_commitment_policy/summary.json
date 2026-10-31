@@ -1,0 +1,152 @@
+{
+  "simulation": true,
+  "execution_mode": "offline_replay",
+  "commitment_policy": null,
+  "scenarios": [
+    {
+      "scenario_id": "S01_sunny",
+      "status": "blocked",
+      "code": "FORECAST_CONTEXT_UNAVAILABLE",
+      "context_hash": "c9c18d5f98e47f96c6ee418560a17fdcc0e1a8f3ecfebeb44f935ec16bc90826",
+      "issues": [
+        {
+          "code": "COMMITMENT_UNKNOWN",
+          "message": "既有预约仅有电量或状态未知，不能推断逐段功率为零"
+        }
+      ]
+    },
+    {
+      "scenario_id": "S02_mismatch",
+      "status": "blocked",
+      "code": "FORECAST_CONTEXT_UNAVAILABLE",
+      "context_hash": "09d7b85831e664c830fe3ceb4044d8c2c560ae0762b0a0e819ed18c0a217f518",
+      "issues": [
+        {
+          "code": "COMMITMENT_UNKNOWN",
+          "message": "既有预约仅有电量或状态未知，不能推断逐段功率为零"
+        }
+      ]
+    },
+    {
+      "scenario_id": "S03_grid",
+      "status": "blocked",
+      "code": "FORECAST_CONTEXT_UNAVAILABLE",
+      "context_hash": "d9b742f22a16a95f830064126b6e91424308c1cbef64e1e3f78b8bc0222d82de",
+      "issues": [
+        {
+          "code": "COMMITMENT_UNKNOWN",
+          "message": "既有预约仅有电量或状态未知，不能推断逐段功率为零"
+        }
+      ]
+    },
+    {
+      "scenario_id": "S04_concurrency",
+      "status": "blocked",
+      "code": "FORECAST_CONTEXT_UNAVAILABLE",
+      "context_hash": "a59f1e1efec16ab062f5a70fd8d8900f13cfa2aa3656432216e659942a68e801",
+      "issues": [
+        {
+          "code": "COMMITMENT_UNKNOWN",
+          "message": "既有预约仅有电量或状态未知，不能推断逐段功率为零"
+        }
+      ]
+    },
+    {
+      "scenario_id": "S05_pv_surplus",
+      "status": "blocked",
+      "code": "FORECAST_CONTEXT_UNAVAILABLE",
+      "context_hash": "29d71e8a68c9fb80f2f1d690130261751bbfbe78d5d383b46cf47ac4f637865b",
+      "issues": [
+        {
+          "code": "COMMITMENT_UNKNOWN",
+          "message": "既有预约仅有电量或状态未知，不能推断逐段功率为零"
+        }
+      ]
+    },
+    {
+      "scenario_id": "S06_calibration",
+      "status": "blocked",
+      "code": "FORECAST_CONTEXT_UNAVAILABLE",
+      "context_hash": "37f681e28a5652929001807855a5afbc523a8ee7065d4963a4821e9c1689b7ea",
+      "issues": [
+        {
+          "code": "COMMITMENT_UNKNOWN",
+          "message": "既有预约仅有电量或状态未知，不能推断逐段功率为零"
+        }
+      ]
+    },
+    {
+      "scenario_id": "S07_storage_floor",
+      "status": "blocked",
+      "code": "FORECAST_CONTEXT_UNAVAILABLE",
+      "context_hash": "5ef6c3077567ef4b225c8960ff531b1a31c2bf38426e3b2b9e8501178f7c4ec0",
+      "issues": [
+        {
+          "code": "COMMITMENT_UNKNOWN",
+          "message": "既有预约仅有电量或状态未知，不能推断逐段功率为零"
+        }
+      ]
+    },
+    {
+      "scenario_id": "S08_storage_ceiling",
+      "status": "blocked",
+      "code": "FORECAST_CONTEXT_UNAVAILABLE",
+      "context_hash": "5d1c96beded2d9936ccf14e22dd485066d0b4ca46f1de200f05d5e4cfc02d9ab",
+      "issues": [
+        {
+          "code": "COMMITMENT_UNKNOWN",
+          "message": "既有预约仅有电量或状态未知，不能推断逐段功率为零"
+        }
+      ]
+    },
+    {
+      "scenario_id": "S09_derated",
+      "status": "blocked",
+      "code": "FORECAST_CONTEXT_UNAVAILABLE",
+      "context_hash": "6db2f7df2a36d2d1355921e74ba72e2ca8c799c9d9a59eaadb48021078d33498",
+      "issues": [
+        {
+          "code": "COMMITMENT_UNKNOWN",
+          "message": "既有预约仅有电量或状态未知，不能推断逐段功率为零"
+        }
+      ]
+    },
+    {
+      "scenario_id": "S10_no_booking",
+      "status": "blocked",
+      "code": "FORECAST_CONTEXT_UNAVAILABLE",
+      "context_hash": "d4156283926c80cb76d152079a3587746bdc76044363af1b0b990659d4bbfdf6",
+      "issues": [
+        {
+          "code": "COMMITMENT_UNKNOWN",
+          "message": "既有预约仅有电量或状态未知，不能推断逐段功率为零"
+        }
+      ]
+    },
+    {
+      "scenario_id": "S11_pv_gap",
+      "status": "blocked",
+      "code": "FORECAST_CONTEXT_UNAVAILABLE",
+      "context_hash": "fce4fd7e9aa16b808d0cc85c7dd3bbcc99d80e91de3b029d273efe2e80426f8e",
+      "issues": [
+        {
+          "code": "FORECAST_UNAVAILABLE",
+          "message": "pv_forecast: 2_of_4_intervals"
+        }
+      ]
+    },
+    {
+      "scenario_id": "S12_late_weather",
+      "status": "blocked",
+      "code": "FORECAST_CONTEXT_UNAVAILABLE",
+      "context_hash": "625e3752c71442c57c62f8f132b80100b5ad59158875886542bbef552c673c26",
+      "issues": [
+        {
+          "code": "FORECAST_UNAVAILABLE",
+          "message": "pv_forecast: no_complete_same_batch_issued_by_D07:00"
+        }
+      ]
+    }
+  ],
+  "planned_count": 0
+}

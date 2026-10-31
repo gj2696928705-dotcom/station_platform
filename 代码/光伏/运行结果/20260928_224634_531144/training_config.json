@@ -1,0 +1,19 @@
+{
+  "interval_minutes": 15,
+  "history_days": 3,
+  "horizon_steps": 96,
+  "train_ratio": 0.7,
+  "val_ratio": 0.15,
+  "nominal_coverage": 0.8,
+  "min_gru_days": 60,
+  "gru_epochs": 30,
+  "gru_batch_size": 128,
+  "gru_patience": 5,
+  "gru_units": 32,
+  "max_gru_samples": 0,
+  "skip_gru": false,
+  "require_gru": true,
+  "seed": 42,
+  "model_id": "pv-power-forecast",
+  "model_version": "0.1.0-candidate"
+}

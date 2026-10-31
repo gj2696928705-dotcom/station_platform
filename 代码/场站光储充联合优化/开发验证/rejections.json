@@ -1,0 +1,565 @@
+[
+  {
+    "case": "tamper_pv_used_kw",
+    "check": {
+      "passed": false,
+      "simulation": true,
+      "certified_safety_service": false,
+      "violations": [
+        {
+          "code": "PLAN_HASH_MISMATCH"
+        },
+        {
+          "code": "PV_LIMIT",
+          "slot": 0,
+          "actual": 1.0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        {
+          "code": "POWER_BALANCE",
+          "slot": 0,
+          "actual": 12.0,
+          "expected": 11.0
+        }
+      ],
+      "metrics": {
+        "purchase_cost_cny": 5.0,
+        "throughput_cost_cny": 0.0,
+        "curtailment_cost_cny": -0.0,
+        "total_objective_cny": 5.0,
+        "grid_import_kwh": 5.0,
+        "pv_used_kwh": 0.25,
+        "pv_curtailed_kwh": -0.25,
+        "storage_throughput_kwh": 4.0,
+        "storage_loss_kwh": 0.0,
+        "storage_initial_kwh": 5.0,
+        "storage_terminal_kwh": 5.0,
+        "peak_import_kw": 12.0,
+        "delivered_energy_by_vehicle_kwh": {
+          "V1": 1.0
+        },
+        "max_balance_residual_kw": 1.0
+      },
+      "plan_fingerprint": "8482531107a8c4d90cfb9811a6efe915eeb700d2b522626c9ee3c396e56bcf68",
+      "input_hash": "98bd46b420118976571e81d8a45af2caaf769af4f91757594cdf31bbe48e8d88",
+      "checked_input_hash": "98bd46b420118976571e81d8a45af2caaf769af4f91757594cdf31bbe48e8d88"
+    }
+  },
+  {
+    "case": "resigned_tamper_pv_used_kw",
+    "check": {
+      "passed": false,
+      "simulation": true,
+      "certified_safety_service": false,
+      "violations": [
+        {
+          "code": "PV_LIMIT",
+          "slot": 0,
+          "actual": 1.0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        {
+          "code": "POWER_BALANCE",
+          "slot": 0,
+          "actual": 12.0,
+          "expected": 11.0
+        }
+      ],
+      "metrics": {
+        "purchase_cost_cny": 5.0,
+        "throughput_cost_cny": 0.0,
+        "curtailment_cost_cny": -0.0,
+        "total_objective_cny": 5.0,
+        "grid_import_kwh": 5.0,
+        "pv_used_kwh": 0.25,
+        "pv_curtailed_kwh": -0.25,
+        "storage_throughput_kwh": 4.0,
+        "storage_loss_kwh": 0.0,
+        "storage_initial_kwh": 5.0,
+        "storage_terminal_kwh": 5.0,
+        "peak_import_kw": 12.0,
+        "delivered_energy_by_vehicle_kwh": {
+          "V1": 1.0
+        },
+        "max_balance_residual_kw": 1.0
+      },
+      "plan_fingerprint": "f0cee1634d4998ae21e6cc233b02382db0e31119a0097cafb911944c0ffa7a27",
+      "input_hash": "98bd46b420118976571e81d8a45af2caaf769af4f91757594cdf31bbe48e8d88",
+      "checked_input_hash": "98bd46b420118976571e81d8a45af2caaf769af4f91757594cdf31bbe48e8d88"
+    }
+  },
+  {
+    "case": "tamper_net_import_kw",
+    "check": {
+      "passed": false,
+      "simulation": true,
+      "certified_safety_service": false,
+      "violations": [
+        {
+          "code": "PLAN_HASH_MISMATCH"
+        },
+        {
+          "code": "POWER_BALANCE",
+          "slot": 0,
+          "actual": 13.0,
+          "expected": 12.0
+        }
+      ],
+      "metrics": {
+        "purchase_cost_cny": 5.25,
+        "throughput_cost_cny": 0.0,
+        "curtailment_cost_cny": 0.0,
+        "total_objective_cny": 5.25,
+        "grid_import_kwh": 5.25,
+        "pv_used_kwh": 0.0,
+        "pv_curtailed_kwh": 0.0,
+        "storage_throughput_kwh": 4.0,
+        "storage_loss_kwh": 0.0,
+        "storage_initial_kwh": 5.0,
+        "storage_terminal_kwh": 5.0,
+        "peak_import_kw": 13.0,
+        "delivered_energy_by_vehicle_kwh": {
+          "V1": 1.0
+        },
+        "max_balance_residual_kw": 1.0
+      },
+      "plan_fingerprint": "8482531107a8c4d90cfb9811a6efe915eeb700d2b522626c9ee3c396e56bcf68",
+      "input_hash": "98bd46b420118976571e81d8a45af2caaf769af4f91757594cdf31bbe48e8d88",
+      "checked_input_hash": "98bd46b420118976571e81d8a45af2caaf769af4f91757594cdf31bbe48e8d88"
+    }
+  },
+  {
+    "case": "resigned_tamper_net_import_kw",
+    "check": {
+      "passed": false,
+      "simulation": true,
+      "certified_safety_service": false,
+      "violations": [
+        {
+          "code": "POWER_BALANCE",
+          "slot": 0,
+          "actual": 13.0,
+          "expected": 12.0
+        }
+      ],
+      "metrics": {
+        "purchase_cost_cny": 5.25,
+        "throughput_cost_cny": 0.0,
+        "curtailment_cost_cny": 0.0,
+        "total_objective_cny": 5.25,
+        "grid_import_kwh": 5.25,
+        "pv_used_kwh": 0.0,
+        "pv_curtailed_kwh": 0.0,
+        "storage_throughput_kwh": 4.0,
+        "storage_loss_kwh": 0.0,
+        "storage_initial_kwh": 5.0,
+        "storage_terminal_kwh": 5.0,
+        "peak_import_kw": 13.0,
+        "delivered_energy_by_vehicle_kwh": {
+          "V1": 1.0
+        },
+        "max_balance_residual_kw": 1.0
+      },
+      "plan_fingerprint": "80168189f8e933aeee378299ceffd70f4ab55761e618f552869c3f4891e137af",
+      "input_hash": "98bd46b420118976571e81d8a45af2caaf769af4f91757594cdf31bbe48e8d88",
+      "checked_input_hash": "98bd46b420118976571e81d8a45af2caaf769af4f91757594cdf31bbe48e8d88"
+    }
+  },
+  {
+    "case": "tamper_storage_charge_kw",
+    "check": {
+      "passed": false,
+      "simulation": true,
+      "certified_safety_service": false,
+      "violations": [
+        {
+          "code": "PLAN_HASH_MISMATCH"
+        },
+        {
+          "code": "STORAGE_CHARGE_POWER",
+          "slot": 0,
+          "actual": 5.0,
+          "minimum": 0,
+          "maximum": 4
+        },
+        {
+          "code": "STORAGE_DYNAMICS",
+          "slot": 0,
+          "actual": 6.0,
+          "expected": 6.25
+        },
+        {
+          "code": "POWER_BALANCE",
+          "slot": 0,
+          "actual": 12.0,
+          "expected": 13.0
+        }
+      ],
+      "metrics": {
+        "purchase_cost_cny": 5.0,
+        "throughput_cost_cny": 0.0,
+        "curtailment_cost_cny": 0.0,
+        "total_objective_cny": 5.0,
+        "grid_import_kwh": 5.0,
+        "pv_used_kwh": 0.0,
+        "pv_curtailed_kwh": 0.0,
+        "storage_throughput_kwh": 4.25,
+        "storage_loss_kwh": 0.0,
+        "storage_initial_kwh": 5.0,
+        "storage_terminal_kwh": 5.0,
+        "peak_import_kw": 12.0,
+        "delivered_energy_by_vehicle_kwh": {
+          "V1": 1.0
+        },
+        "max_balance_residual_kw": 1.0
+      },
+      "plan_fingerprint": "8482531107a8c4d90cfb9811a6efe915eeb700d2b522626c9ee3c396e56bcf68",
+      "input_hash": "98bd46b420118976571e81d8a45af2caaf769af4f91757594cdf31bbe48e8d88",
+      "checked_input_hash": "98bd46b420118976571e81d8a45af2caaf769af4f91757594cdf31bbe48e8d88"
+    }
+  },
+  {
+    "case": "resigned_tamper_storage_charge_kw",
+    "check": {
+      "passed": false,
+      "simulation": true,
+      "certified_safety_service": false,
+      "violations": [
+        {
+          "code": "STORAGE_CHARGE_POWER",
+          "slot": 0,
+          "actual": 5.0,
+          "minimum": 0,
+          "maximum": 4
+        },
+        {
+          "code": "STORAGE_DYNAMICS",
+          "slot": 0,
+          "actual": 6.0,
+          "expected": 6.25
+        },
+        {
+          "code": "POWER_BALANCE",
+          "slot": 0,
+          "actual": 12.0,
+          "expected": 13.0
+        }
+      ],
+      "metrics": {
+        "purchase_cost_cny": 5.0,
+        "throughput_cost_cny": 0.0,
+        "curtailment_cost_cny": 0.0,
+        "total_objective_cny": 5.0,
+        "grid_import_kwh": 5.0,
+        "pv_used_kwh": 0.0,
+        "pv_curtailed_kwh": 0.0,
+        "storage_throughput_kwh": 4.25,
+        "storage_loss_kwh": 0.0,
+        "storage_initial_kwh": 5.0,
+        "storage_terminal_kwh": 5.0,
+        "peak_import_kw": 12.0,
+        "delivered_energy_by_vehicle_kwh": {
+          "V1": 1.0
+        },
+        "max_balance_residual_kw": 1.0
+      },
+      "plan_fingerprint": "74284efa471e6f979488dd4ef5f49c85d1c31ff27b3f9ebfdfe3d5dc1f72e68e",
+      "input_hash": "98bd46b420118976571e81d8a45af2caaf769af4f91757594cdf31bbe48e8d88",
+      "checked_input_hash": "98bd46b420118976571e81d8a45af2caaf769af4f91757594cdf31bbe48e8d88"
+    }
+  },
+  {
+    "case": "tamper_storage_discharge_kw",
+    "check": {
+      "passed": false,
+      "simulation": true,
+      "certified_safety_service": false,
+      "violations": [
+        {
+          "code": "PLAN_HASH_MISMATCH"
+        },
+        {
+          "code": "STORAGE_SIMULTANEOUS",
+          "slot": 0,
+          "charge_kw": 4.0,
+          "discharge_kw": 1.0
+        },
+        {
+          "code": "STORAGE_DYNAMICS",
+          "slot": 0,
+          "actual": 6.0,
+          "expected": 5.75
+        },
+        {
+          "code": "POWER_BALANCE",
+          "slot": 0,
+          "actual": 12.0,
+          "expected": 11.0
+        }
+      ],
+      "metrics": {
+        "purchase_cost_cny": 5.0,
+        "throughput_cost_cny": 0.0,
+        "curtailment_cost_cny": 0.0,
+        "total_objective_cny": 5.0,
+        "grid_import_kwh": 5.0,
+        "pv_used_kwh": 0.0,
+        "pv_curtailed_kwh": 0.0,
+        "storage_throughput_kwh": 4.25,
+        "storage_loss_kwh": 0.0,
+        "storage_initial_kwh": 5.0,
+        "storage_terminal_kwh": 5.0,
+        "peak_import_kw": 12.0,
+        "delivered_energy_by_vehicle_kwh": {
+          "V1": 1.0
+        },
+        "max_balance_residual_kw": 1.0
+      },
+      "plan_fingerprint": "8482531107a8c4d90cfb9811a6efe915eeb700d2b522626c9ee3c396e56bcf68",
+      "input_hash": "98bd46b420118976571e81d8a45af2caaf769af4f91757594cdf31bbe48e8d88",
+      "checked_input_hash": "98bd46b420118976571e81d8a45af2caaf769af4f91757594cdf31bbe48e8d88"
+    }
+  },
+  {
+    "case": "resigned_tamper_storage_discharge_kw",
+    "check": {
+      "passed": false,
+      "simulation": true,
+      "certified_safety_service": false,
+      "violations": [
+        {
+          "code": "STORAGE_SIMULTANEOUS",
+          "slot": 0,
+          "charge_kw": 4.0,
+          "discharge_kw": 1.0
+        },
+        {
+          "code": "STORAGE_DYNAMICS",
+          "slot": 0,
+          "actual": 6.0,
+          "expected": 5.75
+        },
+        {
+          "code": "POWER_BALANCE",
+          "slot": 0,
+          "actual": 12.0,
+          "expected": 11.0
+        }
+      ],
+      "metrics": {
+        "purchase_cost_cny": 5.0,
+        "throughput_cost_cny": 0.0,
+        "curtailment_cost_cny": 0.0,
+        "total_objective_cny": 5.0,
+        "grid_import_kwh": 5.0,
+        "pv_used_kwh": 0.0,
+        "pv_curtailed_kwh": 0.0,
+        "storage_throughput_kwh": 4.25,
+        "storage_loss_kwh": 0.0,
+        "storage_initial_kwh": 5.0,
+        "storage_terminal_kwh": 5.0,
+        "peak_import_kw": 12.0,
+        "delivered_energy_by_vehicle_kwh": {
+          "V1": 1.0
+        },
+        "max_balance_residual_kw": 1.0
+      },
+      "plan_fingerprint": "ea0f8b1730a677eeed2fc5074ad0dd283fd9f96984d8609771b6a118c8e13f76",
+      "input_hash": "98bd46b420118976571e81d8a45af2caaf769af4f91757594cdf31bbe48e8d88",
+      "checked_input_hash": "98bd46b420118976571e81d8a45af2caaf769af4f91757594cdf31bbe48e8d88"
+    }
+  },
+  {
+    "case": "tamper_storage_energy_kwh",
+    "check": {
+      "passed": false,
+      "simulation": true,
+      "certified_safety_service": false,
+      "violations": [
+        {
+          "code": "PLAN_HASH_MISMATCH"
+        },
+        {
+          "code": "STORAGE_INITIAL",
+          "actual": 6.0,
+          "required": 5
+        },
+        {
+          "code": "STORAGE_DYNAMICS",
+          "slot": 0,
+          "actual": 6.0,
+          "expected": 7.0
+        }
+      ],
+      "metrics": {
+        "purchase_cost_cny": 5.0,
+        "throughput_cost_cny": 0.0,
+        "curtailment_cost_cny": 0.0,
+        "total_objective_cny": 5.0,
+        "grid_import_kwh": 5.0,
+        "pv_used_kwh": 0.0,
+        "pv_curtailed_kwh": 0.0,
+        "storage_throughput_kwh": 4.0,
+        "storage_loss_kwh": 0.0,
+        "storage_initial_kwh": 6.0,
+        "storage_terminal_kwh": 5.0,
+        "peak_import_kw": 12.0,
+        "delivered_energy_by_vehicle_kwh": {
+          "V1": 1.0
+        },
+        "max_balance_residual_kw": 0.0
+      },
+      "plan_fingerprint": "8482531107a8c4d90cfb9811a6efe915eeb700d2b522626c9ee3c396e56bcf68",
+      "input_hash": "98bd46b420118976571e81d8a45af2caaf769af4f91757594cdf31bbe48e8d88",
+      "checked_input_hash": "98bd46b420118976571e81d8a45af2caaf769af4f91757594cdf31bbe48e8d88"
+    }
+  },
+  {
+    "case": "resigned_tamper_storage_energy_kwh",
+    "check": {
+      "passed": false,
+      "simulation": true,
+      "certified_safety_service": false,
+      "violations": [
+        {
+          "code": "STORAGE_INITIAL",
+          "actual": 6.0,
+          "required": 5
+        },
+        {
+          "code": "STORAGE_DYNAMICS",
+          "slot": 0,
+          "actual": 6.0,
+          "expected": 7.0
+        }
+      ],
+      "metrics": {
+        "purchase_cost_cny": 5.0,
+        "throughput_cost_cny": 0.0,
+        "curtailment_cost_cny": 0.0,
+        "total_objective_cny": 5.0,
+        "grid_import_kwh": 5.0,
+        "pv_used_kwh": 0.0,
+        "pv_curtailed_kwh": 0.0,
+        "storage_throughput_kwh": 4.0,
+        "storage_loss_kwh": 0.0,
+        "storage_initial_kwh": 6.0,
+        "storage_terminal_kwh": 5.0,
+        "peak_import_kw": 12.0,
+        "delivered_energy_by_vehicle_kwh": {
+          "V1": 1.0
+        },
+        "max_balance_residual_kw": 0.0
+      },
+      "plan_fingerprint": "0c011a148f27467bd90ab58bf1a9b806ad4553bf0888b66a16961ea381efaef6",
+      "input_hash": "98bd46b420118976571e81d8a45af2caaf769af4f91757594cdf31bbe48e8d88",
+      "checked_input_hash": "98bd46b420118976571e81d8a45af2caaf769af4f91757594cdf31bbe48e8d88"
+    }
+  },
+  {
+    "case": "live_grid_limit_drop",
+    "check": {
+      "passed": false,
+      "simulation": true,
+      "certified_safety_service": false,
+      "violations": [
+        {
+          "code": "GRID_IMPORT_EXPORT",
+          "slot": 0,
+          "actual": 12.0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        {
+          "code": "GRID_IMPORT_EXPORT",
+          "slot": 1,
+          "actual": 8.0,
+          "minimum": 0,
+          "maximum": 0
+        }
+      ],
+      "metrics": {
+        "purchase_cost_cny": 5.0,
+        "throughput_cost_cny": 0.0,
+        "curtailment_cost_cny": 0.0,
+        "total_objective_cny": 5.0,
+        "grid_import_kwh": 5.0,
+        "pv_used_kwh": 0.0,
+        "pv_curtailed_kwh": 0.0,
+        "storage_throughput_kwh": 4.0,
+        "storage_loss_kwh": 0.0,
+        "storage_initial_kwh": 5.0,
+        "storage_terminal_kwh": 5.0,
+        "peak_import_kw": 12.0,
+        "delivered_energy_by_vehicle_kwh": {
+          "V1": 1.0
+        },
+        "max_balance_residual_kw": 0.0
+      },
+      "plan_fingerprint": "8482531107a8c4d90cfb9811a6efe915eeb700d2b522626c9ee3c396e56bcf68",
+      "input_hash": "98bd46b420118976571e81d8a45af2caaf769af4f91757594cdf31bbe48e8d88",
+      "checked_input_hash": "dc20690c09e0a0ea169143581f3136c2e23f47b0f130ab9727fecddb74fcc141"
+    }
+  },
+  {
+    "case": "live_pv_drop",
+    "check": {
+      "passed": false,
+      "simulation": true,
+      "certified_safety_service": false,
+      "violations": [
+        {
+          "code": "PV_LIMIT",
+          "slot": 0,
+          "actual": 4.0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        {
+          "code": "PV_LIMIT",
+          "slot": 1,
+          "actual": 4.0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        {
+          "code": "PV_LIMIT",
+          "slot": 2,
+          "actual": 4.0,
+          "minimum": 0,
+          "maximum": 0
+        },
+        {
+          "code": "PV_LIMIT",
+          "slot": 3,
+          "actual": 4.0,
+          "minimum": 0,
+          "maximum": 0
+        }
+      ],
+      "metrics": {
+        "purchase_cost_cny": 1.0,
+        "throughput_cost_cny": 0.0,
+        "curtailment_cost_cny": -0.0,
+        "total_objective_cny": 1.0,
+        "grid_import_kwh": 1.0,
+        "pv_used_kwh": 4.0,
+        "pv_curtailed_kwh": -4.0,
+        "storage_throughput_kwh": 0.0,
+        "storage_loss_kwh": 0.0,
+        "storage_initial_kwh": 5.0,
+        "storage_terminal_kwh": 5.0,
+        "peak_import_kw": 4.0,
+        "delivered_energy_by_vehicle_kwh": {
+          "V1": 1.0
+        },
+        "max_balance_residual_kw": 0.0
+      },
+      "plan_fingerprint": "742404e90daa61089a603ea4753368696ff1bb92b9d0317b6a533ee6dc96f4d5",
+      "input_hash": "215dbf2ef6cf5129acec1a972427f8b71661ec45cce5e6b1801673de51d61c6c",
+      "checked_input_hash": "98bd46b420118976571e81d8a45af2caaf769af4f91757594cdf31bbe48e8d88"
+    }
+  }
+]

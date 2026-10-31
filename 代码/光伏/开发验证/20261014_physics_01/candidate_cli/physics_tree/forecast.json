@@ -1,0 +1,1137 @@
+{
+  "forecast_id": "5f9895fe-ed3e-4555-bf61-3cbde2b50f3f",
+  "forecast_type": "pv_power",
+  "asset_scope": "configured_pv_assets",
+  "generated_at": "2026-10-15T05:41:07.054798+00:00",
+  "forecast_start_at": "2026-01-01T00:00:00+08:00",
+  "forecast_end_at": "2026-01-01T23:45:00+08:00",
+  "interval_minutes": 15,
+  "forecast_values": [
+    {
+      "timestamp": "2026-01-01T00:00:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T00:15:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T00:30:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T00:45:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T01:00:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T01:15:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T01:30:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T01:45:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T02:00:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T02:15:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T02:30:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T02:45:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T03:00:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T03:15:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T03:30:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T03:45:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T04:00:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T04:15:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T04:30:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T04:45:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T05:00:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T05:15:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T05:30:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T05:45:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T06:00:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T06:15:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T06:30:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T06:45:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T07:00:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T07:15:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T07:30:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T07:45:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T08:00:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T08:15:00+08:00",
+      "value": 103.88816725400409,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T08:30:00+08:00",
+      "value": 200.45210514691541,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T08:45:00+08:00",
+      "value": 281.89866475863664,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T09:00:00+08:00",
+      "value": 304.01267814572475,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T09:15:00+08:00",
+      "value": 359.28898858977436,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T09:30:00+08:00",
+      "value": 431.9826762216055,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T09:45:00+08:00",
+      "value": 577.4605518111821,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T10:00:00+08:00",
+      "value": 741.6316690552528,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T10:15:00+08:00",
+      "value": 805.4417156529871,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T10:30:00+08:00",
+      "value": 857.1946555417676,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T10:45:00+08:00",
+      "value": 889.5786096684064,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T11:00:00+08:00",
+      "value": 931.6143583703044,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T11:15:00+08:00",
+      "value": 976.6165151097634,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T11:30:00+08:00",
+      "value": 1002.6733347229065,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T11:45:00+08:00",
+      "value": 1035.9691074552766,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T12:00:00+08:00",
+      "value": 1081.9217441740266,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T12:15:00+08:00",
+      "value": 1112.5215976896516,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T12:30:00+08:00",
+      "value": 1121.430980241406,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T12:45:00+08:00",
+      "value": 1121.327220475781,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T13:00:00+08:00",
+      "value": 1143.2191058707926,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T13:15:00+08:00",
+      "value": 1092.7249471395753,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T13:30:00+08:00",
+      "value": 1046.5643026083253,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T13:45:00+08:00",
+      "value": 1005.3642691465197,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T14:00:00+08:00",
+      "value": 1026.6850553368824,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T14:15:00+08:00",
+      "value": 986.2336625861142,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T14:30:00+08:00",
+      "value": 943.9867322435912,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T14:45:00+08:00",
+      "value": 903.6958318406435,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T15:00:00+08:00",
+      "value": 851.730245467488,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T15:15:00+08:00",
+      "value": 789.0449047978773,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T15:30:00+08:00",
+      "value": 634.2413463331279,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T15:45:00+08:00",
+      "value": 497.79007905908225,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T16:00:00+08:00",
+      "value": 424.8749558803761,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T16:15:00+08:00",
+      "value": 369.8536429718097,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T16:30:00+08:00",
+      "value": 320.51781901961976,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T16:45:00+08:00",
+      "value": 238.78744593133604,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T17:00:00+08:00",
+      "value": 141.02355584716258,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T17:15:00+08:00",
+      "value": 29.836288500015712,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T17:30:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T17:45:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T18:00:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T18:15:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T18:30:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T18:45:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T19:00:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T19:15:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T19:30:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T19:45:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T20:00:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T20:15:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T20:30:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T20:45:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T21:00:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T21:15:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T21:30:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T21:45:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T22:00:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T22:15:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T22:30:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T22:45:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T23:00:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T23:15:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T23:30:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    },
+    {
+      "timestamp": "2026-01-01T23:45:00+08:00",
+      "value": 0.0,
+      "unit": "kW"
+    }
+  ],
+  "prediction_interval": {
+    "method": "empirical_daylight_absolute_residual",
+    "nominal_coverage": 0.8,
+    "values": [
+      {
+        "timestamp": "2026-01-01T00:00:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T00:15:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T00:30:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T00:45:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T01:00:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T01:15:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T01:30:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T01:45:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T02:00:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T02:15:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T02:30:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T02:45:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T03:00:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T03:15:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T03:30:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T03:45:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T04:00:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T04:15:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T04:30:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T04:45:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T05:00:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T05:15:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T05:30:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T05:45:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T06:00:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T06:15:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T06:30:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T06:45:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T07:00:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T07:15:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T07:30:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T07:45:00+08:00",
+        "lower": 0.0,
+        "upper": 877.1108431676521,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T08:00:00+08:00",
+        "lower": 0.0,
+        "upper": 886.4251900636439,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T08:15:00+08:00",
+        "lower": 0.0,
+        "upper": 987.669605297552,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T08:30:00+08:00",
+        "lower": 0.0,
+        "upper": 1080.1639107289734,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T08:45:00+08:00",
+        "lower": 0.0,
+        "upper": 1156.3553189692884,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T09:00:00+08:00",
+        "lower": 0.0,
+        "upper": 1186.2501171639244,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T09:15:00+08:00",
+        "lower": 0.0,
+        "upper": 1245.9124810981234,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T09:30:00+08:00",
+        "lower": 0.0,
+        "upper": 1323.1961027496645,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T09:45:00+08:00",
+        "lower": 0.0,
+        "upper": 1460.3357359646432,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T10:00:00+08:00",
+        "lower": 0.0,
+        "upper": 1626.9292198482287,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T10:15:00+08:00",
+        "lower": 0.0,
+        "upper": 1704.68117063494,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T10:30:00+08:00",
+        "lower": 0.0,
+        "upper": 1757.451566955855,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T10:45:00+08:00",
+        "lower": 0.0,
+        "upper": 1803.8057890854457,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T11:00:00+08:00",
+        "lower": 22.718569095818566,
+        "upper": 1840.5101476447903,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T11:15:00+08:00",
+        "lower": 50.986219385486606,
+        "upper": 1902.2468108340404,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T11:30:00+08:00",
+        "lower": 91.38237243897584,
+        "upper": 1913.9642970068371,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T11:45:00+08:00",
+        "lower": 119.7478774865566,
+        "upper": 1952.1903374239964,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T12:00:00+08:00",
+        "lower": 169.70781027000828,
+        "upper": 1994.1356780780447,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T12:15:00+08:00",
+        "lower": 194.47456481844324,
+        "upper": 2030.56863056086,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T12:30:00+08:00",
+        "lower": 210.59758488800094,
+        "upper": 2032.2643755948109,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T12:45:00+08:00",
+        "lower": 196.443553059058,
+        "upper": 2046.2108878925037,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T13:00:00+08:00",
+        "lower": 211.2366725766882,
+        "upper": 2075.201539164897,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T13:15:00+08:00",
+        "lower": 158.40308952684882,
+        "upper": 2027.0468047523018,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T13:30:00+08:00",
+        "lower": 107.99474325116307,
+        "upper": 1985.1338619654875,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T13:45:00+08:00",
+        "lower": 65.49298405801039,
+        "upper": 1945.2355542350292,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T14:00:00+08:00",
+        "lower": 89.34407678264631,
+        "upper": 1964.0260338911185,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T14:15:00+08:00",
+        "lower": 51.06182790982746,
+        "upper": 1921.4054972624008,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T14:30:00+08:00",
+        "lower": 5.073761670862268,
+        "upper": 1882.89970281632,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T14:45:00+08:00",
+        "lower": 0.0,
+        "upper": 1850.3326076782876,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T15:00:00+08:00",
+        "lower": 0.0,
+        "upper": 1808.9772177925138,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T15:15:00+08:00",
+        "lower": 0.0,
+        "upper": 1749.391834141912,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T15:30:00+08:00",
+        "lower": 0.0,
+        "upper": 1587.801978639298,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T15:45:00+08:00",
+        "lower": 0.0,
+        "upper": 1473.2049112176155,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T16:00:00+08:00",
+        "lower": 0.0,
+        "upper": 1385.0509493266086,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T16:15:00+08:00",
+        "lower": 0.0,
+        "upper": 1336.9998429042626,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T16:30:00+08:00",
+        "lower": 0.0,
+        "upper": 1297.5761899102758,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T16:45:00+08:00",
+        "lower": 0.0,
+        "upper": 1213.019010087328,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T17:00:00+08:00",
+        "lower": 0.0,
+        "upper": 1112.0134577214576,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T17:15:00+08:00",
+        "lower": 0.0,
+        "upper": 1008.850506374474,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T17:30:00+08:00",
+        "lower": 0.0,
+        "upper": 993.9072966415753,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T17:45:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T18:00:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T18:15:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T18:30:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T18:45:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T19:00:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T19:15:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T19:30:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T19:45:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T20:00:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T20:15:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T20:30:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T20:45:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T21:00:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T21:15:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T21:30:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T21:45:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T22:00:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T22:15:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T22:30:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T22:45:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T23:00:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T23:15:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T23:30:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      },
+      {
+        "timestamp": "2026-01-01T23:45:00+08:00",
+        "lower": 0.0,
+        "upper": 0.0,
+        "unit": "kW"
+      }
+    ]
+  },
+  "confidence": {
+    "level": 0.8,
+    "source": "validation_residual_calibration",
+    "limitations": [
+      "经验区间按目标时刻昼夜分组；重叠窗口并非独立样本，不保证未来覆盖率",
+      "夜间区间下界包含零出力；昼夜判定沿用太阳位置或近似时段，覆盖率仍需验证"
+    ],
+    "model_used": "physics_tree",
+    "weather_forecast_issued_at": null,
+    "coordinate_basis": "宜昌地区太阳位置计算用近似坐标，未经实站地址核验",
+    "night_lower_bound": "zero",
+    "physics_features": true,
+    "point_correction": null
+  },
+  "input_data_quality_summary": {
+    "source_rows": 35040,
+    "regular_rows": 35040,
+    "missing_target_rows": 0,
+    "missing_weather_rows": 0,
+    "interpolated_target_rows": 0,
+    "interpolated_weather_rows": 0,
+    "first_timestamp": "2025-01-01T00:00:00+08:00",
+    "last_timestamp": "2025-12-31T23:45:00+08:00",
+    "missing_history_weather_columns": []
+  },
+  "model_id": "pv-power-forecast",
+  "model_version": "0.3.0-physics-physics_tree-candidate",
+  "model_published_at": null,
+  "training_data_window": {
+    "start": "2025-01-01T00:00:00+08:00",
+    "end": "2025-09-13T11:45:00+08:00"
+  },
+  "fallback_forecast_ref": null,
+  "status": "available",
+  "audit_refs": [
+    "model_metadata.json"
+  ],
+  "visualizations": [
+    {
+      "id": "forecast_24h",
+      "kind": "forecast_interval",
+      "title": "未来24小时光伏功率预测",
+      "path": "visualizations/5f9895fe-ed3e-4555-bf61-3cbde2b50f3f_forecast_24h.png",
+      "mime_type": "image/png",
+      "description": "预测值及经验预测区间"
+    },
+    {
+      "id": "history_forecast",
+      "kind": "history_forecast",
+      "title": "历史功率与未来预测衔接",
+      "path": "visualizations/5f9895fe-ed3e-4555-bf61-3cbde2b50f3f_history_forecast.png",
+      "mime_type": "image/png",
+      "description": "最近历史功率与未来预测的衔接"
+    },
+    {
+      "id": "forecast_profile",
+      "kind": "forecast_profile",
+      "title": "预测窗口日内功率分布",
+      "path": "visualizations/5f9895fe-ed3e-4555-bf61-3cbde2b50f3f_forecast_profile.png",
+      "mime_type": "image/png",
+      "description": "预测窗口内的日内功率变化"
+    }
+  ],
+  "visualization_errors": []
+}

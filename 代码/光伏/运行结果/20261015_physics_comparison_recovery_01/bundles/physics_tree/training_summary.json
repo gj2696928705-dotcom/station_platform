@@ -1,0 +1,11 @@
+{
+  "status": "completed",
+  "training_windows_used": 24145,
+  "daylight_labels_used": 1214442,
+  "all_available_windows_used": true,
+  "iterations": 200,
+  "internal_random_validation": false,
+  "loss_target": "kW residual from deterministic clear-sky power",
+  "reported_metrics": "reconstructed physical kW, daytime",
+  "night_points": "explicit zero power, no learned night component"
+}
